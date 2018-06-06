@@ -24,3 +24,1096 @@ Parameter name: loanId"!
 2018-06-06 15:30:26.419 +03:00 [Debug] {"$type":"Los.Common.Events.Application.LoanUpdatedEvent, Los.Common.Events","Names":["BorrowerProfileIds"],"Values":[["796dfe85-7cf7-4841-9e33-3bb0262e5d80"]],"EntityType":0,"LoanId":"00000000-0000-0000-0000-000000000000","Id":"8ab6f709-d091-46c6-8e90-32337d06c973","Actor":"b0cc03d6-79ac-448c-848f-a520fdedb6eb","AggregateId":"27f678e0-1098-4412-9db2-1fcba33c8881","Version":"","Reason":"4a22a087-28ef-45e2-89bd-f146297642cb"}
 2018-06-06 15:30:26.693 +03:00 [Debug] {"$type":"Los.Common.Events.Application.LoanDetailsCreatedEvent, Los.Common.Events","LoanId":"27f678e0-1098-4412-9db2-1fcba33c8881","LoanPurpose":1,"RefinancePrimaryPurposeType":null,"LoanAmount":null,"PurchasePrice":null,"DownPayment":null,"PropertyOwnership":2,"Id":"da8a8cf2-bc76-442f-8254-90172307c714","Actor":"b0cc03d6-79ac-448c-848f-a520fdedb6eb","AggregateId":"702fa5e1-4e6b-43d2-a593-8312eaa8f23d","Version":"","Reason":"4a22a087-28ef-45e2-89bd-f146297642cb"}
 2018-06-06 17:23:55.872 +03:00 [Information] Now starting LOS ClientPortal XCom Runner ...
+2018-06-06 18:34:38.940 +03:00 [Information] Now starting LOS ClientPortal XCom Runner ...
+2018-06-06 18:38:30.393 +03:00 [Debug] {"$type":"Los.Common.Events.Application.LoanCreatedEvent, Los.Common.Events","LoanId":"388a2679-3ca5-41d4-ab81-095e0589bdd1","CompanyId":"f7668845-107c-4c01-9b6b-461b851ff17e","CreatedDateTime":"2018-06-06T18:38:28.5977889+03:00","LeadNumber":"104538369517","Id":"f9571c14-de9e-4615-8199-564453320d87","Actor":"b4f98814-cde5-4119-b648-f361122cecce","AggregateId":"388a2679-3ca5-41d4-ab81-095e0589bdd1","Version":"","Reason":"bcd8aba0-1c8d-455a-9dc5-cd383c1e84a3"}
+2018-06-06 18:38:32.003 +03:00 [Error] Error in "ApplicationXComEventConsumer"
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'ClientPortal_Loans'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(Boolean buffer)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.<>c__DisplayClass12_0`2.<Execute>b__0(DbContext c, TState s)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.Execute[TState,TResult](IExecutionStrategy strategy, Func`2 operation, Func`2 verifySucceeded, TState state)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.QueryMethodProvider.GetResult[TResult](IEnumerable`1 valueBuffers, Boolean throwOnNullResult)
+   at lambda_method(Closure , QueryContext )
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass17_1`1.<CompileQueryCore>b__0(QueryContext qc)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.Any[TSource](IQueryable`1 source, Expression`1 predicate)
+   at Los.Core.DAL.SqlServer.TrackingDomainRepository`3.Exists(Guid id) in C:\IVELIN\PROJECTS\LOS\src\DAL\Los.Core.DAL\SqlServer\TrackingDomainRepository.cs:line 94
+   at Los.Core.Domain.DomainRepositoryExtensions.ValidateDoesNotExist[TAggregate](IDomainRepository`1 repository, Guid id) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Domain\DomainRepositoryExtensions.cs:line 57
+   at Los.ClientPortal.Events.XCom.ApplicationPortal.LoanCreatedEventHandler.Handle(LoanCreatedEvent message) in C:\IVELIN\PROJECTS\LOS\src\CQRS\Los.ClientPortal.Events\XCom\ApplicationPortal\LoanCreatedEventHandler.cs:line 52
+   at Los.Core.Bus.Bus.<>c__DisplayClass7_0`1.<RegisterHandler>b__0(IMessage x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 61
+   at Los.Core.Bus.Bus.Publish[T](T event, IAggregateRoot _) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 45
+   at Los.Core.Events.EventManager.<>c__DisplayClass8_0`1.<Publish>b__0(IEventProcessor x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Los.Core.Events.EventManager.Publish[T](T event, IAggregateRoot aggregate) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at Los.Core.Events.IEventManagerExtensions.Publish[T](IEventManager eventManager, T event) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\IEventManager.cs:line 29
+   at Los.ClientPortal.XCom.Runner.ApplicationXComEventConsumer.Consume(ConsumeContext`1 context) in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.ClientPortal.XCom.Runner\ApplicationXComEventConsumer.cs:line 81
+ClientConnectionId:cda0e683-a55c-419f-97cc-a94189fa2600
+Error Number:208,State:1,Class:16
+2018-06-06 18:38:32.091 +03:00 [Debug] {"$type":"Los.Common.Events.Application.BorrowerProfileCreatedEvent, Los.Common.Events","LoanId":"388a2679-3ca5-41d4-ab81-095e0589bdd1","BorrowerNumber":1,"FirstName":"a","MiddleName":null,"LastName":"a","Suffix":null,"Phones":[{"$type":"Los.Common.Events.Application.BorrowerPhoneEventInfo, Los.Common.Events","Id":"e7780469-59ee-418d-99a1-cc833728cc05","PhoneNumber":"111-111-1111","PhoneType":null}],"Email":"a@a.a","Ssn":null,"BirthDate":null,"Dependents":null,"AgeOfDependents":[],"YearsOfSchool":null,"MaritalStatus":null,"PresentAddressId":"00000000-0000-0000-0000-000000000000","PresentAddressOccupancyStatus":null,"PresentAddressMonthlyRent":null,"PresentAddressTimeLivedMonths":null,"PreviousResidencies":[],"MailingAddressId":"00000000-0000-0000-0000-000000000000","PreferredContactMethod":1,"ServedForMilitary":null,"ActiveDutyExpDate":null,"MilitaryServiceTypes":[],"Id":"d6e8891a-cdc8-49da-a20f-0f470e354583","Actor":"b4f98814-cde5-4119-b648-f361122cecce","AggregateId":"2ba084a5-c9cc-47c7-b713-c05ae9a2d07d","Version":"","Reason":"bcd8aba0-1c8d-455a-9dc5-cd383c1e84a3"}
+2018-06-06 18:38:32.318 +03:00 [Error] Error in "ApplicationXComEventConsumer"
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'ClientPortal_BorrowerProfiles'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(Boolean buffer)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.<>c__DisplayClass12_0`2.<Execute>b__0(DbContext c, TState s)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.Execute[TState,TResult](IExecutionStrategy strategy, Func`2 operation, Func`2 verifySucceeded, TState state)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.QueryMethodProvider.GetResult[TResult](IEnumerable`1 valueBuffers, Boolean throwOnNullResult)
+   at lambda_method(Closure , QueryContext )
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass17_1`1.<CompileQueryCore>b__0(QueryContext qc)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.Any[TSource](IQueryable`1 source, Expression`1 predicate)
+   at Los.Core.DAL.SqlServer.TrackingDomainRepository`3.Exists(Guid id) in C:\IVELIN\PROJECTS\LOS\src\DAL\Los.Core.DAL\SqlServer\TrackingDomainRepository.cs:line 94
+   at Los.Core.Domain.DomainRepositoryExtensions.ValidateDoesNotExist[TAggregate](IDomainRepository`1 repository, Guid id) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Domain\DomainRepositoryExtensions.cs:line 57
+   at Los.ClientPortal.Events.XCom.ApplicationPortal.BorrowerProfileCreatedEventHandler.Handle(BorrowerProfileCreatedEvent message) in C:\IVELIN\PROJECTS\LOS\src\CQRS\Los.ClientPortal.Events\XCom\ApplicationPortal\BorrowerProfileCreatedEventHandler.cs:line 42
+   at Los.Core.Bus.Bus.<>c__DisplayClass7_0`1.<RegisterHandler>b__0(IMessage x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 61
+   at Los.Core.Bus.Bus.Publish[T](T event, IAggregateRoot _) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 45
+   at Los.Core.Events.EventManager.<>c__DisplayClass8_0`1.<Publish>b__0(IEventProcessor x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Los.Core.Events.EventManager.Publish[T](T event, IAggregateRoot aggregate) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at Los.Core.Events.IEventManagerExtensions.Publish[T](IEventManager eventManager, T event) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\IEventManager.cs:line 29
+   at Los.ClientPortal.XCom.Runner.ApplicationXComEventConsumer.Consume(ConsumeContext`1 context) in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.ClientPortal.XCom.Runner\ApplicationXComEventConsumer.cs:line 81
+ClientConnectionId:cda0e683-a55c-419f-97cc-a94189fa2600
+Error Number:208,State:1,Class:16
+2018-06-06 18:38:32.349 +03:00 [Debug] {"$type":"Los.Common.Events.Application.LoanUpdatedEvent, Los.Common.Events","Names":["BorrowerProfileIds"],"Values":[["2ba084a5-c9cc-47c7-b713-c05ae9a2d07d"]],"EntityType":0,"LoanId":"00000000-0000-0000-0000-000000000000","Id":"bb662263-5faa-43bd-bacd-a0ab8c238c5f","Actor":"b4f98814-cde5-4119-b648-f361122cecce","AggregateId":"388a2679-3ca5-41d4-ab81-095e0589bdd1","Version":"","Reason":"bcd8aba0-1c8d-455a-9dc5-cd383c1e84a3"}
+2018-06-06 18:38:32.596 +03:00 [Error] Error in "ApplicationXComEventConsumer"
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'ClientPortal_Loans'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(Boolean buffer)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.<>c__DisplayClass12_0`2.<Execute>b__0(DbContext c, TState s)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.Execute[TState,TResult](IExecutionStrategy strategy, Func`2 operation, Func`2 verifySucceeded, TState state)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at lambda_method(Closure , QueryContext )
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass17_1`1.<CompileQueryCore>b__0(QueryContext qc)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at Los.Core.DAL.SqlServer.TrackingDomainRepository`3.GetDbEntity(Guid id) in C:\IVELIN\PROJECTS\LOS\src\DAL\Los.Core.DAL\SqlServer\TrackingDomainRepository.cs:line 172
+   at Los.Core.DAL.SqlServer.TrackingDomainRepository`3.GetById(Guid id) in C:\IVELIN\PROJECTS\LOS\src\DAL\Los.Core.DAL\SqlServer\TrackingDomainRepository.cs:line 110
+   at Los.Core.Domain.DomainRepositoryExtensions.GetOrThrowById[TAggregate](IDomainRepository`1 repository, Guid id) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Domain\DomainRepositoryExtensions.cs:line 20
+   at Los.ClientPortal.Events.XCom.ApplicationPortal.LoanUpdatedEventHandler.Handle(LoanUpdatedEvent message) in C:\IVELIN\PROJECTS\LOS\src\CQRS\Los.ClientPortal.Events\XCom\ApplicationPortal\LoanUpdatedEventHandler.cs:line 49
+   at Los.Core.Bus.Bus.<>c__DisplayClass7_0`1.<RegisterHandler>b__0(IMessage x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 61
+   at Los.Core.Bus.Bus.Publish[T](T event, IAggregateRoot _) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 45
+   at Los.Core.Events.EventManager.<>c__DisplayClass8_0`1.<Publish>b__0(IEventProcessor x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Los.Core.Events.EventManager.Publish[T](T event, IAggregateRoot aggregate) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at Los.Core.Events.IEventManagerExtensions.Publish[T](IEventManager eventManager, T event) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\IEventManager.cs:line 29
+   at Los.ClientPortal.XCom.Runner.ApplicationXComEventConsumer.Consume(ConsumeContext`1 context) in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.ClientPortal.XCom.Runner\ApplicationXComEventConsumer.cs:line 81
+ClientConnectionId:cda0e683-a55c-419f-97cc-a94189fa2600
+Error Number:208,State:1,Class:16
+2018-06-06 18:38:32.652 +03:00 [Debug] {"$type":"Los.Common.Events.Application.LoanDetailsCreatedEvent, Los.Common.Events","LoanId":"388a2679-3ca5-41d4-ab81-095e0589bdd1","LoanPurpose":1,"RefinancePrimaryPurposeType":null,"LoanAmount":null,"PurchasePrice":null,"DownPayment":null,"PropertyOwnership":2,"Id":"8e5a9228-6b22-4a80-b520-54486f3ecce0","Actor":"b4f98814-cde5-4119-b648-f361122cecce","AggregateId":"fc251ee7-1f2c-4936-a3b1-69d97763b225","Version":"","Reason":"bcd8aba0-1c8d-455a-9dc5-cd383c1e84a3"}
+2018-06-06 18:38:32.805 +03:00 [Error] Error in "ApplicationXComEventConsumer"
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'ClientPortal_Loans'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(Boolean buffer)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.<>c__DisplayClass12_0`2.<Execute>b__0(DbContext c, TState s)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.Execute[TState,TResult](IExecutionStrategy strategy, Func`2 operation, Func`2 verifySucceeded, TState state)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at lambda_method(Closure , QueryContext )
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass17_1`1.<CompileQueryCore>b__0(QueryContext qc)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at Los.Core.DAL.SqlServer.TrackingDomainRepository`3.GetDbEntity(Guid id) in C:\IVELIN\PROJECTS\LOS\src\DAL\Los.Core.DAL\SqlServer\TrackingDomainRepository.cs:line 172
+   at Los.Core.DAL.SqlServer.TrackingDomainRepository`3.GetById(Guid id) in C:\IVELIN\PROJECTS\LOS\src\DAL\Los.Core.DAL\SqlServer\TrackingDomainRepository.cs:line 110
+   at Los.Core.Domain.DomainRepositoryExtensions.GetOrThrowById[TAggregate](IDomainRepository`1 repository, Guid id) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Domain\DomainRepositoryExtensions.cs:line 20
+   at Los.ClientPortal.Events.XCom.ApplicationPortal.LoanDetailsCreatedEventHandler.Handle(LoanDetailsCreatedEvent message) in C:\IVELIN\PROJECTS\LOS\src\CQRS\Los.ClientPortal.Events\XCom\ApplicationPortal\LoanDetailsCreatedEventHandler.cs:line 42
+   at Los.Core.Bus.Bus.<>c__DisplayClass7_0`1.<RegisterHandler>b__0(IMessage x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 61
+   at Los.Core.Bus.Bus.Publish[T](T event, IAggregateRoot _) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 45
+   at Los.Core.Events.EventManager.<>c__DisplayClass8_0`1.<Publish>b__0(IEventProcessor x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Los.Core.Events.EventManager.Publish[T](T event, IAggregateRoot aggregate) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at Los.Core.Events.IEventManagerExtensions.Publish[T](IEventManager eventManager, T event) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\IEventManager.cs:line 29
+   at Los.ClientPortal.XCom.Runner.ApplicationXComEventConsumer.Consume(ConsumeContext`1 context) in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.ClientPortal.XCom.Runner\ApplicationXComEventConsumer.cs:line 81
+ClientConnectionId:cda0e683-a55c-419f-97cc-a94189fa2600
+Error Number:208,State:1,Class:16
+2018-06-06 18:38:32.835 +03:00 [Debug] {"$type":"Los.Common.Events.Application.LoanCreatedEvent, Los.Common.Events","LoanId":"388a2679-3ca5-41d4-ab81-095e0589bdd1","CompanyId":"f7668845-107c-4c01-9b6b-461b851ff17e","CreatedDateTime":"2018-06-06T18:38:28.5977889+03:00","LeadNumber":"104538369517","Id":"f9571c14-de9e-4615-8199-564453320d87","Actor":"b4f98814-cde5-4119-b648-f361122cecce","AggregateId":"388a2679-3ca5-41d4-ab81-095e0589bdd1","Version":"","Reason":"bcd8aba0-1c8d-455a-9dc5-cd383c1e84a3"}
+2018-06-06 18:38:32.973 +03:00 [Error] Error in "ApplicationXComEventConsumer"
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'ClientPortal_Loans'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(Boolean buffer)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.<>c__DisplayClass12_0`2.<Execute>b__0(DbContext c, TState s)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.Execute[TState,TResult](IExecutionStrategy strategy, Func`2 operation, Func`2 verifySucceeded, TState state)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.QueryMethodProvider.GetResult[TResult](IEnumerable`1 valueBuffers, Boolean throwOnNullResult)
+   at lambda_method(Closure , QueryContext )
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass17_1`1.<CompileQueryCore>b__0(QueryContext qc)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.Any[TSource](IQueryable`1 source, Expression`1 predicate)
+   at Los.Core.DAL.SqlServer.TrackingDomainRepository`3.Exists(Guid id) in C:\IVELIN\PROJECTS\LOS\src\DAL\Los.Core.DAL\SqlServer\TrackingDomainRepository.cs:line 94
+   at Los.Core.Domain.DomainRepositoryExtensions.ValidateDoesNotExist[TAggregate](IDomainRepository`1 repository, Guid id) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Domain\DomainRepositoryExtensions.cs:line 57
+   at Los.ClientPortal.Events.XCom.ApplicationPortal.LoanCreatedEventHandler.Handle(LoanCreatedEvent message) in C:\IVELIN\PROJECTS\LOS\src\CQRS\Los.ClientPortal.Events\XCom\ApplicationPortal\LoanCreatedEventHandler.cs:line 52
+   at Los.Core.Bus.Bus.<>c__DisplayClass7_0`1.<RegisterHandler>b__0(IMessage x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 61
+   at Los.Core.Bus.Bus.Publish[T](T event, IAggregateRoot _) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 45
+   at Los.Core.Events.EventManager.<>c__DisplayClass8_0`1.<Publish>b__0(IEventProcessor x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Los.Core.Events.EventManager.Publish[T](T event, IAggregateRoot aggregate) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at Los.Core.Events.IEventManagerExtensions.Publish[T](IEventManager eventManager, T event) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\IEventManager.cs:line 29
+   at Los.ClientPortal.XCom.Runner.ApplicationXComEventConsumer.Consume(ConsumeContext`1 context) in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.ClientPortal.XCom.Runner\ApplicationXComEventConsumer.cs:line 81
+ClientConnectionId:cda0e683-a55c-419f-97cc-a94189fa2600
+Error Number:208,State:1,Class:16
+2018-06-06 18:38:33.024 +03:00 [Debug] {"$type":"Los.Common.Events.Application.BorrowerProfileCreatedEvent, Los.Common.Events","LoanId":"388a2679-3ca5-41d4-ab81-095e0589bdd1","BorrowerNumber":1,"FirstName":"a","MiddleName":null,"LastName":"a","Suffix":null,"Phones":[{"$type":"Los.Common.Events.Application.BorrowerPhoneEventInfo, Los.Common.Events","Id":"e7780469-59ee-418d-99a1-cc833728cc05","PhoneNumber":"111-111-1111","PhoneType":null}],"Email":"a@a.a","Ssn":null,"BirthDate":null,"Dependents":null,"AgeOfDependents":[],"YearsOfSchool":null,"MaritalStatus":null,"PresentAddressId":"00000000-0000-0000-0000-000000000000","PresentAddressOccupancyStatus":null,"PresentAddressMonthlyRent":null,"PresentAddressTimeLivedMonths":null,"PreviousResidencies":[],"MailingAddressId":"00000000-0000-0000-0000-000000000000","PreferredContactMethod":1,"ServedForMilitary":null,"ActiveDutyExpDate":null,"MilitaryServiceTypes":[],"Id":"d6e8891a-cdc8-49da-a20f-0f470e354583","Actor":"b4f98814-cde5-4119-b648-f361122cecce","AggregateId":"2ba084a5-c9cc-47c7-b713-c05ae9a2d07d","Version":"","Reason":"bcd8aba0-1c8d-455a-9dc5-cd383c1e84a3"}
+2018-06-06 18:38:33.168 +03:00 [Error] Error in "ApplicationXComEventConsumer"
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'ClientPortal_BorrowerProfiles'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(Boolean buffer)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.<>c__DisplayClass12_0`2.<Execute>b__0(DbContext c, TState s)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.Execute[TState,TResult](IExecutionStrategy strategy, Func`2 operation, Func`2 verifySucceeded, TState state)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.QueryMethodProvider.GetResult[TResult](IEnumerable`1 valueBuffers, Boolean throwOnNullResult)
+   at lambda_method(Closure , QueryContext )
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass17_1`1.<CompileQueryCore>b__0(QueryContext qc)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.Any[TSource](IQueryable`1 source, Expression`1 predicate)
+   at Los.Core.DAL.SqlServer.TrackingDomainRepository`3.Exists(Guid id) in C:\IVELIN\PROJECTS\LOS\src\DAL\Los.Core.DAL\SqlServer\TrackingDomainRepository.cs:line 94
+   at Los.Core.Domain.DomainRepositoryExtensions.ValidateDoesNotExist[TAggregate](IDomainRepository`1 repository, Guid id) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Domain\DomainRepositoryExtensions.cs:line 57
+   at Los.ClientPortal.Events.XCom.ApplicationPortal.BorrowerProfileCreatedEventHandler.Handle(BorrowerProfileCreatedEvent message) in C:\IVELIN\PROJECTS\LOS\src\CQRS\Los.ClientPortal.Events\XCom\ApplicationPortal\BorrowerProfileCreatedEventHandler.cs:line 42
+   at Los.Core.Bus.Bus.<>c__DisplayClass7_0`1.<RegisterHandler>b__0(IMessage x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 61
+   at Los.Core.Bus.Bus.Publish[T](T event, IAggregateRoot _) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 45
+   at Los.Core.Events.EventManager.<>c__DisplayClass8_0`1.<Publish>b__0(IEventProcessor x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Los.Core.Events.EventManager.Publish[T](T event, IAggregateRoot aggregate) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at Los.Core.Events.IEventManagerExtensions.Publish[T](IEventManager eventManager, T event) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\IEventManager.cs:line 29
+   at Los.ClientPortal.XCom.Runner.ApplicationXComEventConsumer.Consume(ConsumeContext`1 context) in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.ClientPortal.XCom.Runner\ApplicationXComEventConsumer.cs:line 81
+ClientConnectionId:cda0e683-a55c-419f-97cc-a94189fa2600
+Error Number:208,State:1,Class:16
+2018-06-06 18:38:33.212 +03:00 [Debug] {"$type":"Los.Common.Events.Application.LoanUpdatedEvent, Los.Common.Events","Names":["BorrowerProfileIds"],"Values":[["2ba084a5-c9cc-47c7-b713-c05ae9a2d07d"]],"EntityType":0,"LoanId":"00000000-0000-0000-0000-000000000000","Id":"bb662263-5faa-43bd-bacd-a0ab8c238c5f","Actor":"b4f98814-cde5-4119-b648-f361122cecce","AggregateId":"388a2679-3ca5-41d4-ab81-095e0589bdd1","Version":"","Reason":"bcd8aba0-1c8d-455a-9dc5-cd383c1e84a3"}
+2018-06-06 18:38:33.333 +03:00 [Error] Error in "ApplicationXComEventConsumer"
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'ClientPortal_Loans'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(Boolean buffer)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.<>c__DisplayClass12_0`2.<Execute>b__0(DbContext c, TState s)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.Execute[TState,TResult](IExecutionStrategy strategy, Func`2 operation, Func`2 verifySucceeded, TState state)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at lambda_method(Closure , QueryContext )
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass17_1`1.<CompileQueryCore>b__0(QueryContext qc)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at Los.Core.DAL.SqlServer.TrackingDomainRepository`3.GetDbEntity(Guid id) in C:\IVELIN\PROJECTS\LOS\src\DAL\Los.Core.DAL\SqlServer\TrackingDomainRepository.cs:line 172
+   at Los.Core.DAL.SqlServer.TrackingDomainRepository`3.GetById(Guid id) in C:\IVELIN\PROJECTS\LOS\src\DAL\Los.Core.DAL\SqlServer\TrackingDomainRepository.cs:line 110
+   at Los.Core.Domain.DomainRepositoryExtensions.GetOrThrowById[TAggregate](IDomainRepository`1 repository, Guid id) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Domain\DomainRepositoryExtensions.cs:line 20
+   at Los.ClientPortal.Events.XCom.ApplicationPortal.LoanUpdatedEventHandler.Handle(LoanUpdatedEvent message) in C:\IVELIN\PROJECTS\LOS\src\CQRS\Los.ClientPortal.Events\XCom\ApplicationPortal\LoanUpdatedEventHandler.cs:line 49
+   at Los.Core.Bus.Bus.<>c__DisplayClass7_0`1.<RegisterHandler>b__0(IMessage x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 61
+   at Los.Core.Bus.Bus.Publish[T](T event, IAggregateRoot _) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 45
+   at Los.Core.Events.EventManager.<>c__DisplayClass8_0`1.<Publish>b__0(IEventProcessor x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Los.Core.Events.EventManager.Publish[T](T event, IAggregateRoot aggregate) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at Los.Core.Events.IEventManagerExtensions.Publish[T](IEventManager eventManager, T event) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\IEventManager.cs:line 29
+   at Los.ClientPortal.XCom.Runner.ApplicationXComEventConsumer.Consume(ConsumeContext`1 context) in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.ClientPortal.XCom.Runner\ApplicationXComEventConsumer.cs:line 81
+ClientConnectionId:cda0e683-a55c-419f-97cc-a94189fa2600
+Error Number:208,State:1,Class:16
+2018-06-06 18:38:33.365 +03:00 [Debug] {"$type":"Los.Common.Events.Application.LoanDetailsCreatedEvent, Los.Common.Events","LoanId":"388a2679-3ca5-41d4-ab81-095e0589bdd1","LoanPurpose":1,"RefinancePrimaryPurposeType":null,"LoanAmount":null,"PurchasePrice":null,"DownPayment":null,"PropertyOwnership":2,"Id":"8e5a9228-6b22-4a80-b520-54486f3ecce0","Actor":"b4f98814-cde5-4119-b648-f361122cecce","AggregateId":"fc251ee7-1f2c-4936-a3b1-69d97763b225","Version":"","Reason":"bcd8aba0-1c8d-455a-9dc5-cd383c1e84a3"}
+2018-06-06 18:38:33.506 +03:00 [Error] Error in "ApplicationXComEventConsumer"
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'ClientPortal_Loans'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(Boolean buffer)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.<>c__DisplayClass12_0`2.<Execute>b__0(DbContext c, TState s)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.Execute[TState,TResult](IExecutionStrategy strategy, Func`2 operation, Func`2 verifySucceeded, TState state)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at lambda_method(Closure , QueryContext )
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass17_1`1.<CompileQueryCore>b__0(QueryContext qc)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at Los.Core.DAL.SqlServer.TrackingDomainRepository`3.GetDbEntity(Guid id) in C:\IVELIN\PROJECTS\LOS\src\DAL\Los.Core.DAL\SqlServer\TrackingDomainRepository.cs:line 172
+   at Los.Core.DAL.SqlServer.TrackingDomainRepository`3.GetById(Guid id) in C:\IVELIN\PROJECTS\LOS\src\DAL\Los.Core.DAL\SqlServer\TrackingDomainRepository.cs:line 110
+   at Los.Core.Domain.DomainRepositoryExtensions.GetOrThrowById[TAggregate](IDomainRepository`1 repository, Guid id) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Domain\DomainRepositoryExtensions.cs:line 20
+   at Los.ClientPortal.Events.XCom.ApplicationPortal.LoanDetailsCreatedEventHandler.Handle(LoanDetailsCreatedEvent message) in C:\IVELIN\PROJECTS\LOS\src\CQRS\Los.ClientPortal.Events\XCom\ApplicationPortal\LoanDetailsCreatedEventHandler.cs:line 42
+   at Los.Core.Bus.Bus.<>c__DisplayClass7_0`1.<RegisterHandler>b__0(IMessage x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 61
+   at Los.Core.Bus.Bus.Publish[T](T event, IAggregateRoot _) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 45
+   at Los.Core.Events.EventManager.<>c__DisplayClass8_0`1.<Publish>b__0(IEventProcessor x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Los.Core.Events.EventManager.Publish[T](T event, IAggregateRoot aggregate) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at Los.Core.Events.IEventManagerExtensions.Publish[T](IEventManager eventManager, T event) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\IEventManager.cs:line 29
+   at Los.ClientPortal.XCom.Runner.ApplicationXComEventConsumer.Consume(ConsumeContext`1 context) in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.ClientPortal.XCom.Runner\ApplicationXComEventConsumer.cs:line 81
+ClientConnectionId:cda0e683-a55c-419f-97cc-a94189fa2600
+Error Number:208,State:1,Class:16
+2018-06-06 18:38:33.540 +03:00 [Debug] {"$type":"Los.Common.Events.Application.LoanCreatedEvent, Los.Common.Events","LoanId":"388a2679-3ca5-41d4-ab81-095e0589bdd1","CompanyId":"f7668845-107c-4c01-9b6b-461b851ff17e","CreatedDateTime":"2018-06-06T18:38:28.5977889+03:00","LeadNumber":"104538369517","Id":"f9571c14-de9e-4615-8199-564453320d87","Actor":"b4f98814-cde5-4119-b648-f361122cecce","AggregateId":"388a2679-3ca5-41d4-ab81-095e0589bdd1","Version":"","Reason":"bcd8aba0-1c8d-455a-9dc5-cd383c1e84a3"}
+2018-06-06 18:38:33.705 +03:00 [Error] Error in "ApplicationXComEventConsumer"
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'ClientPortal_Loans'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(Boolean buffer)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.<>c__DisplayClass12_0`2.<Execute>b__0(DbContext c, TState s)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.Execute[TState,TResult](IExecutionStrategy strategy, Func`2 operation, Func`2 verifySucceeded, TState state)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.QueryMethodProvider.GetResult[TResult](IEnumerable`1 valueBuffers, Boolean throwOnNullResult)
+   at lambda_method(Closure , QueryContext )
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass17_1`1.<CompileQueryCore>b__0(QueryContext qc)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.Any[TSource](IQueryable`1 source, Expression`1 predicate)
+   at Los.Core.DAL.SqlServer.TrackingDomainRepository`3.Exists(Guid id) in C:\IVELIN\PROJECTS\LOS\src\DAL\Los.Core.DAL\SqlServer\TrackingDomainRepository.cs:line 94
+   at Los.Core.Domain.DomainRepositoryExtensions.ValidateDoesNotExist[TAggregate](IDomainRepository`1 repository, Guid id) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Domain\DomainRepositoryExtensions.cs:line 57
+   at Los.ClientPortal.Events.XCom.ApplicationPortal.LoanCreatedEventHandler.Handle(LoanCreatedEvent message) in C:\IVELIN\PROJECTS\LOS\src\CQRS\Los.ClientPortal.Events\XCom\ApplicationPortal\LoanCreatedEventHandler.cs:line 52
+   at Los.Core.Bus.Bus.<>c__DisplayClass7_0`1.<RegisterHandler>b__0(IMessage x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 61
+   at Los.Core.Bus.Bus.Publish[T](T event, IAggregateRoot _) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 45
+   at Los.Core.Events.EventManager.<>c__DisplayClass8_0`1.<Publish>b__0(IEventProcessor x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Los.Core.Events.EventManager.Publish[T](T event, IAggregateRoot aggregate) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at Los.Core.Events.IEventManagerExtensions.Publish[T](IEventManager eventManager, T event) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\IEventManager.cs:line 29
+   at Los.ClientPortal.XCom.Runner.ApplicationXComEventConsumer.Consume(ConsumeContext`1 context) in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.ClientPortal.XCom.Runner\ApplicationXComEventConsumer.cs:line 81
+ClientConnectionId:cda0e683-a55c-419f-97cc-a94189fa2600
+Error Number:208,State:1,Class:16
+2018-06-06 18:38:33.734 +03:00 [Debug] {"$type":"Los.Common.Events.Application.BorrowerProfileCreatedEvent, Los.Common.Events","LoanId":"388a2679-3ca5-41d4-ab81-095e0589bdd1","BorrowerNumber":1,"FirstName":"a","MiddleName":null,"LastName":"a","Suffix":null,"Phones":[{"$type":"Los.Common.Events.Application.BorrowerPhoneEventInfo, Los.Common.Events","Id":"e7780469-59ee-418d-99a1-cc833728cc05","PhoneNumber":"111-111-1111","PhoneType":null}],"Email":"a@a.a","Ssn":null,"BirthDate":null,"Dependents":null,"AgeOfDependents":[],"YearsOfSchool":null,"MaritalStatus":null,"PresentAddressId":"00000000-0000-0000-0000-000000000000","PresentAddressOccupancyStatus":null,"PresentAddressMonthlyRent":null,"PresentAddressTimeLivedMonths":null,"PreviousResidencies":[],"MailingAddressId":"00000000-0000-0000-0000-000000000000","PreferredContactMethod":1,"ServedForMilitary":null,"ActiveDutyExpDate":null,"MilitaryServiceTypes":[],"Id":"d6e8891a-cdc8-49da-a20f-0f470e354583","Actor":"b4f98814-cde5-4119-b648-f361122cecce","AggregateId":"2ba084a5-c9cc-47c7-b713-c05ae9a2d07d","Version":"","Reason":"bcd8aba0-1c8d-455a-9dc5-cd383c1e84a3"}
+2018-06-06 18:38:33.858 +03:00 [Error] Error in "ApplicationXComEventConsumer"
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'ClientPortal_BorrowerProfiles'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(Boolean buffer)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.<>c__DisplayClass12_0`2.<Execute>b__0(DbContext c, TState s)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.Execute[TState,TResult](IExecutionStrategy strategy, Func`2 operation, Func`2 verifySucceeded, TState state)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.QueryMethodProvider.GetResult[TResult](IEnumerable`1 valueBuffers, Boolean throwOnNullResult)
+   at lambda_method(Closure , QueryContext )
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass17_1`1.<CompileQueryCore>b__0(QueryContext qc)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.Any[TSource](IQueryable`1 source, Expression`1 predicate)
+   at Los.Core.DAL.SqlServer.TrackingDomainRepository`3.Exists(Guid id) in C:\IVELIN\PROJECTS\LOS\src\DAL\Los.Core.DAL\SqlServer\TrackingDomainRepository.cs:line 94
+   at Los.Core.Domain.DomainRepositoryExtensions.ValidateDoesNotExist[TAggregate](IDomainRepository`1 repository, Guid id) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Domain\DomainRepositoryExtensions.cs:line 57
+   at Los.ClientPortal.Events.XCom.ApplicationPortal.BorrowerProfileCreatedEventHandler.Handle(BorrowerProfileCreatedEvent message) in C:\IVELIN\PROJECTS\LOS\src\CQRS\Los.ClientPortal.Events\XCom\ApplicationPortal\BorrowerProfileCreatedEventHandler.cs:line 42
+   at Los.Core.Bus.Bus.<>c__DisplayClass7_0`1.<RegisterHandler>b__0(IMessage x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 61
+   at Los.Core.Bus.Bus.Publish[T](T event, IAggregateRoot _) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 45
+   at Los.Core.Events.EventManager.<>c__DisplayClass8_0`1.<Publish>b__0(IEventProcessor x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Los.Core.Events.EventManager.Publish[T](T event, IAggregateRoot aggregate) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at Los.Core.Events.IEventManagerExtensions.Publish[T](IEventManager eventManager, T event) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\IEventManager.cs:line 29
+   at Los.ClientPortal.XCom.Runner.ApplicationXComEventConsumer.Consume(ConsumeContext`1 context) in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.ClientPortal.XCom.Runner\ApplicationXComEventConsumer.cs:line 81
+ClientConnectionId:cda0e683-a55c-419f-97cc-a94189fa2600
+Error Number:208,State:1,Class:16
+2018-06-06 18:38:33.896 +03:00 [Debug] {"$type":"Los.Common.Events.Application.LoanUpdatedEvent, Los.Common.Events","Names":["BorrowerProfileIds"],"Values":[["2ba084a5-c9cc-47c7-b713-c05ae9a2d07d"]],"EntityType":0,"LoanId":"00000000-0000-0000-0000-000000000000","Id":"bb662263-5faa-43bd-bacd-a0ab8c238c5f","Actor":"b4f98814-cde5-4119-b648-f361122cecce","AggregateId":"388a2679-3ca5-41d4-ab81-095e0589bdd1","Version":"","Reason":"bcd8aba0-1c8d-455a-9dc5-cd383c1e84a3"}
+2018-06-06 18:38:34.030 +03:00 [Error] Error in "ApplicationXComEventConsumer"
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'ClientPortal_Loans'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(Boolean buffer)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.<>c__DisplayClass12_0`2.<Execute>b__0(DbContext c, TState s)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.Execute[TState,TResult](IExecutionStrategy strategy, Func`2 operation, Func`2 verifySucceeded, TState state)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at lambda_method(Closure , QueryContext )
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass17_1`1.<CompileQueryCore>b__0(QueryContext qc)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at Los.Core.DAL.SqlServer.TrackingDomainRepository`3.GetDbEntity(Guid id) in C:\IVELIN\PROJECTS\LOS\src\DAL\Los.Core.DAL\SqlServer\TrackingDomainRepository.cs:line 172
+   at Los.Core.DAL.SqlServer.TrackingDomainRepository`3.GetById(Guid id) in C:\IVELIN\PROJECTS\LOS\src\DAL\Los.Core.DAL\SqlServer\TrackingDomainRepository.cs:line 110
+   at Los.Core.Domain.DomainRepositoryExtensions.GetOrThrowById[TAggregate](IDomainRepository`1 repository, Guid id) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Domain\DomainRepositoryExtensions.cs:line 20
+   at Los.ClientPortal.Events.XCom.ApplicationPortal.LoanUpdatedEventHandler.Handle(LoanUpdatedEvent message) in C:\IVELIN\PROJECTS\LOS\src\CQRS\Los.ClientPortal.Events\XCom\ApplicationPortal\LoanUpdatedEventHandler.cs:line 49
+   at Los.Core.Bus.Bus.<>c__DisplayClass7_0`1.<RegisterHandler>b__0(IMessage x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 61
+   at Los.Core.Bus.Bus.Publish[T](T event, IAggregateRoot _) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 45
+   at Los.Core.Events.EventManager.<>c__DisplayClass8_0`1.<Publish>b__0(IEventProcessor x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Los.Core.Events.EventManager.Publish[T](T event, IAggregateRoot aggregate) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at Los.Core.Events.IEventManagerExtensions.Publish[T](IEventManager eventManager, T event) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\IEventManager.cs:line 29
+   at Los.ClientPortal.XCom.Runner.ApplicationXComEventConsumer.Consume(ConsumeContext`1 context) in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.ClientPortal.XCom.Runner\ApplicationXComEventConsumer.cs:line 81
+ClientConnectionId:cda0e683-a55c-419f-97cc-a94189fa2600
+Error Number:208,State:1,Class:16
+2018-06-06 18:45:33.442 +03:00 [Debug] {"$type":"Los.Common.Events.Application.LoanCreatedEvent, Los.Common.Events","LoanId":"1c454700-6568-46aa-a5ec-606e7b9d6fb7","CompanyId":"f7668845-107c-4c01-9b6b-461b851ff17e","CreatedDateTime":"2018-06-06T18:45:32.9364228+03:00","LeadNumber":"105563064770","Id":"5f918935-1ccd-4dca-a896-baec3bab64b2","Actor":"b4f98814-cde5-4119-b648-f361122cecce","AggregateId":"1c454700-6568-46aa-a5ec-606e7b9d6fb7","Version":"","Reason":"2bf45e5c-1adc-4999-a3a9-1ea4531103a6"}
+2018-06-06 18:45:33.655 +03:00 [Error] Error in "ApplicationXComEventConsumer"
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'ClientPortal_Loans'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(Boolean buffer)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.<>c__DisplayClass12_0`2.<Execute>b__0(DbContext c, TState s)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.Execute[TState,TResult](IExecutionStrategy strategy, Func`2 operation, Func`2 verifySucceeded, TState state)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.QueryMethodProvider.GetResult[TResult](IEnumerable`1 valueBuffers, Boolean throwOnNullResult)
+   at lambda_method(Closure , QueryContext )
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass17_1`1.<CompileQueryCore>b__0(QueryContext qc)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.Any[TSource](IQueryable`1 source, Expression`1 predicate)
+   at Los.Core.DAL.SqlServer.TrackingDomainRepository`3.Exists(Guid id) in C:\IVELIN\PROJECTS\LOS\src\DAL\Los.Core.DAL\SqlServer\TrackingDomainRepository.cs:line 94
+   at Los.Core.Domain.DomainRepositoryExtensions.ValidateDoesNotExist[TAggregate](IDomainRepository`1 repository, Guid id) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Domain\DomainRepositoryExtensions.cs:line 57
+   at Los.ClientPortal.Events.XCom.ApplicationPortal.LoanCreatedEventHandler.Handle(LoanCreatedEvent message) in C:\IVELIN\PROJECTS\LOS\src\CQRS\Los.ClientPortal.Events\XCom\ApplicationPortal\LoanCreatedEventHandler.cs:line 52
+   at Los.Core.Bus.Bus.<>c__DisplayClass7_0`1.<RegisterHandler>b__0(IMessage x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 61
+   at Los.Core.Bus.Bus.Publish[T](T event, IAggregateRoot _) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 45
+   at Los.Core.Events.EventManager.<>c__DisplayClass8_0`1.<Publish>b__0(IEventProcessor x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Los.Core.Events.EventManager.Publish[T](T event, IAggregateRoot aggregate) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at Los.Core.Events.IEventManagerExtensions.Publish[T](IEventManager eventManager, T event) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\IEventManager.cs:line 29
+   at Los.ClientPortal.XCom.Runner.ApplicationXComEventConsumer.Consume(ConsumeContext`1 context) in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.ClientPortal.XCom.Runner\ApplicationXComEventConsumer.cs:line 81
+ClientConnectionId:a728fe10-9599-42b7-aef1-959de890872e
+Error Number:208,State:1,Class:16
+2018-06-06 18:45:33.701 +03:00 [Debug] {"$type":"Los.Common.Events.Application.BorrowerProfileCreatedEvent, Los.Common.Events","LoanId":"1c454700-6568-46aa-a5ec-606e7b9d6fb7","BorrowerNumber":1,"FirstName":"a","MiddleName":null,"LastName":"a","Suffix":null,"Phones":[{"$type":"Los.Common.Events.Application.BorrowerPhoneEventInfo, Los.Common.Events","Id":"8f9e9b31-76d8-4aa5-87e9-e40b91796344","PhoneNumber":"111-111-1111","PhoneType":null}],"Email":"a@a.a","Ssn":null,"BirthDate":null,"Dependents":null,"AgeOfDependents":[],"YearsOfSchool":null,"MaritalStatus":null,"PresentAddressId":"00000000-0000-0000-0000-000000000000","PresentAddressOccupancyStatus":null,"PresentAddressMonthlyRent":null,"PresentAddressTimeLivedMonths":null,"PreviousResidencies":[],"MailingAddressId":"00000000-0000-0000-0000-000000000000","PreferredContactMethod":2,"ServedForMilitary":null,"ActiveDutyExpDate":null,"MilitaryServiceTypes":[],"Id":"6550eebd-3e24-4eaf-9dbd-0a0f8476e147","Actor":"b4f98814-cde5-4119-b648-f361122cecce","AggregateId":"f4a0b40a-be15-45af-b049-abd3b73e0906","Version":"","Reason":"2bf45e5c-1adc-4999-a3a9-1ea4531103a6"}
+2018-06-06 18:45:33.841 +03:00 [Error] Error in "ApplicationXComEventConsumer"
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'ClientPortal_BorrowerProfiles'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(Boolean buffer)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.<>c__DisplayClass12_0`2.<Execute>b__0(DbContext c, TState s)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.Execute[TState,TResult](IExecutionStrategy strategy, Func`2 operation, Func`2 verifySucceeded, TState state)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.QueryMethodProvider.GetResult[TResult](IEnumerable`1 valueBuffers, Boolean throwOnNullResult)
+   at lambda_method(Closure , QueryContext )
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass17_1`1.<CompileQueryCore>b__0(QueryContext qc)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.Any[TSource](IQueryable`1 source, Expression`1 predicate)
+   at Los.Core.DAL.SqlServer.TrackingDomainRepository`3.Exists(Guid id) in C:\IVELIN\PROJECTS\LOS\src\DAL\Los.Core.DAL\SqlServer\TrackingDomainRepository.cs:line 94
+   at Los.Core.Domain.DomainRepositoryExtensions.ValidateDoesNotExist[TAggregate](IDomainRepository`1 repository, Guid id) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Domain\DomainRepositoryExtensions.cs:line 57
+   at Los.ClientPortal.Events.XCom.ApplicationPortal.BorrowerProfileCreatedEventHandler.Handle(BorrowerProfileCreatedEvent message) in C:\IVELIN\PROJECTS\LOS\src\CQRS\Los.ClientPortal.Events\XCom\ApplicationPortal\BorrowerProfileCreatedEventHandler.cs:line 42
+   at Los.Core.Bus.Bus.<>c__DisplayClass7_0`1.<RegisterHandler>b__0(IMessage x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 61
+   at Los.Core.Bus.Bus.Publish[T](T event, IAggregateRoot _) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 45
+   at Los.Core.Events.EventManager.<>c__DisplayClass8_0`1.<Publish>b__0(IEventProcessor x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Los.Core.Events.EventManager.Publish[T](T event, IAggregateRoot aggregate) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at Los.Core.Events.IEventManagerExtensions.Publish[T](IEventManager eventManager, T event) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\IEventManager.cs:line 29
+   at Los.ClientPortal.XCom.Runner.ApplicationXComEventConsumer.Consume(ConsumeContext`1 context) in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.ClientPortal.XCom.Runner\ApplicationXComEventConsumer.cs:line 81
+ClientConnectionId:a728fe10-9599-42b7-aef1-959de890872e
+Error Number:208,State:1,Class:16
+2018-06-06 18:45:33.870 +03:00 [Debug] {"$type":"Los.Common.Events.Application.LoanUpdatedEvent, Los.Common.Events","Names":["BorrowerProfileIds"],"Values":[["f4a0b40a-be15-45af-b049-abd3b73e0906"]],"EntityType":0,"LoanId":"00000000-0000-0000-0000-000000000000","Id":"bb662588-c186-4b3b-8278-723758d6c462","Actor":"b4f98814-cde5-4119-b648-f361122cecce","AggregateId":"1c454700-6568-46aa-a5ec-606e7b9d6fb7","Version":"","Reason":"2bf45e5c-1adc-4999-a3a9-1ea4531103a6"}
+2018-06-06 18:45:33.994 +03:00 [Error] Error in "ApplicationXComEventConsumer"
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'ClientPortal_Loans'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(Boolean buffer)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.<>c__DisplayClass12_0`2.<Execute>b__0(DbContext c, TState s)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.Execute[TState,TResult](IExecutionStrategy strategy, Func`2 operation, Func`2 verifySucceeded, TState state)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at lambda_method(Closure , QueryContext )
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass17_1`1.<CompileQueryCore>b__0(QueryContext qc)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at Los.Core.DAL.SqlServer.TrackingDomainRepository`3.GetDbEntity(Guid id) in C:\IVELIN\PROJECTS\LOS\src\DAL\Los.Core.DAL\SqlServer\TrackingDomainRepository.cs:line 172
+   at Los.Core.DAL.SqlServer.TrackingDomainRepository`3.GetById(Guid id) in C:\IVELIN\PROJECTS\LOS\src\DAL\Los.Core.DAL\SqlServer\TrackingDomainRepository.cs:line 110
+   at Los.Core.Domain.DomainRepositoryExtensions.GetOrThrowById[TAggregate](IDomainRepository`1 repository, Guid id) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Domain\DomainRepositoryExtensions.cs:line 20
+   at Los.ClientPortal.Events.XCom.ApplicationPortal.LoanUpdatedEventHandler.Handle(LoanUpdatedEvent message) in C:\IVELIN\PROJECTS\LOS\src\CQRS\Los.ClientPortal.Events\XCom\ApplicationPortal\LoanUpdatedEventHandler.cs:line 49
+   at Los.Core.Bus.Bus.<>c__DisplayClass7_0`1.<RegisterHandler>b__0(IMessage x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 61
+   at Los.Core.Bus.Bus.Publish[T](T event, IAggregateRoot _) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 45
+   at Los.Core.Events.EventManager.<>c__DisplayClass8_0`1.<Publish>b__0(IEventProcessor x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Los.Core.Events.EventManager.Publish[T](T event, IAggregateRoot aggregate) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at Los.Core.Events.IEventManagerExtensions.Publish[T](IEventManager eventManager, T event) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\IEventManager.cs:line 29
+   at Los.ClientPortal.XCom.Runner.ApplicationXComEventConsumer.Consume(ConsumeContext`1 context) in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.ClientPortal.XCom.Runner\ApplicationXComEventConsumer.cs:line 81
+ClientConnectionId:a728fe10-9599-42b7-aef1-959de890872e
+Error Number:208,State:1,Class:16
+2018-06-06 18:45:34.024 +03:00 [Debug] {"$type":"Los.Common.Events.Application.LoanDetailsCreatedEvent, Los.Common.Events","LoanId":"1c454700-6568-46aa-a5ec-606e7b9d6fb7","LoanPurpose":1,"RefinancePrimaryPurposeType":null,"LoanAmount":null,"PurchasePrice":null,"DownPayment":null,"PropertyOwnership":2,"Id":"2bf4da29-2efb-4f8b-ba05-9a0775b8bd27","Actor":"b4f98814-cde5-4119-b648-f361122cecce","AggregateId":"d1d50c58-8513-4d51-a21d-cb5df40714e9","Version":"","Reason":"2bf45e5c-1adc-4999-a3a9-1ea4531103a6"}
+2018-06-06 18:45:34.144 +03:00 [Error] Error in "ApplicationXComEventConsumer"
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'ClientPortal_Loans'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(Boolean buffer)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.<>c__DisplayClass12_0`2.<Execute>b__0(DbContext c, TState s)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.Execute[TState,TResult](IExecutionStrategy strategy, Func`2 operation, Func`2 verifySucceeded, TState state)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at lambda_method(Closure , QueryContext )
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass17_1`1.<CompileQueryCore>b__0(QueryContext qc)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at Los.Core.DAL.SqlServer.TrackingDomainRepository`3.GetDbEntity(Guid id) in C:\IVELIN\PROJECTS\LOS\src\DAL\Los.Core.DAL\SqlServer\TrackingDomainRepository.cs:line 172
+   at Los.Core.DAL.SqlServer.TrackingDomainRepository`3.GetById(Guid id) in C:\IVELIN\PROJECTS\LOS\src\DAL\Los.Core.DAL\SqlServer\TrackingDomainRepository.cs:line 110
+   at Los.Core.Domain.DomainRepositoryExtensions.GetOrThrowById[TAggregate](IDomainRepository`1 repository, Guid id) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Domain\DomainRepositoryExtensions.cs:line 20
+   at Los.ClientPortal.Events.XCom.ApplicationPortal.LoanDetailsCreatedEventHandler.Handle(LoanDetailsCreatedEvent message) in C:\IVELIN\PROJECTS\LOS\src\CQRS\Los.ClientPortal.Events\XCom\ApplicationPortal\LoanDetailsCreatedEventHandler.cs:line 42
+   at Los.Core.Bus.Bus.<>c__DisplayClass7_0`1.<RegisterHandler>b__0(IMessage x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 61
+   at Los.Core.Bus.Bus.Publish[T](T event, IAggregateRoot _) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 45
+   at Los.Core.Events.EventManager.<>c__DisplayClass8_0`1.<Publish>b__0(IEventProcessor x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Los.Core.Events.EventManager.Publish[T](T event, IAggregateRoot aggregate) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at Los.Core.Events.IEventManagerExtensions.Publish[T](IEventManager eventManager, T event) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\IEventManager.cs:line 29
+   at Los.ClientPortal.XCom.Runner.ApplicationXComEventConsumer.Consume(ConsumeContext`1 context) in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.ClientPortal.XCom.Runner\ApplicationXComEventConsumer.cs:line 81
+ClientConnectionId:a728fe10-9599-42b7-aef1-959de890872e
+Error Number:208,State:1,Class:16
+2018-06-06 18:49:24.476 +03:00 [Information] LOS ClientPortal XCom Runner exited with code 0.
+2018-06-06 18:49:30.476 +03:00 [Information] Now starting LOS ClientPortal XCom Runner ...
+2018-06-06 18:49:56.259 +03:00 [Debug] {"$type":"Los.Common.Events.Application.LoanCreatedEvent, Los.Common.Events","LoanId":"2ec1a35b-82dd-40a7-9eec-6606b73ec49c","CompanyId":"f7668845-107c-4c01-9b6b-461b851ff17e","CreatedDateTime":"2018-06-06T18:49:55.5801814+03:00","LeadNumber":"100641040028","Id":"3feeaf20-db9b-4824-8e6d-4dd36a54636a","Actor":"b4f98814-cde5-4119-b648-f361122cecce","AggregateId":"2ec1a35b-82dd-40a7-9eec-6606b73ec49c","Version":"","Reason":"d43cbe64-c78a-4f01-bcad-b7028056f6e0"}
+2018-06-06 18:49:57.788 +03:00 [Error] Error in "ApplicationXComEventConsumer"
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'ClientPortal_Loans'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(Boolean buffer)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.<>c__DisplayClass12_0`2.<Execute>b__0(DbContext c, TState s)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.Execute[TState,TResult](IExecutionStrategy strategy, Func`2 operation, Func`2 verifySucceeded, TState state)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.QueryMethodProvider.GetResult[TResult](IEnumerable`1 valueBuffers, Boolean throwOnNullResult)
+   at lambda_method(Closure , QueryContext )
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass17_1`1.<CompileQueryCore>b__0(QueryContext qc)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.Any[TSource](IQueryable`1 source, Expression`1 predicate)
+   at Los.Core.DAL.SqlServer.TrackingDomainRepository`3.Exists(Guid id) in C:\IVELIN\PROJECTS\LOS\src\DAL\Los.Core.DAL\SqlServer\TrackingDomainRepository.cs:line 94
+   at Los.Core.Domain.DomainRepositoryExtensions.ValidateDoesNotExist[TAggregate](IDomainRepository`1 repository, Guid id) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Domain\DomainRepositoryExtensions.cs:line 57
+   at Los.ClientPortal.Events.XCom.ApplicationPortal.LoanCreatedEventHandler.Handle(LoanCreatedEvent message) in C:\IVELIN\PROJECTS\LOS\src\CQRS\Los.ClientPortal.Events\XCom\ApplicationPortal\LoanCreatedEventHandler.cs:line 52
+   at Los.Core.Bus.Bus.<>c__DisplayClass7_0`1.<RegisterHandler>b__0(IMessage x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 61
+   at Los.Core.Bus.Bus.Publish[T](T event, IAggregateRoot _) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 45
+   at Los.Core.Events.EventManager.<>c__DisplayClass8_0`1.<Publish>b__0(IEventProcessor x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Los.Core.Events.EventManager.Publish[T](T event, IAggregateRoot aggregate) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at Los.Core.Events.IEventManagerExtensions.Publish[T](IEventManager eventManager, T event) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\IEventManager.cs:line 29
+   at Los.ClientPortal.XCom.Runner.ApplicationXComEventConsumer.Consume(ConsumeContext`1 context) in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.ClientPortal.XCom.Runner\ApplicationXComEventConsumer.cs:line 81
+ClientConnectionId:fbae2a23-dc69-4c36-b221-b10d0cd68205
+Error Number:208,State:1,Class:16
+2018-06-06 18:49:57.877 +03:00 [Debug] {"$type":"Los.Common.Events.Application.BorrowerProfileCreatedEvent, Los.Common.Events","LoanId":"2ec1a35b-82dd-40a7-9eec-6606b73ec49c","BorrowerNumber":1,"FirstName":"b","MiddleName":null,"LastName":"b","Suffix":null,"Phones":[{"$type":"Los.Common.Events.Application.BorrowerPhoneEventInfo, Los.Common.Events","Id":"452be1ec-c397-4c59-a1c2-63c77049603d","PhoneNumber":"345-342-6266","PhoneType":null}],"Email":"b@b.b","Ssn":null,"BirthDate":null,"Dependents":null,"AgeOfDependents":[],"YearsOfSchool":null,"MaritalStatus":null,"PresentAddressId":"00000000-0000-0000-0000-000000000000","PresentAddressOccupancyStatus":null,"PresentAddressMonthlyRent":null,"PresentAddressTimeLivedMonths":null,"PreviousResidencies":[],"MailingAddressId":"00000000-0000-0000-0000-000000000000","PreferredContactMethod":2,"ServedForMilitary":null,"ActiveDutyExpDate":null,"MilitaryServiceTypes":[],"Id":"2659b27b-0325-471f-b19b-67a728a2d332","Actor":"b4f98814-cde5-4119-b648-f361122cecce","AggregateId":"d0b73007-5e5f-444f-bdef-27cf99adbbbe","Version":"","Reason":"d43cbe64-c78a-4f01-bcad-b7028056f6e0"}
+2018-06-06 18:49:58.073 +03:00 [Error] Error in "ApplicationXComEventConsumer"
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'ClientPortal_BorrowerProfiles'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(Boolean buffer)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.<>c__DisplayClass12_0`2.<Execute>b__0(DbContext c, TState s)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.Execute[TState,TResult](IExecutionStrategy strategy, Func`2 operation, Func`2 verifySucceeded, TState state)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.QueryMethodProvider.GetResult[TResult](IEnumerable`1 valueBuffers, Boolean throwOnNullResult)
+   at lambda_method(Closure , QueryContext )
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass17_1`1.<CompileQueryCore>b__0(QueryContext qc)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.Any[TSource](IQueryable`1 source, Expression`1 predicate)
+   at Los.Core.DAL.SqlServer.TrackingDomainRepository`3.Exists(Guid id) in C:\IVELIN\PROJECTS\LOS\src\DAL\Los.Core.DAL\SqlServer\TrackingDomainRepository.cs:line 94
+   at Los.Core.Domain.DomainRepositoryExtensions.ValidateDoesNotExist[TAggregate](IDomainRepository`1 repository, Guid id) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Domain\DomainRepositoryExtensions.cs:line 57
+   at Los.ClientPortal.Events.XCom.ApplicationPortal.BorrowerProfileCreatedEventHandler.Handle(BorrowerProfileCreatedEvent message) in C:\IVELIN\PROJECTS\LOS\src\CQRS\Los.ClientPortal.Events\XCom\ApplicationPortal\BorrowerProfileCreatedEventHandler.cs:line 42
+   at Los.Core.Bus.Bus.<>c__DisplayClass7_0`1.<RegisterHandler>b__0(IMessage x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 61
+   at Los.Core.Bus.Bus.Publish[T](T event, IAggregateRoot _) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 45
+   at Los.Core.Events.EventManager.<>c__DisplayClass8_0`1.<Publish>b__0(IEventProcessor x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Los.Core.Events.EventManager.Publish[T](T event, IAggregateRoot aggregate) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at Los.Core.Events.IEventManagerExtensions.Publish[T](IEventManager eventManager, T event) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\IEventManager.cs:line 29
+   at Los.ClientPortal.XCom.Runner.ApplicationXComEventConsumer.Consume(ConsumeContext`1 context) in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.ClientPortal.XCom.Runner\ApplicationXComEventConsumer.cs:line 81
+ClientConnectionId:fbae2a23-dc69-4c36-b221-b10d0cd68205
+Error Number:208,State:1,Class:16
+2018-06-06 18:49:58.108 +03:00 [Debug] {"$type":"Los.Common.Events.Application.LoanUpdatedEvent, Los.Common.Events","Names":["BorrowerProfileIds"],"Values":[["d0b73007-5e5f-444f-bdef-27cf99adbbbe"]],"EntityType":0,"LoanId":"00000000-0000-0000-0000-000000000000","Id":"1b791ca2-12f3-445d-a7fd-cf234a4a7267","Actor":"b4f98814-cde5-4119-b648-f361122cecce","AggregateId":"2ec1a35b-82dd-40a7-9eec-6606b73ec49c","Version":"","Reason":"d43cbe64-c78a-4f01-bcad-b7028056f6e0"}
+2018-06-06 18:49:58.435 +03:00 [Error] Error in "ApplicationXComEventConsumer"
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'ClientPortal_Loans'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(Boolean buffer)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.<>c__DisplayClass12_0`2.<Execute>b__0(DbContext c, TState s)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.Execute[TState,TResult](IExecutionStrategy strategy, Func`2 operation, Func`2 verifySucceeded, TState state)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at lambda_method(Closure , QueryContext )
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass17_1`1.<CompileQueryCore>b__0(QueryContext qc)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at Los.Core.DAL.SqlServer.TrackingDomainRepository`3.GetDbEntity(Guid id) in C:\IVELIN\PROJECTS\LOS\src\DAL\Los.Core.DAL\SqlServer\TrackingDomainRepository.cs:line 172
+   at Los.Core.DAL.SqlServer.TrackingDomainRepository`3.GetById(Guid id) in C:\IVELIN\PROJECTS\LOS\src\DAL\Los.Core.DAL\SqlServer\TrackingDomainRepository.cs:line 110
+   at Los.Core.Domain.DomainRepositoryExtensions.GetOrThrowById[TAggregate](IDomainRepository`1 repository, Guid id) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Domain\DomainRepositoryExtensions.cs:line 20
+   at Los.ClientPortal.Events.XCom.ApplicationPortal.LoanUpdatedEventHandler.Handle(LoanUpdatedEvent message) in C:\IVELIN\PROJECTS\LOS\src\CQRS\Los.ClientPortal.Events\XCom\ApplicationPortal\LoanUpdatedEventHandler.cs:line 49
+   at Los.Core.Bus.Bus.<>c__DisplayClass7_0`1.<RegisterHandler>b__0(IMessage x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 61
+   at Los.Core.Bus.Bus.Publish[T](T event, IAggregateRoot _) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 45
+   at Los.Core.Events.EventManager.<>c__DisplayClass8_0`1.<Publish>b__0(IEventProcessor x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Los.Core.Events.EventManager.Publish[T](T event, IAggregateRoot aggregate) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at Los.Core.Events.IEventManagerExtensions.Publish[T](IEventManager eventManager, T event) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\IEventManager.cs:line 29
+   at Los.ClientPortal.XCom.Runner.ApplicationXComEventConsumer.Consume(ConsumeContext`1 context) in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.ClientPortal.XCom.Runner\ApplicationXComEventConsumer.cs:line 81
+ClientConnectionId:fbae2a23-dc69-4c36-b221-b10d0cd68205
+Error Number:208,State:1,Class:16
+2018-06-06 18:49:58.479 +03:00 [Debug] {"$type":"Los.Common.Events.Application.LoanDetailsCreatedEvent, Los.Common.Events","LoanId":"2ec1a35b-82dd-40a7-9eec-6606b73ec49c","LoanPurpose":1,"RefinancePrimaryPurposeType":null,"LoanAmount":null,"PurchasePrice":null,"DownPayment":null,"PropertyOwnership":2,"Id":"0e7f263a-0281-46f5-a239-6808e03ecd2f","Actor":"b4f98814-cde5-4119-b648-f361122cecce","AggregateId":"c018179e-f013-42b4-9080-9350005b4282","Version":"","Reason":"d43cbe64-c78a-4f01-bcad-b7028056f6e0"}
+2018-06-06 18:49:58.649 +03:00 [Error] Error in "ApplicationXComEventConsumer"
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'ClientPortal_Loans'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(Boolean buffer)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.<>c__DisplayClass12_0`2.<Execute>b__0(DbContext c, TState s)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.Execute[TState,TResult](IExecutionStrategy strategy, Func`2 operation, Func`2 verifySucceeded, TState state)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at lambda_method(Closure , QueryContext )
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass17_1`1.<CompileQueryCore>b__0(QueryContext qc)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at Los.Core.DAL.SqlServer.TrackingDomainRepository`3.GetDbEntity(Guid id) in C:\IVELIN\PROJECTS\LOS\src\DAL\Los.Core.DAL\SqlServer\TrackingDomainRepository.cs:line 172
+   at Los.Core.DAL.SqlServer.TrackingDomainRepository`3.GetById(Guid id) in C:\IVELIN\PROJECTS\LOS\src\DAL\Los.Core.DAL\SqlServer\TrackingDomainRepository.cs:line 110
+   at Los.Core.Domain.DomainRepositoryExtensions.GetOrThrowById[TAggregate](IDomainRepository`1 repository, Guid id) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Domain\DomainRepositoryExtensions.cs:line 20
+   at Los.ClientPortal.Events.XCom.ApplicationPortal.LoanDetailsCreatedEventHandler.Handle(LoanDetailsCreatedEvent message) in C:\IVELIN\PROJECTS\LOS\src\CQRS\Los.ClientPortal.Events\XCom\ApplicationPortal\LoanDetailsCreatedEventHandler.cs:line 42
+   at Los.Core.Bus.Bus.<>c__DisplayClass7_0`1.<RegisterHandler>b__0(IMessage x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 61
+   at Los.Core.Bus.Bus.Publish[T](T event, IAggregateRoot _) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 45
+   at Los.Core.Events.EventManager.<>c__DisplayClass8_0`1.<Publish>b__0(IEventProcessor x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Los.Core.Events.EventManager.Publish[T](T event, IAggregateRoot aggregate) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at Los.Core.Events.IEventManagerExtensions.Publish[T](IEventManager eventManager, T event) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\IEventManager.cs:line 29
+   at Los.ClientPortal.XCom.Runner.ApplicationXComEventConsumer.Consume(ConsumeContext`1 context) in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.ClientPortal.XCom.Runner\ApplicationXComEventConsumer.cs:line 81
+ClientConnectionId:fbae2a23-dc69-4c36-b221-b10d0cd68205
+Error Number:208,State:1,Class:16
+2018-06-06 18:49:58.714 +03:00 [Debug] {"$type":"Los.Common.Events.Application.LoanCreatedEvent, Los.Common.Events","LoanId":"2ec1a35b-82dd-40a7-9eec-6606b73ec49c","CompanyId":"f7668845-107c-4c01-9b6b-461b851ff17e","CreatedDateTime":"2018-06-06T18:49:55.5801814+03:00","LeadNumber":"100641040028","Id":"3feeaf20-db9b-4824-8e6d-4dd36a54636a","Actor":"b4f98814-cde5-4119-b648-f361122cecce","AggregateId":"2ec1a35b-82dd-40a7-9eec-6606b73ec49c","Version":"","Reason":"d43cbe64-c78a-4f01-bcad-b7028056f6e0"}
+2018-06-06 18:49:58.922 +03:00 [Error] Error in "ApplicationXComEventConsumer"
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'ClientPortal_Loans'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(Boolean buffer)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.<>c__DisplayClass12_0`2.<Execute>b__0(DbContext c, TState s)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.Execute[TState,TResult](IExecutionStrategy strategy, Func`2 operation, Func`2 verifySucceeded, TState state)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.QueryMethodProvider.GetResult[TResult](IEnumerable`1 valueBuffers, Boolean throwOnNullResult)
+   at lambda_method(Closure , QueryContext )
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass17_1`1.<CompileQueryCore>b__0(QueryContext qc)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.Any[TSource](IQueryable`1 source, Expression`1 predicate)
+   at Los.Core.DAL.SqlServer.TrackingDomainRepository`3.Exists(Guid id) in C:\IVELIN\PROJECTS\LOS\src\DAL\Los.Core.DAL\SqlServer\TrackingDomainRepository.cs:line 94
+   at Los.Core.Domain.DomainRepositoryExtensions.ValidateDoesNotExist[TAggregate](IDomainRepository`1 repository, Guid id) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Domain\DomainRepositoryExtensions.cs:line 57
+   at Los.ClientPortal.Events.XCom.ApplicationPortal.LoanCreatedEventHandler.Handle(LoanCreatedEvent message) in C:\IVELIN\PROJECTS\LOS\src\CQRS\Los.ClientPortal.Events\XCom\ApplicationPortal\LoanCreatedEventHandler.cs:line 52
+   at Los.Core.Bus.Bus.<>c__DisplayClass7_0`1.<RegisterHandler>b__0(IMessage x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 61
+   at Los.Core.Bus.Bus.Publish[T](T event, IAggregateRoot _) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 45
+   at Los.Core.Events.EventManager.<>c__DisplayClass8_0`1.<Publish>b__0(IEventProcessor x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Los.Core.Events.EventManager.Publish[T](T event, IAggregateRoot aggregate) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at Los.Core.Events.IEventManagerExtensions.Publish[T](IEventManager eventManager, T event) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\IEventManager.cs:line 29
+   at Los.ClientPortal.XCom.Runner.ApplicationXComEventConsumer.Consume(ConsumeContext`1 context) in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.ClientPortal.XCom.Runner\ApplicationXComEventConsumer.cs:line 81
+ClientConnectionId:fbae2a23-dc69-4c36-b221-b10d0cd68205
+Error Number:208,State:1,Class:16
+2018-06-06 18:49:58.951 +03:00 [Debug] {"$type":"Los.Common.Events.Application.BorrowerProfileCreatedEvent, Los.Common.Events","LoanId":"2ec1a35b-82dd-40a7-9eec-6606b73ec49c","BorrowerNumber":1,"FirstName":"b","MiddleName":null,"LastName":"b","Suffix":null,"Phones":[{"$type":"Los.Common.Events.Application.BorrowerPhoneEventInfo, Los.Common.Events","Id":"452be1ec-c397-4c59-a1c2-63c77049603d","PhoneNumber":"345-342-6266","PhoneType":null}],"Email":"b@b.b","Ssn":null,"BirthDate":null,"Dependents":null,"AgeOfDependents":[],"YearsOfSchool":null,"MaritalStatus":null,"PresentAddressId":"00000000-0000-0000-0000-000000000000","PresentAddressOccupancyStatus":null,"PresentAddressMonthlyRent":null,"PresentAddressTimeLivedMonths":null,"PreviousResidencies":[],"MailingAddressId":"00000000-0000-0000-0000-000000000000","PreferredContactMethod":2,"ServedForMilitary":null,"ActiveDutyExpDate":null,"MilitaryServiceTypes":[],"Id":"2659b27b-0325-471f-b19b-67a728a2d332","Actor":"b4f98814-cde5-4119-b648-f361122cecce","AggregateId":"d0b73007-5e5f-444f-bdef-27cf99adbbbe","Version":"","Reason":"d43cbe64-c78a-4f01-bcad-b7028056f6e0"}
+2018-06-06 18:49:59.069 +03:00 [Error] Error in "ApplicationXComEventConsumer"
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'ClientPortal_BorrowerProfiles'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(Boolean buffer)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.<>c__DisplayClass12_0`2.<Execute>b__0(DbContext c, TState s)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.Execute[TState,TResult](IExecutionStrategy strategy, Func`2 operation, Func`2 verifySucceeded, TState state)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.QueryMethodProvider.GetResult[TResult](IEnumerable`1 valueBuffers, Boolean throwOnNullResult)
+   at lambda_method(Closure , QueryContext )
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass17_1`1.<CompileQueryCore>b__0(QueryContext qc)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.Any[TSource](IQueryable`1 source, Expression`1 predicate)
+   at Los.Core.DAL.SqlServer.TrackingDomainRepository`3.Exists(Guid id) in C:\IVELIN\PROJECTS\LOS\src\DAL\Los.Core.DAL\SqlServer\TrackingDomainRepository.cs:line 94
+   at Los.Core.Domain.DomainRepositoryExtensions.ValidateDoesNotExist[TAggregate](IDomainRepository`1 repository, Guid id) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Domain\DomainRepositoryExtensions.cs:line 57
+   at Los.ClientPortal.Events.XCom.ApplicationPortal.BorrowerProfileCreatedEventHandler.Handle(BorrowerProfileCreatedEvent message) in C:\IVELIN\PROJECTS\LOS\src\CQRS\Los.ClientPortal.Events\XCom\ApplicationPortal\BorrowerProfileCreatedEventHandler.cs:line 42
+   at Los.Core.Bus.Bus.<>c__DisplayClass7_0`1.<RegisterHandler>b__0(IMessage x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 61
+   at Los.Core.Bus.Bus.Publish[T](T event, IAggregateRoot _) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 45
+   at Los.Core.Events.EventManager.<>c__DisplayClass8_0`1.<Publish>b__0(IEventProcessor x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Los.Core.Events.EventManager.Publish[T](T event, IAggregateRoot aggregate) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at Los.Core.Events.IEventManagerExtensions.Publish[T](IEventManager eventManager, T event) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\IEventManager.cs:line 29
+   at Los.ClientPortal.XCom.Runner.ApplicationXComEventConsumer.Consume(ConsumeContext`1 context) in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.ClientPortal.XCom.Runner\ApplicationXComEventConsumer.cs:line 81
+ClientConnectionId:fbae2a23-dc69-4c36-b221-b10d0cd68205
+Error Number:208,State:1,Class:16
+2018-06-06 18:49:59.101 +03:00 [Debug] {"$type":"Los.Common.Events.Application.LoanUpdatedEvent, Los.Common.Events","Names":["BorrowerProfileIds"],"Values":[["d0b73007-5e5f-444f-bdef-27cf99adbbbe"]],"EntityType":0,"LoanId":"00000000-0000-0000-0000-000000000000","Id":"1b791ca2-12f3-445d-a7fd-cf234a4a7267","Actor":"b4f98814-cde5-4119-b648-f361122cecce","AggregateId":"2ec1a35b-82dd-40a7-9eec-6606b73ec49c","Version":"","Reason":"d43cbe64-c78a-4f01-bcad-b7028056f6e0"}
+2018-06-06 18:49:59.280 +03:00 [Error] Error in "ApplicationXComEventConsumer"
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'ClientPortal_Loans'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(Boolean buffer)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.<>c__DisplayClass12_0`2.<Execute>b__0(DbContext c, TState s)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.Execute[TState,TResult](IExecutionStrategy strategy, Func`2 operation, Func`2 verifySucceeded, TState state)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at lambda_method(Closure , QueryContext )
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass17_1`1.<CompileQueryCore>b__0(QueryContext qc)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at Los.Core.DAL.SqlServer.TrackingDomainRepository`3.GetDbEntity(Guid id) in C:\IVELIN\PROJECTS\LOS\src\DAL\Los.Core.DAL\SqlServer\TrackingDomainRepository.cs:line 172
+   at Los.Core.DAL.SqlServer.TrackingDomainRepository`3.GetById(Guid id) in C:\IVELIN\PROJECTS\LOS\src\DAL\Los.Core.DAL\SqlServer\TrackingDomainRepository.cs:line 110
+   at Los.Core.Domain.DomainRepositoryExtensions.GetOrThrowById[TAggregate](IDomainRepository`1 repository, Guid id) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Domain\DomainRepositoryExtensions.cs:line 20
+   at Los.ClientPortal.Events.XCom.ApplicationPortal.LoanUpdatedEventHandler.Handle(LoanUpdatedEvent message) in C:\IVELIN\PROJECTS\LOS\src\CQRS\Los.ClientPortal.Events\XCom\ApplicationPortal\LoanUpdatedEventHandler.cs:line 49
+   at Los.Core.Bus.Bus.<>c__DisplayClass7_0`1.<RegisterHandler>b__0(IMessage x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 61
+   at Los.Core.Bus.Bus.Publish[T](T event, IAggregateRoot _) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 45
+   at Los.Core.Events.EventManager.<>c__DisplayClass8_0`1.<Publish>b__0(IEventProcessor x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Los.Core.Events.EventManager.Publish[T](T event, IAggregateRoot aggregate) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at Los.Core.Events.IEventManagerExtensions.Publish[T](IEventManager eventManager, T event) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\IEventManager.cs:line 29
+   at Los.ClientPortal.XCom.Runner.ApplicationXComEventConsumer.Consume(ConsumeContext`1 context) in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.ClientPortal.XCom.Runner\ApplicationXComEventConsumer.cs:line 81
+ClientConnectionId:fbae2a23-dc69-4c36-b221-b10d0cd68205
+Error Number:208,State:1,Class:16
+2018-06-06 18:49:59.324 +03:00 [Debug] {"$type":"Los.Common.Events.Application.LoanDetailsCreatedEvent, Los.Common.Events","LoanId":"2ec1a35b-82dd-40a7-9eec-6606b73ec49c","LoanPurpose":1,"RefinancePrimaryPurposeType":null,"LoanAmount":null,"PurchasePrice":null,"DownPayment":null,"PropertyOwnership":2,"Id":"0e7f263a-0281-46f5-a239-6808e03ecd2f","Actor":"b4f98814-cde5-4119-b648-f361122cecce","AggregateId":"c018179e-f013-42b4-9080-9350005b4282","Version":"","Reason":"d43cbe64-c78a-4f01-bcad-b7028056f6e0"}
+2018-06-06 18:49:59.484 +03:00 [Error] Error in "ApplicationXComEventConsumer"
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'ClientPortal_Loans'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(Boolean buffer)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.<>c__DisplayClass12_0`2.<Execute>b__0(DbContext c, TState s)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.Execute[TState,TResult](IExecutionStrategy strategy, Func`2 operation, Func`2 verifySucceeded, TState state)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at lambda_method(Closure , QueryContext )
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass17_1`1.<CompileQueryCore>b__0(QueryContext qc)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at Los.Core.DAL.SqlServer.TrackingDomainRepository`3.GetDbEntity(Guid id) in C:\IVELIN\PROJECTS\LOS\src\DAL\Los.Core.DAL\SqlServer\TrackingDomainRepository.cs:line 172
+   at Los.Core.DAL.SqlServer.TrackingDomainRepository`3.GetById(Guid id) in C:\IVELIN\PROJECTS\LOS\src\DAL\Los.Core.DAL\SqlServer\TrackingDomainRepository.cs:line 110
+   at Los.Core.Domain.DomainRepositoryExtensions.GetOrThrowById[TAggregate](IDomainRepository`1 repository, Guid id) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Domain\DomainRepositoryExtensions.cs:line 20
+   at Los.ClientPortal.Events.XCom.ApplicationPortal.LoanDetailsCreatedEventHandler.Handle(LoanDetailsCreatedEvent message) in C:\IVELIN\PROJECTS\LOS\src\CQRS\Los.ClientPortal.Events\XCom\ApplicationPortal\LoanDetailsCreatedEventHandler.cs:line 42
+   at Los.Core.Bus.Bus.<>c__DisplayClass7_0`1.<RegisterHandler>b__0(IMessage x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 61
+   at Los.Core.Bus.Bus.Publish[T](T event, IAggregateRoot _) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 45
+   at Los.Core.Events.EventManager.<>c__DisplayClass8_0`1.<Publish>b__0(IEventProcessor x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Los.Core.Events.EventManager.Publish[T](T event, IAggregateRoot aggregate) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at Los.Core.Events.IEventManagerExtensions.Publish[T](IEventManager eventManager, T event) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\IEventManager.cs:line 29
+   at Los.ClientPortal.XCom.Runner.ApplicationXComEventConsumer.Consume(ConsumeContext`1 context) in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.ClientPortal.XCom.Runner\ApplicationXComEventConsumer.cs:line 81
+ClientConnectionId:fbae2a23-dc69-4c36-b221-b10d0cd68205
+Error Number:208,State:1,Class:16
+2018-06-06 18:49:59.556 +03:00 [Debug] {"$type":"Los.Common.Events.Application.LoanCreatedEvent, Los.Common.Events","LoanId":"2ec1a35b-82dd-40a7-9eec-6606b73ec49c","CompanyId":"f7668845-107c-4c01-9b6b-461b851ff17e","CreatedDateTime":"2018-06-06T18:49:55.5801814+03:00","LeadNumber":"100641040028","Id":"3feeaf20-db9b-4824-8e6d-4dd36a54636a","Actor":"b4f98814-cde5-4119-b648-f361122cecce","AggregateId":"2ec1a35b-82dd-40a7-9eec-6606b73ec49c","Version":"","Reason":"d43cbe64-c78a-4f01-bcad-b7028056f6e0"}
+2018-06-06 18:49:59.699 +03:00 [Error] Error in "ApplicationXComEventConsumer"
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'ClientPortal_Loans'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(Boolean buffer)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.<>c__DisplayClass12_0`2.<Execute>b__0(DbContext c, TState s)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.Execute[TState,TResult](IExecutionStrategy strategy, Func`2 operation, Func`2 verifySucceeded, TState state)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.QueryMethodProvider.GetResult[TResult](IEnumerable`1 valueBuffers, Boolean throwOnNullResult)
+   at lambda_method(Closure , QueryContext )
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass17_1`1.<CompileQueryCore>b__0(QueryContext qc)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.Any[TSource](IQueryable`1 source, Expression`1 predicate)
+   at Los.Core.DAL.SqlServer.TrackingDomainRepository`3.Exists(Guid id) in C:\IVELIN\PROJECTS\LOS\src\DAL\Los.Core.DAL\SqlServer\TrackingDomainRepository.cs:line 94
+   at Los.Core.Domain.DomainRepositoryExtensions.ValidateDoesNotExist[TAggregate](IDomainRepository`1 repository, Guid id) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Domain\DomainRepositoryExtensions.cs:line 57
+   at Los.ClientPortal.Events.XCom.ApplicationPortal.LoanCreatedEventHandler.Handle(LoanCreatedEvent message) in C:\IVELIN\PROJECTS\LOS\src\CQRS\Los.ClientPortal.Events\XCom\ApplicationPortal\LoanCreatedEventHandler.cs:line 52
+   at Los.Core.Bus.Bus.<>c__DisplayClass7_0`1.<RegisterHandler>b__0(IMessage x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 61
+   at Los.Core.Bus.Bus.Publish[T](T event, IAggregateRoot _) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 45
+   at Los.Core.Events.EventManager.<>c__DisplayClass8_0`1.<Publish>b__0(IEventProcessor x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Los.Core.Events.EventManager.Publish[T](T event, IAggregateRoot aggregate) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at Los.Core.Events.IEventManagerExtensions.Publish[T](IEventManager eventManager, T event) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\IEventManager.cs:line 29
+   at Los.ClientPortal.XCom.Runner.ApplicationXComEventConsumer.Consume(ConsumeContext`1 context) in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.ClientPortal.XCom.Runner\ApplicationXComEventConsumer.cs:line 81
+ClientConnectionId:fbae2a23-dc69-4c36-b221-b10d0cd68205
+Error Number:208,State:1,Class:16
+2018-06-06 18:49:59.738 +03:00 [Debug] {"$type":"Los.Common.Events.Application.BorrowerProfileCreatedEvent, Los.Common.Events","LoanId":"2ec1a35b-82dd-40a7-9eec-6606b73ec49c","BorrowerNumber":1,"FirstName":"b","MiddleName":null,"LastName":"b","Suffix":null,"Phones":[{"$type":"Los.Common.Events.Application.BorrowerPhoneEventInfo, Los.Common.Events","Id":"452be1ec-c397-4c59-a1c2-63c77049603d","PhoneNumber":"345-342-6266","PhoneType":null}],"Email":"b@b.b","Ssn":null,"BirthDate":null,"Dependents":null,"AgeOfDependents":[],"YearsOfSchool":null,"MaritalStatus":null,"PresentAddressId":"00000000-0000-0000-0000-000000000000","PresentAddressOccupancyStatus":null,"PresentAddressMonthlyRent":null,"PresentAddressTimeLivedMonths":null,"PreviousResidencies":[],"MailingAddressId":"00000000-0000-0000-0000-000000000000","PreferredContactMethod":2,"ServedForMilitary":null,"ActiveDutyExpDate":null,"MilitaryServiceTypes":[],"Id":"2659b27b-0325-471f-b19b-67a728a2d332","Actor":"b4f98814-cde5-4119-b648-f361122cecce","AggregateId":"d0b73007-5e5f-444f-bdef-27cf99adbbbe","Version":"","Reason":"d43cbe64-c78a-4f01-bcad-b7028056f6e0"}
+2018-06-06 18:49:59.875 +03:00 [Error] Error in "ApplicationXComEventConsumer"
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'ClientPortal_BorrowerProfiles'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(Boolean buffer)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.<>c__DisplayClass12_0`2.<Execute>b__0(DbContext c, TState s)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.Execute[TState,TResult](IExecutionStrategy strategy, Func`2 operation, Func`2 verifySucceeded, TState state)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.QueryMethodProvider.GetResult[TResult](IEnumerable`1 valueBuffers, Boolean throwOnNullResult)
+   at lambda_method(Closure , QueryContext )
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass17_1`1.<CompileQueryCore>b__0(QueryContext qc)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.Any[TSource](IQueryable`1 source, Expression`1 predicate)
+   at Los.Core.DAL.SqlServer.TrackingDomainRepository`3.Exists(Guid id) in C:\IVELIN\PROJECTS\LOS\src\DAL\Los.Core.DAL\SqlServer\TrackingDomainRepository.cs:line 94
+   at Los.Core.Domain.DomainRepositoryExtensions.ValidateDoesNotExist[TAggregate](IDomainRepository`1 repository, Guid id) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Domain\DomainRepositoryExtensions.cs:line 57
+   at Los.ClientPortal.Events.XCom.ApplicationPortal.BorrowerProfileCreatedEventHandler.Handle(BorrowerProfileCreatedEvent message) in C:\IVELIN\PROJECTS\LOS\src\CQRS\Los.ClientPortal.Events\XCom\ApplicationPortal\BorrowerProfileCreatedEventHandler.cs:line 42
+   at Los.Core.Bus.Bus.<>c__DisplayClass7_0`1.<RegisterHandler>b__0(IMessage x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 61
+   at Los.Core.Bus.Bus.Publish[T](T event, IAggregateRoot _) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 45
+   at Los.Core.Events.EventManager.<>c__DisplayClass8_0`1.<Publish>b__0(IEventProcessor x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Los.Core.Events.EventManager.Publish[T](T event, IAggregateRoot aggregate) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at Los.Core.Events.IEventManagerExtensions.Publish[T](IEventManager eventManager, T event) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\IEventManager.cs:line 29
+   at Los.ClientPortal.XCom.Runner.ApplicationXComEventConsumer.Consume(ConsumeContext`1 context) in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.ClientPortal.XCom.Runner\ApplicationXComEventConsumer.cs:line 81
+ClientConnectionId:fbae2a23-dc69-4c36-b221-b10d0cd68205
+Error Number:208,State:1,Class:16
+2018-06-06 18:49:59.907 +03:00 [Debug] {"$type":"Los.Common.Events.Application.LoanUpdatedEvent, Los.Common.Events","Names":["BorrowerProfileIds"],"Values":[["d0b73007-5e5f-444f-bdef-27cf99adbbbe"]],"EntityType":0,"LoanId":"00000000-0000-0000-0000-000000000000","Id":"1b791ca2-12f3-445d-a7fd-cf234a4a7267","Actor":"b4f98814-cde5-4119-b648-f361122cecce","AggregateId":"2ec1a35b-82dd-40a7-9eec-6606b73ec49c","Version":"","Reason":"d43cbe64-c78a-4f01-bcad-b7028056f6e0"}
+2018-06-06 18:50:00.039 +03:00 [Error] Error in "ApplicationXComEventConsumer"
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'ClientPortal_Loans'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(Boolean buffer)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.<>c__DisplayClass12_0`2.<Execute>b__0(DbContext c, TState s)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.Execute[TState,TResult](IExecutionStrategy strategy, Func`2 operation, Func`2 verifySucceeded, TState state)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at lambda_method(Closure , QueryContext )
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass17_1`1.<CompileQueryCore>b__0(QueryContext qc)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at Los.Core.DAL.SqlServer.TrackingDomainRepository`3.GetDbEntity(Guid id) in C:\IVELIN\PROJECTS\LOS\src\DAL\Los.Core.DAL\SqlServer\TrackingDomainRepository.cs:line 172
+   at Los.Core.DAL.SqlServer.TrackingDomainRepository`3.GetById(Guid id) in C:\IVELIN\PROJECTS\LOS\src\DAL\Los.Core.DAL\SqlServer\TrackingDomainRepository.cs:line 110
+   at Los.Core.Domain.DomainRepositoryExtensions.GetOrThrowById[TAggregate](IDomainRepository`1 repository, Guid id) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Domain\DomainRepositoryExtensions.cs:line 20
+   at Los.ClientPortal.Events.XCom.ApplicationPortal.LoanUpdatedEventHandler.Handle(LoanUpdatedEvent message) in C:\IVELIN\PROJECTS\LOS\src\CQRS\Los.ClientPortal.Events\XCom\ApplicationPortal\LoanUpdatedEventHandler.cs:line 49
+   at Los.Core.Bus.Bus.<>c__DisplayClass7_0`1.<RegisterHandler>b__0(IMessage x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 61
+   at Los.Core.Bus.Bus.Publish[T](T event, IAggregateRoot _) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 45
+   at Los.Core.Events.EventManager.<>c__DisplayClass8_0`1.<Publish>b__0(IEventProcessor x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Los.Core.Events.EventManager.Publish[T](T event, IAggregateRoot aggregate) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at Los.Core.Events.IEventManagerExtensions.Publish[T](IEventManager eventManager, T event) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\IEventManager.cs:line 29
+   at Los.ClientPortal.XCom.Runner.ApplicationXComEventConsumer.Consume(ConsumeContext`1 context) in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.ClientPortal.XCom.Runner\ApplicationXComEventConsumer.cs:line 81
+ClientConnectionId:fbae2a23-dc69-4c36-b221-b10d0cd68205
+Error Number:208,State:1,Class:16

@@ -1,0 +1,6 @@
+C:\IVELIN\PROJECTS\WORK FILES\RUN SCRIPTS\UsefulLOSStuff\RunApplicationUI\bin\Debug\RunApplicationUI.exe.config
+C:\IVELIN\PROJECTS\WORK FILES\RUN SCRIPTS\UsefulLOSStuff\RunApplicationUI\bin\Debug\RunApplicationUI.exe
+C:\IVELIN\PROJECTS\WORK FILES\RUN SCRIPTS\UsefulLOSStuff\RunApplicationUI\bin\Debug\RunApplicationUI.pdb
+C:\IVELIN\PROJECTS\WORK FILES\RUN SCRIPTS\UsefulLOSStuff\RunApplicationUI\obj\Debug\RunApplicationUI.csproj.CoreCompileInputs.cache
+C:\IVELIN\PROJECTS\WORK FILES\RUN SCRIPTS\UsefulLOSStuff\RunApplicationUI\obj\Debug\RunApplicationUI.exe
+C:\IVELIN\PROJECTS\WORK FILES\RUN SCRIPTS\UsefulLOSStuff\RunApplicationUI\obj\Debug\RunApplicationUI.pdb

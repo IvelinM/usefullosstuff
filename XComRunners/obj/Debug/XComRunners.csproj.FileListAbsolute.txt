@@ -4,3 +4,10 @@ C:\IVELIN\PROJECTS\WORK FILES\RUN SCRIPTS\UsefulLOSStuff\XComRunners\bin\Debug\X
 C:\IVELIN\PROJECTS\WORK FILES\RUN SCRIPTS\UsefulLOSStuff\XComRunners\obj\Debug\XComRunners.csproj.CoreCompileInputs.cache
 C:\IVELIN\PROJECTS\WORK FILES\RUN SCRIPTS\UsefulLOSStuff\XComRunners\obj\Debug\XComRunners.exe
 C:\IVELIN\PROJECTS\WORK FILES\RUN SCRIPTS\UsefulLOSStuff\XComRunners\obj\Debug\XComRunners.pdb
+C:\IVELIN\PROJECTS\WORK FILES\RUN SCRIPTS\UsefulLOSStuff GITHUB REPO\usefullosstuff\XComRunners\bin\Debug\XComRunners.exe.config
+C:\IVELIN\PROJECTS\WORK FILES\RUN SCRIPTS\UsefulLOSStuff GITHUB REPO\usefullosstuff\XComRunners\bin\Debug\XComRunners.exe
+C:\IVELIN\PROJECTS\WORK FILES\RUN SCRIPTS\UsefulLOSStuff GITHUB REPO\usefullosstuff\XComRunners\bin\Debug\XComRunners.pdb
+C:\IVELIN\PROJECTS\WORK FILES\RUN SCRIPTS\UsefulLOSStuff GITHUB REPO\usefullosstuff\XComRunners\obj\Debug\XComRunners.csproj.CoreCompileInputs.cache
+C:\IVELIN\PROJECTS\WORK FILES\RUN SCRIPTS\UsefulLOSStuff GITHUB REPO\usefullosstuff\XComRunners\obj\Debug\XComRunners.exe
+C:\IVELIN\PROJECTS\WORK FILES\RUN SCRIPTS\UsefulLOSStuff GITHUB REPO\usefullosstuff\XComRunners\obj\Debug\XComRunners.pdb
+C:\IVELIN\PROJECTS\WORK FILES\RUN SCRIPTS\UsefulLOSStuff GITHUB REPO\usefullosstuff\XComRunners\obj\Debug\XComRunners.csprojResolveAssemblyReference.cache

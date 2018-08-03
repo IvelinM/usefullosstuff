@@ -1,0 +1,6 @@
+C:\IVELIN\PROJECTS\WORK FILES\RUN SCRIPTS\UsefulLOSStuff GITHUB REPO\usefullosstuff\ClientPortalNpmInstall\bin\Debug\ClientPortalNpmInstall.exe.config
+C:\IVELIN\PROJECTS\WORK FILES\RUN SCRIPTS\UsefulLOSStuff GITHUB REPO\usefullosstuff\ClientPortalNpmInstall\bin\Debug\ClientPortalNpmInstall.exe
+C:\IVELIN\PROJECTS\WORK FILES\RUN SCRIPTS\UsefulLOSStuff GITHUB REPO\usefullosstuff\ClientPortalNpmInstall\bin\Debug\ClientPortalNpmInstall.pdb
+C:\IVELIN\PROJECTS\WORK FILES\RUN SCRIPTS\UsefulLOSStuff GITHUB REPO\usefullosstuff\ClientPortalNpmInstall\obj\Debug\ClientPortalNpmInstall.csproj.CoreCompileInputs.cache
+C:\IVELIN\PROJECTS\WORK FILES\RUN SCRIPTS\UsefulLOSStuff GITHUB REPO\usefullosstuff\ClientPortalNpmInstall\obj\Debug\ClientPortalNpmInstall.exe
+C:\IVELIN\PROJECTS\WORK FILES\RUN SCRIPTS\UsefulLOSStuff GITHUB REPO\usefullosstuff\ClientPortalNpmInstall\obj\Debug\ClientPortalNpmInstall.pdb

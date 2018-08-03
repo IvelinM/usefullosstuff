@@ -7,8 +7,8 @@ namespace RunUIClients
     {
         static void Main(string[] args)
         {
-            Process.Start("C:\\IVELIN\\PROJECTS\\WORK FILES\\RUN SCRIPTS\\UsefulLOSStuff\\RunApplicationUI\\bin\\Debug\\RunApplicationUI.exe");
-            Process.Start("C:\\IVELIN\\PROJECTS\\WORK FILES\\RUN SCRIPTS\\UsefulLOSStuff\\RunClientPortalUI\\bin\\Debug\\RunClientPortalUI.exe");
+            Process.Start("C:\\IVELIN\\PROJECTS\\WORK FILES\\RUN SCRIPTS\\UsefulLOSStuff GITHUB REPO\\usefullosstuff\\RunApplicationUI\\bin\\Debug\\RunApplicationUI.exe");
+            Process.Start("C:\\IVELIN\\PROJECTS\\WORK FILES\\RUN SCRIPTS\\UsefulLOSStuff GITHUB REPO\\usefullosstuff\\RunClientPortalUI\\bin\\Debug\\RunClientPortalUI.exe");
         }
     }
 }

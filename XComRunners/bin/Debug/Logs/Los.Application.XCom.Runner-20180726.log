@@ -1,0 +1,280 @@
+2018-07-26 14:30:30.626 +03:00 [Information] Now starting LOS Application XCom Runner ...
+2018-07-26 14:30:31.813 +03:00 [Debug] {"$type":"Los.Common.Events.ClientPortal.CompanyCreatedEvent, Los.Common.Events","Name":"Ivelin Co","NmlsId":null,"Address":{"$type":"Los.Core.Types.Address, Los.Core","AddressLine1":"Sofia, asd","AddressLine2":"asd","CountryCode":null,"City":"Sofia","ZipCode":"22222","Unit":null,"State":1,"County":null,"CurrentProgress":{"$type":"Los.Core.Domain.Progress, Los.Core","CurrentProgress":null,"Percent":57.142857142857142857142857143,"InProgress":true,"Completed":false,"IsEmpty":false}},"PhoneNumber":"222-222-2222","Website":"http://none.com/","TaxIdType":2,"TaxIdSsn":"987-65-4321","TaxIdEin":null,"ContactName":"Ivelin","ContactPhoneNumber":"222-222-2222","BusinessType":1,"SubDomain":"ivelin-co","Id":"a1aa0bf8-c1e3-4fd9-9228-eb2320aa7f3b","Actor":"e5f715dd-79d6-4063-9c4d-9f63ee4c2a9b","AggregateId":"b9464a23-b68c-4c24-87b0-456a316f8e20","EntityId":"b9464a23-b68c-4c24-87b0-456a316f8e20","Version":"","Reason":"9ad92b4c-815a-493f-aa87-ebbe4618c91d"}
+2018-07-26 14:30:31.991 +03:00 [Debug] An 'IServiceProvider' was created for internal use by Entity Framework.
+2018-07-26 14:30:32.708 +03:00 [Debug] An 'IServiceProvider' was created for internal use by Entity Framework.
+2018-07-26 14:30:33.160 +03:00 [Information] Entity Framework Core "2.0.2-rtm-10011" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-07-26 14:30:33.255 +03:00 [Debug] Compiling query model: "
+"'"(from CompanyDbEntity x in DbSet<CompanyDbEntity>
+where [x].Id == __id_0
+select [x]).Any()"'
+2018-07-26 14:30:33.285 +03:00 [Debug] Optimized query model: "
+"'"(from CompanyDbEntity x in DbSet<CompanyDbEntity>
+where [x].Id == __id_0
+select [x]).Any()"'
+2018-07-26 14:30:33.383 +03:00 [Debug] "(QueryContext queryContext) => IEnumerable<bool> _InterceptExceptions(
+    source: IEnumerable<bool> _ToSequence(bool GetResult(
+            valueBuffers: IEnumerable<ValueBuffer> _Query(
+                queryContext: queryContext, 
+                shaperCommandContext: SelectExpression: 
+                    SELECT CASE
+                        WHEN EXISTS (
+                            SELECT 1
+                            FROM [LoanApp_Companies] AS [x]
+                            WHERE [x].[Id] = @__id_0)
+                        THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+                    END), 
+            throwOnNullResult: False)), 
+    contextType: Los.Application.DAL.Context.ApplicationDbContext, 
+    logger: DiagnosticsLogger<Query>, 
+    queryContext: queryContext)"
+2018-07-26 14:30:33.411 +03:00 [Debug] Opening connection to database '"LOS"' on server '"IMATEV10"'.
+2018-07-26 14:30:33.437 +03:00 [Debug] Opened connection to database '"LOS"' on server '"IMATEV10"'.
+2018-07-26 14:30:33.450 +03:00 [Debug] Executing DbCommand [Parameters=["@__id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [LoanApp_Companies] AS [x]
+        WHERE [x].[Id] = @__id_0)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END"
+2018-07-26 14:30:33.465 +03:00 [Information] Executed DbCommand ("15"ms) [Parameters=["@__id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [LoanApp_Companies] AS [x]
+        WHERE [x].[Id] = @__id_0)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END"
+2018-07-26 14:30:33.475 +03:00 [Debug] A data reader was disposed.
+2018-07-26 14:30:33.478 +03:00 [Debug] Closing connection to database '"LOS"' on server '"IMATEV10"'.
+2018-07-26 14:30:33.480 +03:00 [Debug] Closed connection to database '"LOS"' on server '"IMATEV10"'.
+2018-07-26 14:30:33.487 +03:00 [Debug] Opening connection to database '"LOS"' on server '"IMATEV10"'.
+2018-07-26 14:30:33.490 +03:00 [Debug] Opened connection to database '"LOS"' on server '"IMATEV10"'.
+2018-07-26 14:30:33.492 +03:00 [Debug] Executing DbCommand [Parameters=["@__id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [LoanApp_Companies] AS [x]
+        WHERE [x].[Id] = @__id_0)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END"
+2018-07-26 14:30:33.495 +03:00 [Information] Executed DbCommand ("2"ms) [Parameters=["@__id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [LoanApp_Companies] AS [x]
+        WHERE [x].[Id] = @__id_0)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END"
+2018-07-26 14:30:33.499 +03:00 [Debug] A data reader was disposed.
+2018-07-26 14:30:33.500 +03:00 [Debug] Closing connection to database '"LOS"' on server '"IMATEV10"'.
+2018-07-26 14:30:33.500 +03:00 [Debug] Closed connection to database '"LOS"' on server '"IMATEV10"'.
+2018-07-26 14:30:33.525 +03:00 [Debug] Compiling query model: "
+"'"from CompanyDbEntity x in DbSet<CompanyDbEntity>
+where 
+    (from Guid <generated>_1 in __idsLsit_0
+    select [<generated>_1]).Contains([x].Id)
+select [x]"'
+2018-07-26 14:30:33.532 +03:00 [Debug] Optimized query model: "
+"'"from CompanyDbEntity x in DbSet<CompanyDbEntity>
+where 
+    (from Guid <generated>_1 in __idsLsit_0
+    select [<generated>_1]).Contains([x].Id)
+select [x]"'
+2018-07-26 14:30:33.556 +03:00 [Debug] "(QueryContext queryContext) => IEnumerable<CompanyDbEntity> _InterceptExceptions(
+    source: IEnumerable<CompanyDbEntity> _TrackEntities(
+        results: IEnumerable<CompanyDbEntity> _ShapedQuery(
+            queryContext: queryContext, 
+            shaperCommandContext: SelectExpression: 
+                SELECT [x].[Id], [x].[SubDomain], [x].[Version]
+                FROM [LoanApp_Companies] AS [x]
+                WHERE 0 = 1, 
+            shaper: UnbufferedEntityShaper<CompanyDbEntity>), 
+        queryContext: queryContext, 
+        entityTrackingInfos: { itemType: CompanyDbEntity }, 
+        entityAccessors: List<Func<CompanyDbEntity, object>> 
+        { 
+            Func<CompanyDbEntity, CompanyDbEntity>, 
+        }
+    ), 
+    contextType: Los.Application.DAL.Context.ApplicationDbContext, 
+    logger: DiagnosticsLogger<Query>, 
+    queryContext: queryContext)"
+2018-07-26 14:30:33.563 +03:00 [Debug] Opening connection to database '"LOS"' on server '"IMATEV10"'.
+2018-07-26 14:30:33.565 +03:00 [Debug] Opened connection to database '"LOS"' on server '"IMATEV10"'.
+2018-07-26 14:30:33.569 +03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[SubDomain], [x].[Version]
+FROM [LoanApp_Companies] AS [x]
+WHERE 0 = 1"
+2018-07-26 14:30:33.571 +03:00 [Information] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[SubDomain], [x].[Version]
+FROM [LoanApp_Companies] AS [x]
+WHERE 0 = 1"
+2018-07-26 14:30:33.575 +03:00 [Debug] A data reader was disposed.
+2018-07-26 14:30:33.575 +03:00 [Debug] Closing connection to database '"LOS"' on server '"IMATEV10"'.
+2018-07-26 14:30:33.577 +03:00 [Debug] Closed connection to database '"LOS"' on server '"IMATEV10"'.
+2018-07-26 14:30:33.634 +03:00 [Debug] Opening connection to database '"LOS"' on server '"IMATEV10"'.
+2018-07-26 14:30:33.636 +03:00 [Debug] Opened connection to database '"LOS"' on server '"IMATEV10"'.
+2018-07-26 14:30:33.638 +03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[SubDomain], [x].[Version]
+FROM [LoanApp_Companies] AS [x]
+WHERE 0 = 1"
+2018-07-26 14:30:33.641 +03:00 [Information] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[SubDomain], [x].[Version]
+FROM [LoanApp_Companies] AS [x]
+WHERE 0 = 1"
+2018-07-26 14:30:33.643 +03:00 [Debug] A data reader was disposed.
+2018-07-26 14:30:33.643 +03:00 [Debug] Closing connection to database '"LOS"' on server '"IMATEV10"'.
+2018-07-26 14:30:33.646 +03:00 [Debug] Closed connection to database '"LOS"' on server '"IMATEV10"'.
+2018-07-26 14:30:33.652 +03:00 [Debug] Compiling query model: "
+"'"from NeedItemDbEntity x in 
+    (from NeedItemDbEntity x in DbSet<NeedItemDbEntity>
+    select [x]).Include(\"Comments\")
+where 
+    (from Guid <generated>_1 in __idsLsit_0
+    select [<generated>_1]).Contains([x].Id)
+select [x]"'
+2018-07-26 14:30:33.663 +03:00 [Debug] Including navigation: '"[x].Comments"'
+2018-07-26 14:30:33.707 +03:00 [Debug] Optimized query model: "
+"'"from NeedItemDbEntity x in DbSet<NeedItemDbEntity>
+where 
+    (from Guid <generated>_1 in __idsLsit_0
+    select [<generated>_1]).Contains([x].Id)
+order by (Nullable<Guid>)EF.Property(?[x]?, \"Id\") asc
+select NeedItemDbEntity _Include(
+    queryContext: queryContext, 
+    entity: [x], 
+    included: new object[]{ }, 
+    fixup: (QueryContext queryContext | NeedItemDbEntity entity | Object[] included) => 
+    {
+        Void queryContext.QueryBuffer.StartTracking(
+            entity: entity, 
+            entityType: EntityType: NeedItemDbEntity)
+        return Void queryContext.QueryBuffer.IncludeCollection(
+            includeId: 0, 
+            navigation: NeedItemDbEntity.Comments, 
+            inverseNavigation: NeedItemCommentDbEntity.NeedItem, 
+            targetEntityType: EntityType: NeedItemCommentDbEntity, 
+            clrCollectionAccessor: ClrICollectionAccessor<NeedItemDbEntity, ICollection<NeedItemCommentDbEntity>, NeedItemCommentDbEntity>, 
+            inverseClrPropertySetter: ClrPropertySetter<NeedItemCommentDbEntity, NeedItemDbEntity>, 
+            tracking: True, 
+            instance: entity, 
+            valuesFactory: () => 
+                from NeedItemCommentDbEntity x.Comments in DbSet<NeedItemCommentDbEntity>
+                join AnonymousObject _x in 
+                    from NeedItemDbEntity x in DbSet<NeedItemDbEntity>
+                    where 
+                        (from Guid <generated>_1 in __idsLsit_0
+                        select [<generated>_1]).Contains([x].Id)
+                    select new AnonymousObject(new object[]{ (object)EF.Property(?[x]?, \"Id\") })
+                on Property([x.Comments], \"NeedItemId\") equals (Nullable<Guid>)object [_x].GetValue(0)
+                order by object [_x].GetValue(0) asc
+                select [x.Comments])
+    }
+)"'
+2018-07-26 14:30:33.759 +03:00 [Debug] "(QueryContext queryContext) => IEnumerable<NeedItemDbEntity> _InterceptExceptions(
+    source: IEnumerable<NeedItemDbEntity> _TrackEntities(
+        results: IEnumerable<NeedItemDbEntity> _Select(
+            source: IEnumerable<NeedItemDbEntity> _ShapedQuery(
+                queryContext: queryContext, 
+                shaperCommandContext: SelectExpression: 
+                    SELECT [x].[Id], [x].[AssignedTo], [x].[Category], [x].[LoanId], [x].[Status], [x].[Text], [x].[Version]
+                    FROM [LoanApp_NeedItems] AS [x]
+                    WHERE 0 = 1
+                    ORDER BY [x].[Id], 
+                shaper: BufferedEntityShaper<NeedItemDbEntity>), 
+            selector: (NeedItemDbEntity x) => NeedItemDbEntity _Include(
+                queryContext: queryContext, 
+                entity: x, 
+                included: new object[]{ }, 
+                fixup: (QueryContext queryContext | NeedItemDbEntity entity | Object[] included) => 
+                {
+                    Void queryContext.QueryBuffer.StartTracking(
+                        entity: entity, 
+                        entityType: EntityType: NeedItemDbEntity)
+                    return Void queryContext.QueryBuffer.IncludeCollection(
+                        includeId: 0, 
+                        navigation: NeedItemDbEntity.Comments, 
+                        inverseNavigation: NeedItemCommentDbEntity.NeedItem, 
+                        targetEntityType: EntityType: NeedItemCommentDbEntity, 
+                        clrCollectionAccessor: ClrICollectionAccessor<NeedItemDbEntity, ICollection<NeedItemCommentDbEntity>, NeedItemCommentDbEntity>, 
+                        inverseClrPropertySetter: ClrPropertySetter<NeedItemCommentDbEntity, NeedItemDbEntity>, 
+                        tracking: True, 
+                        instance: entity, 
+                        valuesFactory: () => IEnumerable<NeedItemCommentDbEntity> _ShapedQuery(
+                            queryContext: queryContext, 
+                            shaperCommandContext: SelectExpression: 
+                                SELECT [x.Comments].[Id], [x.Comments].[NeedItemId], [x.Comments].[Text]
+                                FROM [LoanApp_NeedItemComments] AS [x.Comments]
+                                INNER JOIN (
+                                    SELECT [x0].[Id]
+                                    FROM [LoanApp_NeedItems] AS [x0]
+                                    WHERE 0 = 1
+                                ) AS [t] ON [x.Comments].[NeedItemId] = [t].[Id]
+                                ORDER BY [t].[Id], 
+                            shaper: BufferedEntityShaper<NeedItemCommentDbEntity>))
+                }
+            )), 
+        queryContext: Unhandled parameter: queryContext, 
+        entityTrackingInfos: { itemType: NeedItemDbEntity }, 
+        entityAccessors: List<Func<NeedItemDbEntity, object>> 
+        { 
+            Func<NeedItemDbEntity, NeedItemDbEntity>, 
+        }
+    ), 
+    contextType: Los.Application.DAL.Context.ApplicationDbContext, 
+    logger: DiagnosticsLogger<Query>, 
+    queryContext: Unhandled parameter: queryContext)"
+2018-07-26 14:30:33.767 +03:00 [Debug] Opening connection to database '"LOS"' on server '"IMATEV10"'.
+2018-07-26 14:30:33.767 +03:00 [Debug] Opened connection to database '"LOS"' on server '"IMATEV10"'.
+2018-07-26 14:30:33.768 +03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[AssignedTo], [x].[Category], [x].[LoanId], [x].[Status], [x].[Text], [x].[Version]
+FROM [LoanApp_NeedItems] AS [x]
+WHERE 0 = 1
+ORDER BY [x].[Id]"
+2018-07-26 14:30:33.776 +03:00 [Information] Executed DbCommand ("8"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[AssignedTo], [x].[Category], [x].[LoanId], [x].[Status], [x].[Text], [x].[Version]
+FROM [LoanApp_NeedItems] AS [x]
+WHERE 0 = 1
+ORDER BY [x].[Id]"
+2018-07-26 14:30:33.779 +03:00 [Debug] A data reader was disposed.
+2018-07-26 14:30:33.779 +03:00 [Debug] Closing connection to database '"LOS"' on server '"IMATEV10"'.
+2018-07-26 14:30:33.782 +03:00 [Debug] Closed connection to database '"LOS"' on server '"IMATEV10"'.
+2018-07-26 14:30:33.785 +03:00 [Debug] Opening connection to database '"LOS"' on server '"IMATEV10"'.
+2018-07-26 14:30:33.786 +03:00 [Debug] Opened connection to database '"LOS"' on server '"IMATEV10"'.
+2018-07-26 14:30:33.787 +03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[AssignedTo], [x].[Category], [x].[LoanId], [x].[Status], [x].[Text], [x].[Version]
+FROM [LoanApp_NeedItems] AS [x]
+WHERE 0 = 1
+ORDER BY [x].[Id]"
+2018-07-26 14:30:33.792 +03:00 [Information] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[AssignedTo], [x].[Category], [x].[LoanId], [x].[Status], [x].[Text], [x].[Version]
+FROM [LoanApp_NeedItems] AS [x]
+WHERE 0 = 1
+ORDER BY [x].[Id]"
+2018-07-26 14:30:33.795 +03:00 [Debug] A data reader was disposed.
+2018-07-26 14:30:33.796 +03:00 [Debug] Closing connection to database '"LOS"' on server '"IMATEV10"'.
+2018-07-26 14:30:33.798 +03:00 [Debug] Closed connection to database '"LOS"' on server '"IMATEV10"'.
+2018-07-26 14:30:33.818 +03:00 [Debug] Opening connection to database '"LOS"' on server '"IMATEV10"'.
+2018-07-26 14:30:33.820 +03:00 [Debug] Opened connection to database '"LOS"' on server '"IMATEV10"'.
+2018-07-26 14:30:33.824 +03:00 [Debug] Beginning transaction with isolation level '"ReadCommitted"'.
+2018-07-26 14:30:33.872 +03:00 [Debug] Executing DbCommand [Parameters=["@p0='?', @p1='?' (Size = 128)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [LoanApp_Companies] ([Id], [SubDomain])
+VALUES (@p0, @p1);
+SELECT [Version]
+FROM [LoanApp_Companies]
+WHERE @@ROWCOUNT = 1 AND [Id] = @p0;"
+2018-07-26 14:30:33.881 +03:00 [Information] Executed DbCommand ("9"ms) [Parameters=["@p0='?', @p1='?' (Size = 128)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [LoanApp_Companies] ([Id], [SubDomain])
+VALUES (@p0, @p1);
+SELECT [Version]
+FROM [LoanApp_Companies]
+WHERE @@ROWCOUNT = 1 AND [Id] = @p0;"
+2018-07-26 14:30:33.895 +03:00 [Debug] A data reader was disposed.
+2018-07-26 14:30:33.899 +03:00 [Debug] Committing transaction.
+2018-07-26 14:30:33.900 +03:00 [Debug] Closing connection to database '"LOS"' on server '"IMATEV10"'.
+2018-07-26 14:30:33.901 +03:00 [Debug] Closed connection to database '"LOS"' on server '"IMATEV10"'.
+2018-07-26 14:30:33.903 +03:00 [Debug] Disposing transaction.
+2018-07-26 17:59:47.358 +03:00 [Information] Now starting LOS Application XCom Runner ...

@@ -1,0 +1,618 @@
+2018-07-10 17:52:14.890 +03:00 [Information] Now starting LOS ClientPortal XCom Runner ...
+2018-07-10 17:52:16.245 +03:00 [Debug] {"$type":"Los.Common.Events.Application.LoanDetailsUpdatedEvent, Los.Common.Events","Names":["LoanAmount"],"Values":[564.0],"EntityType":3,"LoanId":"fa46256e-c892-40a6-9723-c4f6c453af2e","Id":"81679fea-e390-4160-b261-574af5e08e56","Actor":"11852895-1aa8-497b-b8a6-29d7825f7c03","AggregateId":"b27541cc-7160-4e28-a7e7-29b94156ae4b","EntityId":"b27541cc-7160-4e28-a7e7-29b94156ae4b","Version":"AAAAAA==","Reason":"a3a3f98b-32d3-4557-aa6d-3bd244bbc6a3"}
+2018-07-10 17:52:25.786 +03:00 [Information] Now starting LOS ClientPortal XCom Runner ...
+2018-07-10 17:52:45.249 +03:00 [Debug] {"$type":"Los.Common.Events.Application.LoanCreatedEvent, Los.Common.Events","LoanId":"39c000fe-4ce4-464c-b52e-f6adb8bdc018","CompanyId":"78b02e00-978d-4ce2-b87d-aaad7c61a350","CreatedDateTime":"2018-07-10T17:52:44.3800475+03:00","LeadNumber":"107965357373","Id":"db6eab47-fcdf-47e0-80bd-48d70faf9027","Actor":"e7935e72-055e-41e8-a4d6-2308cb74c63e","AggregateId":"39c000fe-4ce4-464c-b52e-f6adb8bdc018","EntityId":"39c000fe-4ce4-464c-b52e-f6adb8bdc018","Version":"","Reason":"c9c11b3e-a2c1-4609-b069-26b010aa3f35"}
+2018-07-10 17:52:47.385 +03:00 [Debug] {"$type":"Los.Common.Events.Application.LoanUpdatedEvent, Los.Common.Events","Names":["BorrowerProfileIds"],"Values":[["ae3cf614-ea88-49a2-8a66-621ba9638e8c"]],"EntityType":0,"LoanId":"00000000-0000-0000-0000-000000000000","Id":"6dc2579a-a5e6-4c65-acd2-18129cb59da3","Actor":"e7935e72-055e-41e8-a4d6-2308cb74c63e","AggregateId":"39c000fe-4ce4-464c-b52e-f6adb8bdc018","EntityId":"39c000fe-4ce4-464c-b52e-f6adb8bdc018","Version":"","Reason":"c9c11b3e-a2c1-4609-b069-26b010aa3f35"}
+2018-07-10 17:52:47.568 +03:00 [Debug] {"$type":"Los.Common.Events.Application.BorrowerProfileCreatedEvent, Los.Common.Events","LoanId":"39c000fe-4ce4-464c-b52e-f6adb8bdc018","BorrowerNumber":1,"FirstName":"Daniel","MiddleName":null,"LastName":"Sofia","Suffix":null,"Phones":[{"$type":"Los.Common.Events.Application.BorrowerPhoneEventInfo, Los.Common.Events","Id":"8c3ba8f0-e73a-442c-be2a-f4a501ef9af4","PhoneNumber":"234-234-2424","PhoneType":null}],"Email":"d@d.d","Ssn":null,"BirthDate":null,"Dependents":null,"AgeOfDependents":[],"YearsOfSchool":null,"MaritalStatus":null,"PresentAddressId":null,"PresentAddressOccupancyStatus":null,"PresentAddressMonthlyRent":null,"PresentAddressTimeLivedMonths":null,"PreviousResidencies":[],"MailingAddressId":null,"PreferredContactMethod":2,"ServedForMilitary":null,"ActiveDutyExpDate":null,"MilitaryServiceTypes":[],"Id":"adef9429-42b0-4c00-97f3-bf928c08aa70","Actor":"e7935e72-055e-41e8-a4d6-2308cb74c63e","AggregateId":"ae3cf614-ea88-49a2-8a66-621ba9638e8c","EntityId":"ae3cf614-ea88-49a2-8a66-621ba9638e8c","Version":"","Reason":"c9c11b3e-a2c1-4609-b069-26b010aa3f35"}
+2018-07-10 17:52:47.803 +03:00 [Debug] {"$type":"Los.Common.Events.Application.LoanDetailsCreatedEvent, Los.Common.Events","LoanId":"39c000fe-4ce4-464c-b52e-f6adb8bdc018","LoanPurpose":1,"RefinancePrimaryPurposeType":null,"LoanAmount":null,"PurchasePrice":235424254.0,"DownPayment":25252.0,"PropertyOwnership":1,"Id":"30cd0bc0-43eb-43d7-bc6c-64d76a653e46","Actor":"e7935e72-055e-41e8-a4d6-2308cb74c63e","AggregateId":"5883320b-d279-43f2-8f4a-fd178748a617","EntityId":"5883320b-d279-43f2-8f4a-fd178748a617","Version":"","Reason":"c9c11b3e-a2c1-4609-b069-26b010aa3f35"}
+2018-07-10 17:54:42.233 +03:00 [Information] Now starting LOS ClientPortal XCom Runner ...
+2018-07-10 17:55:23.750 +03:00 [Debug] {"$type":"Los.Common.Events.Application.LoanCreatedEvent, Los.Common.Events","LoanId":"8bf64b75-47e6-4c57-aadd-771e9fb94bb3","CompanyId":"78b02e00-978d-4ce2-b87d-aaad7c61a350","CreatedDateTime":"2018-07-10T17:55:23.3831076+03:00","LeadNumber":"106525867839","Id":"8b81cdb5-d7a3-4421-a6f2-8991bbef78be","Actor":"e7935e72-055e-41e8-a4d6-2308cb74c63e","AggregateId":"8bf64b75-47e6-4c57-aadd-771e9fb94bb3","EntityId":"8bf64b75-47e6-4c57-aadd-771e9fb94bb3","Version":"","Reason":"e5231aa0-60d0-47b2-a5f5-c5431f6e6d00"}
+2018-07-10 17:55:23.929 +03:00 [Debug] {"$type":"Los.Common.Events.Application.BorrowerProfileCreatedEvent, Los.Common.Events","LoanId":"8bf64b75-47e6-4c57-aadd-771e9fb94bb3","BorrowerNumber":1,"FirstName":"dsf","MiddleName":null,"LastName":"sdf","Suffix":null,"Phones":[{"$type":"Los.Common.Events.Application.BorrowerPhoneEventInfo, Los.Common.Events","Id":"dff4d47e-30e3-4ad4-8d5b-08b540955423","PhoneNumber":"234-242-2424","PhoneType":null}],"Email":"Assss@Assss.Assss","Ssn":null,"BirthDate":null,"Dependents":null,"AgeOfDependents":[],"YearsOfSchool":null,"MaritalStatus":null,"PresentAddressId":null,"PresentAddressOccupancyStatus":null,"PresentAddressMonthlyRent":null,"PresentAddressTimeLivedMonths":null,"PreviousResidencies":[],"MailingAddressId":null,"PreferredContactMethod":1,"ServedForMilitary":null,"ActiveDutyExpDate":null,"MilitaryServiceTypes":[],"Id":"adccc412-07a4-449f-9a6e-f8839f5a9e9b","Actor":"e7935e72-055e-41e8-a4d6-2308cb74c63e","AggregateId":"0e459329-d1b9-41b7-a2f7-1f8c92c1a54a","EntityId":"0e459329-d1b9-41b7-a2f7-1f8c92c1a54a","Version":"","Reason":"e5231aa0-60d0-47b2-a5f5-c5431f6e6d00"}
+2018-07-10 17:55:23.930 +03:00 [Debug] {"$type":"Los.Common.Events.Application.LoanUpdatedEvent, Los.Common.Events","Names":["BorrowerProfileIds"],"Values":[["0e459329-d1b9-41b7-a2f7-1f8c92c1a54a"]],"EntityType":0,"LoanId":"00000000-0000-0000-0000-000000000000","Id":"be28c4c9-6272-402d-a34c-8d97bf443616","Actor":"e7935e72-055e-41e8-a4d6-2308cb74c63e","AggregateId":"8bf64b75-47e6-4c57-aadd-771e9fb94bb3","EntityId":"8bf64b75-47e6-4c57-aadd-771e9fb94bb3","Version":"","Reason":"e5231aa0-60d0-47b2-a5f5-c5431f6e6d00"}
+2018-07-10 17:55:25.879 +03:00 [Debug] {"$type":"Los.Common.Events.Application.LoanDetailsCreatedEvent, Los.Common.Events","LoanId":"8bf64b75-47e6-4c57-aadd-771e9fb94bb3","LoanPurpose":1,"RefinancePrimaryPurposeType":null,"LoanAmount":null,"PurchasePrice":35353553.0,"DownPayment":34534535.0,"PropertyOwnership":1,"Id":"145838c0-11d4-44d7-81ee-3b9714c7e263","Actor":"e7935e72-055e-41e8-a4d6-2308cb74c63e","AggregateId":"7c804243-eaca-4e93-a06a-503ca9d85c9b","EntityId":"7c804243-eaca-4e93-a06a-503ca9d85c9b","Version":"","Reason":"e5231aa0-60d0-47b2-a5f5-c5431f6e6d00"}
+2018-07-10 17:55:33.409 +03:00 [Debug] {"$type":"Los.Common.Events.Application.LoanDetailsUpdatedEvent, Los.Common.Events","Names":["LoanAmount"],"Values":[2424.0],"EntityType":3,"LoanId":"8bf64b75-47e6-4c57-aadd-771e9fb94bb3","Id":"b55aa79a-c800-4d47-bdca-212f795e95d8","Actor":"b3291215-22c2-4508-82b5-91437e319eec","AggregateId":"7c804243-eaca-4e93-a06a-503ca9d85c9b","EntityId":"7c804243-eaca-4e93-a06a-503ca9d85c9b","Version":"AAAAAA==","Reason":"8ea04ff9-cdc1-404f-af01-9e2f45abfe35"}
+2018-07-10 17:59:05.865 +03:00 [Debug] {"$type":"Los.Common.Events.Application.LoanCreatedEvent, Los.Common.Events","LoanId":"f3206765-3a8b-4e2f-86e5-436d0ea074cc","CompanyId":"6878a5af-605c-4fc5-8234-7c91a7b3d61f","CreatedDateTime":"2018-07-10T17:59:05.5118434+03:00","LeadNumber":"107880058720","Id":"8269ac0c-0514-4be7-ba1d-098ebfe51c64","Actor":"b3291215-22c2-4508-82b5-91437e319eec","AggregateId":"f3206765-3a8b-4e2f-86e5-436d0ea074cc","EntityId":"f3206765-3a8b-4e2f-86e5-436d0ea074cc","Version":"","Reason":"0402c833-c7f1-4f2e-841a-5b155bdd5fb4"}
+2018-07-10 17:59:05.868 +03:00 [Debug] {"$type":"Los.Common.Events.Application.LoanUpdatedEvent, Los.Common.Events","Names":["BorrowerProfileIds"],"Values":[["fba9f0e0-10a9-49ca-9419-5ac22244d2b4"]],"EntityType":0,"LoanId":"00000000-0000-0000-0000-000000000000","Id":"f128df17-bc40-4414-87a3-1e343cf8d56b","Actor":"b3291215-22c2-4508-82b5-91437e319eec","AggregateId":"f3206765-3a8b-4e2f-86e5-436d0ea074cc","EntityId":"f3206765-3a8b-4e2f-86e5-436d0ea074cc","Version":"","Reason":"0402c833-c7f1-4f2e-841a-5b155bdd5fb4"}
+2018-07-10 17:59:06.030 +03:00 [Error] Error in "ApplicationXComEventConsumer"
+Los.Core.Exceptions.AggregateNotFoundException: Correlation Id: ffab85f7-3ace-49a2-9540-fb69db55e5fc / User Message: Internal server error. / Message: Can't find aggregate [f3206765-3a8b-4e2f-86e5-436d0ea074cc] of type [Loan]!
+   at Los.Core.Domain.DomainRepositoryExtensions.GetOrThrowById[TAggregate](IDomainRepository`1 repository, Guid id) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Domain\DomainRepositoryExtensions.cs:line 23
+   at Los.ClientPortal.Events.XCom.ApplicationPortal.LoanUpdatedEventHandler.Handle(LoanUpdatedEvent message) in C:\IVELIN\PROJECTS\LOS\src\CQRS\Los.ClientPortal.Events\XCom\ApplicationPortal\LoanUpdatedEventHandler.cs:line 47
+   at Los.Core.Bus.Bus.<>c__DisplayClass7_0`1.<RegisterHandler>b__0(IMessage x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 61
+   at Los.Core.Bus.Bus.Publish[T](T event, IAggregateRoot _) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 45
+   at Los.Core.Events.EventManager.<>c__DisplayClass8_0`1.<Publish>b__0(IEventProcessor x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Los.Core.Events.EventManager.Publish[T](T event, IAggregateRoot aggregate) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at Los.Core.Events.IEventManagerExtensions.Publish[T](IEventManager eventManager, T event) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\IEventManager.cs:line 29
+   at Los.ClientPortal.XCom.Runner.ApplicationXComEventConsumer.<Consume>d__4.MoveNext() in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.ClientPortal.XCom.Runner\ApplicationXComEventConsumer.cs:line 81
+2018-07-10 17:59:06.064 +03:00 [Debug] {"$type":"Los.Common.Events.Application.LoanDetailsCreatedEvent, Los.Common.Events","LoanId":"f3206765-3a8b-4e2f-86e5-436d0ea074cc","LoanPurpose":1,"RefinancePrimaryPurposeType":null,"LoanAmount":null,"PurchasePrice":21311.0,"DownPayment":12313.0,"PropertyOwnership":1,"Id":"05fd613f-0512-46aa-8b41-70a17c8dd40d","Actor":"b3291215-22c2-4508-82b5-91437e319eec","AggregateId":"9552e03d-dfb5-4f6c-89f8-fb89db4ea8b3","EntityId":"9552e03d-dfb5-4f6c-89f8-fb89db4ea8b3","Version":"","Reason":"0402c833-c7f1-4f2e-841a-5b155bdd5fb4"}
+2018-07-10 17:59:06.119 +03:00 [Error] Error in "ApplicationXComEventConsumer"
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: The INSERT statement conflicted with the FOREIGN KEY constraint "FK_ClientPortal_Loans_ClientPortal_Companies_CompanyId". The conflict occurred in database "LOS.clientPortal", table "dbo.ClientPortal_Companies", column 'Id'.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__174_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd(Task task)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.<ExecuteAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.<ExecuteAsync>d__32.MoveNext()
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.<ExecuteAsync>d__32.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.<ExecuteAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.<ExecuteAsync>d__7`2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<SaveChangesAsync>d__61.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<SaveChangesAsync>d__59.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.DbContext.<SaveChangesAsync>d__48.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Los.Core.DAL.Context.DbContextUnitOfWork`1.<CommitAsync>d__13.MoveNext() in C:\IVELIN\PROJECTS\LOS\src\DAL\Los.Core.DAL\Context\DbContextUnitOfWork.cs:line 75
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Los.Core.Junk.TailUnitOfWork.<CommitAsync>d__19.MoveNext() in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Junk\TailUnitOfWork.cs:line 92
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Los.ClientPortal.XCom.Runner.ApplicationXComEventConsumer.<Consume>d__4.MoveNext() in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.ClientPortal.XCom.Runner\ApplicationXComEventConsumer.cs:line 84
+2018-07-10 17:59:06.161 +03:00 [Debug] {"$type":"Los.Common.Events.Application.BorrowerProfileCreatedEvent, Los.Common.Events","LoanId":"f3206765-3a8b-4e2f-86e5-436d0ea074cc","BorrowerNumber":1,"FirstName":"Daniel","MiddleName":null,"LastName":"Sofia","Suffix":null,"Phones":[{"$type":"Los.Common.Events.Application.BorrowerPhoneEventInfo, Los.Common.Events","Id":"e225770b-f101-4648-927e-12f92c360183","PhoneNumber":"359-879-6532","PhoneType":null}],"Email":"d@d.d","Ssn":null,"BirthDate":null,"Dependents":null,"AgeOfDependents":[],"YearsOfSchool":null,"MaritalStatus":null,"PresentAddressId":null,"PresentAddressOccupancyStatus":null,"PresentAddressMonthlyRent":null,"PresentAddressTimeLivedMonths":null,"PreviousResidencies":[],"MailingAddressId":null,"PreferredContactMethod":1,"ServedForMilitary":null,"ActiveDutyExpDate":null,"MilitaryServiceTypes":[],"Id":"6481b666-5346-41a8-86d5-78a0d364a656","Actor":"b3291215-22c2-4508-82b5-91437e319eec","AggregateId":"fba9f0e0-10a9-49ca-9419-5ac22244d2b4","EntityId":"fba9f0e0-10a9-49ca-9419-5ac22244d2b4","Version":"","Reason":"0402c833-c7f1-4f2e-841a-5b155bdd5fb4"}
+2018-07-10 17:59:06.225 +03:00 [Error] Error in "ApplicationXComEventConsumer"
+Los.Core.Exceptions.AggregateNotFoundException: Correlation Id: 29c7018d-6053-4204-9305-192491f54363 / User Message: Internal server error. / Message: Can't find aggregate [f3206765-3a8b-4e2f-86e5-436d0ea074cc] of type [Loan]!
+   at Los.Core.Domain.DomainRepositoryExtensions.GetOrThrowById[TAggregate](IDomainRepository`1 repository, Guid id) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Domain\DomainRepositoryExtensions.cs:line 23
+   at Los.ClientPortal.Events.XCom.ApplicationPortal.LoanDetailsCreatedEventHandler.Handle(LoanDetailsCreatedEvent message) in C:\IVELIN\PROJECTS\LOS\src\CQRS\Los.ClientPortal.Events\XCom\ApplicationPortal\LoanDetailsCreatedEventHandler.cs:line 41
+   at Los.Core.Bus.Bus.<>c__DisplayClass7_0`1.<RegisterHandler>b__0(IMessage x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 61
+   at Los.Core.Bus.Bus.Publish[T](T event, IAggregateRoot _) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 45
+   at Los.Core.Events.EventManager.<>c__DisplayClass8_0`1.<Publish>b__0(IEventProcessor x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Los.Core.Events.EventManager.Publish[T](T event, IAggregateRoot aggregate) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at Los.Core.Events.IEventManagerExtensions.Publish[T](IEventManager eventManager, T event) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\IEventManager.cs:line 29
+   at Los.ClientPortal.XCom.Runner.ApplicationXComEventConsumer.<Consume>d__4.MoveNext() in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.ClientPortal.XCom.Runner\ApplicationXComEventConsumer.cs:line 81
+2018-07-10 17:59:06.230 +03:00 [Debug] {"$type":"Los.Common.Events.Application.LoanUpdatedEvent, Los.Common.Events","Names":["BorrowerProfileIds"],"Values":[["fba9f0e0-10a9-49ca-9419-5ac22244d2b4"]],"EntityType":0,"LoanId":"00000000-0000-0000-0000-000000000000","Id":"f128df17-bc40-4414-87a3-1e343cf8d56b","Actor":"b3291215-22c2-4508-82b5-91437e319eec","AggregateId":"f3206765-3a8b-4e2f-86e5-436d0ea074cc","EntityId":"f3206765-3a8b-4e2f-86e5-436d0ea074cc","Version":"","Reason":"0402c833-c7f1-4f2e-841a-5b155bdd5fb4"}
+2018-07-10 17:59:06.347 +03:00 [Error] Error in "ApplicationXComEventConsumer"
+Los.Core.Exceptions.AggregateNotFoundException: Correlation Id: 27a3c7d6-e09c-48e3-9a5f-91a6cf46579c / User Message: Internal server error. / Message: Can't find aggregate [f3206765-3a8b-4e2f-86e5-436d0ea074cc] of type [Loan]!
+   at Los.Core.Domain.DomainRepositoryExtensions.GetOrThrowById[TAggregate](IDomainRepository`1 repository, Guid id) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Domain\DomainRepositoryExtensions.cs:line 23
+   at Los.ClientPortal.Events.XCom.ApplicationPortal.LoanUpdatedEventHandler.Handle(LoanUpdatedEvent message) in C:\IVELIN\PROJECTS\LOS\src\CQRS\Los.ClientPortal.Events\XCom\ApplicationPortal\LoanUpdatedEventHandler.cs:line 47
+   at Los.Core.Bus.Bus.<>c__DisplayClass7_0`1.<RegisterHandler>b__0(IMessage x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 61
+   at Los.Core.Bus.Bus.Publish[T](T event, IAggregateRoot _) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 45
+   at Los.Core.Events.EventManager.<>c__DisplayClass8_0`1.<Publish>b__0(IEventProcessor x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Los.Core.Events.EventManager.Publish[T](T event, IAggregateRoot aggregate) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at Los.Core.Events.IEventManagerExtensions.Publish[T](IEventManager eventManager, T event) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\IEventManager.cs:line 29
+   at Los.ClientPortal.XCom.Runner.ApplicationXComEventConsumer.<Consume>d__4.MoveNext() in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.ClientPortal.XCom.Runner\ApplicationXComEventConsumer.cs:line 81
+2018-07-10 17:59:06.353 +03:00 [Debug] {"$type":"Los.Common.Events.Application.LoanDetailsCreatedEvent, Los.Common.Events","LoanId":"f3206765-3a8b-4e2f-86e5-436d0ea074cc","LoanPurpose":1,"RefinancePrimaryPurposeType":null,"LoanAmount":null,"PurchasePrice":21311.0,"DownPayment":12313.0,"PropertyOwnership":1,"Id":"05fd613f-0512-46aa-8b41-70a17c8dd40d","Actor":"b3291215-22c2-4508-82b5-91437e319eec","AggregateId":"9552e03d-dfb5-4f6c-89f8-fb89db4ea8b3","EntityId":"9552e03d-dfb5-4f6c-89f8-fb89db4ea8b3","Version":"","Reason":"0402c833-c7f1-4f2e-841a-5b155bdd5fb4"}
+2018-07-10 17:59:06.407 +03:00 [Error] Error in "ApplicationXComEventConsumer"
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: The INSERT statement conflicted with the FOREIGN KEY constraint "FK_ClientPortal_BorrowerProfiles_ClientPortal_Loans_LoanId". The conflict occurred in database "LOS.clientPortal", table "dbo.ClientPortal_Loans", column 'Id'.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__174_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd(Task task)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.<ExecuteAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.<ExecuteAsync>d__32.MoveNext()
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.<ExecuteAsync>d__32.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.<ExecuteAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.<ExecuteAsync>d__7`2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<SaveChangesAsync>d__61.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<SaveChangesAsync>d__59.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.DbContext.<SaveChangesAsync>d__48.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Los.Core.DAL.Context.DbContextUnitOfWork`1.<CommitAsync>d__13.MoveNext() in C:\IVELIN\PROJECTS\LOS\src\DAL\Los.Core.DAL\Context\DbContextUnitOfWork.cs:line 75
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Los.Core.Junk.TailUnitOfWork.<CommitAsync>d__19.MoveNext() in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Junk\TailUnitOfWork.cs:line 92
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Los.ClientPortal.XCom.Runner.ApplicationXComEventConsumer.<Consume>d__4.MoveNext() in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.ClientPortal.XCom.Runner\ApplicationXComEventConsumer.cs:line 84
+2018-07-10 17:59:06.434 +03:00 [Debug] {"$type":"Los.Common.Events.Application.LoanCreatedEvent, Los.Common.Events","LoanId":"f3206765-3a8b-4e2f-86e5-436d0ea074cc","CompanyId":"6878a5af-605c-4fc5-8234-7c91a7b3d61f","CreatedDateTime":"2018-07-10T17:59:05.5118434+03:00","LeadNumber":"107880058720","Id":"8269ac0c-0514-4be7-ba1d-098ebfe51c64","Actor":"b3291215-22c2-4508-82b5-91437e319eec","AggregateId":"f3206765-3a8b-4e2f-86e5-436d0ea074cc","EntityId":"f3206765-3a8b-4e2f-86e5-436d0ea074cc","Version":"","Reason":"0402c833-c7f1-4f2e-841a-5b155bdd5fb4"}
+2018-07-10 17:59:06.498 +03:00 [Error] Error in "ApplicationXComEventConsumer"
+Los.Core.Exceptions.AggregateNotFoundException: Correlation Id: e6bd7041-afae-45f3-935b-efcc03acd30e / User Message: Internal server error. / Message: Can't find aggregate [f3206765-3a8b-4e2f-86e5-436d0ea074cc] of type [Loan]!
+   at Los.Core.Domain.DomainRepositoryExtensions.GetOrThrowById[TAggregate](IDomainRepository`1 repository, Guid id) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Domain\DomainRepositoryExtensions.cs:line 23
+   at Los.ClientPortal.Events.XCom.ApplicationPortal.LoanDetailsCreatedEventHandler.Handle(LoanDetailsCreatedEvent message) in C:\IVELIN\PROJECTS\LOS\src\CQRS\Los.ClientPortal.Events\XCom\ApplicationPortal\LoanDetailsCreatedEventHandler.cs:line 41
+   at Los.Core.Bus.Bus.<>c__DisplayClass7_0`1.<RegisterHandler>b__0(IMessage x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 61
+   at Los.Core.Bus.Bus.Publish[T](T event, IAggregateRoot _) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 45
+   at Los.Core.Events.EventManager.<>c__DisplayClass8_0`1.<Publish>b__0(IEventProcessor x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Los.Core.Events.EventManager.Publish[T](T event, IAggregateRoot aggregate) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at Los.Core.Events.IEventManagerExtensions.Publish[T](IEventManager eventManager, T event) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\IEventManager.cs:line 29
+   at Los.ClientPortal.XCom.Runner.ApplicationXComEventConsumer.<Consume>d__4.MoveNext() in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.ClientPortal.XCom.Runner\ApplicationXComEventConsumer.cs:line 81
+2018-07-10 17:59:06.505 +03:00 [Debug] {"$type":"Los.Common.Events.Application.LoanUpdatedEvent, Los.Common.Events","Names":["BorrowerProfileIds"],"Values":[["fba9f0e0-10a9-49ca-9419-5ac22244d2b4"]],"EntityType":0,"LoanId":"00000000-0000-0000-0000-000000000000","Id":"f128df17-bc40-4414-87a3-1e343cf8d56b","Actor":"b3291215-22c2-4508-82b5-91437e319eec","AggregateId":"f3206765-3a8b-4e2f-86e5-436d0ea074cc","EntityId":"f3206765-3a8b-4e2f-86e5-436d0ea074cc","Version":"","Reason":"0402c833-c7f1-4f2e-841a-5b155bdd5fb4"}
+2018-07-10 17:59:06.576 +03:00 [Error] Error in "ApplicationXComEventConsumer"
+Los.Core.Common.ConcurrencyException: Stale data cannot be updated.
+   at Los.EventSourcing.GetEventStore.GetEventStore.CheckEventsForConcurrency() in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.EventSourcing\GetEventStore\GetEventStore.cs:line 232
+   at Los.EventSourcing.GetEventStore.GetEventStore.<CommitAsync>d__16.MoveNext() in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.EventSourcing\GetEventStore\GetEventStore.cs:line 200
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Los.Core.Junk.TailUnitOfWork.<CommitAsync>d__19.MoveNext() in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Junk\TailUnitOfWork.cs:line 83
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Los.ClientPortal.XCom.Runner.ApplicationXComEventConsumer.<Consume>d__4.MoveNext() in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.ClientPortal.XCom.Runner\ApplicationXComEventConsumer.cs:line 84
+2018-07-10 17:59:06.589 +03:00 [Debug] {"$type":"Los.Common.Events.Application.BorrowerProfileCreatedEvent, Los.Common.Events","LoanId":"f3206765-3a8b-4e2f-86e5-436d0ea074cc","BorrowerNumber":1,"FirstName":"Daniel","MiddleName":null,"LastName":"Sofia","Suffix":null,"Phones":[{"$type":"Los.Common.Events.Application.BorrowerPhoneEventInfo, Los.Common.Events","Id":"e225770b-f101-4648-927e-12f92c360183","PhoneNumber":"359-879-6532","PhoneType":null}],"Email":"d@d.d","Ssn":null,"BirthDate":null,"Dependents":null,"AgeOfDependents":[],"YearsOfSchool":null,"MaritalStatus":null,"PresentAddressId":null,"PresentAddressOccupancyStatus":null,"PresentAddressMonthlyRent":null,"PresentAddressTimeLivedMonths":null,"PreviousResidencies":[],"MailingAddressId":null,"PreferredContactMethod":1,"ServedForMilitary":null,"ActiveDutyExpDate":null,"MilitaryServiceTypes":[],"Id":"6481b666-5346-41a8-86d5-78a0d364a656","Actor":"b3291215-22c2-4508-82b5-91437e319eec","AggregateId":"fba9f0e0-10a9-49ca-9419-5ac22244d2b4","EntityId":"fba9f0e0-10a9-49ca-9419-5ac22244d2b4","Version":"","Reason":"0402c833-c7f1-4f2e-841a-5b155bdd5fb4"}
+2018-07-10 17:59:06.628 +03:00 [Error] Error in "ApplicationXComEventConsumer"
+Los.Core.Exceptions.AggregateNotFoundException: Correlation Id: f3b96ef2-2045-41c7-bfe8-52e96f646569 / User Message: Internal server error. / Message: Can't find aggregate [f3206765-3a8b-4e2f-86e5-436d0ea074cc] of type [Loan]!
+   at Los.Core.Domain.DomainRepositoryExtensions.GetOrThrowById[TAggregate](IDomainRepository`1 repository, Guid id) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Domain\DomainRepositoryExtensions.cs:line 23
+   at Los.ClientPortal.Events.XCom.ApplicationPortal.LoanUpdatedEventHandler.Handle(LoanUpdatedEvent message) in C:\IVELIN\PROJECTS\LOS\src\CQRS\Los.ClientPortal.Events\XCom\ApplicationPortal\LoanUpdatedEventHandler.cs:line 47
+   at Los.Core.Bus.Bus.<>c__DisplayClass7_0`1.<RegisterHandler>b__0(IMessage x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 61
+   at Los.Core.Bus.Bus.Publish[T](T event, IAggregateRoot _) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 45
+   at Los.Core.Events.EventManager.<>c__DisplayClass8_0`1.<Publish>b__0(IEventProcessor x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Los.Core.Events.EventManager.Publish[T](T event, IAggregateRoot aggregate) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at Los.Core.Events.IEventManagerExtensions.Publish[T](IEventManager eventManager, T event) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\IEventManager.cs:line 29
+   at Los.ClientPortal.XCom.Runner.ApplicationXComEventConsumer.<Consume>d__4.MoveNext() in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.ClientPortal.XCom.Runner\ApplicationXComEventConsumer.cs:line 81
+2018-07-10 17:59:06.636 +03:00 [Debug] {"$type":"Los.Common.Events.Application.LoanDetailsCreatedEvent, Los.Common.Events","LoanId":"f3206765-3a8b-4e2f-86e5-436d0ea074cc","LoanPurpose":1,"RefinancePrimaryPurposeType":null,"LoanAmount":null,"PurchasePrice":21311.0,"DownPayment":12313.0,"PropertyOwnership":1,"Id":"05fd613f-0512-46aa-8b41-70a17c8dd40d","Actor":"b3291215-22c2-4508-82b5-91437e319eec","AggregateId":"9552e03d-dfb5-4f6c-89f8-fb89db4ea8b3","EntityId":"9552e03d-dfb5-4f6c-89f8-fb89db4ea8b3","Version":"","Reason":"0402c833-c7f1-4f2e-841a-5b155bdd5fb4"}
+2018-07-10 17:59:06.719 +03:00 [Error] Error in "ApplicationXComEventConsumer"
+Los.Core.Common.ConcurrencyException: Stale data cannot be updated.
+   at Los.EventSourcing.GetEventStore.GetEventStore.CheckEventsForConcurrency() in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.EventSourcing\GetEventStore\GetEventStore.cs:line 232
+   at Los.EventSourcing.GetEventStore.GetEventStore.<CommitAsync>d__16.MoveNext() in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.EventSourcing\GetEventStore\GetEventStore.cs:line 200
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Los.Core.Junk.TailUnitOfWork.<CommitAsync>d__19.MoveNext() in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Junk\TailUnitOfWork.cs:line 83
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Los.ClientPortal.XCom.Runner.ApplicationXComEventConsumer.<Consume>d__4.MoveNext() in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.ClientPortal.XCom.Runner\ApplicationXComEventConsumer.cs:line 84
+2018-07-10 17:59:06.740 +03:00 [Debug] {"$type":"Los.Common.Events.Application.LoanCreatedEvent, Los.Common.Events","LoanId":"f3206765-3a8b-4e2f-86e5-436d0ea074cc","CompanyId":"6878a5af-605c-4fc5-8234-7c91a7b3d61f","CreatedDateTime":"2018-07-10T17:59:05.5118434+03:00","LeadNumber":"107880058720","Id":"8269ac0c-0514-4be7-ba1d-098ebfe51c64","Actor":"b3291215-22c2-4508-82b5-91437e319eec","AggregateId":"f3206765-3a8b-4e2f-86e5-436d0ea074cc","EntityId":"f3206765-3a8b-4e2f-86e5-436d0ea074cc","Version":"","Reason":"0402c833-c7f1-4f2e-841a-5b155bdd5fb4"}
+2018-07-10 17:59:06.761 +03:00 [Error] Error in "ApplicationXComEventConsumer"
+Los.Core.Exceptions.AggregateNotFoundException: Correlation Id: b27b335b-6383-437b-b3b5-dc2aadc416c2 / User Message: Internal server error. / Message: Can't find aggregate [f3206765-3a8b-4e2f-86e5-436d0ea074cc] of type [Loan]!
+   at Los.Core.Domain.DomainRepositoryExtensions.GetOrThrowById[TAggregate](IDomainRepository`1 repository, Guid id) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Domain\DomainRepositoryExtensions.cs:line 23
+   at Los.ClientPortal.Events.XCom.ApplicationPortal.LoanDetailsCreatedEventHandler.Handle(LoanDetailsCreatedEvent message) in C:\IVELIN\PROJECTS\LOS\src\CQRS\Los.ClientPortal.Events\XCom\ApplicationPortal\LoanDetailsCreatedEventHandler.cs:line 41
+   at Los.Core.Bus.Bus.<>c__DisplayClass7_0`1.<RegisterHandler>b__0(IMessage x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 61
+   at Los.Core.Bus.Bus.Publish[T](T event, IAggregateRoot _) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 45
+   at Los.Core.Events.EventManager.<>c__DisplayClass8_0`1.<Publish>b__0(IEventProcessor x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Los.Core.Events.EventManager.Publish[T](T event, IAggregateRoot aggregate) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at Los.Core.Events.IEventManagerExtensions.Publish[T](IEventManager eventManager, T event) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\IEventManager.cs:line 29
+   at Los.ClientPortal.XCom.Runner.ApplicationXComEventConsumer.<Consume>d__4.MoveNext() in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.ClientPortal.XCom.Runner\ApplicationXComEventConsumer.cs:line 81
+2018-07-10 17:59:06.767 +03:00 [Debug] {"$type":"Los.Common.Events.Application.LoanUpdatedEvent, Los.Common.Events","Names":["BorrowerProfileIds"],"Values":[["fba9f0e0-10a9-49ca-9419-5ac22244d2b4"]],"EntityType":0,"LoanId":"00000000-0000-0000-0000-000000000000","Id":"f128df17-bc40-4414-87a3-1e343cf8d56b","Actor":"b3291215-22c2-4508-82b5-91437e319eec","AggregateId":"f3206765-3a8b-4e2f-86e5-436d0ea074cc","EntityId":"f3206765-3a8b-4e2f-86e5-436d0ea074cc","Version":"","Reason":"0402c833-c7f1-4f2e-841a-5b155bdd5fb4"}
+2018-07-10 17:59:06.862 +03:00 [Error] Error in "ApplicationXComEventConsumer"
+Los.Core.Common.ConcurrencyException: Stale data cannot be updated.
+   at Los.EventSourcing.GetEventStore.GetEventStore.CheckEventsForConcurrency() in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.EventSourcing\GetEventStore\GetEventStore.cs:line 232
+   at Los.EventSourcing.GetEventStore.GetEventStore.<CommitAsync>d__16.MoveNext() in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.EventSourcing\GetEventStore\GetEventStore.cs:line 200
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Los.Core.Junk.TailUnitOfWork.<CommitAsync>d__19.MoveNext() in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Junk\TailUnitOfWork.cs:line 83
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Los.ClientPortal.XCom.Runner.ApplicationXComEventConsumer.<Consume>d__4.MoveNext() in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.ClientPortal.XCom.Runner\ApplicationXComEventConsumer.cs:line 84
+2018-07-10 17:59:06.869 +03:00 [Debug] {"$type":"Los.Common.Events.Application.BorrowerProfileCreatedEvent, Los.Common.Events","LoanId":"f3206765-3a8b-4e2f-86e5-436d0ea074cc","BorrowerNumber":1,"FirstName":"Daniel","MiddleName":null,"LastName":"Sofia","Suffix":null,"Phones":[{"$type":"Los.Common.Events.Application.BorrowerPhoneEventInfo, Los.Common.Events","Id":"e225770b-f101-4648-927e-12f92c360183","PhoneNumber":"359-879-6532","PhoneType":null}],"Email":"d@d.d","Ssn":null,"BirthDate":null,"Dependents":null,"AgeOfDependents":[],"YearsOfSchool":null,"MaritalStatus":null,"PresentAddressId":null,"PresentAddressOccupancyStatus":null,"PresentAddressMonthlyRent":null,"PresentAddressTimeLivedMonths":null,"PreviousResidencies":[],"MailingAddressId":null,"PreferredContactMethod":1,"ServedForMilitary":null,"ActiveDutyExpDate":null,"MilitaryServiceTypes":[],"Id":"6481b666-5346-41a8-86d5-78a0d364a656","Actor":"b3291215-22c2-4508-82b5-91437e319eec","AggregateId":"fba9f0e0-10a9-49ca-9419-5ac22244d2b4","EntityId":"fba9f0e0-10a9-49ca-9419-5ac22244d2b4","Version":"","Reason":"0402c833-c7f1-4f2e-841a-5b155bdd5fb4"}
+2018-07-10 17:59:06.899 +03:00 [Error] Error in "ApplicationXComEventConsumer"
+Los.Core.Exceptions.AggregateNotFoundException: Correlation Id: 4de1f238-4f48-48b6-8b9f-dd28219d9450 / User Message: Internal server error. / Message: Can't find aggregate [f3206765-3a8b-4e2f-86e5-436d0ea074cc] of type [Loan]!
+   at Los.Core.Domain.DomainRepositoryExtensions.GetOrThrowById[TAggregate](IDomainRepository`1 repository, Guid id) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Domain\DomainRepositoryExtensions.cs:line 23
+   at Los.ClientPortal.Events.XCom.ApplicationPortal.LoanUpdatedEventHandler.Handle(LoanUpdatedEvent message) in C:\IVELIN\PROJECTS\LOS\src\CQRS\Los.ClientPortal.Events\XCom\ApplicationPortal\LoanUpdatedEventHandler.cs:line 47
+   at Los.Core.Bus.Bus.<>c__DisplayClass7_0`1.<RegisterHandler>b__0(IMessage x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 61
+   at Los.Core.Bus.Bus.Publish[T](T event, IAggregateRoot _) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 45
+   at Los.Core.Events.EventManager.<>c__DisplayClass8_0`1.<Publish>b__0(IEventProcessor x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Los.Core.Events.EventManager.Publish[T](T event, IAggregateRoot aggregate) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at Los.Core.Events.IEventManagerExtensions.Publish[T](IEventManager eventManager, T event) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\IEventManager.cs:line 29
+   at Los.ClientPortal.XCom.Runner.ApplicationXComEventConsumer.<Consume>d__4.MoveNext() in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.ClientPortal.XCom.Runner\ApplicationXComEventConsumer.cs:line 81
+2018-07-10 17:59:06.906 +03:00 [Debug] {"$type":"Los.Common.Events.Application.LoanDetailsCreatedEvent, Los.Common.Events","LoanId":"f3206765-3a8b-4e2f-86e5-436d0ea074cc","LoanPurpose":1,"RefinancePrimaryPurposeType":null,"LoanAmount":null,"PurchasePrice":21311.0,"DownPayment":12313.0,"PropertyOwnership":1,"Id":"05fd613f-0512-46aa-8b41-70a17c8dd40d","Actor":"b3291215-22c2-4508-82b5-91437e319eec","AggregateId":"9552e03d-dfb5-4f6c-89f8-fb89db4ea8b3","EntityId":"9552e03d-dfb5-4f6c-89f8-fb89db4ea8b3","Version":"","Reason":"0402c833-c7f1-4f2e-841a-5b155bdd5fb4"}
+2018-07-10 17:59:07.034 +03:00 [Error] Error in "ApplicationXComEventConsumer"
+Los.Core.Common.ConcurrencyException: Stale data cannot be updated.
+   at Los.EventSourcing.GetEventStore.GetEventStore.CheckEventsForConcurrency() in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.EventSourcing\GetEventStore\GetEventStore.cs:line 232
+   at Los.EventSourcing.GetEventStore.GetEventStore.<CommitAsync>d__16.MoveNext() in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.EventSourcing\GetEventStore\GetEventStore.cs:line 200
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Los.Core.Junk.TailUnitOfWork.<CommitAsync>d__19.MoveNext() in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Junk\TailUnitOfWork.cs:line 83
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Los.ClientPortal.XCom.Runner.ApplicationXComEventConsumer.<Consume>d__4.MoveNext() in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.ClientPortal.XCom.Runner\ApplicationXComEventConsumer.cs:line 84
+2018-07-10 17:59:07.042 +03:00 [Debug] {"$type":"Los.Common.Events.Application.LoanCreatedEvent, Los.Common.Events","LoanId":"f3206765-3a8b-4e2f-86e5-436d0ea074cc","CompanyId":"6878a5af-605c-4fc5-8234-7c91a7b3d61f","CreatedDateTime":"2018-07-10T17:59:05.5118434+03:00","LeadNumber":"107880058720","Id":"8269ac0c-0514-4be7-ba1d-098ebfe51c64","Actor":"b3291215-22c2-4508-82b5-91437e319eec","AggregateId":"f3206765-3a8b-4e2f-86e5-436d0ea074cc","EntityId":"f3206765-3a8b-4e2f-86e5-436d0ea074cc","Version":"","Reason":"0402c833-c7f1-4f2e-841a-5b155bdd5fb4"}
+2018-07-10 17:59:07.050 +03:00 [Error] Error in "ApplicationXComEventConsumer"
+Los.Core.Exceptions.AggregateNotFoundException: Correlation Id: 2956e588-995a-401c-abcb-585e90bdef47 / User Message: Internal server error. / Message: Can't find aggregate [f3206765-3a8b-4e2f-86e5-436d0ea074cc] of type [Loan]!
+   at Los.Core.Domain.DomainRepositoryExtensions.GetOrThrowById[TAggregate](IDomainRepository`1 repository, Guid id) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Domain\DomainRepositoryExtensions.cs:line 23
+   at Los.ClientPortal.Events.XCom.ApplicationPortal.LoanDetailsCreatedEventHandler.Handle(LoanDetailsCreatedEvent message) in C:\IVELIN\PROJECTS\LOS\src\CQRS\Los.ClientPortal.Events\XCom\ApplicationPortal\LoanDetailsCreatedEventHandler.cs:line 41
+   at Los.Core.Bus.Bus.<>c__DisplayClass7_0`1.<RegisterHandler>b__0(IMessage x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 61
+   at Los.Core.Bus.Bus.Publish[T](T event, IAggregateRoot _) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 45
+   at Los.Core.Events.EventManager.<>c__DisplayClass8_0`1.<Publish>b__0(IEventProcessor x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Los.Core.Events.EventManager.Publish[T](T event, IAggregateRoot aggregate) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at Los.Core.Events.IEventManagerExtensions.Publish[T](IEventManager eventManager, T event) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\IEventManager.cs:line 29
+   at Los.ClientPortal.XCom.Runner.ApplicationXComEventConsumer.<Consume>d__4.MoveNext() in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.ClientPortal.XCom.Runner\ApplicationXComEventConsumer.cs:line 81
+2018-07-10 17:59:07.058 +03:00 [Debug] {"$type":"Los.Common.Events.Application.LoanUpdatedEvent, Los.Common.Events","Names":["BorrowerProfileIds"],"Values":[["fba9f0e0-10a9-49ca-9419-5ac22244d2b4"]],"EntityType":0,"LoanId":"00000000-0000-0000-0000-000000000000","Id":"f128df17-bc40-4414-87a3-1e343cf8d56b","Actor":"b3291215-22c2-4508-82b5-91437e319eec","AggregateId":"f3206765-3a8b-4e2f-86e5-436d0ea074cc","EntityId":"f3206765-3a8b-4e2f-86e5-436d0ea074cc","Version":"","Reason":"0402c833-c7f1-4f2e-841a-5b155bdd5fb4"}
+2018-07-10 17:59:07.181 +03:00 [Error] Error in "ApplicationXComEventConsumer"
+Los.Core.Common.ConcurrencyException: Stale data cannot be updated.
+   at Los.EventSourcing.GetEventStore.GetEventStore.CheckEventsForConcurrency() in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.EventSourcing\GetEventStore\GetEventStore.cs:line 232
+   at Los.EventSourcing.GetEventStore.GetEventStore.<CommitAsync>d__16.MoveNext() in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.EventSourcing\GetEventStore\GetEventStore.cs:line 200
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Los.Core.Junk.TailUnitOfWork.<CommitAsync>d__19.MoveNext() in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Junk\TailUnitOfWork.cs:line 83
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Los.ClientPortal.XCom.Runner.ApplicationXComEventConsumer.<Consume>d__4.MoveNext() in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.ClientPortal.XCom.Runner\ApplicationXComEventConsumer.cs:line 84
+2018-07-10 17:59:07.192 +03:00 [Debug] {"$type":"Los.Common.Events.Application.BorrowerProfileCreatedEvent, Los.Common.Events","LoanId":"f3206765-3a8b-4e2f-86e5-436d0ea074cc","BorrowerNumber":1,"FirstName":"Daniel","MiddleName":null,"LastName":"Sofia","Suffix":null,"Phones":[{"$type":"Los.Common.Events.Application.BorrowerPhoneEventInfo, Los.Common.Events","Id":"e225770b-f101-4648-927e-12f92c360183","PhoneNumber":"359-879-6532","PhoneType":null}],"Email":"d@d.d","Ssn":null,"BirthDate":null,"Dependents":null,"AgeOfDependents":[],"YearsOfSchool":null,"MaritalStatus":null,"PresentAddressId":null,"PresentAddressOccupancyStatus":null,"PresentAddressMonthlyRent":null,"PresentAddressTimeLivedMonths":null,"PreviousResidencies":[],"MailingAddressId":null,"PreferredContactMethod":1,"ServedForMilitary":null,"ActiveDutyExpDate":null,"MilitaryServiceTypes":[],"Id":"6481b666-5346-41a8-86d5-78a0d364a656","Actor":"b3291215-22c2-4508-82b5-91437e319eec","AggregateId":"fba9f0e0-10a9-49ca-9419-5ac22244d2b4","EntityId":"fba9f0e0-10a9-49ca-9419-5ac22244d2b4","Version":"","Reason":"0402c833-c7f1-4f2e-841a-5b155bdd5fb4"}
+2018-07-10 17:59:07.197 +03:00 [Error] Error in "ApplicationXComEventConsumer"
+Los.Core.Exceptions.AggregateNotFoundException: Correlation Id: 83c9b3b9-4245-45f8-aa54-024b5d962c25 / User Message: Internal server error. / Message: Can't find aggregate [f3206765-3a8b-4e2f-86e5-436d0ea074cc] of type [Loan]!
+   at Los.Core.Domain.DomainRepositoryExtensions.GetOrThrowById[TAggregate](IDomainRepository`1 repository, Guid id) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Domain\DomainRepositoryExtensions.cs:line 23
+   at Los.ClientPortal.Events.XCom.ApplicationPortal.LoanUpdatedEventHandler.Handle(LoanUpdatedEvent message) in C:\IVELIN\PROJECTS\LOS\src\CQRS\Los.ClientPortal.Events\XCom\ApplicationPortal\LoanUpdatedEventHandler.cs:line 47
+   at Los.Core.Bus.Bus.<>c__DisplayClass7_0`1.<RegisterHandler>b__0(IMessage x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 61
+   at Los.Core.Bus.Bus.Publish[T](T event, IAggregateRoot _) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 45
+   at Los.Core.Events.EventManager.<>c__DisplayClass8_0`1.<Publish>b__0(IEventProcessor x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Los.Core.Events.EventManager.Publish[T](T event, IAggregateRoot aggregate) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at Los.Core.Events.IEventManagerExtensions.Publish[T](IEventManager eventManager, T event) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\IEventManager.cs:line 29
+   at Los.ClientPortal.XCom.Runner.ApplicationXComEventConsumer.<Consume>d__4.MoveNext() in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.ClientPortal.XCom.Runner\ApplicationXComEventConsumer.cs:line 81
+2018-07-10 17:59:07.206 +03:00 [Debug] {"$type":"Los.Common.Events.Application.LoanDetailsCreatedEvent, Los.Common.Events","LoanId":"f3206765-3a8b-4e2f-86e5-436d0ea074cc","LoanPurpose":1,"RefinancePrimaryPurposeType":null,"LoanAmount":null,"PurchasePrice":21311.0,"DownPayment":12313.0,"PropertyOwnership":1,"Id":"05fd613f-0512-46aa-8b41-70a17c8dd40d","Actor":"b3291215-22c2-4508-82b5-91437e319eec","AggregateId":"9552e03d-dfb5-4f6c-89f8-fb89db4ea8b3","EntityId":"9552e03d-dfb5-4f6c-89f8-fb89db4ea8b3","Version":"","Reason":"0402c833-c7f1-4f2e-841a-5b155bdd5fb4"}
+2018-07-10 17:59:07.325 +03:00 [Error] Error in "ApplicationXComEventConsumer"
+Los.Core.Common.ConcurrencyException: Stale data cannot be updated.
+   at Los.EventSourcing.GetEventStore.GetEventStore.CheckEventsForConcurrency() in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.EventSourcing\GetEventStore\GetEventStore.cs:line 232
+   at Los.EventSourcing.GetEventStore.GetEventStore.<CommitAsync>d__16.MoveNext() in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.EventSourcing\GetEventStore\GetEventStore.cs:line 200
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Los.Core.Junk.TailUnitOfWork.<CommitAsync>d__19.MoveNext() in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Junk\TailUnitOfWork.cs:line 83
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Los.ClientPortal.XCom.Runner.ApplicationXComEventConsumer.<Consume>d__4.MoveNext() in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.ClientPortal.XCom.Runner\ApplicationXComEventConsumer.cs:line 84
+2018-07-10 17:59:07.325 +03:00 [Error] Error in "ApplicationXComEventConsumer"
+Los.Core.Exceptions.AggregateNotFoundException: Correlation Id: f0e39a31-3654-4acb-9496-bb4bb9f6b447 / User Message: Internal server error. / Message: Can't find aggregate [f3206765-3a8b-4e2f-86e5-436d0ea074cc] of type [Loan]!
+   at Los.Core.Domain.DomainRepositoryExtensions.GetOrThrowById[TAggregate](IDomainRepository`1 repository, Guid id) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Domain\DomainRepositoryExtensions.cs:line 23
+   at Los.ClientPortal.Events.XCom.ApplicationPortal.LoanDetailsCreatedEventHandler.Handle(LoanDetailsCreatedEvent message) in C:\IVELIN\PROJECTS\LOS\src\CQRS\Los.ClientPortal.Events\XCom\ApplicationPortal\LoanDetailsCreatedEventHandler.cs:line 41
+   at Los.Core.Bus.Bus.<>c__DisplayClass7_0`1.<RegisterHandler>b__0(IMessage x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 61
+   at Los.Core.Bus.Bus.Publish[T](T event, IAggregateRoot _) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 45
+   at Los.Core.Events.EventManager.<>c__DisplayClass8_0`1.<Publish>b__0(IEventProcessor x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Los.Core.Events.EventManager.Publish[T](T event, IAggregateRoot aggregate) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at Los.Core.Events.IEventManagerExtensions.Publish[T](IEventManager eventManager, T event) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\IEventManager.cs:line 29
+   at Los.ClientPortal.XCom.Runner.ApplicationXComEventConsumer.<Consume>d__4.MoveNext() in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.ClientPortal.XCom.Runner\ApplicationXComEventConsumer.cs:line 81
+2018-07-10 17:59:07.333 +03:00 [Debug] {"$type":"Los.Common.Events.Application.LoanCreatedEvent, Los.Common.Events","LoanId":"f3206765-3a8b-4e2f-86e5-436d0ea074cc","CompanyId":"6878a5af-605c-4fc5-8234-7c91a7b3d61f","CreatedDateTime":"2018-07-10T17:59:05.5118434+03:00","LeadNumber":"107880058720","Id":"8269ac0c-0514-4be7-ba1d-098ebfe51c64","Actor":"b3291215-22c2-4508-82b5-91437e319eec","AggregateId":"f3206765-3a8b-4e2f-86e5-436d0ea074cc","EntityId":"f3206765-3a8b-4e2f-86e5-436d0ea074cc","Version":"","Reason":"0402c833-c7f1-4f2e-841a-5b155bdd5fb4"}
+2018-07-10 17:59:07.344 +03:00 [Debug] {"$type":"Los.Common.Events.Application.LoanUpdatedEvent, Los.Common.Events","Names":["BorrowerProfileIds"],"Values":[["fba9f0e0-10a9-49ca-9419-5ac22244d2b4"]],"EntityType":0,"LoanId":"00000000-0000-0000-0000-000000000000","Id":"f128df17-bc40-4414-87a3-1e343cf8d56b","Actor":"b3291215-22c2-4508-82b5-91437e319eec","AggregateId":"f3206765-3a8b-4e2f-86e5-436d0ea074cc","EntityId":"f3206765-3a8b-4e2f-86e5-436d0ea074cc","Version":"","Reason":"0402c833-c7f1-4f2e-841a-5b155bdd5fb4"}
+2018-07-10 17:59:07.460 +03:00 [Error] Error in "ApplicationXComEventConsumer"
+Los.Core.Exceptions.AggregateNotFoundException: Correlation Id: 7d6feaa9-c5f8-41c8-b5bf-799fbabe8b16 / User Message: Internal server error. / Message: Can't find aggregate [f3206765-3a8b-4e2f-86e5-436d0ea074cc] of type [Loan]!
+   at Los.Core.Domain.DomainRepositoryExtensions.GetOrThrowById[TAggregate](IDomainRepository`1 repository, Guid id) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Domain\DomainRepositoryExtensions.cs:line 23
+   at Los.ClientPortal.Events.XCom.ApplicationPortal.LoanUpdatedEventHandler.Handle(LoanUpdatedEvent message) in C:\IVELIN\PROJECTS\LOS\src\CQRS\Los.ClientPortal.Events\XCom\ApplicationPortal\LoanUpdatedEventHandler.cs:line 47
+   at Los.Core.Bus.Bus.<>c__DisplayClass7_0`1.<RegisterHandler>b__0(IMessage x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 61
+   at Los.Core.Bus.Bus.Publish[T](T event, IAggregateRoot _) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 45
+   at Los.Core.Events.EventManager.<>c__DisplayClass8_0`1.<Publish>b__0(IEventProcessor x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Los.Core.Events.EventManager.Publish[T](T event, IAggregateRoot aggregate) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at Los.Core.Events.IEventManagerExtensions.Publish[T](IEventManager eventManager, T event) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\IEventManager.cs:line 29
+   at Los.ClientPortal.XCom.Runner.ApplicationXComEventConsumer.<Consume>d__4.MoveNext() in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.ClientPortal.XCom.Runner\ApplicationXComEventConsumer.cs:line 81
+2018-07-10 17:59:07.477 +03:00 [Error] Error in "ApplicationXComEventConsumer"
+Los.Core.Common.ConcurrencyException: Stale data cannot be updated.
+   at Los.EventSourcing.GetEventStore.GetEventStore.CheckEventsForConcurrency() in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.EventSourcing\GetEventStore\GetEventStore.cs:line 232
+   at Los.EventSourcing.GetEventStore.GetEventStore.<CommitAsync>d__16.MoveNext() in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.EventSourcing\GetEventStore\GetEventStore.cs:line 200
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Los.Core.Junk.TailUnitOfWork.<CommitAsync>d__19.MoveNext() in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Junk\TailUnitOfWork.cs:line 83
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Los.ClientPortal.XCom.Runner.ApplicationXComEventConsumer.<Consume>d__4.MoveNext() in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.ClientPortal.XCom.Runner\ApplicationXComEventConsumer.cs:line 84
+2018-07-10 17:59:07.486 +03:00 [Debug] {"$type":"Los.Common.Events.Application.BorrowerProfileCreatedEvent, Los.Common.Events","LoanId":"f3206765-3a8b-4e2f-86e5-436d0ea074cc","BorrowerNumber":1,"FirstName":"Daniel","MiddleName":null,"LastName":"Sofia","Suffix":null,"Phones":[{"$type":"Los.Common.Events.Application.BorrowerPhoneEventInfo, Los.Common.Events","Id":"e225770b-f101-4648-927e-12f92c360183","PhoneNumber":"359-879-6532","PhoneType":null}],"Email":"d@d.d","Ssn":null,"BirthDate":null,"Dependents":null,"AgeOfDependents":[],"YearsOfSchool":null,"MaritalStatus":null,"PresentAddressId":null,"PresentAddressOccupancyStatus":null,"PresentAddressMonthlyRent":null,"PresentAddressTimeLivedMonths":null,"PreviousResidencies":[],"MailingAddressId":null,"PreferredContactMethod":1,"ServedForMilitary":null,"ActiveDutyExpDate":null,"MilitaryServiceTypes":[],"Id":"6481b666-5346-41a8-86d5-78a0d364a656","Actor":"b3291215-22c2-4508-82b5-91437e319eec","AggregateId":"fba9f0e0-10a9-49ca-9419-5ac22244d2b4","EntityId":"fba9f0e0-10a9-49ca-9419-5ac22244d2b4","Version":"","Reason":"0402c833-c7f1-4f2e-841a-5b155bdd5fb4"}
+2018-07-10 17:59:07.556 +03:00 [Error] (Exception message) Timestamp: 07/10/2018 14:59:07, FaultedMessageId: 3b800000-0daa-1c1b-7af3-08d5e675aea9, FaultId: 3b800000-0daa-1c1b-a434-08d5e675af9f, Host.Assembly: "Los.ClientPortal.XCom.Runner"!
+2018-07-10 17:59:07.559 +03:00 [Error] (Exception) Type: "Los.Core.Exceptions.AggregateNotFoundException", Source: "Los.Core", Message: "Correlation Id: 7d6feaa9-c5f8-41c8-b5bf-799fbabe8b16 / User Message: Internal server error. / Message: Can't find aggregate [f3206765-3a8b-4e2f-86e5-436d0ea074cc] of type [Loan]!"!
+2018-07-10 17:59:07.641 +03:00 [Error] Error in "ApplicationXComEventConsumer"
+Los.Core.Common.ConcurrencyException: Stale data cannot be updated.
+   at Los.EventSourcing.GetEventStore.GetEventStore.CheckEventsForConcurrency() in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.EventSourcing\GetEventStore\GetEventStore.cs:line 232
+   at Los.EventSourcing.GetEventStore.GetEventStore.<CommitAsync>d__16.MoveNext() in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.EventSourcing\GetEventStore\GetEventStore.cs:line 200
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Los.Core.Junk.TailUnitOfWork.<CommitAsync>d__19.MoveNext() in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Junk\TailUnitOfWork.cs:line 83
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Los.ClientPortal.XCom.Runner.ApplicationXComEventConsumer.<Consume>d__4.MoveNext() in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.ClientPortal.XCom.Runner\ApplicationXComEventConsumer.cs:line 84
+2018-07-10 17:59:07.647 +03:00 [Debug] {"$type":"Los.Common.Events.Application.LoanCreatedEvent, Los.Common.Events","LoanId":"f3206765-3a8b-4e2f-86e5-436d0ea074cc","CompanyId":"6878a5af-605c-4fc5-8234-7c91a7b3d61f","CreatedDateTime":"2018-07-10T17:59:05.5118434+03:00","LeadNumber":"107880058720","Id":"8269ac0c-0514-4be7-ba1d-098ebfe51c64","Actor":"b3291215-22c2-4508-82b5-91437e319eec","AggregateId":"f3206765-3a8b-4e2f-86e5-436d0ea074cc","EntityId":"f3206765-3a8b-4e2f-86e5-436d0ea074cc","Version":"","Reason":"0402c833-c7f1-4f2e-841a-5b155bdd5fb4"}
+2018-07-10 17:59:07.808 +03:00 [Error] Error in "ApplicationXComEventConsumer"
+Los.Core.Common.ConcurrencyException: Stale data cannot be updated.
+   at Los.EventSourcing.GetEventStore.GetEventStore.CheckEventsForConcurrency() in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.EventSourcing\GetEventStore\GetEventStore.cs:line 232
+   at Los.EventSourcing.GetEventStore.GetEventStore.<CommitAsync>d__16.MoveNext() in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.EventSourcing\GetEventStore\GetEventStore.cs:line 200
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Los.Core.Junk.TailUnitOfWork.<CommitAsync>d__19.MoveNext() in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Junk\TailUnitOfWork.cs:line 83
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Los.ClientPortal.XCom.Runner.ApplicationXComEventConsumer.<Consume>d__4.MoveNext() in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.ClientPortal.XCom.Runner\ApplicationXComEventConsumer.cs:line 84
+2018-07-10 17:59:07.858 +03:00 [Error] (Exception message) Timestamp: 07/10/2018 14:59:07, FaultedMessageId: 3b800000-0daa-1c1b-1524-08d5e675aea9, FaultId: 3b800000-0daa-1c1b-8acf-08d5e675afd3, Host.Assembly: "Los.ClientPortal.XCom.Runner"!
+2018-07-10 17:59:07.866 +03:00 [Error] (Exception) Type: "Los.Core.Common.ConcurrencyException", Source: "Los.EventSourcing", Message: "Stale data cannot be updated."!
+2018-07-10 17:59:29.683 +03:00 [Information] Now starting LOS ClientPortal XCom Runner ...
+2018-07-10 18:00:04.179 +03:00 [Debug] {"$type":"Los.Common.Events.Application.LoanCreatedEvent, Los.Common.Events","LoanId":"0b98346f-542e-4f01-9d62-731b66675d43","CompanyId":"6878a5af-605c-4fc5-8234-7c91a7b3d61f","CreatedDateTime":"2018-07-10T18:00:03.6567985+03:00","LeadNumber":"104637813645","Id":"6039b4de-afbb-4d6f-a4e3-9ef103953bb6","Actor":"e7935e72-055e-41e8-a4d6-2308cb74c63e","AggregateId":"0b98346f-542e-4f01-9d62-731b66675d43","EntityId":"0b98346f-542e-4f01-9d62-731b66675d43","Version":"","Reason":"d6ff3ad1-bb8c-439b-97f0-e3907a705ec2"}
+2018-07-10 18:00:06.310 +03:00 [Error] Error in "ApplicationXComEventConsumer"
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: The INSERT statement conflicted with the FOREIGN KEY constraint "FK_ClientPortal_Loans_ClientPortal_Companies_CompanyId". The conflict occurred in database "LOS.clientPortal", table "dbo.ClientPortal_Companies", column 'Id'.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__174_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd(Task task)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.<ExecuteAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.<ExecuteAsync>d__32.MoveNext()
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.<ExecuteAsync>d__32.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.<ExecuteAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.<ExecuteAsync>d__7`2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<SaveChangesAsync>d__61.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<SaveChangesAsync>d__59.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.DbContext.<SaveChangesAsync>d__48.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Los.Core.DAL.Context.DbContextUnitOfWork`1.<CommitAsync>d__13.MoveNext() in C:\IVELIN\PROJECTS\LOS\src\DAL\Los.Core.DAL\Context\DbContextUnitOfWork.cs:line 75
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Los.Core.Junk.TailUnitOfWork.<CommitAsync>d__19.MoveNext() in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Junk\TailUnitOfWork.cs:line 92
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Los.ClientPortal.XCom.Runner.ApplicationXComEventConsumer.<Consume>d__4.MoveNext() in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.ClientPortal.XCom.Runner\ApplicationXComEventConsumer.cs:line 84
+2018-07-10 18:00:06.350 +03:00 [Debug] {"$type":"Los.Common.Events.Application.LoanUpdatedEvent, Los.Common.Events","Names":["BorrowerProfileIds"],"Values":[["69b06b67-ac79-4dfb-8aa4-d85bae702496"]],"EntityType":0,"LoanId":"00000000-0000-0000-0000-000000000000","Id":"9f093d31-364f-44db-ba78-e6fe8319e590","Actor":"e7935e72-055e-41e8-a4d6-2308cb74c63e","AggregateId":"0b98346f-542e-4f01-9d62-731b66675d43","EntityId":"0b98346f-542e-4f01-9d62-731b66675d43","Version":"","Reason":"d6ff3ad1-bb8c-439b-97f0-e3907a705ec2"}
+2018-07-10 18:00:06.506 +03:00 [Error] Error in "ApplicationXComEventConsumer"
+Los.Core.Exceptions.AggregateNotFoundException: Correlation Id: f7e89a8d-8a39-4964-b39d-a688c8380ae0 / User Message: Internal server error. / Message: Can't find aggregate [0b98346f-542e-4f01-9d62-731b66675d43] of type [Loan]!
+   at Los.Core.Domain.DomainRepositoryExtensions.GetOrThrowById[TAggregate](IDomainRepository`1 repository, Guid id) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Domain\DomainRepositoryExtensions.cs:line 23
+   at Los.ClientPortal.Events.XCom.ApplicationPortal.LoanUpdatedEventHandler.Handle(LoanUpdatedEvent message) in C:\IVELIN\PROJECTS\LOS\src\CQRS\Los.ClientPortal.Events\XCom\ApplicationPortal\LoanUpdatedEventHandler.cs:line 47
+   at Los.Core.Bus.Bus.<>c__DisplayClass7_0`1.<RegisterHandler>b__0(IMessage x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 61
+   at Los.Core.Bus.Bus.Publish[T](T event, IAggregateRoot _) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 45
+   at Los.Core.Events.EventManager.<>c__DisplayClass8_0`1.<Publish>b__0(IEventProcessor x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Los.Core.Events.EventManager.Publish[T](T event, IAggregateRoot aggregate) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at Los.Core.Events.IEventManagerExtensions.Publish[T](IEventManager eventManager, T event) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\IEventManager.cs:line 29
+   at Los.ClientPortal.XCom.Runner.ApplicationXComEventConsumer.<Consume>d__4.MoveNext() in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.ClientPortal.XCom.Runner\ApplicationXComEventConsumer.cs:line 81
+2018-07-10 18:00:06.514 +03:00 [Debug] {"$type":"Los.Common.Events.Application.BorrowerProfileCreatedEvent, Los.Common.Events","LoanId":"0b98346f-542e-4f01-9d62-731b66675d43","BorrowerNumber":1,"FirstName":"Daniel","MiddleName":null,"LastName":"Sofia","Suffix":null,"Phones":[{"$type":"Los.Common.Events.Application.BorrowerPhoneEventInfo, Los.Common.Events","Id":"456f76bb-b93a-468d-a8ac-9c9614b2c27c","PhoneNumber":"342-234-2424","PhoneType":null}],"Email":"d@d.d","Ssn":null,"BirthDate":null,"Dependents":null,"AgeOfDependents":[],"YearsOfSchool":null,"MaritalStatus":null,"PresentAddressId":null,"PresentAddressOccupancyStatus":null,"PresentAddressMonthlyRent":null,"PresentAddressTimeLivedMonths":null,"PreviousResidencies":[],"MailingAddressId":null,"PreferredContactMethod":3,"ServedForMilitary":null,"ActiveDutyExpDate":null,"MilitaryServiceTypes":[],"Id":"1b6f3b90-aec6-4e4d-9064-6e4ada8f51a4","Actor":"e7935e72-055e-41e8-a4d6-2308cb74c63e","AggregateId":"69b06b67-ac79-4dfb-8aa4-d85bae702496","EntityId":"69b06b67-ac79-4dfb-8aa4-d85bae702496","Version":"","Reason":"d6ff3ad1-bb8c-439b-97f0-e3907a705ec2"}
+2018-07-10 18:00:06.731 +03:00 [Error] Error in "ApplicationXComEventConsumer"
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: The INSERT statement conflicted with the FOREIGN KEY constraint "FK_ClientPortal_BorrowerProfiles_ClientPortal_Loans_LoanId". The conflict occurred in database "LOS.clientPortal", table "dbo.ClientPortal_Loans", column 'Id'.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__174_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd(Task task)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.<ExecuteAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.<ExecuteAsync>d__32.MoveNext()
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.<ExecuteAsync>d__32.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.<ExecuteAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.<ExecuteAsync>d__7`2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<SaveChangesAsync>d__61.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<SaveChangesAsync>d__59.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.DbContext.<SaveChangesAsync>d__48.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Los.Core.DAL.Context.DbContextUnitOfWork`1.<CommitAsync>d__13.MoveNext() in C:\IVELIN\PROJECTS\LOS\src\DAL\Los.Core.DAL\Context\DbContextUnitOfWork.cs:line 75
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Los.Core.Junk.TailUnitOfWork.<CommitAsync>d__19.MoveNext() in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Junk\TailUnitOfWork.cs:line 92
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Los.ClientPortal.XCom.Runner.ApplicationXComEventConsumer.<Consume>d__4.MoveNext() in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.ClientPortal.XCom.Runner\ApplicationXComEventConsumer.cs:line 84
+2018-07-10 18:00:06.769 +03:00 [Debug] {"$type":"Los.Common.Events.Application.LoanDetailsCreatedEvent, Los.Common.Events","LoanId":"0b98346f-542e-4f01-9d62-731b66675d43","LoanPurpose":1,"RefinancePrimaryPurposeType":null,"LoanAmount":null,"PurchasePrice":34524242424.0,"DownPayment":234234.0,"PropertyOwnership":1,"Id":"f407aa0a-1271-4275-9d47-4a2ed117965b","Actor":"e7935e72-055e-41e8-a4d6-2308cb74c63e","AggregateId":"1e21a930-78f3-4d6e-9bd8-5bb37fdc4183","EntityId":"1e21a930-78f3-4d6e-9bd8-5bb37fdc4183","Version":"","Reason":"d6ff3ad1-bb8c-439b-97f0-e3907a705ec2"}
+2018-07-10 18:00:06.901 +03:00 [Error] Error in "ApplicationXComEventConsumer"
+Los.Core.Exceptions.AggregateNotFoundException: Correlation Id: 0af2a8e3-e2af-47ef-bee2-227ca35df018 / User Message: Internal server error. / Message: Can't find aggregate [0b98346f-542e-4f01-9d62-731b66675d43] of type [Loan]!
+   at Los.Core.Domain.DomainRepositoryExtensions.GetOrThrowById[TAggregate](IDomainRepository`1 repository, Guid id) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Domain\DomainRepositoryExtensions.cs:line 23
+   at Los.ClientPortal.Events.XCom.ApplicationPortal.LoanDetailsCreatedEventHandler.Handle(LoanDetailsCreatedEvent message) in C:\IVELIN\PROJECTS\LOS\src\CQRS\Los.ClientPortal.Events\XCom\ApplicationPortal\LoanDetailsCreatedEventHandler.cs:line 41
+   at Los.Core.Bus.Bus.<>c__DisplayClass7_0`1.<RegisterHandler>b__0(IMessage x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 61
+   at Los.Core.Bus.Bus.Publish[T](T event, IAggregateRoot _) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 45
+   at Los.Core.Events.EventManager.<>c__DisplayClass8_0`1.<Publish>b__0(IEventProcessor x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Los.Core.Events.EventManager.Publish[T](T event, IAggregateRoot aggregate) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at Los.Core.Events.IEventManagerExtensions.Publish[T](IEventManager eventManager, T event) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\IEventManager.cs:line 29
+   at Los.ClientPortal.XCom.Runner.ApplicationXComEventConsumer.<Consume>d__4.MoveNext() in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.ClientPortal.XCom.Runner\ApplicationXComEventConsumer.cs:line 81
+2018-07-10 18:00:06.910 +03:00 [Debug] {"$type":"Los.Common.Events.Application.LoanCreatedEvent, Los.Common.Events","LoanId":"0b98346f-542e-4f01-9d62-731b66675d43","CompanyId":"6878a5af-605c-4fc5-8234-7c91a7b3d61f","CreatedDateTime":"2018-07-10T18:00:03.6567985+03:00","LeadNumber":"104637813645","Id":"6039b4de-afbb-4d6f-a4e3-9ef103953bb6","Actor":"e7935e72-055e-41e8-a4d6-2308cb74c63e","AggregateId":"0b98346f-542e-4f01-9d62-731b66675d43","EntityId":"0b98346f-542e-4f01-9d62-731b66675d43","Version":"","Reason":"d6ff3ad1-bb8c-439b-97f0-e3907a705ec2"}
+2018-07-10 18:00:07.040 +03:00 [Error] Error in "ApplicationXComEventConsumer"
+Los.Core.Common.ConcurrencyException: Stale data cannot be updated.
+   at Los.EventSourcing.GetEventStore.GetEventStore.CheckEventsForConcurrency() in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.EventSourcing\GetEventStore\GetEventStore.cs:line 232
+   at Los.EventSourcing.GetEventStore.GetEventStore.<CommitAsync>d__16.MoveNext() in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.EventSourcing\GetEventStore\GetEventStore.cs:line 200
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Los.Core.Junk.TailUnitOfWork.<CommitAsync>d__19.MoveNext() in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Junk\TailUnitOfWork.cs:line 83
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Los.ClientPortal.XCom.Runner.ApplicationXComEventConsumer.<Consume>d__4.MoveNext() in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.ClientPortal.XCom.Runner\ApplicationXComEventConsumer.cs:line 84
+2018-07-10 18:00:07.050 +03:00 [Debug] {"$type":"Los.Common.Events.Application.LoanUpdatedEvent, Los.Common.Events","Names":["BorrowerProfileIds"],"Values":[["69b06b67-ac79-4dfb-8aa4-d85bae702496"]],"EntityType":0,"LoanId":"00000000-0000-0000-0000-000000000000","Id":"9f093d31-364f-44db-ba78-e6fe8319e590","Actor":"e7935e72-055e-41e8-a4d6-2308cb74c63e","AggregateId":"0b98346f-542e-4f01-9d62-731b66675d43","EntityId":"0b98346f-542e-4f01-9d62-731b66675d43","Version":"","Reason":"d6ff3ad1-bb8c-439b-97f0-e3907a705ec2"}
+2018-07-10 18:00:07.196 +03:00 [Error] Error in "ApplicationXComEventConsumer"
+Los.Core.Exceptions.AggregateNotFoundException: Correlation Id: 04ff38be-e04d-4aa6-97a7-efbb32c4b49f / User Message: Internal server error. / Message: Can't find aggregate [0b98346f-542e-4f01-9d62-731b66675d43] of type [Loan]!
+   at Los.Core.Domain.DomainRepositoryExtensions.GetOrThrowById[TAggregate](IDomainRepository`1 repository, Guid id) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Domain\DomainRepositoryExtensions.cs:line 23
+   at Los.ClientPortal.Events.XCom.ApplicationPortal.LoanUpdatedEventHandler.Handle(LoanUpdatedEvent message) in C:\IVELIN\PROJECTS\LOS\src\CQRS\Los.ClientPortal.Events\XCom\ApplicationPortal\LoanUpdatedEventHandler.cs:line 47
+   at Los.Core.Bus.Bus.<>c__DisplayClass7_0`1.<RegisterHandler>b__0(IMessage x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 61
+   at Los.Core.Bus.Bus.Publish[T](T event, IAggregateRoot _) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 45
+   at Los.Core.Events.EventManager.<>c__DisplayClass8_0`1.<Publish>b__0(IEventProcessor x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Los.Core.Events.EventManager.Publish[T](T event, IAggregateRoot aggregate) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at Los.Core.Events.IEventManagerExtensions.Publish[T](IEventManager eventManager, T event) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\IEventManager.cs:line 29
+   at Los.ClientPortal.XCom.Runner.ApplicationXComEventConsumer.<Consume>d__4.MoveNext() in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.ClientPortal.XCom.Runner\ApplicationXComEventConsumer.cs:line 81
+2018-07-10 18:00:07.203 +03:00 [Debug] {"$type":"Los.Common.Events.Application.BorrowerProfileCreatedEvent, Los.Common.Events","LoanId":"0b98346f-542e-4f01-9d62-731b66675d43","BorrowerNumber":1,"FirstName":"Daniel","MiddleName":null,"LastName":"Sofia","Suffix":null,"Phones":[{"$type":"Los.Common.Events.Application.BorrowerPhoneEventInfo, Los.Common.Events","Id":"456f76bb-b93a-468d-a8ac-9c9614b2c27c","PhoneNumber":"342-234-2424","PhoneType":null}],"Email":"d@d.d","Ssn":null,"BirthDate":null,"Dependents":null,"AgeOfDependents":[],"YearsOfSchool":null,"MaritalStatus":null,"PresentAddressId":null,"PresentAddressOccupancyStatus":null,"PresentAddressMonthlyRent":null,"PresentAddressTimeLivedMonths":null,"PreviousResidencies":[],"MailingAddressId":null,"PreferredContactMethod":3,"ServedForMilitary":null,"ActiveDutyExpDate":null,"MilitaryServiceTypes":[],"Id":"1b6f3b90-aec6-4e4d-9064-6e4ada8f51a4","Actor":"e7935e72-055e-41e8-a4d6-2308cb74c63e","AggregateId":"69b06b67-ac79-4dfb-8aa4-d85bae702496","EntityId":"69b06b67-ac79-4dfb-8aa4-d85bae702496","Version":"","Reason":"d6ff3ad1-bb8c-439b-97f0-e3907a705ec2"}
+2018-07-10 18:00:07.365 +03:00 [Error] Error in "ApplicationXComEventConsumer"
+Los.Core.Common.ConcurrencyException: Stale data cannot be updated.
+   at Los.EventSourcing.GetEventStore.GetEventStore.CheckEventsForConcurrency() in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.EventSourcing\GetEventStore\GetEventStore.cs:line 232
+   at Los.EventSourcing.GetEventStore.GetEventStore.<CommitAsync>d__16.MoveNext() in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.EventSourcing\GetEventStore\GetEventStore.cs:line 200
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Los.Core.Junk.TailUnitOfWork.<CommitAsync>d__19.MoveNext() in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Junk\TailUnitOfWork.cs:line 83
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Los.ClientPortal.XCom.Runner.ApplicationXComEventConsumer.<Consume>d__4.MoveNext() in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.ClientPortal.XCom.Runner\ApplicationXComEventConsumer.cs:line 84
+2018-07-10 18:00:07.378 +03:00 [Debug] {"$type":"Los.Common.Events.Application.LoanDetailsCreatedEvent, Los.Common.Events","LoanId":"0b98346f-542e-4f01-9d62-731b66675d43","LoanPurpose":1,"RefinancePrimaryPurposeType":null,"LoanAmount":null,"PurchasePrice":34524242424.0,"DownPayment":234234.0,"PropertyOwnership":1,"Id":"f407aa0a-1271-4275-9d47-4a2ed117965b","Actor":"e7935e72-055e-41e8-a4d6-2308cb74c63e","AggregateId":"1e21a930-78f3-4d6e-9bd8-5bb37fdc4183","EntityId":"1e21a930-78f3-4d6e-9bd8-5bb37fdc4183","Version":"","Reason":"d6ff3ad1-bb8c-439b-97f0-e3907a705ec2"}
+2018-07-10 18:00:07.477 +03:00 [Error] Error in "ApplicationXComEventConsumer"
+Los.Core.Exceptions.AggregateNotFoundException: Correlation Id: 8d269693-4c29-4066-b19c-8157eca144c5 / User Message: Internal server error. / Message: Can't find aggregate [0b98346f-542e-4f01-9d62-731b66675d43] of type [Loan]!
+   at Los.Core.Domain.DomainRepositoryExtensions.GetOrThrowById[TAggregate](IDomainRepository`1 repository, Guid id) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Domain\DomainRepositoryExtensions.cs:line 23
+   at Los.ClientPortal.Events.XCom.ApplicationPortal.LoanDetailsCreatedEventHandler.Handle(LoanDetailsCreatedEvent message) in C:\IVELIN\PROJECTS\LOS\src\CQRS\Los.ClientPortal.Events\XCom\ApplicationPortal\LoanDetailsCreatedEventHandler.cs:line 41
+   at Los.Core.Bus.Bus.<>c__DisplayClass7_0`1.<RegisterHandler>b__0(IMessage x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 61
+   at Los.Core.Bus.Bus.Publish[T](T event, IAggregateRoot _) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 45
+   at Los.Core.Events.EventManager.<>c__DisplayClass8_0`1.<Publish>b__0(IEventProcessor x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Los.Core.Events.EventManager.Publish[T](T event, IAggregateRoot aggregate) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at Los.Core.Events.IEventManagerExtensions.Publish[T](IEventManager eventManager, T event) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\IEventManager.cs:line 29
+   at Los.ClientPortal.XCom.Runner.ApplicationXComEventConsumer.<Consume>d__4.MoveNext() in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.ClientPortal.XCom.Runner\ApplicationXComEventConsumer.cs:line 81
+2018-07-10 18:00:07.483 +03:00 [Debug] {"$type":"Los.Common.Events.Application.LoanCreatedEvent, Los.Common.Events","LoanId":"0b98346f-542e-4f01-9d62-731b66675d43","CompanyId":"6878a5af-605c-4fc5-8234-7c91a7b3d61f","CreatedDateTime":"2018-07-10T18:00:03.6567985+03:00","LeadNumber":"104637813645","Id":"6039b4de-afbb-4d6f-a4e3-9ef103953bb6","Actor":"e7935e72-055e-41e8-a4d6-2308cb74c63e","AggregateId":"0b98346f-542e-4f01-9d62-731b66675d43","EntityId":"0b98346f-542e-4f01-9d62-731b66675d43","Version":"","Reason":"d6ff3ad1-bb8c-439b-97f0-e3907a705ec2"}
+2018-07-10 18:00:07.632 +03:00 [Error] Error in "ApplicationXComEventConsumer"
+Los.Core.Common.ConcurrencyException: Stale data cannot be updated.
+   at Los.EventSourcing.GetEventStore.GetEventStore.CheckEventsForConcurrency() in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.EventSourcing\GetEventStore\GetEventStore.cs:line 232
+   at Los.EventSourcing.GetEventStore.GetEventStore.<CommitAsync>d__16.MoveNext() in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.EventSourcing\GetEventStore\GetEventStore.cs:line 200
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Los.Core.Junk.TailUnitOfWork.<CommitAsync>d__19.MoveNext() in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Junk\TailUnitOfWork.cs:line 83
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Los.ClientPortal.XCom.Runner.ApplicationXComEventConsumer.<Consume>d__4.MoveNext() in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.ClientPortal.XCom.Runner\ApplicationXComEventConsumer.cs:line 84
+2018-07-10 18:00:07.641 +03:00 [Debug] {"$type":"Los.Common.Events.Application.LoanUpdatedEvent, Los.Common.Events","Names":["BorrowerProfileIds"],"Values":[["69b06b67-ac79-4dfb-8aa4-d85bae702496"]],"EntityType":0,"LoanId":"00000000-0000-0000-0000-000000000000","Id":"9f093d31-364f-44db-ba78-e6fe8319e590","Actor":"e7935e72-055e-41e8-a4d6-2308cb74c63e","AggregateId":"0b98346f-542e-4f01-9d62-731b66675d43","EntityId":"0b98346f-542e-4f01-9d62-731b66675d43","Version":"","Reason":"d6ff3ad1-bb8c-439b-97f0-e3907a705ec2"}
+2018-07-10 18:00:07.752 +03:00 [Error] Error in "ApplicationXComEventConsumer"
+Los.Core.Exceptions.AggregateNotFoundException: Correlation Id: fd0714b8-0a63-43f7-b4a8-11bf58498a66 / User Message: Internal server error. / Message: Can't find aggregate [0b98346f-542e-4f01-9d62-731b66675d43] of type [Loan]!
+   at Los.Core.Domain.DomainRepositoryExtensions.GetOrThrowById[TAggregate](IDomainRepository`1 repository, Guid id) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Domain\DomainRepositoryExtensions.cs:line 23
+   at Los.ClientPortal.Events.XCom.ApplicationPortal.LoanUpdatedEventHandler.Handle(LoanUpdatedEvent message) in C:\IVELIN\PROJECTS\LOS\src\CQRS\Los.ClientPortal.Events\XCom\ApplicationPortal\LoanUpdatedEventHandler.cs:line 47
+   at Los.Core.Bus.Bus.<>c__DisplayClass7_0`1.<RegisterHandler>b__0(IMessage x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 61
+   at Los.Core.Bus.Bus.Publish[T](T event, IAggregateRoot _) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 45
+   at Los.Core.Events.EventManager.<>c__DisplayClass8_0`1.<Publish>b__0(IEventProcessor x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Los.Core.Events.EventManager.Publish[T](T event, IAggregateRoot aggregate) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at Los.Core.Events.IEventManagerExtensions.Publish[T](IEventManager eventManager, T event) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\IEventManager.cs:line 29
+   at Los.ClientPortal.XCom.Runner.ApplicationXComEventConsumer.<Consume>d__4.MoveNext() in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.ClientPortal.XCom.Runner\ApplicationXComEventConsumer.cs:line 81
+2018-07-10 18:00:07.779 +03:00 [Debug] {"$type":"Los.Common.Events.Application.BorrowerProfileCreatedEvent, Los.Common.Events","LoanId":"0b98346f-542e-4f01-9d62-731b66675d43","BorrowerNumber":1,"FirstName":"Daniel","MiddleName":null,"LastName":"Sofia","Suffix":null,"Phones":[{"$type":"Los.Common.Events.Application.BorrowerPhoneEventInfo, Los.Common.Events","Id":"456f76bb-b93a-468d-a8ac-9c9614b2c27c","PhoneNumber":"342-234-2424","PhoneType":null}],"Email":"d@d.d","Ssn":null,"BirthDate":null,"Dependents":null,"AgeOfDependents":[],"YearsOfSchool":null,"MaritalStatus":null,"PresentAddressId":null,"PresentAddressOccupancyStatus":null,"PresentAddressMonthlyRent":null,"PresentAddressTimeLivedMonths":null,"PreviousResidencies":[],"MailingAddressId":null,"PreferredContactMethod":3,"ServedForMilitary":null,"ActiveDutyExpDate":null,"MilitaryServiceTypes":[],"Id":"1b6f3b90-aec6-4e4d-9064-6e4ada8f51a4","Actor":"e7935e72-055e-41e8-a4d6-2308cb74c63e","AggregateId":"69b06b67-ac79-4dfb-8aa4-d85bae702496","EntityId":"69b06b67-ac79-4dfb-8aa4-d85bae702496","Version":"","Reason":"d6ff3ad1-bb8c-439b-97f0-e3907a705ec2"}
+2018-07-10 18:00:07.958 +03:00 [Error] Error in "ApplicationXComEventConsumer"
+Los.Core.Common.ConcurrencyException: Stale data cannot be updated.
+   at Los.EventSourcing.GetEventStore.GetEventStore.CheckEventsForConcurrency() in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.EventSourcing\GetEventStore\GetEventStore.cs:line 232
+   at Los.EventSourcing.GetEventStore.GetEventStore.<CommitAsync>d__16.MoveNext() in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.EventSourcing\GetEventStore\GetEventStore.cs:line 200
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Los.Core.Junk.TailUnitOfWork.<CommitAsync>d__19.MoveNext() in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Junk\TailUnitOfWork.cs:line 83
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Los.ClientPortal.XCom.Runner.ApplicationXComEventConsumer.<Consume>d__4.MoveNext() in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.ClientPortal.XCom.Runner\ApplicationXComEventConsumer.cs:line 84
+2018-07-10 19:31:52.533 +03:00 [Information] Now starting LOS ClientPortal XCom Runner ...

@@ -1,0 +1,6 @@
+C:\IVELIN\PROJECTS\WORK FILES\RUN SCRIPTS\UsefulLOSStuff GITHUB REPO\usefullosstuff\NpmInstallUIs\bin\Debug\NpmInstallUIs.exe.config
+C:\IVELIN\PROJECTS\WORK FILES\RUN SCRIPTS\UsefulLOSStuff GITHUB REPO\usefullosstuff\NpmInstallUIs\bin\Debug\NpmInstallUIs.exe
+C:\IVELIN\PROJECTS\WORK FILES\RUN SCRIPTS\UsefulLOSStuff GITHUB REPO\usefullosstuff\NpmInstallUIs\bin\Debug\NpmInstallUIs.pdb
+C:\IVELIN\PROJECTS\WORK FILES\RUN SCRIPTS\UsefulLOSStuff GITHUB REPO\usefullosstuff\NpmInstallUIs\obj\Debug\NpmInstallUIs.csproj.CoreCompileInputs.cache
+C:\IVELIN\PROJECTS\WORK FILES\RUN SCRIPTS\UsefulLOSStuff GITHUB REPO\usefullosstuff\NpmInstallUIs\obj\Debug\NpmInstallUIs.exe
+C:\IVELIN\PROJECTS\WORK FILES\RUN SCRIPTS\UsefulLOSStuff GITHUB REPO\usefullosstuff\NpmInstallUIs\obj\Debug\NpmInstallUIs.pdb

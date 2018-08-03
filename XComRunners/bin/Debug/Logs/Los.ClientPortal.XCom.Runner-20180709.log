@@ -1,0 +1,350 @@
+2018-07-09 11:53:46.364 +03:00 [Information] Now starting LOS ClientPortal XCom Runner ...
+2018-07-09 11:53:47.484 +03:00 [Debug] {"$type":"Los.Common.Events.Application.LoanDetailsUpdatedEvent, Los.Common.Events","Names":["PurchasePrice"],"Values":[345.0],"EntityType":3,"LoanId":"8bf7362f-0bde-4700-9f55-6dcc1ec49aad","Id":"a4dd78ef-8e24-4646-a52a-1e0bf2fb1036","Actor":"d7e6ab4b-de85-4486-a768-5d2658de7543","AggregateId":"4cb2e541-2d82-4875-8393-66b0947fe30e","EntityId":"4cb2e541-2d82-4875-8393-66b0947fe30e","Version":"DAAAAA==","Reason":"67468a2f-5493-4eae-abee-88e69af2328c"}
+2018-07-09 11:55:16.167 +03:00 [Debug] {"$type":"Los.Common.Events.Application.LoanDetailsUpdatedEvent, Los.Common.Events","Names":["LoanAmount"],"Values":[111.0],"EntityType":3,"LoanId":"90687332-4275-4495-837b-c081a1ef2687","Id":"9a372ae9-b91d-43ec-9d65-9c0f1ee1a9cc","Actor":"509d3962-8e14-49da-8ec7-3972c60b0d40","AggregateId":"3d064286-3b00-4a05-b825-849154600fc7","EntityId":"3d064286-3b00-4a05-b825-849154600fc7","Version":"CQAAAA==","Reason":"844ee993-9abd-4636-adb3-8d562d8300f0"}
+2018-07-09 11:55:55.548 +03:00 [Debug] {"$type":"Los.Common.Events.Application.BorrowerProfileUpdatedEvent, Los.Common.Events","Names":["FirstName","Dependents"],"Values":["Antony",0],"EntityType":2,"LoanId":"90687332-4275-4495-837b-c081a1ef2687","Id":"a3167697-f699-4dae-a76a-10c8c7c50462","Actor":"509d3962-8e14-49da-8ec7-3972c60b0d40","AggregateId":"9b9c157d-1e86-454e-961f-a8e43087f290","EntityId":"9b9c157d-1e86-454e-961f-a8e43087f290","Version":"AAAAAA==","Reason":"1cfcb591-9d5e-422a-99b4-d18ade130bb9"}
+2018-07-09 12:02:34.988 +03:00 [Information] Now starting LOS ClientPortal XCom Runner ...
+2018-07-09 12:02:49.330 +03:00 [Debug] {"$type":"Los.Common.Events.Application.LoanDetailsUpdatedEvent, Los.Common.Events","Names":["PurchasePrice"],"Values":[22222.0],"EntityType":3,"LoanId":"90687332-4275-4495-837b-c081a1ef2687","Id":"1ee72ca5-9903-440c-87c9-1cf78be01ff0","Actor":"509d3962-8e14-49da-8ec7-3972c60b0d40","AggregateId":"3d064286-3b00-4a05-b825-849154600fc7","EntityId":"3d064286-3b00-4a05-b825-849154600fc7","Version":"CgAAAA==","Reason":"5fb80e8b-e26f-4fcd-825b-5836b0d897b3"}
+2018-07-09 12:06:32.447 +03:00 [Information] Now starting LOS ClientPortal XCom Runner ...
+2018-07-09 12:07:05.293 +03:00 [Debug] {"$type":"Los.Common.Events.Application.LoanDetailsUpdatedEvent, Los.Common.Events","Names":["LoanAmount"],"Values":[11111111111.0],"EntityType":3,"LoanId":"90687332-4275-4495-837b-c081a1ef2687","Id":"ee204d4d-d3a8-4341-9c53-0219a033784f","Actor":"509d3962-8e14-49da-8ec7-3972c60b0d40","AggregateId":"3d064286-3b00-4a05-b825-849154600fc7","EntityId":"3d064286-3b00-4a05-b825-849154600fc7","Version":"CwAAAA==","Reason":"1f5104f8-0ee8-4613-ab21-295c8b4bd133"}
+2018-07-09 12:09:06.553 +03:00 [Information] Now starting LOS ClientPortal XCom Runner ...
+2018-07-09 12:09:20.551 +03:00 [Debug] {"$type":"Los.Common.Events.Application.LoanDetailsUpdatedEvent, Los.Common.Events","Names":["LoanAmount","PurchasePrice"],"Values":[111.0,222.0],"EntityType":3,"LoanId":"90687332-4275-4495-837b-c081a1ef2687","Id":"f10f283c-35b1-419d-aa76-4fae7ee48eb3","Actor":"509d3962-8e14-49da-8ec7-3972c60b0d40","AggregateId":"3d064286-3b00-4a05-b825-849154600fc7","EntityId":"3d064286-3b00-4a05-b825-849154600fc7","Version":"DAAAAA==","Reason":"1ec9f7f8-5832-4f45-ac7f-33a1f19f49c7"}
+2018-07-09 15:12:57.859 +03:00 [Information] Now starting LOS ClientPortal XCom Runner ...
+2018-07-09 15:14:48.362 +03:00 [Debug] {"$type":"Los.Common.Events.Application.LoanDetailsUpdatedEvent, Los.Common.Events","Names":["LoanAmount"],"Values":[111456456.0],"EntityType":3,"LoanId":"90687332-4275-4495-837b-c081a1ef2687","Id":"b4f8e38e-214a-4aa9-949c-d8001ba2db8b","Actor":"509d3962-8e14-49da-8ec7-3972c60b0d40","AggregateId":"3d064286-3b00-4a05-b825-849154600fc7","EntityId":"3d064286-3b00-4a05-b825-849154600fc7","Version":"DQAAAA==","Reason":"6682fe6a-f191-4731-8885-2a47d673094d"}
+2018-07-09 15:14:49.209 +03:00 [Debug] {"$type":"Los.Common.Events.Application.LoanDetailsUpdatedEvent, Los.Common.Events","Names":["LoanAmount"],"Values":[111456456.0],"EntityType":3,"LoanId":"90687332-4275-4495-837b-c081a1ef2687","Id":"b4f8e38e-214a-4aa9-949c-d8001ba2db8b","Actor":"509d3962-8e14-49da-8ec7-3972c60b0d40","AggregateId":"3d064286-3b00-4a05-b825-849154600fc7","EntityId":"3d064286-3b00-4a05-b825-849154600fc7","Version":"DQAAAA==","Reason":"6682fe6a-f191-4731-8885-2a47d673094d"}
+2018-07-09 15:14:49.328 +03:00 [Debug] {"$type":"Los.Common.Events.Application.LoanDetailsUpdatedEvent, Los.Common.Events","Names":["LoanAmount"],"Values":[111456456.0],"EntityType":3,"LoanId":"90687332-4275-4495-837b-c081a1ef2687","Id":"b4f8e38e-214a-4aa9-949c-d8001ba2db8b","Actor":"509d3962-8e14-49da-8ec7-3972c60b0d40","AggregateId":"3d064286-3b00-4a05-b825-849154600fc7","EntityId":"3d064286-3b00-4a05-b825-849154600fc7","Version":"DQAAAA==","Reason":"6682fe6a-f191-4731-8885-2a47d673094d"}
+2018-07-09 15:14:49.435 +03:00 [Debug] {"$type":"Los.Common.Events.Application.LoanDetailsUpdatedEvent, Los.Common.Events","Names":["LoanAmount"],"Values":[111456456.0],"EntityType":3,"LoanId":"90687332-4275-4495-837b-c081a1ef2687","Id":"b4f8e38e-214a-4aa9-949c-d8001ba2db8b","Actor":"509d3962-8e14-49da-8ec7-3972c60b0d40","AggregateId":"3d064286-3b00-4a05-b825-849154600fc7","EntityId":"3d064286-3b00-4a05-b825-849154600fc7","Version":"DQAAAA==","Reason":"6682fe6a-f191-4731-8885-2a47d673094d"}
+2018-07-09 15:14:49.554 +03:00 [Debug] {"$type":"Los.Common.Events.Application.LoanDetailsUpdatedEvent, Los.Common.Events","Names":["LoanAmount"],"Values":[111456456.0],"EntityType":3,"LoanId":"90687332-4275-4495-837b-c081a1ef2687","Id":"b4f8e38e-214a-4aa9-949c-d8001ba2db8b","Actor":"509d3962-8e14-49da-8ec7-3972c60b0d40","AggregateId":"3d064286-3b00-4a05-b825-849154600fc7","EntityId":"3d064286-3b00-4a05-b825-849154600fc7","Version":"DQAAAA==","Reason":"6682fe6a-f191-4731-8885-2a47d673094d"}
+2018-07-09 15:14:49.667 +03:00 [Debug] {"$type":"Los.Common.Events.Application.LoanDetailsUpdatedEvent, Los.Common.Events","Names":["LoanAmount"],"Values":[111456456.0],"EntityType":3,"LoanId":"90687332-4275-4495-837b-c081a1ef2687","Id":"b4f8e38e-214a-4aa9-949c-d8001ba2db8b","Actor":"509d3962-8e14-49da-8ec7-3972c60b0d40","AggregateId":"3d064286-3b00-4a05-b825-849154600fc7","EntityId":"3d064286-3b00-4a05-b825-849154600fc7","Version":"DQAAAA==","Reason":"6682fe6a-f191-4731-8885-2a47d673094d"}
+2018-07-09 15:14:49.916 +03:00 [Error] (Exception message) Timestamp: 07/09/2018 12:14:49, FaultedMessageId: 3b800000-0daa-1c1b-9ffd-08d5e595908d, FaultId: 3b800000-0daa-1c1b-6484-08d5e595918f, Host.Assembly: "Los.ClientPortal.XCom.Runner"!
+2018-07-09 15:14:49.922 +03:00 [Error] (Exception) Type: "System.NullReferenceException", Source: "Los.ClientPortal.XCom.Runner", Message: "Object reference not set to an instance of an object."!
+2018-07-09 18:37:27.503 +03:00 [Information] Now starting LOS ClientPortal XCom Runner ...
+2018-07-09 18:37:28.673 +03:00 [Debug] {"$type":"Los.Common.Events.Application.LoanDetailsUpdatedEvent, Los.Common.Events","Names":["LoanAmount","DownPayment"],"Values":[1113453.0,333545454.0],"EntityType":3,"LoanId":"90687332-4275-4495-837b-c081a1ef2687","Id":"09fe3bd0-bb26-4bfd-96a0-82c7b5f191c2","Actor":"509d3962-8e14-49da-8ec7-3972c60b0d40","AggregateId":"3d064286-3b00-4a05-b825-849154600fc7","EntityId":"3d064286-3b00-4a05-b825-849154600fc7","Version":"IgAAAA==","Reason":"0366f30b-9be0-4457-ae92-8dedebbae353"}
+2018-07-09 18:37:30.438 +03:00 [Error] Error in "ApplicationXComEventConsumer"
+System.ArgumentNullException: Value cannot be null.
+Parameter name: state
+   at Los.Core.Utilities.Check.NotNull[T](T value, String parameterName) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Utilities\Check.cs:line 21
+   at Los.ClientPortal.Domain.LenderAddendum.SetMemento(ILenderAddendumState state) in C:\IVELIN\PROJECTS\LOS\src\DomainModel\Los.ClientPortal.Domain\LenderAddendum\LenderAddendum.cs:line 207
+   at Los.ClientPortal.Domain.LenderAddendum.Instantiate(ILenderAddendumState state) in C:\IVELIN\PROJECTS\LOS\src\DomainModel\Los.ClientPortal.Domain\LenderAddendum\LenderAddendum.cs:line 200
+   at Los.Core.Common.OriginatorFactory.<>c__DisplayClass3_0`2.<Register>b__0(Object x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Common\OriginatorFactory.cs:line 34
+   at Los.Core.Common.OriginatorFactory.Instantiate[T,TM](TM state) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Common\OriginatorFactory.cs:line 22
+   at Los.Core.DAL.TrackingDomainRepository`3.CreateAggregateRoot(TE dbEntity) in C:\IVELIN\PROJECTS\LOS\src\DAL\Los.Core.DAL\TrackingDomainRepository.cs:line 248
+   at Los.ClientPortal.DAL.Repositories.LenderAddendum.LenderAddendumRepository.GetByLoanId(Guid loanId) in C:\IVELIN\PROJECTS\LOS\src\DAL\Los.ClientPortal.DAL\Repositories\LenderAddendum\LenderAddendumRepository.cs:line 41
+   at Los.ClientPortal.Events.XCom.ApplicationPortal.SyncLenderAddendumEventHandler.Handle(LoanDetailsUpdatedEvent message) in C:\IVELIN\PROJECTS\LOS\src\CQRS\Los.ClientPortal.Events\XCom\ApplicationPortal\SyncLenderAddendumEventHandler.cs:line 45
+   at Los.Core.Bus.Bus.<>c__DisplayClass7_0`1.<RegisterHandler>b__0(IMessage x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 61
+   at Los.Core.Bus.Bus.Publish[T](T event, IAggregateRoot _) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 45
+   at Los.Core.Events.EventManager.<>c__DisplayClass8_0`1.<Publish>b__0(IEventProcessor x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Los.Core.Events.EventManager.Publish[T](T event, IAggregateRoot aggregate) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at Los.Core.Events.IEventManagerExtensions.Publish[T](IEventManager eventManager, T event) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\IEventManager.cs:line 29
+   at Los.ClientPortal.XCom.Runner.ApplicationXComEventConsumer.<Consume>d__4.MoveNext() in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.ClientPortal.XCom.Runner\ApplicationXComEventConsumer.cs:line 81
+2018-07-09 18:37:30.464 +03:00 [Debug] {"$type":"Los.Common.Events.Application.LoanDetailsUpdatedEvent, Los.Common.Events","Names":["LoanAmount"],"Values":[11134535675.0],"EntityType":3,"LoanId":"90687332-4275-4495-837b-c081a1ef2687","Id":"955256ca-d7da-4d94-a41c-9e4c0b78b266","Actor":"509d3962-8e14-49da-8ec7-3972c60b0d40","AggregateId":"3d064286-3b00-4a05-b825-849154600fc7","EntityId":"3d064286-3b00-4a05-b825-849154600fc7","Version":"IwAAAA==","Reason":"79c29932-0caf-4155-bbee-47aa1787960b"}
+2018-07-09 18:37:30.589 +03:00 [Error] Error in "ApplicationXComEventConsumer"
+System.ArgumentNullException: Value cannot be null.
+Parameter name: state
+   at Los.Core.Utilities.Check.NotNull[T](T value, String parameterName) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Utilities\Check.cs:line 21
+   at Los.ClientPortal.Domain.LenderAddendum.SetMemento(ILenderAddendumState state) in C:\IVELIN\PROJECTS\LOS\src\DomainModel\Los.ClientPortal.Domain\LenderAddendum\LenderAddendum.cs:line 207
+   at Los.ClientPortal.Domain.LenderAddendum.Instantiate(ILenderAddendumState state) in C:\IVELIN\PROJECTS\LOS\src\DomainModel\Los.ClientPortal.Domain\LenderAddendum\LenderAddendum.cs:line 200
+   at Los.Core.Common.OriginatorFactory.<>c__DisplayClass3_0`2.<Register>b__0(Object x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Common\OriginatorFactory.cs:line 34
+   at Los.Core.Common.OriginatorFactory.Instantiate[T,TM](TM state) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Common\OriginatorFactory.cs:line 22
+   at Los.Core.DAL.TrackingDomainRepository`3.CreateAggregateRoot(TE dbEntity) in C:\IVELIN\PROJECTS\LOS\src\DAL\Los.Core.DAL\TrackingDomainRepository.cs:line 248
+   at Los.ClientPortal.DAL.Repositories.LenderAddendum.LenderAddendumRepository.GetByLoanId(Guid loanId) in C:\IVELIN\PROJECTS\LOS\src\DAL\Los.ClientPortal.DAL\Repositories\LenderAddendum\LenderAddendumRepository.cs:line 41
+   at Los.ClientPortal.Events.XCom.ApplicationPortal.SyncLenderAddendumEventHandler.Handle(LoanDetailsUpdatedEvent message) in C:\IVELIN\PROJECTS\LOS\src\CQRS\Los.ClientPortal.Events\XCom\ApplicationPortal\SyncLenderAddendumEventHandler.cs:line 45
+   at Los.Core.Bus.Bus.<>c__DisplayClass7_0`1.<RegisterHandler>b__0(IMessage x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 61
+   at Los.Core.Bus.Bus.Publish[T](T event, IAggregateRoot _) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 45
+   at Los.Core.Events.EventManager.<>c__DisplayClass8_0`1.<Publish>b__0(IEventProcessor x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Los.Core.Events.EventManager.Publish[T](T event, IAggregateRoot aggregate) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at Los.Core.Events.IEventManagerExtensions.Publish[T](IEventManager eventManager, T event) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\IEventManager.cs:line 29
+   at Los.ClientPortal.XCom.Runner.ApplicationXComEventConsumer.<Consume>d__4.MoveNext() in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.ClientPortal.XCom.Runner\ApplicationXComEventConsumer.cs:line 81
+2018-07-09 18:37:30.602 +03:00 [Debug] {"$type":"Los.Common.Events.Application.LoanDetailsUpdatedEvent, Los.Common.Events","Names":["LoanAmount","DownPayment"],"Values":[1113453.0,333545454.0],"EntityType":3,"LoanId":"90687332-4275-4495-837b-c081a1ef2687","Id":"09fe3bd0-bb26-4bfd-96a0-82c7b5f191c2","Actor":"509d3962-8e14-49da-8ec7-3972c60b0d40","AggregateId":"3d064286-3b00-4a05-b825-849154600fc7","EntityId":"3d064286-3b00-4a05-b825-849154600fc7","Version":"IgAAAA==","Reason":"0366f30b-9be0-4457-ae92-8dedebbae353"}
+2018-07-09 18:37:30.723 +03:00 [Error] Error in "ApplicationXComEventConsumer"
+System.ArgumentNullException: Value cannot be null.
+Parameter name: state
+   at Los.Core.Utilities.Check.NotNull[T](T value, String parameterName) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Utilities\Check.cs:line 21
+   at Los.ClientPortal.Domain.LenderAddendum.SetMemento(ILenderAddendumState state) in C:\IVELIN\PROJECTS\LOS\src\DomainModel\Los.ClientPortal.Domain\LenderAddendum\LenderAddendum.cs:line 207
+   at Los.ClientPortal.Domain.LenderAddendum.Instantiate(ILenderAddendumState state) in C:\IVELIN\PROJECTS\LOS\src\DomainModel\Los.ClientPortal.Domain\LenderAddendum\LenderAddendum.cs:line 200
+   at Los.Core.Common.OriginatorFactory.<>c__DisplayClass3_0`2.<Register>b__0(Object x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Common\OriginatorFactory.cs:line 34
+   at Los.Core.Common.OriginatorFactory.Instantiate[T,TM](TM state) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Common\OriginatorFactory.cs:line 22
+   at Los.Core.DAL.TrackingDomainRepository`3.CreateAggregateRoot(TE dbEntity) in C:\IVELIN\PROJECTS\LOS\src\DAL\Los.Core.DAL\TrackingDomainRepository.cs:line 248
+   at Los.ClientPortal.DAL.Repositories.LenderAddendum.LenderAddendumRepository.GetByLoanId(Guid loanId) in C:\IVELIN\PROJECTS\LOS\src\DAL\Los.ClientPortal.DAL\Repositories\LenderAddendum\LenderAddendumRepository.cs:line 41
+   at Los.ClientPortal.Events.XCom.ApplicationPortal.SyncLenderAddendumEventHandler.Handle(LoanDetailsUpdatedEvent message) in C:\IVELIN\PROJECTS\LOS\src\CQRS\Los.ClientPortal.Events\XCom\ApplicationPortal\SyncLenderAddendumEventHandler.cs:line 45
+   at Los.Core.Bus.Bus.<>c__DisplayClass7_0`1.<RegisterHandler>b__0(IMessage x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 61
+   at Los.Core.Bus.Bus.Publish[T](T event, IAggregateRoot _) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 45
+   at Los.Core.Events.EventManager.<>c__DisplayClass8_0`1.<Publish>b__0(IEventProcessor x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Los.Core.Events.EventManager.Publish[T](T event, IAggregateRoot aggregate) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at Los.Core.Events.IEventManagerExtensions.Publish[T](IEventManager eventManager, T event) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\IEventManager.cs:line 29
+   at Los.ClientPortal.XCom.Runner.ApplicationXComEventConsumer.<Consume>d__4.MoveNext() in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.ClientPortal.XCom.Runner\ApplicationXComEventConsumer.cs:line 81
+2018-07-09 18:37:30.736 +03:00 [Debug] {"$type":"Los.Common.Events.Application.LoanDetailsUpdatedEvent, Los.Common.Events","Names":["LoanAmount"],"Values":[11134535675.0],"EntityType":3,"LoanId":"90687332-4275-4495-837b-c081a1ef2687","Id":"955256ca-d7da-4d94-a41c-9e4c0b78b266","Actor":"509d3962-8e14-49da-8ec7-3972c60b0d40","AggregateId":"3d064286-3b00-4a05-b825-849154600fc7","EntityId":"3d064286-3b00-4a05-b825-849154600fc7","Version":"IwAAAA==","Reason":"79c29932-0caf-4155-bbee-47aa1787960b"}
+2018-07-09 18:37:30.839 +03:00 [Error] Error in "ApplicationXComEventConsumer"
+System.ArgumentNullException: Value cannot be null.
+Parameter name: state
+   at Los.Core.Utilities.Check.NotNull[T](T value, String parameterName) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Utilities\Check.cs:line 21
+   at Los.ClientPortal.Domain.LenderAddendum.SetMemento(ILenderAddendumState state) in C:\IVELIN\PROJECTS\LOS\src\DomainModel\Los.ClientPortal.Domain\LenderAddendum\LenderAddendum.cs:line 207
+   at Los.ClientPortal.Domain.LenderAddendum.Instantiate(ILenderAddendumState state) in C:\IVELIN\PROJECTS\LOS\src\DomainModel\Los.ClientPortal.Domain\LenderAddendum\LenderAddendum.cs:line 200
+   at Los.Core.Common.OriginatorFactory.<>c__DisplayClass3_0`2.<Register>b__0(Object x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Common\OriginatorFactory.cs:line 34
+   at Los.Core.Common.OriginatorFactory.Instantiate[T,TM](TM state) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Common\OriginatorFactory.cs:line 22
+   at Los.Core.DAL.TrackingDomainRepository`3.CreateAggregateRoot(TE dbEntity) in C:\IVELIN\PROJECTS\LOS\src\DAL\Los.Core.DAL\TrackingDomainRepository.cs:line 248
+   at Los.ClientPortal.DAL.Repositories.LenderAddendum.LenderAddendumRepository.GetByLoanId(Guid loanId) in C:\IVELIN\PROJECTS\LOS\src\DAL\Los.ClientPortal.DAL\Repositories\LenderAddendum\LenderAddendumRepository.cs:line 41
+   at Los.ClientPortal.Events.XCom.ApplicationPortal.SyncLenderAddendumEventHandler.Handle(LoanDetailsUpdatedEvent message) in C:\IVELIN\PROJECTS\LOS\src\CQRS\Los.ClientPortal.Events\XCom\ApplicationPortal\SyncLenderAddendumEventHandler.cs:line 45
+   at Los.Core.Bus.Bus.<>c__DisplayClass7_0`1.<RegisterHandler>b__0(IMessage x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 61
+   at Los.Core.Bus.Bus.Publish[T](T event, IAggregateRoot _) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 45
+   at Los.Core.Events.EventManager.<>c__DisplayClass8_0`1.<Publish>b__0(IEventProcessor x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Los.Core.Events.EventManager.Publish[T](T event, IAggregateRoot aggregate) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at Los.Core.Events.IEventManagerExtensions.Publish[T](IEventManager eventManager, T event) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\IEventManager.cs:line 29
+   at Los.ClientPortal.XCom.Runner.ApplicationXComEventConsumer.<Consume>d__4.MoveNext() in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.ClientPortal.XCom.Runner\ApplicationXComEventConsumer.cs:line 81
+2018-07-09 18:37:30.856 +03:00 [Debug] {"$type":"Los.Common.Events.Application.LoanDetailsUpdatedEvent, Los.Common.Events","Names":["LoanAmount","DownPayment"],"Values":[1113453.0,333545454.0],"EntityType":3,"LoanId":"90687332-4275-4495-837b-c081a1ef2687","Id":"09fe3bd0-bb26-4bfd-96a0-82c7b5f191c2","Actor":"509d3962-8e14-49da-8ec7-3972c60b0d40","AggregateId":"3d064286-3b00-4a05-b825-849154600fc7","EntityId":"3d064286-3b00-4a05-b825-849154600fc7","Version":"IgAAAA==","Reason":"0366f30b-9be0-4457-ae92-8dedebbae353"}
+2018-07-09 18:37:30.989 +03:00 [Error] Error in "ApplicationXComEventConsumer"
+System.ArgumentNullException: Value cannot be null.
+Parameter name: state
+   at Los.Core.Utilities.Check.NotNull[T](T value, String parameterName) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Utilities\Check.cs:line 21
+   at Los.ClientPortal.Domain.LenderAddendum.SetMemento(ILenderAddendumState state) in C:\IVELIN\PROJECTS\LOS\src\DomainModel\Los.ClientPortal.Domain\LenderAddendum\LenderAddendum.cs:line 207
+   at Los.ClientPortal.Domain.LenderAddendum.Instantiate(ILenderAddendumState state) in C:\IVELIN\PROJECTS\LOS\src\DomainModel\Los.ClientPortal.Domain\LenderAddendum\LenderAddendum.cs:line 200
+   at Los.Core.Common.OriginatorFactory.<>c__DisplayClass3_0`2.<Register>b__0(Object x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Common\OriginatorFactory.cs:line 34
+   at Los.Core.Common.OriginatorFactory.Instantiate[T,TM](TM state) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Common\OriginatorFactory.cs:line 22
+   at Los.Core.DAL.TrackingDomainRepository`3.CreateAggregateRoot(TE dbEntity) in C:\IVELIN\PROJECTS\LOS\src\DAL\Los.Core.DAL\TrackingDomainRepository.cs:line 248
+   at Los.ClientPortal.DAL.Repositories.LenderAddendum.LenderAddendumRepository.GetByLoanId(Guid loanId) in C:\IVELIN\PROJECTS\LOS\src\DAL\Los.ClientPortal.DAL\Repositories\LenderAddendum\LenderAddendumRepository.cs:line 41
+   at Los.ClientPortal.Events.XCom.ApplicationPortal.SyncLenderAddendumEventHandler.Handle(LoanDetailsUpdatedEvent message) in C:\IVELIN\PROJECTS\LOS\src\CQRS\Los.ClientPortal.Events\XCom\ApplicationPortal\SyncLenderAddendumEventHandler.cs:line 45
+   at Los.Core.Bus.Bus.<>c__DisplayClass7_0`1.<RegisterHandler>b__0(IMessage x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 61
+   at Los.Core.Bus.Bus.Publish[T](T event, IAggregateRoot _) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 45
+   at Los.Core.Events.EventManager.<>c__DisplayClass8_0`1.<Publish>b__0(IEventProcessor x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Los.Core.Events.EventManager.Publish[T](T event, IAggregateRoot aggregate) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at Los.Core.Events.IEventManagerExtensions.Publish[T](IEventManager eventManager, T event) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\IEventManager.cs:line 29
+   at Los.ClientPortal.XCom.Runner.ApplicationXComEventConsumer.<Consume>d__4.MoveNext() in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.ClientPortal.XCom.Runner\ApplicationXComEventConsumer.cs:line 81
+2018-07-09 18:37:31.002 +03:00 [Debug] {"$type":"Los.Common.Events.Application.LoanDetailsUpdatedEvent, Los.Common.Events","Names":["LoanAmount"],"Values":[11134535675.0],"EntityType":3,"LoanId":"90687332-4275-4495-837b-c081a1ef2687","Id":"955256ca-d7da-4d94-a41c-9e4c0b78b266","Actor":"509d3962-8e14-49da-8ec7-3972c60b0d40","AggregateId":"3d064286-3b00-4a05-b825-849154600fc7","EntityId":"3d064286-3b00-4a05-b825-849154600fc7","Version":"IwAAAA==","Reason":"79c29932-0caf-4155-bbee-47aa1787960b"}
+2018-07-09 18:37:31.115 +03:00 [Error] Error in "ApplicationXComEventConsumer"
+System.ArgumentNullException: Value cannot be null.
+Parameter name: state
+   at Los.Core.Utilities.Check.NotNull[T](T value, String parameterName) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Utilities\Check.cs:line 21
+   at Los.ClientPortal.Domain.LenderAddendum.SetMemento(ILenderAddendumState state) in C:\IVELIN\PROJECTS\LOS\src\DomainModel\Los.ClientPortal.Domain\LenderAddendum\LenderAddendum.cs:line 207
+   at Los.ClientPortal.Domain.LenderAddendum.Instantiate(ILenderAddendumState state) in C:\IVELIN\PROJECTS\LOS\src\DomainModel\Los.ClientPortal.Domain\LenderAddendum\LenderAddendum.cs:line 200
+   at Los.Core.Common.OriginatorFactory.<>c__DisplayClass3_0`2.<Register>b__0(Object x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Common\OriginatorFactory.cs:line 34
+   at Los.Core.Common.OriginatorFactory.Instantiate[T,TM](TM state) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Common\OriginatorFactory.cs:line 22
+   at Los.Core.DAL.TrackingDomainRepository`3.CreateAggregateRoot(TE dbEntity) in C:\IVELIN\PROJECTS\LOS\src\DAL\Los.Core.DAL\TrackingDomainRepository.cs:line 248
+   at Los.ClientPortal.DAL.Repositories.LenderAddendum.LenderAddendumRepository.GetByLoanId(Guid loanId) in C:\IVELIN\PROJECTS\LOS\src\DAL\Los.ClientPortal.DAL\Repositories\LenderAddendum\LenderAddendumRepository.cs:line 41
+   at Los.ClientPortal.Events.XCom.ApplicationPortal.SyncLenderAddendumEventHandler.Handle(LoanDetailsUpdatedEvent message) in C:\IVELIN\PROJECTS\LOS\src\CQRS\Los.ClientPortal.Events\XCom\ApplicationPortal\SyncLenderAddendumEventHandler.cs:line 45
+   at Los.Core.Bus.Bus.<>c__DisplayClass7_0`1.<RegisterHandler>b__0(IMessage x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 61
+   at Los.Core.Bus.Bus.Publish[T](T event, IAggregateRoot _) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 45
+   at Los.Core.Events.EventManager.<>c__DisplayClass8_0`1.<Publish>b__0(IEventProcessor x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Los.Core.Events.EventManager.Publish[T](T event, IAggregateRoot aggregate) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at Los.Core.Events.IEventManagerExtensions.Publish[T](IEventManager eventManager, T event) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\IEventManager.cs:line 29
+   at Los.ClientPortal.XCom.Runner.ApplicationXComEventConsumer.<Consume>d__4.MoveNext() in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.ClientPortal.XCom.Runner\ApplicationXComEventConsumer.cs:line 81
+2018-07-09 18:37:31.125 +03:00 [Debug] {"$type":"Los.Common.Events.Application.LoanDetailsUpdatedEvent, Los.Common.Events","Names":["LoanAmount","DownPayment"],"Values":[1113453.0,333545454.0],"EntityType":3,"LoanId":"90687332-4275-4495-837b-c081a1ef2687","Id":"09fe3bd0-bb26-4bfd-96a0-82c7b5f191c2","Actor":"509d3962-8e14-49da-8ec7-3972c60b0d40","AggregateId":"3d064286-3b00-4a05-b825-849154600fc7","EntityId":"3d064286-3b00-4a05-b825-849154600fc7","Version":"IgAAAA==","Reason":"0366f30b-9be0-4457-ae92-8dedebbae353"}
+2018-07-09 18:37:31.252 +03:00 [Error] Error in "ApplicationXComEventConsumer"
+System.ArgumentNullException: Value cannot be null.
+Parameter name: state
+   at Los.Core.Utilities.Check.NotNull[T](T value, String parameterName) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Utilities\Check.cs:line 21
+   at Los.ClientPortal.Domain.LenderAddendum.SetMemento(ILenderAddendumState state) in C:\IVELIN\PROJECTS\LOS\src\DomainModel\Los.ClientPortal.Domain\LenderAddendum\LenderAddendum.cs:line 207
+   at Los.ClientPortal.Domain.LenderAddendum.Instantiate(ILenderAddendumState state) in C:\IVELIN\PROJECTS\LOS\src\DomainModel\Los.ClientPortal.Domain\LenderAddendum\LenderAddendum.cs:line 200
+   at Los.Core.Common.OriginatorFactory.<>c__DisplayClass3_0`2.<Register>b__0(Object x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Common\OriginatorFactory.cs:line 34
+   at Los.Core.Common.OriginatorFactory.Instantiate[T,TM](TM state) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Common\OriginatorFactory.cs:line 22
+   at Los.Core.DAL.TrackingDomainRepository`3.CreateAggregateRoot(TE dbEntity) in C:\IVELIN\PROJECTS\LOS\src\DAL\Los.Core.DAL\TrackingDomainRepository.cs:line 248
+   at Los.ClientPortal.DAL.Repositories.LenderAddendum.LenderAddendumRepository.GetByLoanId(Guid loanId) in C:\IVELIN\PROJECTS\LOS\src\DAL\Los.ClientPortal.DAL\Repositories\LenderAddendum\LenderAddendumRepository.cs:line 41
+   at Los.ClientPortal.Events.XCom.ApplicationPortal.SyncLenderAddendumEventHandler.Handle(LoanDetailsUpdatedEvent message) in C:\IVELIN\PROJECTS\LOS\src\CQRS\Los.ClientPortal.Events\XCom\ApplicationPortal\SyncLenderAddendumEventHandler.cs:line 45
+   at Los.Core.Bus.Bus.<>c__DisplayClass7_0`1.<RegisterHandler>b__0(IMessage x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 61
+   at Los.Core.Bus.Bus.Publish[T](T event, IAggregateRoot _) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 45
+   at Los.Core.Events.EventManager.<>c__DisplayClass8_0`1.<Publish>b__0(IEventProcessor x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Los.Core.Events.EventManager.Publish[T](T event, IAggregateRoot aggregate) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at Los.Core.Events.IEventManagerExtensions.Publish[T](IEventManager eventManager, T event) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\IEventManager.cs:line 29
+   at Los.ClientPortal.XCom.Runner.ApplicationXComEventConsumer.<Consume>d__4.MoveNext() in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.ClientPortal.XCom.Runner\ApplicationXComEventConsumer.cs:line 81
+2018-07-09 18:37:31.265 +03:00 [Debug] {"$type":"Los.Common.Events.Application.LoanDetailsUpdatedEvent, Los.Common.Events","Names":["LoanAmount"],"Values":[11134535675.0],"EntityType":3,"LoanId":"90687332-4275-4495-837b-c081a1ef2687","Id":"955256ca-d7da-4d94-a41c-9e4c0b78b266","Actor":"509d3962-8e14-49da-8ec7-3972c60b0d40","AggregateId":"3d064286-3b00-4a05-b825-849154600fc7","EntityId":"3d064286-3b00-4a05-b825-849154600fc7","Version":"IwAAAA==","Reason":"79c29932-0caf-4155-bbee-47aa1787960b"}
+2018-07-09 18:37:31.376 +03:00 [Error] Error in "ApplicationXComEventConsumer"
+System.ArgumentNullException: Value cannot be null.
+Parameter name: state
+   at Los.Core.Utilities.Check.NotNull[T](T value, String parameterName) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Utilities\Check.cs:line 21
+   at Los.ClientPortal.Domain.LenderAddendum.SetMemento(ILenderAddendumState state) in C:\IVELIN\PROJECTS\LOS\src\DomainModel\Los.ClientPortal.Domain\LenderAddendum\LenderAddendum.cs:line 207
+   at Los.ClientPortal.Domain.LenderAddendum.Instantiate(ILenderAddendumState state) in C:\IVELIN\PROJECTS\LOS\src\DomainModel\Los.ClientPortal.Domain\LenderAddendum\LenderAddendum.cs:line 200
+   at Los.Core.Common.OriginatorFactory.<>c__DisplayClass3_0`2.<Register>b__0(Object x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Common\OriginatorFactory.cs:line 34
+   at Los.Core.Common.OriginatorFactory.Instantiate[T,TM](TM state) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Common\OriginatorFactory.cs:line 22
+   at Los.Core.DAL.TrackingDomainRepository`3.CreateAggregateRoot(TE dbEntity) in C:\IVELIN\PROJECTS\LOS\src\DAL\Los.Core.DAL\TrackingDomainRepository.cs:line 248
+   at Los.ClientPortal.DAL.Repositories.LenderAddendum.LenderAddendumRepository.GetByLoanId(Guid loanId) in C:\IVELIN\PROJECTS\LOS\src\DAL\Los.ClientPortal.DAL\Repositories\LenderAddendum\LenderAddendumRepository.cs:line 41
+   at Los.ClientPortal.Events.XCom.ApplicationPortal.SyncLenderAddendumEventHandler.Handle(LoanDetailsUpdatedEvent message) in C:\IVELIN\PROJECTS\LOS\src\CQRS\Los.ClientPortal.Events\XCom\ApplicationPortal\SyncLenderAddendumEventHandler.cs:line 45
+   at Los.Core.Bus.Bus.<>c__DisplayClass7_0`1.<RegisterHandler>b__0(IMessage x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 61
+   at Los.Core.Bus.Bus.Publish[T](T event, IAggregateRoot _) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 45
+   at Los.Core.Events.EventManager.<>c__DisplayClass8_0`1.<Publish>b__0(IEventProcessor x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Los.Core.Events.EventManager.Publish[T](T event, IAggregateRoot aggregate) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at Los.Core.Events.IEventManagerExtensions.Publish[T](IEventManager eventManager, T event) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\IEventManager.cs:line 29
+   at Los.ClientPortal.XCom.Runner.ApplicationXComEventConsumer.<Consume>d__4.MoveNext() in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.ClientPortal.XCom.Runner\ApplicationXComEventConsumer.cs:line 81
+2018-07-09 18:37:31.387 +03:00 [Debug] {"$type":"Los.Common.Events.Application.LoanDetailsUpdatedEvent, Los.Common.Events","Names":["LoanAmount","DownPayment"],"Values":[1113453.0,333545454.0],"EntityType":3,"LoanId":"90687332-4275-4495-837b-c081a1ef2687","Id":"09fe3bd0-bb26-4bfd-96a0-82c7b5f191c2","Actor":"509d3962-8e14-49da-8ec7-3972c60b0d40","AggregateId":"3d064286-3b00-4a05-b825-849154600fc7","EntityId":"3d064286-3b00-4a05-b825-849154600fc7","Version":"IgAAAA==","Reason":"0366f30b-9be0-4457-ae92-8dedebbae353"}
+2018-07-09 18:37:31.511 +03:00 [Error] Error in "ApplicationXComEventConsumer"
+System.ArgumentNullException: Value cannot be null.
+Parameter name: state
+   at Los.Core.Utilities.Check.NotNull[T](T value, String parameterName) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Utilities\Check.cs:line 21
+   at Los.ClientPortal.Domain.LenderAddendum.SetMemento(ILenderAddendumState state) in C:\IVELIN\PROJECTS\LOS\src\DomainModel\Los.ClientPortal.Domain\LenderAddendum\LenderAddendum.cs:line 207
+   at Los.ClientPortal.Domain.LenderAddendum.Instantiate(ILenderAddendumState state) in C:\IVELIN\PROJECTS\LOS\src\DomainModel\Los.ClientPortal.Domain\LenderAddendum\LenderAddendum.cs:line 200
+   at Los.Core.Common.OriginatorFactory.<>c__DisplayClass3_0`2.<Register>b__0(Object x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Common\OriginatorFactory.cs:line 34
+   at Los.Core.Common.OriginatorFactory.Instantiate[T,TM](TM state) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Common\OriginatorFactory.cs:line 22
+   at Los.Core.DAL.TrackingDomainRepository`3.CreateAggregateRoot(TE dbEntity) in C:\IVELIN\PROJECTS\LOS\src\DAL\Los.Core.DAL\TrackingDomainRepository.cs:line 248
+   at Los.ClientPortal.DAL.Repositories.LenderAddendum.LenderAddendumRepository.GetByLoanId(Guid loanId) in C:\IVELIN\PROJECTS\LOS\src\DAL\Los.ClientPortal.DAL\Repositories\LenderAddendum\LenderAddendumRepository.cs:line 41
+   at Los.ClientPortal.Events.XCom.ApplicationPortal.SyncLenderAddendumEventHandler.Handle(LoanDetailsUpdatedEvent message) in C:\IVELIN\PROJECTS\LOS\src\CQRS\Los.ClientPortal.Events\XCom\ApplicationPortal\SyncLenderAddendumEventHandler.cs:line 45
+   at Los.Core.Bus.Bus.<>c__DisplayClass7_0`1.<RegisterHandler>b__0(IMessage x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 61
+   at Los.Core.Bus.Bus.Publish[T](T event, IAggregateRoot _) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 45
+   at Los.Core.Events.EventManager.<>c__DisplayClass8_0`1.<Publish>b__0(IEventProcessor x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Los.Core.Events.EventManager.Publish[T](T event, IAggregateRoot aggregate) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at Los.Core.Events.IEventManagerExtensions.Publish[T](IEventManager eventManager, T event) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\IEventManager.cs:line 29
+   at Los.ClientPortal.XCom.Runner.ApplicationXComEventConsumer.<Consume>d__4.MoveNext() in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.ClientPortal.XCom.Runner\ApplicationXComEventConsumer.cs:line 81
+2018-07-09 18:37:31.521 +03:00 [Debug] {"$type":"Los.Common.Events.Application.LoanDetailsUpdatedEvent, Los.Common.Events","Names":["LoanAmount"],"Values":[11134535675.0],"EntityType":3,"LoanId":"90687332-4275-4495-837b-c081a1ef2687","Id":"955256ca-d7da-4d94-a41c-9e4c0b78b266","Actor":"509d3962-8e14-49da-8ec7-3972c60b0d40","AggregateId":"3d064286-3b00-4a05-b825-849154600fc7","EntityId":"3d064286-3b00-4a05-b825-849154600fc7","Version":"IwAAAA==","Reason":"79c29932-0caf-4155-bbee-47aa1787960b"}
+2018-07-09 18:37:31.641 +03:00 [Error] Error in "ApplicationXComEventConsumer"
+System.ArgumentNullException: Value cannot be null.
+Parameter name: state
+   at Los.Core.Utilities.Check.NotNull[T](T value, String parameterName) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Utilities\Check.cs:line 21
+   at Los.ClientPortal.Domain.LenderAddendum.SetMemento(ILenderAddendumState state) in C:\IVELIN\PROJECTS\LOS\src\DomainModel\Los.ClientPortal.Domain\LenderAddendum\LenderAddendum.cs:line 207
+   at Los.ClientPortal.Domain.LenderAddendum.Instantiate(ILenderAddendumState state) in C:\IVELIN\PROJECTS\LOS\src\DomainModel\Los.ClientPortal.Domain\LenderAddendum\LenderAddendum.cs:line 200
+   at Los.Core.Common.OriginatorFactory.<>c__DisplayClass3_0`2.<Register>b__0(Object x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Common\OriginatorFactory.cs:line 34
+   at Los.Core.Common.OriginatorFactory.Instantiate[T,TM](TM state) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Common\OriginatorFactory.cs:line 22
+   at Los.Core.DAL.TrackingDomainRepository`3.CreateAggregateRoot(TE dbEntity) in C:\IVELIN\PROJECTS\LOS\src\DAL\Los.Core.DAL\TrackingDomainRepository.cs:line 248
+   at Los.ClientPortal.DAL.Repositories.LenderAddendum.LenderAddendumRepository.GetByLoanId(Guid loanId) in C:\IVELIN\PROJECTS\LOS\src\DAL\Los.ClientPortal.DAL\Repositories\LenderAddendum\LenderAddendumRepository.cs:line 41
+   at Los.ClientPortal.Events.XCom.ApplicationPortal.SyncLenderAddendumEventHandler.Handle(LoanDetailsUpdatedEvent message) in C:\IVELIN\PROJECTS\LOS\src\CQRS\Los.ClientPortal.Events\XCom\ApplicationPortal\SyncLenderAddendumEventHandler.cs:line 45
+   at Los.Core.Bus.Bus.<>c__DisplayClass7_0`1.<RegisterHandler>b__0(IMessage x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 61
+   at Los.Core.Bus.Bus.Publish[T](T event, IAggregateRoot _) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 45
+   at Los.Core.Events.EventManager.<>c__DisplayClass8_0`1.<Publish>b__0(IEventProcessor x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Los.Core.Events.EventManager.Publish[T](T event, IAggregateRoot aggregate) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at Los.Core.Events.IEventManagerExtensions.Publish[T](IEventManager eventManager, T event) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\IEventManager.cs:line 29
+   at Los.ClientPortal.XCom.Runner.ApplicationXComEventConsumer.<Consume>d__4.MoveNext() in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.ClientPortal.XCom.Runner\ApplicationXComEventConsumer.cs:line 81
+2018-07-09 18:37:31.653 +03:00 [Debug] {"$type":"Los.Common.Events.Application.LoanDetailsUpdatedEvent, Los.Common.Events","Names":["LoanAmount","DownPayment"],"Values":[1113453.0,333545454.0],"EntityType":3,"LoanId":"90687332-4275-4495-837b-c081a1ef2687","Id":"09fe3bd0-bb26-4bfd-96a0-82c7b5f191c2","Actor":"509d3962-8e14-49da-8ec7-3972c60b0d40","AggregateId":"3d064286-3b00-4a05-b825-849154600fc7","EntityId":"3d064286-3b00-4a05-b825-849154600fc7","Version":"IgAAAA==","Reason":"0366f30b-9be0-4457-ae92-8dedebbae353"}
+2018-07-09 18:37:31.781 +03:00 [Error] Error in "ApplicationXComEventConsumer"
+System.ArgumentNullException: Value cannot be null.
+Parameter name: state
+   at Los.Core.Utilities.Check.NotNull[T](T value, String parameterName) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Utilities\Check.cs:line 21
+   at Los.ClientPortal.Domain.LenderAddendum.SetMemento(ILenderAddendumState state) in C:\IVELIN\PROJECTS\LOS\src\DomainModel\Los.ClientPortal.Domain\LenderAddendum\LenderAddendum.cs:line 207
+   at Los.ClientPortal.Domain.LenderAddendum.Instantiate(ILenderAddendumState state) in C:\IVELIN\PROJECTS\LOS\src\DomainModel\Los.ClientPortal.Domain\LenderAddendum\LenderAddendum.cs:line 200
+   at Los.Core.Common.OriginatorFactory.<>c__DisplayClass3_0`2.<Register>b__0(Object x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Common\OriginatorFactory.cs:line 34
+   at Los.Core.Common.OriginatorFactory.Instantiate[T,TM](TM state) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Common\OriginatorFactory.cs:line 22
+   at Los.Core.DAL.TrackingDomainRepository`3.CreateAggregateRoot(TE dbEntity) in C:\IVELIN\PROJECTS\LOS\src\DAL\Los.Core.DAL\TrackingDomainRepository.cs:line 248
+   at Los.ClientPortal.DAL.Repositories.LenderAddendum.LenderAddendumRepository.GetByLoanId(Guid loanId) in C:\IVELIN\PROJECTS\LOS\src\DAL\Los.ClientPortal.DAL\Repositories\LenderAddendum\LenderAddendumRepository.cs:line 41
+   at Los.ClientPortal.Events.XCom.ApplicationPortal.SyncLenderAddendumEventHandler.Handle(LoanDetailsUpdatedEvent message) in C:\IVELIN\PROJECTS\LOS\src\CQRS\Los.ClientPortal.Events\XCom\ApplicationPortal\SyncLenderAddendumEventHandler.cs:line 45
+   at Los.Core.Bus.Bus.<>c__DisplayClass7_0`1.<RegisterHandler>b__0(IMessage x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 61
+   at Los.Core.Bus.Bus.Publish[T](T event, IAggregateRoot _) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 45
+   at Los.Core.Events.EventManager.<>c__DisplayClass8_0`1.<Publish>b__0(IEventProcessor x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Los.Core.Events.EventManager.Publish[T](T event, IAggregateRoot aggregate) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at Los.Core.Events.IEventManagerExtensions.Publish[T](IEventManager eventManager, T event) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\IEventManager.cs:line 29
+   at Los.ClientPortal.XCom.Runner.ApplicationXComEventConsumer.<Consume>d__4.MoveNext() in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.ClientPortal.XCom.Runner\ApplicationXComEventConsumer.cs:line 81
+2018-07-09 18:37:31.851 +03:00 [Error] (Exception message) Timestamp: 07/09/2018 15:37:31, FaultedMessageId: 3b800000-0daa-1c1b-8750-08d5e5b1ced1, FaultId: 3b800000-0daa-1c1b-5231-08d5e5b1e2b0, Host.Assembly: "Los.ClientPortal.XCom.Runner"!
+2018-07-09 18:37:31.856 +03:00 [Error] (Exception) Type: "System.ArgumentNullException", Source: "Los.Core", Message: "Value cannot be null.
+Parameter name: state"!
+2018-07-09 18:37:40.838 +03:00 [Information] Now starting LOS ClientPortal XCom Runner ...
+2018-07-09 18:37:50.257 +03:00 [Debug] {"$type":"Los.Common.Events.Application.LoanDetailsUpdatedEvent, Los.Common.Events","Names":["LoanAmount"],"Values":[111.0],"EntityType":3,"LoanId":"90687332-4275-4495-837b-c081a1ef2687","Id":"14ce4574-d7db-482c-a5fd-a23a631f7791","Actor":"509d3962-8e14-49da-8ec7-3972c60b0d40","AggregateId":"3d064286-3b00-4a05-b825-849154600fc7","EntityId":"3d064286-3b00-4a05-b825-849154600fc7","Version":"JAAAAA==","Reason":"43e92602-9996-4568-9c8f-9f8fa78f3af9"}
+2018-07-09 18:37:52.086 +03:00 [Error] Error in "ApplicationXComEventConsumer"
+System.ArgumentNullException: Value cannot be null.
+Parameter name: state
+   at Los.Core.Utilities.Check.NotNull[T](T value, String parameterName) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Utilities\Check.cs:line 21
+   at Los.ClientPortal.Domain.LenderAddendum.SetMemento(ILenderAddendumState state) in C:\IVELIN\PROJECTS\LOS\src\DomainModel\Los.ClientPortal.Domain\LenderAddendum\LenderAddendum.cs:line 207
+   at Los.ClientPortal.Domain.LenderAddendum.Instantiate(ILenderAddendumState state) in C:\IVELIN\PROJECTS\LOS\src\DomainModel\Los.ClientPortal.Domain\LenderAddendum\LenderAddendum.cs:line 200
+   at Los.Core.Common.OriginatorFactory.<>c__DisplayClass3_0`2.<Register>b__0(Object x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Common\OriginatorFactory.cs:line 34
+   at Los.Core.Common.OriginatorFactory.Instantiate[T,TM](TM state) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Common\OriginatorFactory.cs:line 22
+   at Los.Core.DAL.TrackingDomainRepository`3.CreateAggregateRoot(TE dbEntity) in C:\IVELIN\PROJECTS\LOS\src\DAL\Los.Core.DAL\TrackingDomainRepository.cs:line 248
+   at Los.ClientPortal.DAL.Repositories.LenderAddendum.LenderAddendumRepository.GetByLoanId(Guid loanId) in C:\IVELIN\PROJECTS\LOS\src\DAL\Los.ClientPortal.DAL\Repositories\LenderAddendum\LenderAddendumRepository.cs:line 41
+   at Los.ClientPortal.Events.XCom.ApplicationPortal.SyncLenderAddendumEventHandler.Handle(LoanDetailsUpdatedEvent message) in C:\IVELIN\PROJECTS\LOS\src\CQRS\Los.ClientPortal.Events\XCom\ApplicationPortal\SyncLenderAddendumEventHandler.cs:line 45
+   at Los.Core.Bus.Bus.<>c__DisplayClass7_0`1.<RegisterHandler>b__0(IMessage x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 61
+   at Los.Core.Bus.Bus.Publish[T](T event, IAggregateRoot _) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 45
+   at Los.Core.Events.EventManager.<>c__DisplayClass8_0`1.<Publish>b__0(IEventProcessor x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Los.Core.Events.EventManager.Publish[T](T event, IAggregateRoot aggregate) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at Los.Core.Events.IEventManagerExtensions.Publish[T](IEventManager eventManager, T event) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\IEventManager.cs:line 29
+   at Los.ClientPortal.XCom.Runner.ApplicationXComEventConsumer.<Consume>d__4.MoveNext() in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.ClientPortal.XCom.Runner\ApplicationXComEventConsumer.cs:line 81
+2018-07-09 18:37:52.133 +03:00 [Debug] {"$type":"Los.Common.Events.Application.LoanDetailsUpdatedEvent, Los.Common.Events","Names":["LoanAmount"],"Values":[111.0],"EntityType":3,"LoanId":"90687332-4275-4495-837b-c081a1ef2687","Id":"14ce4574-d7db-482c-a5fd-a23a631f7791","Actor":"509d3962-8e14-49da-8ec7-3972c60b0d40","AggregateId":"3d064286-3b00-4a05-b825-849154600fc7","EntityId":"3d064286-3b00-4a05-b825-849154600fc7","Version":"JAAAAA==","Reason":"43e92602-9996-4568-9c8f-9f8fa78f3af9"}
+2018-07-09 18:37:52.248 +03:00 [Error] Error in "ApplicationXComEventConsumer"
+System.ArgumentNullException: Value cannot be null.
+Parameter name: state
+   at Los.Core.Utilities.Check.NotNull[T](T value, String parameterName) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Utilities\Check.cs:line 21
+   at Los.ClientPortal.Domain.LenderAddendum.SetMemento(ILenderAddendumState state) in C:\IVELIN\PROJECTS\LOS\src\DomainModel\Los.ClientPortal.Domain\LenderAddendum\LenderAddendum.cs:line 207
+   at Los.ClientPortal.Domain.LenderAddendum.Instantiate(ILenderAddendumState state) in C:\IVELIN\PROJECTS\LOS\src\DomainModel\Los.ClientPortal.Domain\LenderAddendum\LenderAddendum.cs:line 200
+   at Los.Core.Common.OriginatorFactory.<>c__DisplayClass3_0`2.<Register>b__0(Object x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Common\OriginatorFactory.cs:line 34
+   at Los.Core.Common.OriginatorFactory.Instantiate[T,TM](TM state) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Common\OriginatorFactory.cs:line 22
+   at Los.Core.DAL.TrackingDomainRepository`3.CreateAggregateRoot(TE dbEntity) in C:\IVELIN\PROJECTS\LOS\src\DAL\Los.Core.DAL\TrackingDomainRepository.cs:line 248
+   at Los.ClientPortal.DAL.Repositories.LenderAddendum.LenderAddendumRepository.GetByLoanId(Guid loanId) in C:\IVELIN\PROJECTS\LOS\src\DAL\Los.ClientPortal.DAL\Repositories\LenderAddendum\LenderAddendumRepository.cs:line 41
+   at Los.ClientPortal.Events.XCom.ApplicationPortal.SyncLenderAddendumEventHandler.Handle(LoanDetailsUpdatedEvent message) in C:\IVELIN\PROJECTS\LOS\src\CQRS\Los.ClientPortal.Events\XCom\ApplicationPortal\SyncLenderAddendumEventHandler.cs:line 45
+   at Los.Core.Bus.Bus.<>c__DisplayClass7_0`1.<RegisterHandler>b__0(IMessage x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 61
+   at Los.Core.Bus.Bus.Publish[T](T event, IAggregateRoot _) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 45
+   at Los.Core.Events.EventManager.<>c__DisplayClass8_0`1.<Publish>b__0(IEventProcessor x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Los.Core.Events.EventManager.Publish[T](T event, IAggregateRoot aggregate) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at Los.Core.Events.IEventManagerExtensions.Publish[T](IEventManager eventManager, T event) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\IEventManager.cs:line 29
+   at Los.ClientPortal.XCom.Runner.ApplicationXComEventConsumer.<Consume>d__4.MoveNext() in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.ClientPortal.XCom.Runner\ApplicationXComEventConsumer.cs:line 81
+2018-07-09 18:37:52.259 +03:00 [Debug] {"$type":"Los.Common.Events.Application.LoanDetailsUpdatedEvent, Los.Common.Events","Names":["LoanAmount"],"Values":[111.0],"EntityType":3,"LoanId":"90687332-4275-4495-837b-c081a1ef2687","Id":"14ce4574-d7db-482c-a5fd-a23a631f7791","Actor":"509d3962-8e14-49da-8ec7-3972c60b0d40","AggregateId":"3d064286-3b00-4a05-b825-849154600fc7","EntityId":"3d064286-3b00-4a05-b825-849154600fc7","Version":"JAAAAA==","Reason":"43e92602-9996-4568-9c8f-9f8fa78f3af9"}
+2018-07-09 18:37:52.387 +03:00 [Error] Error in "ApplicationXComEventConsumer"
+System.ArgumentNullException: Value cannot be null.
+Parameter name: state
+   at Los.Core.Utilities.Check.NotNull[T](T value, String parameterName) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Utilities\Check.cs:line 21
+   at Los.ClientPortal.Domain.LenderAddendum.SetMemento(ILenderAddendumState state) in C:\IVELIN\PROJECTS\LOS\src\DomainModel\Los.ClientPortal.Domain\LenderAddendum\LenderAddendum.cs:line 207
+   at Los.ClientPortal.Domain.LenderAddendum.Instantiate(ILenderAddendumState state) in C:\IVELIN\PROJECTS\LOS\src\DomainModel\Los.ClientPortal.Domain\LenderAddendum\LenderAddendum.cs:line 200
+   at Los.Core.Common.OriginatorFactory.<>c__DisplayClass3_0`2.<Register>b__0(Object x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Common\OriginatorFactory.cs:line 34
+   at Los.Core.Common.OriginatorFactory.Instantiate[T,TM](TM state) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Common\OriginatorFactory.cs:line 22
+   at Los.Core.DAL.TrackingDomainRepository`3.CreateAggregateRoot(TE dbEntity) in C:\IVELIN\PROJECTS\LOS\src\DAL\Los.Core.DAL\TrackingDomainRepository.cs:line 248
+   at Los.ClientPortal.DAL.Repositories.LenderAddendum.LenderAddendumRepository.GetByLoanId(Guid loanId) in C:\IVELIN\PROJECTS\LOS\src\DAL\Los.ClientPortal.DAL\Repositories\LenderAddendum\LenderAddendumRepository.cs:line 41
+   at Los.ClientPortal.Events.XCom.ApplicationPortal.SyncLenderAddendumEventHandler.Handle(LoanDetailsUpdatedEvent message) in C:\IVELIN\PROJECTS\LOS\src\CQRS\Los.ClientPortal.Events\XCom\ApplicationPortal\SyncLenderAddendumEventHandler.cs:line 45
+   at Los.Core.Bus.Bus.<>c__DisplayClass7_0`1.<RegisterHandler>b__0(IMessage x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 61
+   at Los.Core.Bus.Bus.Publish[T](T event, IAggregateRoot _) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 45
+   at Los.Core.Events.EventManager.<>c__DisplayClass8_0`1.<Publish>b__0(IEventProcessor x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Los.Core.Events.EventManager.Publish[T](T event, IAggregateRoot aggregate) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at Los.Core.Events.IEventManagerExtensions.Publish[T](IEventManager eventManager, T event) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\IEventManager.cs:line 29
+   at Los.ClientPortal.XCom.Runner.ApplicationXComEventConsumer.<Consume>d__4.MoveNext() in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.ClientPortal.XCom.Runner\ApplicationXComEventConsumer.cs:line 81
+2018-07-09 18:37:52.402 +03:00 [Debug] {"$type":"Los.Common.Events.Application.LoanDetailsUpdatedEvent, Los.Common.Events","Names":["LoanAmount"],"Values":[111.0],"EntityType":3,"LoanId":"90687332-4275-4495-837b-c081a1ef2687","Id":"14ce4574-d7db-482c-a5fd-a23a631f7791","Actor":"509d3962-8e14-49da-8ec7-3972c60b0d40","AggregateId":"3d064286-3b00-4a05-b825-849154600fc7","EntityId":"3d064286-3b00-4a05-b825-849154600fc7","Version":"JAAAAA==","Reason":"43e92602-9996-4568-9c8f-9f8fa78f3af9"}
+2018-07-09 18:37:52.515 +03:00 [Error] Error in "ApplicationXComEventConsumer"
+System.ArgumentNullException: Value cannot be null.
+Parameter name: state
+   at Los.Core.Utilities.Check.NotNull[T](T value, String parameterName) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Utilities\Check.cs:line 21
+   at Los.ClientPortal.Domain.LenderAddendum.SetMemento(ILenderAddendumState state) in C:\IVELIN\PROJECTS\LOS\src\DomainModel\Los.ClientPortal.Domain\LenderAddendum\LenderAddendum.cs:line 207
+   at Los.ClientPortal.Domain.LenderAddendum.Instantiate(ILenderAddendumState state) in C:\IVELIN\PROJECTS\LOS\src\DomainModel\Los.ClientPortal.Domain\LenderAddendum\LenderAddendum.cs:line 200
+   at Los.Core.Common.OriginatorFactory.<>c__DisplayClass3_0`2.<Register>b__0(Object x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Common\OriginatorFactory.cs:line 34
+   at Los.Core.Common.OriginatorFactory.Instantiate[T,TM](TM state) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Common\OriginatorFactory.cs:line 22
+   at Los.Core.DAL.TrackingDomainRepository`3.CreateAggregateRoot(TE dbEntity) in C:\IVELIN\PROJECTS\LOS\src\DAL\Los.Core.DAL\TrackingDomainRepository.cs:line 248
+   at Los.ClientPortal.DAL.Repositories.LenderAddendum.LenderAddendumRepository.GetByLoanId(Guid loanId) in C:\IVELIN\PROJECTS\LOS\src\DAL\Los.ClientPortal.DAL\Repositories\LenderAddendum\LenderAddendumRepository.cs:line 41
+   at Los.ClientPortal.Events.XCom.ApplicationPortal.SyncLenderAddendumEventHandler.Handle(LoanDetailsUpdatedEvent message) in C:\IVELIN\PROJECTS\LOS\src\CQRS\Los.ClientPortal.Events\XCom\ApplicationPortal\SyncLenderAddendumEventHandler.cs:line 45
+   at Los.Core.Bus.Bus.<>c__DisplayClass7_0`1.<RegisterHandler>b__0(IMessage x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 61
+   at Los.Core.Bus.Bus.Publish[T](T event, IAggregateRoot _) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 45
+   at Los.Core.Events.EventManager.<>c__DisplayClass8_0`1.<Publish>b__0(IEventProcessor x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Los.Core.Events.EventManager.Publish[T](T event, IAggregateRoot aggregate) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at Los.Core.Events.IEventManagerExtensions.Publish[T](IEventManager eventManager, T event) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\IEventManager.cs:line 29
+   at Los.ClientPortal.XCom.Runner.ApplicationXComEventConsumer.<Consume>d__4.MoveNext() in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.ClientPortal.XCom.Runner\ApplicationXComEventConsumer.cs:line 81
+2018-07-09 18:37:52.524 +03:00 [Debug] {"$type":"Los.Common.Events.Application.LoanDetailsUpdatedEvent, Los.Common.Events","Names":["LoanAmount"],"Values":[111.0],"EntityType":3,"LoanId":"90687332-4275-4495-837b-c081a1ef2687","Id":"14ce4574-d7db-482c-a5fd-a23a631f7791","Actor":"509d3962-8e14-49da-8ec7-3972c60b0d40","AggregateId":"3d064286-3b00-4a05-b825-849154600fc7","EntityId":"3d064286-3b00-4a05-b825-849154600fc7","Version":"JAAAAA==","Reason":"43e92602-9996-4568-9c8f-9f8fa78f3af9"}
+2018-07-09 18:37:52.644 +03:00 [Error] Error in "ApplicationXComEventConsumer"
+System.ArgumentNullException: Value cannot be null.
+Parameter name: state
+   at Los.Core.Utilities.Check.NotNull[T](T value, String parameterName) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Utilities\Check.cs:line 21
+   at Los.ClientPortal.Domain.LenderAddendum.SetMemento(ILenderAddendumState state) in C:\IVELIN\PROJECTS\LOS\src\DomainModel\Los.ClientPortal.Domain\LenderAddendum\LenderAddendum.cs:line 207
+   at Los.ClientPortal.Domain.LenderAddendum.Instantiate(ILenderAddendumState state) in C:\IVELIN\PROJECTS\LOS\src\DomainModel\Los.ClientPortal.Domain\LenderAddendum\LenderAddendum.cs:line 200
+   at Los.Core.Common.OriginatorFactory.<>c__DisplayClass3_0`2.<Register>b__0(Object x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Common\OriginatorFactory.cs:line 34
+   at Los.Core.Common.OriginatorFactory.Instantiate[T,TM](TM state) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Common\OriginatorFactory.cs:line 22
+   at Los.Core.DAL.TrackingDomainRepository`3.CreateAggregateRoot(TE dbEntity) in C:\IVELIN\PROJECTS\LOS\src\DAL\Los.Core.DAL\TrackingDomainRepository.cs:line 248
+   at Los.ClientPortal.DAL.Repositories.LenderAddendum.LenderAddendumRepository.GetByLoanId(Guid loanId) in C:\IVELIN\PROJECTS\LOS\src\DAL\Los.ClientPortal.DAL\Repositories\LenderAddendum\LenderAddendumRepository.cs:line 41
+   at Los.ClientPortal.Events.XCom.ApplicationPortal.SyncLenderAddendumEventHandler.Handle(LoanDetailsUpdatedEvent message) in C:\IVELIN\PROJECTS\LOS\src\CQRS\Los.ClientPortal.Events\XCom\ApplicationPortal\SyncLenderAddendumEventHandler.cs:line 45
+   at Los.Core.Bus.Bus.<>c__DisplayClass7_0`1.<RegisterHandler>b__0(IMessage x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 61
+   at Los.Core.Bus.Bus.Publish[T](T event, IAggregateRoot _) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 45
+   at Los.Core.Events.EventManager.<>c__DisplayClass8_0`1.<Publish>b__0(IEventProcessor x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Los.Core.Events.EventManager.Publish[T](T event, IAggregateRoot aggregate) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at Los.Core.Events.IEventManagerExtensions.Publish[T](IEventManager eventManager, T event) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\IEventManager.cs:line 29
+   at Los.ClientPortal.XCom.Runner.ApplicationXComEventConsumer.<Consume>d__4.MoveNext() in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.ClientPortal.XCom.Runner\ApplicationXComEventConsumer.cs:line 81
+2018-07-09 18:37:52.653 +03:00 [Debug] {"$type":"Los.Common.Events.Application.LoanDetailsUpdatedEvent, Los.Common.Events","Names":["LoanAmount"],"Values":[111.0],"EntityType":3,"LoanId":"90687332-4275-4495-837b-c081a1ef2687","Id":"14ce4574-d7db-482c-a5fd-a23a631f7791","Actor":"509d3962-8e14-49da-8ec7-3972c60b0d40","AggregateId":"3d064286-3b00-4a05-b825-849154600fc7","EntityId":"3d064286-3b00-4a05-b825-849154600fc7","Version":"JAAAAA==","Reason":"43e92602-9996-4568-9c8f-9f8fa78f3af9"}
+2018-07-09 18:37:52.763 +03:00 [Error] Error in "ApplicationXComEventConsumer"
+System.ArgumentNullException: Value cannot be null.
+Parameter name: state
+   at Los.Core.Utilities.Check.NotNull[T](T value, String parameterName) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Utilities\Check.cs:line 21
+   at Los.ClientPortal.Domain.LenderAddendum.SetMemento(ILenderAddendumState state) in C:\IVELIN\PROJECTS\LOS\src\DomainModel\Los.ClientPortal.Domain\LenderAddendum\LenderAddendum.cs:line 207
+   at Los.ClientPortal.Domain.LenderAddendum.Instantiate(ILenderAddendumState state) in C:\IVELIN\PROJECTS\LOS\src\DomainModel\Los.ClientPortal.Domain\LenderAddendum\LenderAddendum.cs:line 200
+   at Los.Core.Common.OriginatorFactory.<>c__DisplayClass3_0`2.<Register>b__0(Object x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Common\OriginatorFactory.cs:line 34
+   at Los.Core.Common.OriginatorFactory.Instantiate[T,TM](TM state) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Common\OriginatorFactory.cs:line 22
+   at Los.Core.DAL.TrackingDomainRepository`3.CreateAggregateRoot(TE dbEntity) in C:\IVELIN\PROJECTS\LOS\src\DAL\Los.Core.DAL\TrackingDomainRepository.cs:line 248
+   at Los.ClientPortal.DAL.Repositories.LenderAddendum.LenderAddendumRepository.GetByLoanId(Guid loanId) in C:\IVELIN\PROJECTS\LOS\src\DAL\Los.ClientPortal.DAL\Repositories\LenderAddendum\LenderAddendumRepository.cs:line 41
+   at Los.ClientPortal.Events.XCom.ApplicationPortal.SyncLenderAddendumEventHandler.Handle(LoanDetailsUpdatedEvent message) in C:\IVELIN\PROJECTS\LOS\src\CQRS\Los.ClientPortal.Events\XCom\ApplicationPortal\SyncLenderAddendumEventHandler.cs:line 45
+   at Los.Core.Bus.Bus.<>c__DisplayClass7_0`1.<RegisterHandler>b__0(IMessage x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 61
+   at Los.Core.Bus.Bus.Publish[T](T event, IAggregateRoot _) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Bus\Bus.cs:line 45
+   at Los.Core.Events.EventManager.<>c__DisplayClass8_0`1.<Publish>b__0(IEventProcessor x) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Los.Core.Events.EventManager.Publish[T](T event, IAggregateRoot aggregate) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\EventManager.cs:line 65
+   at Los.Core.Events.IEventManagerExtensions.Publish[T](IEventManager eventManager, T event) in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Events\IEventManager.cs:line 29
+   at Los.ClientPortal.XCom.Runner.ApplicationXComEventConsumer.<Consume>d__4.MoveNext() in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.ClientPortal.XCom.Runner\ApplicationXComEventConsumer.cs:line 81
+2018-07-09 18:37:52.957 +03:00 [Error] (Exception message) Timestamp: 07/09/2018 15:37:52, FaultedMessageId: 3b800000-0daa-1c1b-ed30-08d5e5b1ed91, FaultId: 3b800000-0daa-1c1b-bc31-08d5e5b1ef32, Host.Assembly: "Los.ClientPortal.XCom.Runner"!
+2018-07-09 18:37:52.960 +03:00 [Error] (Exception) Type: "System.ArgumentNullException", Source: "Los.Core", Message: "Value cannot be null.
+Parameter name: state"!

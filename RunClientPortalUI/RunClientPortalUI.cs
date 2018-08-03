@@ -6,7 +6,7 @@ namespace RunClientPortalUI
     {
         static void Main(string[] args)
         {
-            string ClientPortalPath = @"C:\IVELIN\PROJECTS\LOS\src\Web\Los.ClientPortal.UI";
+            string ClientPortalPath = @"C:\IVELIN\PROJECTS\LOS\src\Los.ClientPortal\Web\Los.ClientPortal.UI";
 
             var RunClientPortalUI = new ProcessStartInfo
             {

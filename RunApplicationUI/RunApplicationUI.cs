@@ -6,7 +6,7 @@ namespace RunApplicationUI
     {
         static void Main(string[] args)
         {
-            string ApplicationPath = @"C:\IVELIN\PROJECTS\LOS\src\Web\Los.Application.UI";
+            string ApplicationPath = @"C:\IVELIN\PROJECTS\LOS\src\Los.Application\Web\Los.Application.UI";
             var RunApplicationUI = new ProcessStartInfo
             {
                 FileName = "cmd",

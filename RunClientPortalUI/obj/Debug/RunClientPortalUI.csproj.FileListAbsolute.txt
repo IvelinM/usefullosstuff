@@ -5,3 +5,10 @@ C:\IVELIN\PROJECTS\WORK FILES\RUN SCRIPTS\UsefulLOSStuff\RunClientPortalUI\obj\D
 C:\IVELIN\PROJECTS\WORK FILES\RUN SCRIPTS\UsefulLOSStuff\RunClientPortalUI\obj\Debug\RunClientPortalUI.csproj.CoreCompileInputs.cache
 C:\IVELIN\PROJECTS\WORK FILES\RUN SCRIPTS\UsefulLOSStuff\RunClientPortalUI\obj\Debug\RunClientPortalUI.exe
 C:\IVELIN\PROJECTS\WORK FILES\RUN SCRIPTS\UsefulLOSStuff\RunClientPortalUI\obj\Debug\RunClientPortalUI.pdb
+C:\IVELIN\PROJECTS\WORK FILES\RUN SCRIPTS\UsefulLOSStuff GITHUB REPO\usefullosstuff\RunClientPortalUI\bin\Debug\RunClientPortalUI.exe.config
+C:\IVELIN\PROJECTS\WORK FILES\RUN SCRIPTS\UsefulLOSStuff GITHUB REPO\usefullosstuff\RunClientPortalUI\bin\Debug\RunClientPortalUI.exe
+C:\IVELIN\PROJECTS\WORK FILES\RUN SCRIPTS\UsefulLOSStuff GITHUB REPO\usefullosstuff\RunClientPortalUI\bin\Debug\RunClientPortalUI.pdb
+C:\IVELIN\PROJECTS\WORK FILES\RUN SCRIPTS\UsefulLOSStuff GITHUB REPO\usefullosstuff\RunClientPortalUI\obj\Debug\RunClientPortalUI.csproj.CoreCompileInputs.cache
+C:\IVELIN\PROJECTS\WORK FILES\RUN SCRIPTS\UsefulLOSStuff GITHUB REPO\usefullosstuff\RunClientPortalUI\obj\Debug\RunClientPortalUI.exe
+C:\IVELIN\PROJECTS\WORK FILES\RUN SCRIPTS\UsefulLOSStuff GITHUB REPO\usefullosstuff\RunClientPortalUI\obj\Debug\RunClientPortalUI.pdb
+C:\IVELIN\PROJECTS\WORK FILES\RUN SCRIPTS\UsefulLOSStuff GITHUB REPO\usefullosstuff\RunClientPortalUI\obj\Debug\RunClientPortalUI.csprojResolveAssemblyReference.cache

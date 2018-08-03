@@ -1,0 +1,127 @@
+2018-07-10 17:52:14.907 +03:00 [Information] Now starting LOS Application XCom Runner ...
+2018-07-10 17:52:16.236 +03:00 [Debug] {"$type":"Los.Common.Events.ClientPortal.LenderAddendumCreatedEvent, Los.Common.Events","LoanId":"a71abb53-2917-428c-8d81-8ac2fcc73679","Improvements":45646.0,"Land":456.0,"Refinance":456.0,"PaidOff":456.0,"ClosingCosts":456.0,"DiscountPoints":456.0,"TotalDueFromBorrower":null,"LoanAmountExludingInsurance":null,"FinancedMortgageInsurance":564564.0,"OtherMortgageLoans":546.0,"TotalMortgageLoans":null,"SellerCredits":456.0,"OtherCredits":456.0,"TotalCredits":null,"TotalMortgageAndTotalCredits":null,"TotalCashFromBorrower":null,"Id":"301d4e51-0161-43ed-9363-d2fb4bbb6539","Actor":"00000000-0000-0000-0000-000000000000","AggregateId":"a71abb53-2917-428c-8d81-8ac2fcc73679","EntityId":"00000000-0000-0000-0000-000000000000","Version":"","Reason":"00000000-0000-0000-0000-000000000000"}
+2018-07-10 17:52:16.255 +03:00 [Debug] {"$type":"Los.Common.Events.ClientPortal.CompanyCreatedEvent, Los.Common.Events","Name":"Provitech Solutions Ltd","NmlsId":null,"Address":{"$type":"Los.Core.Types.Address, Los.Core","AddressLine1":"bul. Vasil Levski 15-17","AddressLine2":"asd","CountryCode":null,"City":"Sofia","ZipCode":"87965","Unit":null,"State":1,"County":null,"CurrentProgress":{"$type":"Los.Core.Domain.Progress, Los.Core","CurrentProgress":null,"Percent":57.142857142857142857142857143,"InProgress":true,"Completed":false,"IsEmpty":false}},"PhoneNumber":"222-222-2222","Website":"http://none.com/","TaxIdType":2,"TaxIdSsn":"987-65-4321","TaxIdEin":null,"ContactName":"Ivelin","ContactPhoneNumber":"222-222-2222","BusinessType":2,"SubDomain":"provitech-solutions-ltd","Id":"8f4081fe-c8d2-46ee-92d3-1f31b034934c","Actor":"b419611e-d853-4a28-af2d-057f1172b209","AggregateId":"6878a5af-605c-4fc5-8234-7c91a7b3d61f","EntityId":"6878a5af-605c-4fc5-8234-7c91a7b3d61f","Version":"","Reason":"cea89b60-60df-445d-9ad8-279cadb93d41"}
+2018-07-10 17:52:18.564 +03:00 [Error] Error in "ClientPortalXComEventConsumer"
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Cannot insert duplicate key row in object 'dbo.LoanApp_Companies' with unique index 'IX_LoanApp_Companies_SubDomain'. The duplicate key value is (provitech-solutions-ltd).
+The statement has been terminated.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__174_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd(Task task)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.<ExecuteAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.<ExecuteAsync>d__32.MoveNext()
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.<ExecuteAsync>d__32.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.<ExecuteAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.<ExecuteAsync>d__7`2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<SaveChangesAsync>d__61.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<SaveChangesAsync>d__59.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.DbContext.<SaveChangesAsync>d__48.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Los.Core.DAL.Context.DbContextUnitOfWork`1.<CommitAsync>d__13.MoveNext() in C:\IVELIN\PROJECTS\LOS\src\DAL\Los.Core.DAL\Context\DbContextUnitOfWork.cs:line 75
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Los.Core.Junk.TailUnitOfWork.<CommitAsync>d__19.MoveNext() in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Junk\TailUnitOfWork.cs:line 92
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Los.Application.XCom.Runner.ClientPortalXComEventConsumer.<Consume>d__4.MoveNext() in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.Application.XCom.Runner\ClientPortalXComEventConsumer.cs:line 83
+2018-07-10 17:52:18.621 +03:00 [Debug] {"$type":"Los.Common.Events.ClientPortal.LenderAddendumCreatedEvent, Los.Common.Events","LoanId":"a71abb53-2917-428c-8d81-8ac2fcc73679","Improvements":45646.0,"Land":456.0,"Refinance":456.0,"PaidOff":456.0,"ClosingCosts":456.0,"DiscountPoints":456.0,"TotalDueFromBorrower":null,"LoanAmountExludingInsurance":null,"FinancedMortgageInsurance":564564.0,"OtherMortgageLoans":546.0,"TotalMortgageLoans":null,"SellerCredits":456.0,"OtherCredits":456.0,"TotalCredits":null,"TotalMortgageAndTotalCredits":null,"TotalCashFromBorrower":null,"Id":"301d4e51-0161-43ed-9363-d2fb4bbb6539","Actor":"00000000-0000-0000-0000-000000000000","AggregateId":"a71abb53-2917-428c-8d81-8ac2fcc73679","EntityId":"00000000-0000-0000-0000-000000000000","Version":"","Reason":"00000000-0000-0000-0000-000000000000"}
+2018-07-10 17:52:18.625 +03:00 [Debug] {"$type":"Los.Common.Events.ClientPortal.LenderAddendumCreatedEvent, Los.Common.Events","LoanId":"a71abb53-2917-428c-8d81-8ac2fcc73679","Improvements":45646.0,"Land":456.0,"Refinance":456.0,"PaidOff":456.0,"ClosingCosts":456.0,"DiscountPoints":456.0,"TotalDueFromBorrower":null,"LoanAmountExludingInsurance":null,"FinancedMortgageInsurance":564564.0,"OtherMortgageLoans":546.0,"TotalMortgageLoans":null,"SellerCredits":456.0,"OtherCredits":456.0,"TotalCredits":null,"TotalMortgageAndTotalCredits":null,"TotalCashFromBorrower":null,"Id":"301d4e51-0161-43ed-9363-d2fb4bbb6539","Actor":"00000000-0000-0000-0000-000000000000","AggregateId":"a71abb53-2917-428c-8d81-8ac2fcc73679","EntityId":"00000000-0000-0000-0000-000000000000","Version":"","Reason":"00000000-0000-0000-0000-000000000000"}
+2018-07-10 17:52:18.647 +03:00 [Debug] {"$type":"Los.Common.Events.ClientPortal.CompanyCreatedEvent, Los.Common.Events","Name":"Provitech Solutions Ltd","NmlsId":null,"Address":{"$type":"Los.Core.Types.Address, Los.Core","AddressLine1":"bul. Vasil Levski 15-17","AddressLine2":"asd","CountryCode":null,"City":"Sofia","ZipCode":"87965","Unit":null,"State":1,"County":null,"CurrentProgress":{"$type":"Los.Core.Domain.Progress, Los.Core","CurrentProgress":null,"Percent":57.142857142857142857142857143,"InProgress":true,"Completed":false,"IsEmpty":false}},"PhoneNumber":"222-222-2222","Website":"http://none.com/","TaxIdType":2,"TaxIdSsn":"987-65-4321","TaxIdEin":null,"ContactName":"Ivelin","ContactPhoneNumber":"222-222-2222","BusinessType":2,"SubDomain":"provitech-solutions-ltd","Id":"8f4081fe-c8d2-46ee-92d3-1f31b034934c","Actor":"b419611e-d853-4a28-af2d-057f1172b209","AggregateId":"6878a5af-605c-4fc5-8234-7c91a7b3d61f","EntityId":"6878a5af-605c-4fc5-8234-7c91a7b3d61f","Version":"","Reason":"cea89b60-60df-445d-9ad8-279cadb93d41"}
+2018-07-10 17:52:18.784 +03:00 [Error] Error in "ClientPortalXComEventConsumer"
+Los.Core.Common.ConcurrencyException: Stale data cannot be updated.
+   at Los.EventSourcing.GetEventStore.GetEventStore.CheckEventsForConcurrency() in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.EventSourcing\GetEventStore\GetEventStore.cs:line 232
+   at Los.EventSourcing.GetEventStore.GetEventStore.<CommitAsync>d__16.MoveNext() in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.EventSourcing\GetEventStore\GetEventStore.cs:line 200
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Los.Core.Junk.TailUnitOfWork.<CommitAsync>d__19.MoveNext() in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Junk\TailUnitOfWork.cs:line 83
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Los.Application.XCom.Runner.ClientPortalXComEventConsumer.<Consume>d__4.MoveNext() in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.Application.XCom.Runner\ClientPortalXComEventConsumer.cs:line 83
+2018-07-10 17:52:18.805 +03:00 [Debug] {"$type":"Los.Common.Events.ClientPortal.LenderAddendumCreatedEvent, Los.Common.Events","LoanId":"a71abb53-2917-428c-8d81-8ac2fcc73679","Improvements":45646.0,"Land":456.0,"Refinance":456.0,"PaidOff":456.0,"ClosingCosts":456.0,"DiscountPoints":456.0,"TotalDueFromBorrower":null,"LoanAmountExludingInsurance":null,"FinancedMortgageInsurance":564564.0,"OtherMortgageLoans":546.0,"TotalMortgageLoans":null,"SellerCredits":456.0,"OtherCredits":456.0,"TotalCredits":null,"TotalMortgageAndTotalCredits":null,"TotalCashFromBorrower":null,"Id":"301d4e51-0161-43ed-9363-d2fb4bbb6539","Actor":"00000000-0000-0000-0000-000000000000","AggregateId":"a71abb53-2917-428c-8d81-8ac2fcc73679","EntityId":"00000000-0000-0000-0000-000000000000","Version":"","Reason":"00000000-0000-0000-0000-000000000000"}
+2018-07-10 17:52:18.808 +03:00 [Debug] {"$type":"Los.Common.Events.ClientPortal.CompanyCreatedEvent, Los.Common.Events","Name":"Provitech Solutions Ltd","NmlsId":null,"Address":{"$type":"Los.Core.Types.Address, Los.Core","AddressLine1":"bul. Vasil Levski 15-17","AddressLine2":"asd","CountryCode":null,"City":"Sofia","ZipCode":"87965","Unit":null,"State":1,"County":null,"CurrentProgress":{"$type":"Los.Core.Domain.Progress, Los.Core","CurrentProgress":null,"Percent":57.142857142857142857142857143,"InProgress":true,"Completed":false,"IsEmpty":false}},"PhoneNumber":"222-222-2222","Website":"http://none.com/","TaxIdType":2,"TaxIdSsn":"987-65-4321","TaxIdEin":null,"ContactName":"Ivelin","ContactPhoneNumber":"222-222-2222","BusinessType":2,"SubDomain":"provitech-solutions-ltd","Id":"8f4081fe-c8d2-46ee-92d3-1f31b034934c","Actor":"b419611e-d853-4a28-af2d-057f1172b209","AggregateId":"6878a5af-605c-4fc5-8234-7c91a7b3d61f","EntityId":"6878a5af-605c-4fc5-8234-7c91a7b3d61f","Version":"","Reason":"cea89b60-60df-445d-9ad8-279cadb93d41"}
+2018-07-10 17:52:18.934 +03:00 [Error] Error in "ClientPortalXComEventConsumer"
+Los.Core.Common.ConcurrencyException: Stale data cannot be updated.
+   at Los.EventSourcing.GetEventStore.GetEventStore.CheckEventsForConcurrency() in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.EventSourcing\GetEventStore\GetEventStore.cs:line 232
+   at Los.EventSourcing.GetEventStore.GetEventStore.<CommitAsync>d__16.MoveNext() in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.EventSourcing\GetEventStore\GetEventStore.cs:line 200
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Los.Core.Junk.TailUnitOfWork.<CommitAsync>d__19.MoveNext() in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Junk\TailUnitOfWork.cs:line 83
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Los.Application.XCom.Runner.ClientPortalXComEventConsumer.<Consume>d__4.MoveNext() in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.Application.XCom.Runner\ClientPortalXComEventConsumer.cs:line 83
+2018-07-10 17:52:18.943 +03:00 [Debug] {"$type":"Los.Common.Events.ClientPortal.LenderAddendumCreatedEvent, Los.Common.Events","LoanId":"a71abb53-2917-428c-8d81-8ac2fcc73679","Improvements":45646.0,"Land":456.0,"Refinance":456.0,"PaidOff":456.0,"ClosingCosts":456.0,"DiscountPoints":456.0,"TotalDueFromBorrower":null,"LoanAmountExludingInsurance":null,"FinancedMortgageInsurance":564564.0,"OtherMortgageLoans":546.0,"TotalMortgageLoans":null,"SellerCredits":456.0,"OtherCredits":456.0,"TotalCredits":null,"TotalMortgageAndTotalCredits":null,"TotalCashFromBorrower":null,"Id":"301d4e51-0161-43ed-9363-d2fb4bbb6539","Actor":"00000000-0000-0000-0000-000000000000","AggregateId":"a71abb53-2917-428c-8d81-8ac2fcc73679","EntityId":"00000000-0000-0000-0000-000000000000","Version":"","Reason":"00000000-0000-0000-0000-000000000000"}
+2018-07-10 17:52:18.945 +03:00 [Debug] {"$type":"Los.Common.Events.ClientPortal.CompanyCreatedEvent, Los.Common.Events","Name":"Provitech Solutions Ltd","NmlsId":null,"Address":{"$type":"Los.Core.Types.Address, Los.Core","AddressLine1":"bul. Vasil Levski 15-17","AddressLine2":"asd","CountryCode":null,"City":"Sofia","ZipCode":"87965","Unit":null,"State":1,"County":null,"CurrentProgress":{"$type":"Los.Core.Domain.Progress, Los.Core","CurrentProgress":null,"Percent":57.142857142857142857142857143,"InProgress":true,"Completed":false,"IsEmpty":false}},"PhoneNumber":"222-222-2222","Website":"http://none.com/","TaxIdType":2,"TaxIdSsn":"987-65-4321","TaxIdEin":null,"ContactName":"Ivelin","ContactPhoneNumber":"222-222-2222","BusinessType":2,"SubDomain":"provitech-solutions-ltd","Id":"8f4081fe-c8d2-46ee-92d3-1f31b034934c","Actor":"b419611e-d853-4a28-af2d-057f1172b209","AggregateId":"6878a5af-605c-4fc5-8234-7c91a7b3d61f","EntityId":"6878a5af-605c-4fc5-8234-7c91a7b3d61f","Version":"","Reason":"cea89b60-60df-445d-9ad8-279cadb93d41"}
+2018-07-10 17:52:19.074 +03:00 [Error] Error in "ClientPortalXComEventConsumer"
+Los.Core.Common.ConcurrencyException: Stale data cannot be updated.
+   at Los.EventSourcing.GetEventStore.GetEventStore.CheckEventsForConcurrency() in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.EventSourcing\GetEventStore\GetEventStore.cs:line 232
+   at Los.EventSourcing.GetEventStore.GetEventStore.<CommitAsync>d__16.MoveNext() in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.EventSourcing\GetEventStore\GetEventStore.cs:line 200
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Los.Core.Junk.TailUnitOfWork.<CommitAsync>d__19.MoveNext() in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Junk\TailUnitOfWork.cs:line 83
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Los.Application.XCom.Runner.ClientPortalXComEventConsumer.<Consume>d__4.MoveNext() in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.Application.XCom.Runner\ClientPortalXComEventConsumer.cs:line 83
+2018-07-10 17:52:19.081 +03:00 [Debug] {"$type":"Los.Common.Events.ClientPortal.LenderAddendumCreatedEvent, Los.Common.Events","LoanId":"a71abb53-2917-428c-8d81-8ac2fcc73679","Improvements":45646.0,"Land":456.0,"Refinance":456.0,"PaidOff":456.0,"ClosingCosts":456.0,"DiscountPoints":456.0,"TotalDueFromBorrower":null,"LoanAmountExludingInsurance":null,"FinancedMortgageInsurance":564564.0,"OtherMortgageLoans":546.0,"TotalMortgageLoans":null,"SellerCredits":456.0,"OtherCredits":456.0,"TotalCredits":null,"TotalMortgageAndTotalCredits":null,"TotalCashFromBorrower":null,"Id":"301d4e51-0161-43ed-9363-d2fb4bbb6539","Actor":"00000000-0000-0000-0000-000000000000","AggregateId":"a71abb53-2917-428c-8d81-8ac2fcc73679","EntityId":"00000000-0000-0000-0000-000000000000","Version":"","Reason":"00000000-0000-0000-0000-000000000000"}
+2018-07-10 17:52:19.083 +03:00 [Debug] {"$type":"Los.Common.Events.ClientPortal.CompanyCreatedEvent, Los.Common.Events","Name":"Provitech Solutions Ltd","NmlsId":null,"Address":{"$type":"Los.Core.Types.Address, Los.Core","AddressLine1":"bul. Vasil Levski 15-17","AddressLine2":"asd","CountryCode":null,"City":"Sofia","ZipCode":"87965","Unit":null,"State":1,"County":null,"CurrentProgress":{"$type":"Los.Core.Domain.Progress, Los.Core","CurrentProgress":null,"Percent":57.142857142857142857142857143,"InProgress":true,"Completed":false,"IsEmpty":false}},"PhoneNumber":"222-222-2222","Website":"http://none.com/","TaxIdType":2,"TaxIdSsn":"987-65-4321","TaxIdEin":null,"ContactName":"Ivelin","ContactPhoneNumber":"222-222-2222","BusinessType":2,"SubDomain":"provitech-solutions-ltd","Id":"8f4081fe-c8d2-46ee-92d3-1f31b034934c","Actor":"b419611e-d853-4a28-af2d-057f1172b209","AggregateId":"6878a5af-605c-4fc5-8234-7c91a7b3d61f","EntityId":"6878a5af-605c-4fc5-8234-7c91a7b3d61f","Version":"","Reason":"cea89b60-60df-445d-9ad8-279cadb93d41"}
+2018-07-10 17:52:19.259 +03:00 [Error] Error in "ClientPortalXComEventConsumer"
+Los.Core.Common.ConcurrencyException: Stale data cannot be updated.
+   at Los.EventSourcing.GetEventStore.GetEventStore.CheckEventsForConcurrency() in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.EventSourcing\GetEventStore\GetEventStore.cs:line 232
+   at Los.EventSourcing.GetEventStore.GetEventStore.<CommitAsync>d__16.MoveNext() in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.EventSourcing\GetEventStore\GetEventStore.cs:line 200
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Los.Core.Junk.TailUnitOfWork.<CommitAsync>d__19.MoveNext() in C:\IVELIN\PROJECTS\LOS\src\Common\Los.Core\Junk\TailUnitOfWork.cs:line 83
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at Los.Application.XCom.Runner.ClientPortalXComEventConsumer.<Consume>d__4.MoveNext() in C:\IVELIN\PROJECTS\LOS\src\Infrastructure\Los.Application.XCom.Runner\ClientPortalXComEventConsumer.cs:line 83
+2018-07-10 17:52:19.289 +03:00 [Error] (Exception message) Timestamp: 07/10/2018 14:52:19, FaultedMessageId: 3b800000-0daa-1c1b-db29-08d5e67336e5, FaultId: 3b800000-0daa-1c1b-bd00-08d5e674bc34, Host.Assembly: "Los.Application.XCom.Runner"!
+2018-07-10 17:52:19.294 +03:00 [Error] (Exception) Type: "Newtonsoft.Json.JsonSerializationException", Source: "Newtonsoft.Json", Message: "Could not find type 'Los.Common.Events.ClientPortal.LenderAddendumCreatedEvent' in assembly 'Los.Common.Events, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null'."!
+2018-07-10 17:52:25.803 +03:00 [Information] Now starting LOS Application XCom Runner ...
+2018-07-10 17:54:42.249 +03:00 [Information] Now starting LOS Application XCom Runner ...
+2018-07-10 17:59:29.683 +03:00 [Information] Now starting LOS Application XCom Runner ...
+2018-07-10 19:31:52.533 +03:00 [Information] Now starting LOS Application XCom Runner ...
+2018-07-10 19:31:54.148 +03:00 [Debug] {"$type":"Los.Common.Events.ClientPortal.LenderAddendumCreatedEvent, Los.Common.Events","LoanId":"889ea090-d206-4aa0-906b-d214320cb646","Improvements":2354.0,"Land":25.0,"Refinance":25.0,"PaidOff":25.0,"ClosingCosts":252.0,"DiscountPoints":2525.0,"TotalDueFromBorrower":null,"LoanAmountExludingInsurance":null,"FinancedMortgageInsurance":999997.0,"OtherMortgageLoans":3452.0,"TotalMortgageLoans":null,"SellerCredits":345.0,"OtherCredits":345.0,"TotalCredits":null,"TotalMortgageAndTotalCredits":null,"TotalCashFromBorrower":null,"Id":"8ef9edc6-80ca-49e4-9c6d-0957ba46d654","Actor":"00000000-0000-0000-0000-000000000000","AggregateId":"889ea090-d206-4aa0-906b-d214320cb646","EntityId":"00000000-0000-0000-0000-000000000000","Version":"","Reason":"00000000-0000-0000-0000-000000000000"}

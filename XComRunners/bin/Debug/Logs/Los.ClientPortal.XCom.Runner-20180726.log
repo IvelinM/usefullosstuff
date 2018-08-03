@@ -1,0 +1,1361 @@
+2018-07-26 14:30:30.616 +03:00 [Information] Now starting LOS ClientPortal XCom Runner ...
+2018-07-26 14:36:54.342 +03:00 [Debug] {"$type":"Los.Common.Events.Application.LoanCreatedEvent, Los.Common.Events","LoanId":"c84be6c4-e339-4d32-89ba-0e74781d4c05","CompanyId":"b9464a23-b68c-4c24-87b0-456a316f8e20","CreatedDateTime":"2018-07-26T14:36:51.5471612+03:00","LeadNumber":"104355251539","Id":"b8e01cd7-0bcf-4219-b062-c47324ff4f24","Actor":"f12f5f85-5bc1-4685-988c-82381ca9e93c","AggregateId":"c84be6c4-e339-4d32-89ba-0e74781d4c05","EntityId":"c84be6c4-e339-4d32-89ba-0e74781d4c05","Version":"","Reason":"e1f33fd4-398a-46e5-85d2-61143623dd06"}
+2018-07-26 14:36:54.514 +03:00 [Debug] An 'IServiceProvider' was created for internal use by Entity Framework.
+2018-07-26 14:36:55.323 +03:00 [Debug] An 'IServiceProvider' was created for internal use by Entity Framework.
+2018-07-26 14:36:55.968 +03:00 [Warning] The 'bool' property '"IsUsed"' on entity type '"UserInvitationDbEntity"' is configured with a database-generated default. This default will always be used when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead so that the default will only be used when the property value is 'null'.
+2018-07-26 14:36:56.055 +03:00 [Information] Entity Framework Core "2.0.2-rtm-10011" initialized '"ClientPortalDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-07-26 14:36:56.167 +03:00 [Debug] Compiling query model: "
+"'"(from LoanDbEntity x in DbSet<LoanDbEntity>
+where [x].Id == __id_0
+select [x]).Any()"'
+2018-07-26 14:36:56.216 +03:00 [Debug] Optimized query model: "
+"'"(from LoanDbEntity x in DbSet<LoanDbEntity>
+where [x].Id == __id_0
+select [x]).Any()"'
+2018-07-26 14:36:56.338 +03:00 [Debug] "(QueryContext queryContext) => IEnumerable<bool> _InterceptExceptions(
+    source: IEnumerable<bool> _ToSequence(bool GetResult(
+            valueBuffers: IEnumerable<ValueBuffer> _Query(
+                queryContext: queryContext, 
+                shaperCommandContext: SelectExpression: 
+                    SELECT CASE
+                        WHEN EXISTS (
+                            SELECT 1
+                            FROM [ClientPortal_Loans] AS [x]
+                            WHERE [x].[Id] = @__id_0)
+                        THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+                    END), 
+            throwOnNullResult: False)), 
+    contextType: Los.ClientPortal.DAL.Context.ClientPortalDbContext, 
+    logger: DiagnosticsLogger<Query>, 
+    queryContext: queryContext)"
+2018-07-26 14:36:56.364 +03:00 [Debug] Opening connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:36:56.377 +03:00 [Debug] Opened connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:36:56.391 +03:00 [Debug] Executing DbCommand [Parameters=["@__id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [ClientPortal_Loans] AS [x]
+        WHERE [x].[Id] = @__id_0)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END"
+2018-07-26 14:36:56.599 +03:00 [Information] Executed DbCommand ("211"ms) [Parameters=["@__id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [ClientPortal_Loans] AS [x]
+        WHERE [x].[Id] = @__id_0)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END"
+2018-07-26 14:36:56.610 +03:00 [Debug] A data reader was disposed.
+2018-07-26 14:36:56.613 +03:00 [Debug] Closing connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:36:56.615 +03:00 [Debug] Closed connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:36:56.626 +03:00 [Debug] Opening connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:36:56.628 +03:00 [Debug] Opened connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:36:56.632 +03:00 [Debug] Executing DbCommand [Parameters=["@__id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [ClientPortal_Loans] AS [x]
+        WHERE [x].[Id] = @__id_0)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END"
+2018-07-26 14:36:56.635 +03:00 [Information] Executed DbCommand ("3"ms) [Parameters=["@__id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [ClientPortal_Loans] AS [x]
+        WHERE [x].[Id] = @__id_0)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END"
+2018-07-26 14:36:56.638 +03:00 [Debug] A data reader was disposed.
+2018-07-26 14:36:56.642 +03:00 [Debug] Closing connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:36:56.643 +03:00 [Debug] Closed connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:36:56.672 +03:00 [Debug] Compiling query model: "
+"'"from LoanDbEntity x in 
+    (from LoanDbEntity x in DbSet<LoanDbEntity>
+    select [x]).Include(\"BorrowerProfiles\")
+where 
+    (from Guid <generated>_1 in __idsLsit_0
+    select [<generated>_1]).Contains([x].Id)
+select [x]"'
+2018-07-26 14:36:56.683 +03:00 [Debug] Including navigation: '"[x].BorrowerProfiles"'
+2018-07-26 14:36:56.738 +03:00 [Debug] Optimized query model: "
+"'"from LoanDbEntity x in DbSet<LoanDbEntity>
+where 
+    (from Guid <generated>_1 in __idsLsit_0
+    select [<generated>_1]).Contains([x].Id)
+order by (Nullable<Guid>)EF.Property(?[x]?, \"Id\") asc
+select LoanDbEntity _Include(
+    queryContext: queryContext, 
+    entity: [x], 
+    included: new object[]{ }, 
+    fixup: (QueryContext queryContext | LoanDbEntity entity | Object[] included) => 
+    {
+        Void queryContext.QueryBuffer.StartTracking(
+            entity: entity, 
+            entityType: EntityType: LoanDbEntity)
+        return Void queryContext.QueryBuffer.IncludeCollection(
+            includeId: 0, 
+            navigation: LoanDbEntity.BorrowerProfiles, 
+            inverseNavigation: null, 
+            targetEntityType: EntityType: BorrowerProfileDbEntity, 
+            clrCollectionAccessor: ClrICollectionAccessor<LoanDbEntity, ICollection<BorrowerProfileDbEntity>, BorrowerProfileDbEntity>, 
+            inverseClrPropertySetter: null, 
+            tracking: True, 
+            instance: entity, 
+            valuesFactory: () => 
+                from BorrowerProfileDbEntity x.BorrowerProfiles in DbSet<BorrowerProfileDbEntity>
+                join AnonymousObject _x in 
+                    from LoanDbEntity x in DbSet<LoanDbEntity>
+                    where 
+                        (from Guid <generated>_1 in __idsLsit_0
+                        select [<generated>_1]).Contains([x].Id)
+                    select new AnonymousObject(new object[]{ (object)EF.Property(?[x]?, \"Id\") })
+                on Property([x.BorrowerProfiles], \"LoanDbEntityId\") equals (Nullable<Guid>)object [_x].GetValue(0)
+                order by object [_x].GetValue(0) asc
+                select [x.BorrowerProfiles])
+    }
+)"'
+2018-07-26 14:36:56.819 +03:00 [Debug] "(QueryContext queryContext) => IEnumerable<LoanDbEntity> _InterceptExceptions(
+    source: IEnumerable<LoanDbEntity> _TrackEntities(
+        results: IEnumerable<LoanDbEntity> _Select(
+            source: IEnumerable<LoanDbEntity> _ShapedQuery(
+                queryContext: queryContext, 
+                shaperCommandContext: SelectExpression: 
+                    SELECT [x].[Id], [x].[CompanyId], [x].[CreatedDateTime], [x].[IsSubmitted], [x].[LoanAmount], [x].[LoanPurpose], [x].[PurchasePrice], [x].[SubmittedDateTime], [x].[Version]
+                    FROM [ClientPortal_Loans] AS [x]
+                    WHERE 0 = 1
+                    ORDER BY [x].[Id], 
+                shaper: BufferedEntityShaper<LoanDbEntity>), 
+            selector: (LoanDbEntity x) => LoanDbEntity _Include(
+                queryContext: queryContext, 
+                entity: x, 
+                included: new object[]{ }, 
+                fixup: (QueryContext queryContext | LoanDbEntity entity | Object[] included) => 
+                {
+                    Void queryContext.QueryBuffer.StartTracking(
+                        entity: entity, 
+                        entityType: EntityType: LoanDbEntity)
+                    return Void queryContext.QueryBuffer.IncludeCollection(
+                        includeId: 0, 
+                        navigation: LoanDbEntity.BorrowerProfiles, 
+                        inverseNavigation: null, 
+                        targetEntityType: EntityType: BorrowerProfileDbEntity, 
+                        clrCollectionAccessor: ClrICollectionAccessor<LoanDbEntity, ICollection<BorrowerProfileDbEntity>, BorrowerProfileDbEntity>, 
+                        inverseClrPropertySetter: null, 
+                        tracking: True, 
+                        instance: entity, 
+                        valuesFactory: () => IEnumerable<BorrowerProfileDbEntity> _ShapedQuery(
+                            queryContext: queryContext, 
+                            shaperCommandContext: SelectExpression: 
+                                SELECT [x.BorrowerProfiles].[Id], [x.BorrowerProfiles].[Email], [x.BorrowerProfiles].[FirstName], [x.BorrowerProfiles].[LastName], [x.BorrowerProfiles].[LoanDbEntityId], [x.BorrowerProfiles].[LoanId], [x.BorrowerProfiles].[PreferredContactMethod], [x.BorrowerProfiles].[Version]
+                                FROM [ClientPortal_BorrowerProfiles] AS [x.BorrowerProfiles]
+                                INNER JOIN (
+                                    SELECT [x0].[Id]
+                                    FROM [ClientPortal_Loans] AS [x0]
+                                    WHERE 0 = 1
+                                ) AS [t] ON [x.BorrowerProfiles].[LoanDbEntityId] = [t].[Id]
+                                ORDER BY [t].[Id], 
+                            shaper: BufferedEntityShaper<BorrowerProfileDbEntity>))
+                }
+            )), 
+        queryContext: Unhandled parameter: queryContext, 
+        entityTrackingInfos: { itemType: LoanDbEntity }, 
+        entityAccessors: List<Func<LoanDbEntity, object>> 
+        { 
+            Func<LoanDbEntity, LoanDbEntity>, 
+        }
+    ), 
+    contextType: Los.ClientPortal.DAL.Context.ClientPortalDbContext, 
+    logger: DiagnosticsLogger<Query>, 
+    queryContext: Unhandled parameter: queryContext)"
+2018-07-26 14:36:56.836 +03:00 [Debug] Opening connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:36:56.838 +03:00 [Debug] Opened connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:36:56.842 +03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[CompanyId], [x].[CreatedDateTime], [x].[IsSubmitted], [x].[LoanAmount], [x].[LoanPurpose], [x].[PurchasePrice], [x].[SubmittedDateTime], [x].[Version]
+FROM [ClientPortal_Loans] AS [x]
+WHERE 0 = 1
+ORDER BY [x].[Id]"
+2018-07-26 14:36:56.847 +03:00 [Information] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[CompanyId], [x].[CreatedDateTime], [x].[IsSubmitted], [x].[LoanAmount], [x].[LoanPurpose], [x].[PurchasePrice], [x].[SubmittedDateTime], [x].[Version]
+FROM [ClientPortal_Loans] AS [x]
+WHERE 0 = 1
+ORDER BY [x].[Id]"
+2018-07-26 14:36:56.849 +03:00 [Debug] A data reader was disposed.
+2018-07-26 14:36:56.850 +03:00 [Debug] Closing connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:36:56.854 +03:00 [Debug] Closed connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:36:56.926 +03:00 [Debug] Opening connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:36:56.928 +03:00 [Debug] Opened connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:36:56.930 +03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[CompanyId], [x].[CreatedDateTime], [x].[IsSubmitted], [x].[LoanAmount], [x].[LoanPurpose], [x].[PurchasePrice], [x].[SubmittedDateTime], [x].[Version]
+FROM [ClientPortal_Loans] AS [x]
+WHERE 0 = 1
+ORDER BY [x].[Id]"
+2018-07-26 14:36:56.933 +03:00 [Information] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[CompanyId], [x].[CreatedDateTime], [x].[IsSubmitted], [x].[LoanAmount], [x].[LoanPurpose], [x].[PurchasePrice], [x].[SubmittedDateTime], [x].[Version]
+FROM [ClientPortal_Loans] AS [x]
+WHERE 0 = 1
+ORDER BY [x].[Id]"
+2018-07-26 14:36:56.935 +03:00 [Debug] A data reader was disposed.
+2018-07-26 14:36:56.935 +03:00 [Debug] Closing connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:36:56.940 +03:00 [Debug] Closed connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:36:56.943 +03:00 [Debug] Compiling query model: "
+"'"from BorrowerProfileDbEntity x in DbSet<BorrowerProfileDbEntity>
+where 
+    (from Guid <generated>_1 in __idsLsit_0
+    select [<generated>_1]).Contains([x].Id)
+select [x]"'
+2018-07-26 14:36:56.945 +03:00 [Debug] Optimized query model: "
+"'"from BorrowerProfileDbEntity x in DbSet<BorrowerProfileDbEntity>
+where 
+    (from Guid <generated>_1 in __idsLsit_0
+    select [<generated>_1]).Contains([x].Id)
+select [x]"'
+2018-07-26 14:36:56.950 +03:00 [Debug] "(QueryContext queryContext) => IEnumerable<BorrowerProfileDbEntity> _InterceptExceptions(
+    source: IEnumerable<BorrowerProfileDbEntity> _TrackEntities(
+        results: IEnumerable<BorrowerProfileDbEntity> _ShapedQuery(
+            queryContext: queryContext, 
+            shaperCommandContext: SelectExpression: 
+                SELECT [x].[Id], [x].[Email], [x].[FirstName], [x].[LastName], [x].[LoanDbEntityId], [x].[LoanId], [x].[PreferredContactMethod], [x].[Version]
+                FROM [ClientPortal_BorrowerProfiles] AS [x]
+                WHERE 0 = 1, 
+            shaper: BufferedEntityShaper<BorrowerProfileDbEntity>), 
+        queryContext: queryContext, 
+        entityTrackingInfos: { itemType: BorrowerProfileDbEntity }, 
+        entityAccessors: List<Func<BorrowerProfileDbEntity, object>> 
+        { 
+            Func<BorrowerProfileDbEntity, BorrowerProfileDbEntity>, 
+        }
+    ), 
+    contextType: Los.ClientPortal.DAL.Context.ClientPortalDbContext, 
+    logger: DiagnosticsLogger<Query>, 
+    queryContext: queryContext)"
+2018-07-26 14:36:56.953 +03:00 [Debug] Opening connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:36:56.954 +03:00 [Debug] Opened connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:36:56.955 +03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Email], [x].[FirstName], [x].[LastName], [x].[LoanDbEntityId], [x].[LoanId], [x].[PreferredContactMethod], [x].[Version]
+FROM [ClientPortal_BorrowerProfiles] AS [x]
+WHERE 0 = 1"
+2018-07-26 14:36:57.063 +03:00 [Information] Executed DbCommand ("108"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Email], [x].[FirstName], [x].[LastName], [x].[LoanDbEntityId], [x].[LoanId], [x].[PreferredContactMethod], [x].[Version]
+FROM [ClientPortal_BorrowerProfiles] AS [x]
+WHERE 0 = 1"
+2018-07-26 14:36:57.066 +03:00 [Debug] A data reader was disposed.
+2018-07-26 14:36:57.067 +03:00 [Debug] Closing connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:36:57.068 +03:00 [Debug] Closed connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:36:57.070 +03:00 [Debug] Opening connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:36:57.075 +03:00 [Debug] Opened connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:36:57.078 +03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Email], [x].[FirstName], [x].[LastName], [x].[LoanDbEntityId], [x].[LoanId], [x].[PreferredContactMethod], [x].[Version]
+FROM [ClientPortal_BorrowerProfiles] AS [x]
+WHERE 0 = 1"
+2018-07-26 14:36:57.087 +03:00 [Information] Executed DbCommand ("9"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Email], [x].[FirstName], [x].[LastName], [x].[LoanDbEntityId], [x].[LoanId], [x].[PreferredContactMethod], [x].[Version]
+FROM [ClientPortal_BorrowerProfiles] AS [x]
+WHERE 0 = 1"
+2018-07-26 14:36:57.097 +03:00 [Debug] A data reader was disposed.
+2018-07-26 14:36:57.098 +03:00 [Debug] Closing connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:36:57.100 +03:00 [Debug] Closed connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:36:57.142 +03:00 [Debug] Opening connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:36:57.144 +03:00 [Debug] Opened connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:36:57.148 +03:00 [Debug] Beginning transaction with isolation level '"ReadCommitted"'.
+2018-07-26 14:36:57.233 +03:00 [Debug] Executing DbCommand [Parameters=["@p0='?', @p1='?', @p2='?', @p3='?', @p4='?', @p5='?', @p6='?', @p7='?'"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [ClientPortal_Loans] ([Id], [CompanyId], [CreatedDateTime], [IsSubmitted], [LoanAmount], [LoanPurpose], [PurchasePrice], [SubmittedDateTime])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+SELECT [Version]
+FROM [ClientPortal_Loans]
+WHERE @@ROWCOUNT = 1 AND [Id] = @p0;"
+2018-07-26 14:36:57.352 +03:00 [Information] Executed DbCommand ("118"ms) [Parameters=["@p0='?', @p1='?', @p2='?', @p3='?', @p4='?', @p5='?', @p6='?', @p7='?'"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [ClientPortal_Loans] ([Id], [CompanyId], [CreatedDateTime], [IsSubmitted], [LoanAmount], [LoanPurpose], [PurchasePrice], [SubmittedDateTime])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+SELECT [Version]
+FROM [ClientPortal_Loans]
+WHERE @@ROWCOUNT = 1 AND [Id] = @p0;"
+2018-07-26 14:36:57.368 +03:00 [Debug] A data reader was disposed.
+2018-07-26 14:36:57.371 +03:00 [Debug] Committing transaction.
+2018-07-26 14:36:57.374 +03:00 [Debug] Closing connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:36:57.375 +03:00 [Debug] Closed connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:36:57.378 +03:00 [Debug] Disposing transaction.
+2018-07-26 14:36:57.561 +03:00 [Debug] {"$type":"Los.Common.Events.Application.LoanUpdatedEvent, Los.Common.Events","Names":["BorrowerProfileIds"],"Values":[["d3ea0665-8cb0-4a5c-83f0-93c2f68a05e4"]],"EntityType":0,"LoanId":"00000000-0000-0000-0000-000000000000","Id":"1e88cd53-3f6d-4756-8338-ba9f4322b347","Actor":"f12f5f85-5bc1-4685-988c-82381ca9e93c","AggregateId":"c84be6c4-e339-4d32-89ba-0e74781d4c05","EntityId":"c84be6c4-e339-4d32-89ba-0e74781d4c05","Version":"","Reason":"e1f33fd4-398a-46e5-85d2-61143623dd06"}
+2018-07-26 14:36:57.748 +03:00 [Information] Entity Framework Core "2.0.2-rtm-10011" initialized '"ClientPortalDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-07-26 14:36:57.753 +03:00 [Debug] Compiling query model: "
+"'"(from LoanDbEntity x in 
+    (from LoanDbEntity x in DbSet<LoanDbEntity>
+    select [x]).Include(\"BorrowerProfiles\")
+where [x].Id == __id_0
+select [x]).FirstOrDefault()"'
+2018-07-26 14:36:57.762 +03:00 [Debug] Including navigation: '"[x].BorrowerProfiles"'
+2018-07-26 14:36:57.767 +03:00 [Debug] Optimized query model: "
+"'"(from LoanDbEntity x in DbSet<LoanDbEntity>
+where [x].Id == __id_0
+order by (Nullable<Guid>)EF.Property(?[x]?, \"Id\") asc
+select LoanDbEntity _Include(
+    queryContext: queryContext, 
+    entity: [x], 
+    included: new object[]{ }, 
+    fixup: (QueryContext queryContext | LoanDbEntity entity | Object[] included) => 
+    {
+        Void queryContext.QueryBuffer.StartTracking(
+            entity: entity, 
+            entityType: EntityType: LoanDbEntity)
+        return Void queryContext.QueryBuffer.IncludeCollection(
+            includeId: 0, 
+            navigation: LoanDbEntity.BorrowerProfiles, 
+            inverseNavigation: null, 
+            targetEntityType: EntityType: BorrowerProfileDbEntity, 
+            clrCollectionAccessor: ClrICollectionAccessor<LoanDbEntity, ICollection<BorrowerProfileDbEntity>, BorrowerProfileDbEntity>, 
+            inverseClrPropertySetter: null, 
+            tracking: True, 
+            instance: entity, 
+            valuesFactory: () => 
+                from BorrowerProfileDbEntity x.BorrowerProfiles in DbSet<BorrowerProfileDbEntity>
+                join AnonymousObject _x in 
+                    (from LoanDbEntity x in DbSet<LoanDbEntity>
+                    where [x].Id == __id_0
+                    order by (Nullable<Guid>)EF.Property(?[x]?, \"Id\") asc
+                    select new AnonymousObject(new object[]{ (object)EF.Property(?[x]?, \"Id\") })).Take(1)
+                on Property([x.BorrowerProfiles], \"LoanDbEntityId\") equals (Nullable<Guid>)object [_x].GetValue(0)
+                order by object [_x].GetValue(0) asc
+                select [x.BorrowerProfiles])
+    }
+)).FirstOrDefault()"'
+2018-07-26 14:36:57.793 +03:00 [Debug] "(QueryContext queryContext) => IEnumerable<LoanDbEntity> _InterceptExceptions(
+    source: IEnumerable<LoanDbEntity> _TrackEntities(
+        results: IEnumerable<LoanDbEntity> _ToSequence(LoanDbEntity FirstOrDefault(IEnumerable<LoanDbEntity> _Select(
+                    source: IEnumerable<LoanDbEntity> _ShapedQuery(
+                        queryContext: queryContext, 
+                        shaperCommandContext: SelectExpression: 
+                            SELECT TOP(1) [x].[Id], [x].[CompanyId], [x].[CreatedDateTime], [x].[IsSubmitted], [x].[LoanAmount], [x].[LoanPurpose], [x].[PurchasePrice], [x].[SubmittedDateTime], [x].[Version]
+                            FROM [ClientPortal_Loans] AS [x]
+                            WHERE [x].[Id] = @__id_0
+                            ORDER BY [x].[Id], 
+                        shaper: BufferedEntityShaper<LoanDbEntity>), 
+                    selector: (LoanDbEntity x) => LoanDbEntity _Include(
+                        queryContext: queryContext, 
+                        entity: x, 
+                        included: new object[]{ }, 
+                        fixup: (QueryContext queryContext | LoanDbEntity entity | Object[] included) => 
+                        {
+                            Void queryContext.QueryBuffer.StartTracking(
+                                entity: entity, 
+                                entityType: EntityType: LoanDbEntity)
+                            return Void queryContext.QueryBuffer.IncludeCollection(
+                                includeId: 0, 
+                                navigation: LoanDbEntity.BorrowerProfiles, 
+                                inverseNavigation: null, 
+                                targetEntityType: EntityType: BorrowerProfileDbEntity, 
+                                clrCollectionAccessor: ClrICollectionAccessor<LoanDbEntity, ICollection<BorrowerProfileDbEntity>, BorrowerProfileDbEntity>, 
+                                inverseClrPropertySetter: null, 
+                                tracking: True, 
+                                instance: entity, 
+                                valuesFactory: () => IEnumerable<BorrowerProfileDbEntity> _ShapedQuery(
+                                    queryContext: queryContext, 
+                                    shaperCommandContext: SelectExpression: 
+                                        SELECT [x.BorrowerProfiles].[Id], [x.BorrowerProfiles].[Email], [x.BorrowerProfiles].[FirstName], [x.BorrowerProfiles].[LastName], [x.BorrowerProfiles].[LoanDbEntityId], [x.BorrowerProfiles].[LoanId], [x.BorrowerProfiles].[PreferredContactMethod], [x.BorrowerProfiles].[Version]
+                                        FROM [ClientPortal_BorrowerProfiles] AS [x.BorrowerProfiles]
+                                        INNER JOIN (
+                                            SELECT TOP(1) [x0].[Id]
+                                            FROM [ClientPortal_Loans] AS [x0]
+                                            WHERE [x0].[Id] = @__id_0
+                                            ORDER BY [x0].[Id]
+                                        ) AS [t] ON [x.BorrowerProfiles].[LoanDbEntityId] = [t].[Id]
+                                        ORDER BY [t].[Id], 
+                                    shaper: BufferedEntityShaper<BorrowerProfileDbEntity>))
+                        }
+                    )))), 
+        queryContext: Unhandled parameter: queryContext, 
+        entityTrackingInfos: { itemType: LoanDbEntity }, 
+        entityAccessors: List<Func<LoanDbEntity, object>> 
+        { 
+            Func<LoanDbEntity, LoanDbEntity>, 
+        }
+    ), 
+    contextType: Los.ClientPortal.DAL.Context.ClientPortalDbContext, 
+    logger: DiagnosticsLogger<Query>, 
+    queryContext: Unhandled parameter: queryContext)"
+2018-07-26 14:36:57.816 +03:00 [Debug] Opening connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:36:57.819 +03:00 [Debug] Opened connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:36:57.820 +03:00 [Debug] Executing DbCommand [Parameters=["@__id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [x].[Id], [x].[CompanyId], [x].[CreatedDateTime], [x].[IsSubmitted], [x].[LoanAmount], [x].[LoanPurpose], [x].[PurchasePrice], [x].[SubmittedDateTime], [x].[Version]
+FROM [ClientPortal_Loans] AS [x]
+WHERE [x].[Id] = @__id_0
+ORDER BY [x].[Id]"
+2018-07-26 14:36:57.831 +03:00 [Information] Executed DbCommand ("10"ms) [Parameters=["@__id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [x].[Id], [x].[CompanyId], [x].[CreatedDateTime], [x].[IsSubmitted], [x].[LoanAmount], [x].[LoanPurpose], [x].[PurchasePrice], [x].[SubmittedDateTime], [x].[Version]
+FROM [ClientPortal_Loans] AS [x]
+WHERE [x].[Id] = @__id_0
+ORDER BY [x].[Id]"
+2018-07-26 14:36:57.856 +03:00 [Debug] A data reader was disposed.
+2018-07-26 14:36:57.861 +03:00 [Debug] Executing DbCommand [Parameters=["@__id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x.BorrowerProfiles].[Id], [x.BorrowerProfiles].[Email], [x.BorrowerProfiles].[FirstName], [x.BorrowerProfiles].[LastName], [x.BorrowerProfiles].[LoanDbEntityId], [x.BorrowerProfiles].[LoanId], [x.BorrowerProfiles].[PreferredContactMethod], [x.BorrowerProfiles].[Version]
+FROM [ClientPortal_BorrowerProfiles] AS [x.BorrowerProfiles]
+INNER JOIN (
+    SELECT TOP(1) [x0].[Id]
+    FROM [ClientPortal_Loans] AS [x0]
+    WHERE [x0].[Id] = @__id_0
+    ORDER BY [x0].[Id]
+) AS [t] ON [x.BorrowerProfiles].[LoanDbEntityId] = [t].[Id]
+ORDER BY [t].[Id]"
+2018-07-26 14:36:57.870 +03:00 [Information] Executed DbCommand ("8"ms) [Parameters=["@__id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x.BorrowerProfiles].[Id], [x.BorrowerProfiles].[Email], [x.BorrowerProfiles].[FirstName], [x.BorrowerProfiles].[LastName], [x.BorrowerProfiles].[LoanDbEntityId], [x.BorrowerProfiles].[LoanId], [x.BorrowerProfiles].[PreferredContactMethod], [x.BorrowerProfiles].[Version]
+FROM [ClientPortal_BorrowerProfiles] AS [x.BorrowerProfiles]
+INNER JOIN (
+    SELECT TOP(1) [x0].[Id]
+    FROM [ClientPortal_Loans] AS [x0]
+    WHERE [x0].[Id] = @__id_0
+    ORDER BY [x0].[Id]
+) AS [t] ON [x.BorrowerProfiles].[LoanDbEntityId] = [t].[Id]
+ORDER BY [t].[Id]"
+2018-07-26 14:36:57.884 +03:00 [Debug] A data reader was disposed.
+2018-07-26 14:36:57.884 +03:00 [Debug] Closing connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:36:57.885 +03:00 [Debug] Closed connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:36:57.902 +03:00 [Debug] Opening connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:36:57.904 +03:00 [Debug] Opened connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:36:57.908 +03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[CompanyId], [x].[CreatedDateTime], [x].[IsSubmitted], [x].[LoanAmount], [x].[LoanPurpose], [x].[PurchasePrice], [x].[SubmittedDateTime], [x].[Version]
+FROM [ClientPortal_Loans] AS [x]
+WHERE 0 = 1
+ORDER BY [x].[Id]"
+2018-07-26 14:36:57.914 +03:00 [Information] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[CompanyId], [x].[CreatedDateTime], [x].[IsSubmitted], [x].[LoanAmount], [x].[LoanPurpose], [x].[PurchasePrice], [x].[SubmittedDateTime], [x].[Version]
+FROM [ClientPortal_Loans] AS [x]
+WHERE 0 = 1
+ORDER BY [x].[Id]"
+2018-07-26 14:36:57.917 +03:00 [Debug] A data reader was disposed.
+2018-07-26 14:36:57.917 +03:00 [Debug] Closing connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:36:57.918 +03:00 [Debug] Closed connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:36:57.919 +03:00 [Debug] Opening connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:36:57.920 +03:00 [Debug] Opened connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:36:57.922 +03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[CompanyId], [x].[CreatedDateTime], [x].[IsSubmitted], [x].[LoanAmount], [x].[LoanPurpose], [x].[PurchasePrice], [x].[SubmittedDateTime], [x].[Version]
+FROM [ClientPortal_Loans] AS [x]
+WHERE [x].[Id] IN ('c84be6c4-e339-4d32-89ba-0e74781d4c05')
+ORDER BY [x].[Id]"
+2018-07-26 14:36:57.934 +03:00 [Information] Executed DbCommand ("11"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[CompanyId], [x].[CreatedDateTime], [x].[IsSubmitted], [x].[LoanAmount], [x].[LoanPurpose], [x].[PurchasePrice], [x].[SubmittedDateTime], [x].[Version]
+FROM [ClientPortal_Loans] AS [x]
+WHERE [x].[Id] IN ('c84be6c4-e339-4d32-89ba-0e74781d4c05')
+ORDER BY [x].[Id]"
+2018-07-26 14:36:57.937 +03:00 [Debug] A data reader was disposed.
+2018-07-26 14:36:57.943 +03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x.BorrowerProfiles].[Id], [x.BorrowerProfiles].[Email], [x.BorrowerProfiles].[FirstName], [x.BorrowerProfiles].[LastName], [x.BorrowerProfiles].[LoanDbEntityId], [x.BorrowerProfiles].[LoanId], [x.BorrowerProfiles].[PreferredContactMethod], [x.BorrowerProfiles].[Version]
+FROM [ClientPortal_BorrowerProfiles] AS [x.BorrowerProfiles]
+INNER JOIN (
+    SELECT [x0].[Id]
+    FROM [ClientPortal_Loans] AS [x0]
+    WHERE [x0].[Id] IN ('c84be6c4-e339-4d32-89ba-0e74781d4c05')
+) AS [t] ON [x.BorrowerProfiles].[LoanDbEntityId] = [t].[Id]
+ORDER BY [t].[Id]"
+2018-07-26 14:36:57.951 +03:00 [Information] Executed DbCommand ("7"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x.BorrowerProfiles].[Id], [x.BorrowerProfiles].[Email], [x.BorrowerProfiles].[FirstName], [x.BorrowerProfiles].[LastName], [x.BorrowerProfiles].[LoanDbEntityId], [x.BorrowerProfiles].[LoanId], [x.BorrowerProfiles].[PreferredContactMethod], [x.BorrowerProfiles].[Version]
+FROM [ClientPortal_BorrowerProfiles] AS [x.BorrowerProfiles]
+INNER JOIN (
+    SELECT [x0].[Id]
+    FROM [ClientPortal_Loans] AS [x0]
+    WHERE [x0].[Id] IN ('c84be6c4-e339-4d32-89ba-0e74781d4c05')
+) AS [t] ON [x.BorrowerProfiles].[LoanDbEntityId] = [t].[Id]
+ORDER BY [t].[Id]"
+2018-07-26 14:36:57.962 +03:00 [Debug] A data reader was disposed.
+2018-07-26 14:36:57.967 +03:00 [Debug] Closing connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:36:57.967 +03:00 [Debug] Closed connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:36:57.980 +03:00 [Debug] Opening connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:36:57.982 +03:00 [Debug] Opened connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:36:57.984 +03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Email], [x].[FirstName], [x].[LastName], [x].[LoanDbEntityId], [x].[LoanId], [x].[PreferredContactMethod], [x].[Version]
+FROM [ClientPortal_BorrowerProfiles] AS [x]
+WHERE 0 = 1"
+2018-07-26 14:36:57.987 +03:00 [Information] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Email], [x].[FirstName], [x].[LastName], [x].[LoanDbEntityId], [x].[LoanId], [x].[PreferredContactMethod], [x].[Version]
+FROM [ClientPortal_BorrowerProfiles] AS [x]
+WHERE 0 = 1"
+2018-07-26 14:36:57.992 +03:00 [Debug] A data reader was disposed.
+2018-07-26 14:36:57.997 +03:00 [Debug] Closing connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:36:57.999 +03:00 [Debug] Closed connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:36:58.002 +03:00 [Debug] Opening connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:36:58.003 +03:00 [Debug] Opened connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:36:58.004 +03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Email], [x].[FirstName], [x].[LastName], [x].[LoanDbEntityId], [x].[LoanId], [x].[PreferredContactMethod], [x].[Version]
+FROM [ClientPortal_BorrowerProfiles] AS [x]
+WHERE 0 = 1"
+2018-07-26 14:36:58.014 +03:00 [Information] Executed DbCommand ("10"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Email], [x].[FirstName], [x].[LastName], [x].[LoanDbEntityId], [x].[LoanId], [x].[PreferredContactMethod], [x].[Version]
+FROM [ClientPortal_BorrowerProfiles] AS [x]
+WHERE 0 = 1"
+2018-07-26 14:36:58.017 +03:00 [Debug] A data reader was disposed.
+2018-07-26 14:36:58.018 +03:00 [Debug] Closing connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:36:58.020 +03:00 [Debug] Closed connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:36:58.024 +03:00 [Debug] {"$type":"Los.Common.Events.Application.BorrowerProfileCreatedEvent, Los.Common.Events","LoanId":"c84be6c4-e339-4d32-89ba-0e74781d4c05","BorrowerNumber":1,"FirstName":"b","MiddleName":null,"LastName":"b","Suffix":null,"Phones":[{"$type":"Los.Common.Events.Application.BorrowerPhoneEventInfo, Los.Common.Events","Id":"1a51e882-a4c1-4ae6-86dc-219e9e63e110","PhoneNumber":"987-654-3210","PhoneType":null}],"Email":"b@b.b","Ssn":null,"BirthDate":null,"Dependents":null,"AgeOfDependents":[],"YearsOfSchool":null,"MaritalStatus":null,"PresentAddressId":null,"PresentAddressOccupancyStatus":null,"PresentAddressMonthlyRent":null,"PresentAddressTimeLivedMonths":null,"PreviousResidencies":[],"MailingAddressId":null,"PreferredContactMethod":3,"ServedForMilitary":null,"ActiveDutyExpDate":null,"MilitaryServiceTypes":[],"Id":"617b0beb-dc6a-44bf-a479-b1bbcf954666","Actor":"f12f5f85-5bc1-4685-988c-82381ca9e93c","AggregateId":"d3ea0665-8cb0-4a5c-83f0-93c2f68a05e4","EntityId":"d3ea0665-8cb0-4a5c-83f0-93c2f68a05e4","Version":"","Reason":"e1f33fd4-398a-46e5-85d2-61143623dd06"}
+2018-07-26 14:36:58.235 +03:00 [Information] Entity Framework Core "2.0.2-rtm-10011" initialized '"ClientPortalDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-07-26 14:36:58.240 +03:00 [Debug] Compiling query model: "
+"'"(from BorrowerProfileDbEntity x in DbSet<BorrowerProfileDbEntity>
+where [x].Id == __id_0
+select [x]).Any()"'
+2018-07-26 14:36:58.243 +03:00 [Debug] Optimized query model: "
+"'"(from BorrowerProfileDbEntity x in DbSet<BorrowerProfileDbEntity>
+where [x].Id == __id_0
+select [x]).Any()"'
+2018-07-26 14:36:58.249 +03:00 [Debug] "(QueryContext queryContext) => IEnumerable<bool> _InterceptExceptions(
+    source: IEnumerable<bool> _ToSequence(bool GetResult(
+            valueBuffers: IEnumerable<ValueBuffer> _Query(
+                queryContext: queryContext, 
+                shaperCommandContext: SelectExpression: 
+                    SELECT CASE
+                        WHEN EXISTS (
+                            SELECT 1
+                            FROM [ClientPortal_BorrowerProfiles] AS [x]
+                            WHERE [x].[Id] = @__id_0)
+                        THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+                    END), 
+            throwOnNullResult: False)), 
+    contextType: Los.ClientPortal.DAL.Context.ClientPortalDbContext, 
+    logger: DiagnosticsLogger<Query>, 
+    queryContext: queryContext)"
+2018-07-26 14:36:58.265 +03:00 [Debug] Opening connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:36:58.267 +03:00 [Debug] Opened connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:36:58.270 +03:00 [Debug] Executing DbCommand [Parameters=["@__id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [ClientPortal_BorrowerProfiles] AS [x]
+        WHERE [x].[Id] = @__id_0)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END"
+2018-07-26 14:36:58.276 +03:00 [Information] Executed DbCommand ("6"ms) [Parameters=["@__id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [ClientPortal_BorrowerProfiles] AS [x]
+        WHERE [x].[Id] = @__id_0)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END"
+2018-07-26 14:36:58.281 +03:00 [Debug] A data reader was disposed.
+2018-07-26 14:36:58.282 +03:00 [Debug] Closing connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:36:58.284 +03:00 [Debug] Closed connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:36:58.287 +03:00 [Debug] Opening connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:36:58.293 +03:00 [Debug] Opened connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:36:58.295 +03:00 [Debug] Executing DbCommand [Parameters=["@__id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [ClientPortal_BorrowerProfiles] AS [x]
+        WHERE [x].[Id] = @__id_0)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END"
+2018-07-26 14:36:58.300 +03:00 [Information] Executed DbCommand ("5"ms) [Parameters=["@__id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [ClientPortal_BorrowerProfiles] AS [x]
+        WHERE [x].[Id] = @__id_0)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END"
+2018-07-26 14:36:58.302 +03:00 [Debug] A data reader was disposed.
+2018-07-26 14:36:58.303 +03:00 [Debug] Closing connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:36:58.303 +03:00 [Debug] Closed connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:36:58.306 +03:00 [Debug] Opening connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:36:58.311 +03:00 [Debug] Opened connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:36:58.314 +03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[CompanyId], [x].[CreatedDateTime], [x].[IsSubmitted], [x].[LoanAmount], [x].[LoanPurpose], [x].[PurchasePrice], [x].[SubmittedDateTime], [x].[Version]
+FROM [ClientPortal_Loans] AS [x]
+WHERE 0 = 1
+ORDER BY [x].[Id]"
+2018-07-26 14:36:58.316 +03:00 [Information] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[CompanyId], [x].[CreatedDateTime], [x].[IsSubmitted], [x].[LoanAmount], [x].[LoanPurpose], [x].[PurchasePrice], [x].[SubmittedDateTime], [x].[Version]
+FROM [ClientPortal_Loans] AS [x]
+WHERE 0 = 1
+ORDER BY [x].[Id]"
+2018-07-26 14:36:58.318 +03:00 [Debug] A data reader was disposed.
+2018-07-26 14:36:58.319 +03:00 [Debug] Closing connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:36:58.321 +03:00 [Debug] Closed connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:36:58.324 +03:00 [Debug] Opening connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:36:58.326 +03:00 [Debug] Opened connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:36:58.328 +03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[CompanyId], [x].[CreatedDateTime], [x].[IsSubmitted], [x].[LoanAmount], [x].[LoanPurpose], [x].[PurchasePrice], [x].[SubmittedDateTime], [x].[Version]
+FROM [ClientPortal_Loans] AS [x]
+WHERE 0 = 1
+ORDER BY [x].[Id]"
+2018-07-26 14:36:58.331 +03:00 [Information] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[CompanyId], [x].[CreatedDateTime], [x].[IsSubmitted], [x].[LoanAmount], [x].[LoanPurpose], [x].[PurchasePrice], [x].[SubmittedDateTime], [x].[Version]
+FROM [ClientPortal_Loans] AS [x]
+WHERE 0 = 1
+ORDER BY [x].[Id]"
+2018-07-26 14:36:58.333 +03:00 [Debug] A data reader was disposed.
+2018-07-26 14:36:58.333 +03:00 [Debug] Closing connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:36:58.334 +03:00 [Debug] Closed connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:36:58.335 +03:00 [Debug] Opening connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:36:58.336 +03:00 [Debug] Opened connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:36:58.337 +03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Email], [x].[FirstName], [x].[LastName], [x].[LoanDbEntityId], [x].[LoanId], [x].[PreferredContactMethod], [x].[Version]
+FROM [ClientPortal_BorrowerProfiles] AS [x]
+WHERE 0 = 1"
+2018-07-26 14:36:58.344 +03:00 [Information] Executed DbCommand ("7"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Email], [x].[FirstName], [x].[LastName], [x].[LoanDbEntityId], [x].[LoanId], [x].[PreferredContactMethod], [x].[Version]
+FROM [ClientPortal_BorrowerProfiles] AS [x]
+WHERE 0 = 1"
+2018-07-26 14:36:58.349 +03:00 [Debug] A data reader was disposed.
+2018-07-26 14:36:58.350 +03:00 [Debug] Closing connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:36:58.353 +03:00 [Debug] Closed connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:36:58.370 +03:00 [Debug] Opening connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:36:58.373 +03:00 [Debug] Opened connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:36:58.376 +03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Email], [x].[FirstName], [x].[LastName], [x].[LoanDbEntityId], [x].[LoanId], [x].[PreferredContactMethod], [x].[Version]
+FROM [ClientPortal_BorrowerProfiles] AS [x]
+WHERE 0 = 1"
+2018-07-26 14:36:58.379 +03:00 [Information] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Email], [x].[FirstName], [x].[LastName], [x].[LoanDbEntityId], [x].[LoanId], [x].[PreferredContactMethod], [x].[Version]
+FROM [ClientPortal_BorrowerProfiles] AS [x]
+WHERE 0 = 1"
+2018-07-26 14:36:58.384 +03:00 [Debug] A data reader was disposed.
+2018-07-26 14:36:58.385 +03:00 [Debug] Closing connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:36:58.386 +03:00 [Debug] Closed connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:36:58.393 +03:00 [Debug] Opening connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:36:58.396 +03:00 [Debug] Opened connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:36:58.401 +03:00 [Debug] Beginning transaction with isolation level '"ReadCommitted"'.
+2018-07-26 14:36:58.404 +03:00 [Debug] Executing DbCommand [Parameters=["@p0='?', @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?', @p5='?', @p6='?'"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [ClientPortal_BorrowerProfiles] ([Id], [Email], [FirstName], [LastName], [LoanDbEntityId], [LoanId], [PreferredContactMethod])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+SELECT [Version]
+FROM [ClientPortal_BorrowerProfiles]
+WHERE @@ROWCOUNT = 1 AND [Id] = @p0;"
+2018-07-26 14:36:58.422 +03:00 [Information] Executed DbCommand ("16"ms) [Parameters=["@p0='?', @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?', @p5='?', @p6='?'"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [ClientPortal_BorrowerProfiles] ([Id], [Email], [FirstName], [LastName], [LoanDbEntityId], [LoanId], [PreferredContactMethod])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+SELECT [Version]
+FROM [ClientPortal_BorrowerProfiles]
+WHERE @@ROWCOUNT = 1 AND [Id] = @p0;"
+2018-07-26 14:36:58.434 +03:00 [Debug] A data reader was disposed.
+2018-07-26 14:36:58.436 +03:00 [Debug] Committing transaction.
+2018-07-26 14:36:58.437 +03:00 [Debug] Closing connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:36:58.438 +03:00 [Debug] Closed connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:36:58.448 +03:00 [Debug] Disposing transaction.
+2018-07-26 14:36:58.476 +03:00 [Debug] {"$type":"Los.Common.Events.Application.LoanDetailsCreatedEvent, Los.Common.Events","LoanId":"c84be6c4-e339-4d32-89ba-0e74781d4c05","LoanPurpose":1,"RefinancePrimaryPurposeType":null,"LoanAmount":null,"PurchasePrice":null,"DownPayment":null,"PropertyOwnership":2,"Id":"692f5310-599b-481e-9016-778ade89d13e","Actor":"f12f5f85-5bc1-4685-988c-82381ca9e93c","AggregateId":"41770072-8116-4083-88d8-51d6909a6bfa","EntityId":"41770072-8116-4083-88d8-51d6909a6bfa","Version":"","Reason":"e1f33fd4-398a-46e5-85d2-61143623dd06"}
+2018-07-26 14:36:58.620 +03:00 [Information] Entity Framework Core "2.0.2-rtm-10011" initialized '"ClientPortalDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-07-26 14:36:58.624 +03:00 [Debug] Opening connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:36:58.626 +03:00 [Debug] Opened connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:36:58.627 +03:00 [Debug] Executing DbCommand [Parameters=["@__id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [x].[Id], [x].[CompanyId], [x].[CreatedDateTime], [x].[IsSubmitted], [x].[LoanAmount], [x].[LoanPurpose], [x].[PurchasePrice], [x].[SubmittedDateTime], [x].[Version]
+FROM [ClientPortal_Loans] AS [x]
+WHERE [x].[Id] = @__id_0
+ORDER BY [x].[Id]"
+2018-07-26 14:36:58.631 +03:00 [Information] Executed DbCommand ("4"ms) [Parameters=["@__id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [x].[Id], [x].[CompanyId], [x].[CreatedDateTime], [x].[IsSubmitted], [x].[LoanAmount], [x].[LoanPurpose], [x].[PurchasePrice], [x].[SubmittedDateTime], [x].[Version]
+FROM [ClientPortal_Loans] AS [x]
+WHERE [x].[Id] = @__id_0
+ORDER BY [x].[Id]"
+2018-07-26 14:36:58.634 +03:00 [Debug] A data reader was disposed.
+2018-07-26 14:36:58.635 +03:00 [Debug] Executing DbCommand [Parameters=["@__id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x.BorrowerProfiles].[Id], [x.BorrowerProfiles].[Email], [x.BorrowerProfiles].[FirstName], [x.BorrowerProfiles].[LastName], [x.BorrowerProfiles].[LoanDbEntityId], [x.BorrowerProfiles].[LoanId], [x.BorrowerProfiles].[PreferredContactMethod], [x.BorrowerProfiles].[Version]
+FROM [ClientPortal_BorrowerProfiles] AS [x.BorrowerProfiles]
+INNER JOIN (
+    SELECT TOP(1) [x0].[Id]
+    FROM [ClientPortal_Loans] AS [x0]
+    WHERE [x0].[Id] = @__id_0
+    ORDER BY [x0].[Id]
+) AS [t] ON [x.BorrowerProfiles].[LoanDbEntityId] = [t].[Id]
+ORDER BY [t].[Id]"
+2018-07-26 14:36:58.642 +03:00 [Information] Executed DbCommand ("7"ms) [Parameters=["@__id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x.BorrowerProfiles].[Id], [x.BorrowerProfiles].[Email], [x.BorrowerProfiles].[FirstName], [x.BorrowerProfiles].[LastName], [x.BorrowerProfiles].[LoanDbEntityId], [x.BorrowerProfiles].[LoanId], [x.BorrowerProfiles].[PreferredContactMethod], [x.BorrowerProfiles].[Version]
+FROM [ClientPortal_BorrowerProfiles] AS [x.BorrowerProfiles]
+INNER JOIN (
+    SELECT TOP(1) [x0].[Id]
+    FROM [ClientPortal_Loans] AS [x0]
+    WHERE [x0].[Id] = @__id_0
+    ORDER BY [x0].[Id]
+) AS [t] ON [x.BorrowerProfiles].[LoanDbEntityId] = [t].[Id]
+ORDER BY [t].[Id]"
+2018-07-26 14:36:58.647 +03:00 [Debug] A data reader was disposed.
+2018-07-26 14:36:58.648 +03:00 [Debug] Closing connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:36:58.649 +03:00 [Debug] Closed connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:36:58.658 +03:00 [Debug] Opening connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:36:58.658 +03:00 [Debug] Opened connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:36:58.660 +03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[CompanyId], [x].[CreatedDateTime], [x].[IsSubmitted], [x].[LoanAmount], [x].[LoanPurpose], [x].[PurchasePrice], [x].[SubmittedDateTime], [x].[Version]
+FROM [ClientPortal_Loans] AS [x]
+WHERE 0 = 1
+ORDER BY [x].[Id]"
+2018-07-26 14:36:58.666 +03:00 [Information] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[CompanyId], [x].[CreatedDateTime], [x].[IsSubmitted], [x].[LoanAmount], [x].[LoanPurpose], [x].[PurchasePrice], [x].[SubmittedDateTime], [x].[Version]
+FROM [ClientPortal_Loans] AS [x]
+WHERE 0 = 1
+ORDER BY [x].[Id]"
+2018-07-26 14:36:58.668 +03:00 [Debug] A data reader was disposed.
+2018-07-26 14:36:58.670 +03:00 [Debug] Closing connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:36:58.670 +03:00 [Debug] Closed connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:36:58.672 +03:00 [Debug] Opening connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:36:58.676 +03:00 [Debug] Opened connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:36:58.677 +03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[CompanyId], [x].[CreatedDateTime], [x].[IsSubmitted], [x].[LoanAmount], [x].[LoanPurpose], [x].[PurchasePrice], [x].[SubmittedDateTime], [x].[Version]
+FROM [ClientPortal_Loans] AS [x]
+WHERE [x].[Id] IN ('c84be6c4-e339-4d32-89ba-0e74781d4c05')
+ORDER BY [x].[Id]"
+2018-07-26 14:36:58.679 +03:00 [Information] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[CompanyId], [x].[CreatedDateTime], [x].[IsSubmitted], [x].[LoanAmount], [x].[LoanPurpose], [x].[PurchasePrice], [x].[SubmittedDateTime], [x].[Version]
+FROM [ClientPortal_Loans] AS [x]
+WHERE [x].[Id] IN ('c84be6c4-e339-4d32-89ba-0e74781d4c05')
+ORDER BY [x].[Id]"
+2018-07-26 14:36:58.682 +03:00 [Debug] A data reader was disposed.
+2018-07-26 14:36:58.685 +03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x.BorrowerProfiles].[Id], [x.BorrowerProfiles].[Email], [x.BorrowerProfiles].[FirstName], [x.BorrowerProfiles].[LastName], [x.BorrowerProfiles].[LoanDbEntityId], [x.BorrowerProfiles].[LoanId], [x.BorrowerProfiles].[PreferredContactMethod], [x.BorrowerProfiles].[Version]
+FROM [ClientPortal_BorrowerProfiles] AS [x.BorrowerProfiles]
+INNER JOIN (
+    SELECT [x0].[Id]
+    FROM [ClientPortal_Loans] AS [x0]
+    WHERE [x0].[Id] IN ('c84be6c4-e339-4d32-89ba-0e74781d4c05')
+) AS [t] ON [x.BorrowerProfiles].[LoanDbEntityId] = [t].[Id]
+ORDER BY [t].[Id]"
+2018-07-26 14:36:58.690 +03:00 [Information] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x.BorrowerProfiles].[Id], [x.BorrowerProfiles].[Email], [x.BorrowerProfiles].[FirstName], [x.BorrowerProfiles].[LastName], [x.BorrowerProfiles].[LoanDbEntityId], [x.BorrowerProfiles].[LoanId], [x.BorrowerProfiles].[PreferredContactMethod], [x.BorrowerProfiles].[Version]
+FROM [ClientPortal_BorrowerProfiles] AS [x.BorrowerProfiles]
+INNER JOIN (
+    SELECT [x0].[Id]
+    FROM [ClientPortal_Loans] AS [x0]
+    WHERE [x0].[Id] IN ('c84be6c4-e339-4d32-89ba-0e74781d4c05')
+) AS [t] ON [x.BorrowerProfiles].[LoanDbEntityId] = [t].[Id]
+ORDER BY [t].[Id]"
+2018-07-26 14:36:58.696 +03:00 [Debug] A data reader was disposed.
+2018-07-26 14:36:58.697 +03:00 [Debug] Closing connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:36:58.698 +03:00 [Debug] Closed connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:36:58.702 +03:00 [Debug] Opening connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:36:58.703 +03:00 [Debug] Opened connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:36:58.706 +03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Email], [x].[FirstName], [x].[LastName], [x].[LoanDbEntityId], [x].[LoanId], [x].[PreferredContactMethod], [x].[Version]
+FROM [ClientPortal_BorrowerProfiles] AS [x]
+WHERE 0 = 1"
+2018-07-26 14:36:58.709 +03:00 [Information] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Email], [x].[FirstName], [x].[LastName], [x].[LoanDbEntityId], [x].[LoanId], [x].[PreferredContactMethod], [x].[Version]
+FROM [ClientPortal_BorrowerProfiles] AS [x]
+WHERE 0 = 1"
+2018-07-26 14:36:58.713 +03:00 [Debug] A data reader was disposed.
+2018-07-26 14:36:58.717 +03:00 [Debug] Closing connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:36:58.718 +03:00 [Debug] Closed connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:36:58.719 +03:00 [Debug] Opening connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:36:58.720 +03:00 [Debug] Opened connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:36:58.722 +03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Email], [x].[FirstName], [x].[LastName], [x].[LoanDbEntityId], [x].[LoanId], [x].[PreferredContactMethod], [x].[Version]
+FROM [ClientPortal_BorrowerProfiles] AS [x]
+WHERE 0 = 1"
+2018-07-26 14:36:58.725 +03:00 [Information] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Email], [x].[FirstName], [x].[LastName], [x].[LoanDbEntityId], [x].[LoanId], [x].[PreferredContactMethod], [x].[Version]
+FROM [ClientPortal_BorrowerProfiles] AS [x]
+WHERE 0 = 1"
+2018-07-26 14:36:58.730 +03:00 [Debug] A data reader was disposed.
+2018-07-26 14:36:58.731 +03:00 [Debug] Closing connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:36:58.732 +03:00 [Debug] Closed connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:36:58.734 +03:00 [Debug] Opening connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:36:58.738 +03:00 [Debug] Opened connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:36:58.740 +03:00 [Debug] Beginning transaction with isolation level '"ReadCommitted"'.
+2018-07-26 14:36:58.752 +03:00 [Debug] Executing DbCommand [Parameters=["@p1='?', @p0='?', @p2='?' (Size = 8)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [ClientPortal_Loans] SET [LoanPurpose] = @p0
+WHERE [Id] = @p1 AND [Version] = @p2;
+SELECT [Version]
+FROM [ClientPortal_Loans]
+WHERE @@ROWCOUNT = 1 AND [Id] = @p1;"
+2018-07-26 14:36:58.783 +03:00 [Information] Executed DbCommand ("31"ms) [Parameters=["@p1='?', @p0='?', @p2='?' (Size = 8)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [ClientPortal_Loans] SET [LoanPurpose] = @p0
+WHERE [Id] = @p1 AND [Version] = @p2;
+SELECT [Version]
+FROM [ClientPortal_Loans]
+WHERE @@ROWCOUNT = 1 AND [Id] = @p1;"
+2018-07-26 14:36:58.792 +03:00 [Debug] A data reader was disposed.
+2018-07-26 14:36:58.802 +03:00 [Debug] Committing transaction.
+2018-07-26 14:36:58.804 +03:00 [Debug] Closing connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:36:58.805 +03:00 [Debug] Closed connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:36:58.814 +03:00 [Debug] Disposing transaction.
+2018-07-26 14:37:14.462 +03:00 [Debug] {"$type":"Los.Common.Events.Application.BorrowerProfileUpdatedEvent, Los.Common.Events","Names":["Dependents","PresentAddressId"],"Values":[0,"9b5f1adc-208a-47ff-a524-7f733ac58fb4"],"EntityType":2,"LoanId":"c84be6c4-e339-4d32-89ba-0e74781d4c05","Id":"7003dcbf-ee9e-493a-8f96-9dd15c003c7b","Actor":"28cde30f-9fb5-48d2-9334-d05dbcb9a8ea","AggregateId":"d3ea0665-8cb0-4a5c-83f0-93c2f68a05e4","EntityId":"d3ea0665-8cb0-4a5c-83f0-93c2f68a05e4","Version":"AAAAAAAAB9U=","Reason":"63cf0124-be00-417b-ad21-e85124d145e2"}
+2018-07-26 14:37:14.593 +03:00 [Information] Entity Framework Core "2.0.2-rtm-10011" initialized '"ClientPortalDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-07-26 14:37:14.597 +03:00 [Debug] Compiling query model: "
+"'"(from BorrowerProfileDbEntity x in DbSet<BorrowerProfileDbEntity>
+where [x].Id == __id_0
+select [x]).FirstOrDefault()"'
+2018-07-26 14:37:14.599 +03:00 [Debug] Optimized query model: "
+"'"(from BorrowerProfileDbEntity x in DbSet<BorrowerProfileDbEntity>
+where [x].Id == __id_0
+select [x]).FirstOrDefault()"'
+2018-07-26 14:37:14.609 +03:00 [Debug] "(QueryContext queryContext) => IEnumerable<BorrowerProfileDbEntity> _InterceptExceptions(
+    source: IEnumerable<BorrowerProfileDbEntity> _TrackEntities(
+        results: IEnumerable<BorrowerProfileDbEntity> _ToSequence(BorrowerProfileDbEntity FirstOrDefault(IEnumerable<BorrowerProfileDbEntity> _ShapedQuery(
+                    queryContext: queryContext, 
+                    shaperCommandContext: SelectExpression: 
+                        SELECT TOP(1) [x].[Id], [x].[Email], [x].[FirstName], [x].[LastName], [x].[LoanDbEntityId], [x].[LoanId], [x].[PreferredContactMethod], [x].[Version]
+                        FROM [ClientPortal_BorrowerProfiles] AS [x]
+                        WHERE [x].[Id] = @__id_0, 
+                    shaper: BufferedEntityShaper<BorrowerProfileDbEntity>))), 
+        queryContext: queryContext, 
+        entityTrackingInfos: { itemType: BorrowerProfileDbEntity }, 
+        entityAccessors: List<Func<BorrowerProfileDbEntity, object>> 
+        { 
+            Func<BorrowerProfileDbEntity, BorrowerProfileDbEntity>, 
+        }
+    ), 
+    contextType: Los.ClientPortal.DAL.Context.ClientPortalDbContext, 
+    logger: DiagnosticsLogger<Query>, 
+    queryContext: queryContext)"
+2018-07-26 14:37:14.626 +03:00 [Debug] Opening connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:37:14.627 +03:00 [Debug] Opened connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:37:14.628 +03:00 [Debug] Executing DbCommand [Parameters=["@__id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [x].[Id], [x].[Email], [x].[FirstName], [x].[LastName], [x].[LoanDbEntityId], [x].[LoanId], [x].[PreferredContactMethod], [x].[Version]
+FROM [ClientPortal_BorrowerProfiles] AS [x]
+WHERE [x].[Id] = @__id_0"
+2018-07-26 14:37:14.633 +03:00 [Information] Executed DbCommand ("4"ms) [Parameters=["@__id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [x].[Id], [x].[Email], [x].[FirstName], [x].[LastName], [x].[LoanDbEntityId], [x].[LoanId], [x].[PreferredContactMethod], [x].[Version]
+FROM [ClientPortal_BorrowerProfiles] AS [x]
+WHERE [x].[Id] = @__id_0"
+2018-07-26 14:37:14.641 +03:00 [Debug] A data reader was disposed.
+2018-07-26 14:37:14.642 +03:00 [Debug] Closing connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:37:14.643 +03:00 [Debug] Closed connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:37:14.651 +03:00 [Debug] Opening connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:37:14.657 +03:00 [Debug] Opened connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:37:14.662 +03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[CompanyId], [x].[CreatedDateTime], [x].[IsSubmitted], [x].[LoanAmount], [x].[LoanPurpose], [x].[PurchasePrice], [x].[SubmittedDateTime], [x].[Version]
+FROM [ClientPortal_Loans] AS [x]
+WHERE 0 = 1
+ORDER BY [x].[Id]"
+2018-07-26 14:37:14.673 +03:00 [Information] Executed DbCommand ("11"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[CompanyId], [x].[CreatedDateTime], [x].[IsSubmitted], [x].[LoanAmount], [x].[LoanPurpose], [x].[PurchasePrice], [x].[SubmittedDateTime], [x].[Version]
+FROM [ClientPortal_Loans] AS [x]
+WHERE 0 = 1
+ORDER BY [x].[Id]"
+2018-07-26 14:37:14.677 +03:00 [Debug] A data reader was disposed.
+2018-07-26 14:37:14.678 +03:00 [Debug] Closing connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:37:14.679 +03:00 [Debug] Closed connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:37:14.684 +03:00 [Debug] Opening connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:37:14.684 +03:00 [Debug] Opened connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:37:14.685 +03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[CompanyId], [x].[CreatedDateTime], [x].[IsSubmitted], [x].[LoanAmount], [x].[LoanPurpose], [x].[PurchasePrice], [x].[SubmittedDateTime], [x].[Version]
+FROM [ClientPortal_Loans] AS [x]
+WHERE 0 = 1
+ORDER BY [x].[Id]"
+2018-07-26 14:37:14.690 +03:00 [Information] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[CompanyId], [x].[CreatedDateTime], [x].[IsSubmitted], [x].[LoanAmount], [x].[LoanPurpose], [x].[PurchasePrice], [x].[SubmittedDateTime], [x].[Version]
+FROM [ClientPortal_Loans] AS [x]
+WHERE 0 = 1
+ORDER BY [x].[Id]"
+2018-07-26 14:37:14.696 +03:00 [Debug] A data reader was disposed.
+2018-07-26 14:37:14.699 +03:00 [Debug] Closing connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:37:14.701 +03:00 [Debug] Closed connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:37:14.706 +03:00 [Debug] Opening connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:37:14.707 +03:00 [Debug] Opened connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:37:14.709 +03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Email], [x].[FirstName], [x].[LastName], [x].[LoanDbEntityId], [x].[LoanId], [x].[PreferredContactMethod], [x].[Version]
+FROM [ClientPortal_BorrowerProfiles] AS [x]
+WHERE 0 = 1"
+2018-07-26 14:37:14.713 +03:00 [Information] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Email], [x].[FirstName], [x].[LastName], [x].[LoanDbEntityId], [x].[LoanId], [x].[PreferredContactMethod], [x].[Version]
+FROM [ClientPortal_BorrowerProfiles] AS [x]
+WHERE 0 = 1"
+2018-07-26 14:37:14.719 +03:00 [Debug] A data reader was disposed.
+2018-07-26 14:37:14.721 +03:00 [Debug] Closing connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:37:14.723 +03:00 [Debug] Closed connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:37:14.727 +03:00 [Debug] Opening connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:37:14.728 +03:00 [Debug] Opened connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:37:14.731 +03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Email], [x].[FirstName], [x].[LastName], [x].[LoanDbEntityId], [x].[LoanId], [x].[PreferredContactMethod], [x].[Version]
+FROM [ClientPortal_BorrowerProfiles] AS [x]
+WHERE [x].[Id] IN ('d3ea0665-8cb0-4a5c-83f0-93c2f68a05e4')"
+2018-07-26 14:37:14.737 +03:00 [Information] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Email], [x].[FirstName], [x].[LastName], [x].[LoanDbEntityId], [x].[LoanId], [x].[PreferredContactMethod], [x].[Version]
+FROM [ClientPortal_BorrowerProfiles] AS [x]
+WHERE [x].[Id] IN ('d3ea0665-8cb0-4a5c-83f0-93c2f68a05e4')"
+2018-07-26 14:37:14.741 +03:00 [Debug] A data reader was disposed.
+2018-07-26 14:37:14.742 +03:00 [Debug] Closing connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:37:14.744 +03:00 [Debug] Closed connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:38:56.928 +03:00 [Debug] {"$type":"Los.Common.Events.Application.LoanCreatedEvent, Los.Common.Events","LoanId":"2c75897c-9bef-4546-9b9a-0f45ddc9463f","CompanyId":"b9464a23-b68c-4c24-87b0-456a316f8e20","CreatedDateTime":"2018-07-26T14:38:55.9533187+03:00","LeadNumber":"104072825074","Id":"5a721de5-517a-4a89-8db6-c1cb9f28adcd","Actor":"f12f5f85-5bc1-4685-988c-82381ca9e93c","AggregateId":"2c75897c-9bef-4546-9b9a-0f45ddc9463f","EntityId":"2c75897c-9bef-4546-9b9a-0f45ddc9463f","Version":"","Reason":"2371a094-5b51-42da-bd7d-8df62dd50d44"}
+2018-07-26 14:38:57.107 +03:00 [Information] Entity Framework Core "2.0.2-rtm-10011" initialized '"ClientPortalDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-07-26 14:38:57.110 +03:00 [Debug] Opening connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:38:57.112 +03:00 [Debug] Opened connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:38:57.113 +03:00 [Debug] Executing DbCommand [Parameters=["@__id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [ClientPortal_Loans] AS [x]
+        WHERE [x].[Id] = @__id_0)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END"
+2018-07-26 14:38:57.117 +03:00 [Information] Executed DbCommand ("4"ms) [Parameters=["@__id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [ClientPortal_Loans] AS [x]
+        WHERE [x].[Id] = @__id_0)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END"
+2018-07-26 14:38:57.120 +03:00 [Debug] A data reader was disposed.
+2018-07-26 14:38:57.123 +03:00 [Debug] Closing connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:38:57.123 +03:00 [Debug] Closed connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:38:57.125 +03:00 [Debug] Opening connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:38:57.130 +03:00 [Debug] Opened connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:38:57.131 +03:00 [Debug] Executing DbCommand [Parameters=["@__id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [ClientPortal_Loans] AS [x]
+        WHERE [x].[Id] = @__id_0)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END"
+2018-07-26 14:38:57.133 +03:00 [Information] Executed DbCommand ("2"ms) [Parameters=["@__id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [ClientPortal_Loans] AS [x]
+        WHERE [x].[Id] = @__id_0)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END"
+2018-07-26 14:38:57.135 +03:00 [Debug] A data reader was disposed.
+2018-07-26 14:38:57.135 +03:00 [Debug] Closing connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:38:57.137 +03:00 [Debug] Closed connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:38:57.142 +03:00 [Debug] Opening connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:38:57.145 +03:00 [Debug] Opened connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:38:57.146 +03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[CompanyId], [x].[CreatedDateTime], [x].[IsSubmitted], [x].[LoanAmount], [x].[LoanPurpose], [x].[PurchasePrice], [x].[SubmittedDateTime], [x].[Version]
+FROM [ClientPortal_Loans] AS [x]
+WHERE 0 = 1
+ORDER BY [x].[Id]"
+2018-07-26 14:38:57.149 +03:00 [Information] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[CompanyId], [x].[CreatedDateTime], [x].[IsSubmitted], [x].[LoanAmount], [x].[LoanPurpose], [x].[PurchasePrice], [x].[SubmittedDateTime], [x].[Version]
+FROM [ClientPortal_Loans] AS [x]
+WHERE 0 = 1
+ORDER BY [x].[Id]"
+2018-07-26 14:38:57.152 +03:00 [Debug] A data reader was disposed.
+2018-07-26 14:38:57.154 +03:00 [Debug] Closing connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:38:57.155 +03:00 [Debug] Closed connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:38:57.160 +03:00 [Debug] Opening connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:38:57.162 +03:00 [Debug] Opened connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:38:57.164 +03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[CompanyId], [x].[CreatedDateTime], [x].[IsSubmitted], [x].[LoanAmount], [x].[LoanPurpose], [x].[PurchasePrice], [x].[SubmittedDateTime], [x].[Version]
+FROM [ClientPortal_Loans] AS [x]
+WHERE 0 = 1
+ORDER BY [x].[Id]"
+2018-07-26 14:38:57.167 +03:00 [Information] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[CompanyId], [x].[CreatedDateTime], [x].[IsSubmitted], [x].[LoanAmount], [x].[LoanPurpose], [x].[PurchasePrice], [x].[SubmittedDateTime], [x].[Version]
+FROM [ClientPortal_Loans] AS [x]
+WHERE 0 = 1
+ORDER BY [x].[Id]"
+2018-07-26 14:38:57.169 +03:00 [Debug] A data reader was disposed.
+2018-07-26 14:38:57.172 +03:00 [Debug] Closing connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:38:57.174 +03:00 [Debug] Closed connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:38:57.176 +03:00 [Debug] Opening connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:38:57.177 +03:00 [Debug] Opened connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:38:57.178 +03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Email], [x].[FirstName], [x].[LastName], [x].[LoanDbEntityId], [x].[LoanId], [x].[PreferredContactMethod], [x].[Version]
+FROM [ClientPortal_BorrowerProfiles] AS [x]
+WHERE 0 = 1"
+2018-07-26 14:38:57.180 +03:00 [Information] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Email], [x].[FirstName], [x].[LastName], [x].[LoanDbEntityId], [x].[LoanId], [x].[PreferredContactMethod], [x].[Version]
+FROM [ClientPortal_BorrowerProfiles] AS [x]
+WHERE 0 = 1"
+2018-07-26 14:38:57.185 +03:00 [Debug] A data reader was disposed.
+2018-07-26 14:38:57.185 +03:00 [Debug] Closing connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:38:57.186 +03:00 [Debug] Closed connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:38:57.188 +03:00 [Debug] Opening connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:38:57.189 +03:00 [Debug] Opened connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:38:57.190 +03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Email], [x].[FirstName], [x].[LastName], [x].[LoanDbEntityId], [x].[LoanId], [x].[PreferredContactMethod], [x].[Version]
+FROM [ClientPortal_BorrowerProfiles] AS [x]
+WHERE 0 = 1"
+2018-07-26 14:38:57.199 +03:00 [Information] Executed DbCommand ("8"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Email], [x].[FirstName], [x].[LastName], [x].[LoanDbEntityId], [x].[LoanId], [x].[PreferredContactMethod], [x].[Version]
+FROM [ClientPortal_BorrowerProfiles] AS [x]
+WHERE 0 = 1"
+2018-07-26 14:38:57.201 +03:00 [Debug] A data reader was disposed.
+2018-07-26 14:38:57.205 +03:00 [Debug] Closing connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:38:57.206 +03:00 [Debug] Closed connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:38:57.208 +03:00 [Debug] Opening connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:38:57.210 +03:00 [Debug] Opened connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:38:57.212 +03:00 [Debug] Beginning transaction with isolation level '"ReadCommitted"'.
+2018-07-26 14:38:57.212 +03:00 [Debug] Executing DbCommand [Parameters=["@p0='?', @p1='?', @p2='?', @p3='?', @p4='?', @p5='?', @p6='?', @p7='?'"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [ClientPortal_Loans] ([Id], [CompanyId], [CreatedDateTime], [IsSubmitted], [LoanAmount], [LoanPurpose], [PurchasePrice], [SubmittedDateTime])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+SELECT [Version]
+FROM [ClientPortal_Loans]
+WHERE @@ROWCOUNT = 1 AND [Id] = @p0;"
+2018-07-26 14:38:57.218 +03:00 [Information] Executed DbCommand ("5"ms) [Parameters=["@p0='?', @p1='?', @p2='?', @p3='?', @p4='?', @p5='?', @p6='?', @p7='?'"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [ClientPortal_Loans] ([Id], [CompanyId], [CreatedDateTime], [IsSubmitted], [LoanAmount], [LoanPurpose], [PurchasePrice], [SubmittedDateTime])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+SELECT [Version]
+FROM [ClientPortal_Loans]
+WHERE @@ROWCOUNT = 1 AND [Id] = @p0;"
+2018-07-26 14:38:57.222 +03:00 [Debug] A data reader was disposed.
+2018-07-26 14:38:57.228 +03:00 [Debug] Committing transaction.
+2018-07-26 14:38:57.229 +03:00 [Debug] Closing connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:38:57.230 +03:00 [Debug] Closed connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:38:57.231 +03:00 [Debug] Disposing transaction.
+2018-07-26 14:38:57.251 +03:00 [Debug] {"$type":"Los.Common.Events.Application.LoanUpdatedEvent, Los.Common.Events","Names":["BorrowerProfileIds"],"Values":[["431d0b1a-fdbd-4664-974f-4a850632a406"]],"EntityType":0,"LoanId":"00000000-0000-0000-0000-000000000000","Id":"a15ebc55-4401-4254-822a-97e9ac9209cf","Actor":"f12f5f85-5bc1-4685-988c-82381ca9e93c","AggregateId":"2c75897c-9bef-4546-9b9a-0f45ddc9463f","EntityId":"2c75897c-9bef-4546-9b9a-0f45ddc9463f","Version":"","Reason":"2371a094-5b51-42da-bd7d-8df62dd50d44"}
+2018-07-26 14:38:57.387 +03:00 [Information] Entity Framework Core "2.0.2-rtm-10011" initialized '"ClientPortalDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-07-26 14:38:57.405 +03:00 [Debug] Opening connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:38:57.407 +03:00 [Debug] Opened connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:38:57.408 +03:00 [Debug] Executing DbCommand [Parameters=["@__id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [x].[Id], [x].[CompanyId], [x].[CreatedDateTime], [x].[IsSubmitted], [x].[LoanAmount], [x].[LoanPurpose], [x].[PurchasePrice], [x].[SubmittedDateTime], [x].[Version]
+FROM [ClientPortal_Loans] AS [x]
+WHERE [x].[Id] = @__id_0
+ORDER BY [x].[Id]"
+2018-07-26 14:38:57.413 +03:00 [Information] Executed DbCommand ("5"ms) [Parameters=["@__id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [x].[Id], [x].[CompanyId], [x].[CreatedDateTime], [x].[IsSubmitted], [x].[LoanAmount], [x].[LoanPurpose], [x].[PurchasePrice], [x].[SubmittedDateTime], [x].[Version]
+FROM [ClientPortal_Loans] AS [x]
+WHERE [x].[Id] = @__id_0
+ORDER BY [x].[Id]"
+2018-07-26 14:38:57.415 +03:00 [Debug] A data reader was disposed.
+2018-07-26 14:38:57.416 +03:00 [Debug] Executing DbCommand [Parameters=["@__id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x.BorrowerProfiles].[Id], [x.BorrowerProfiles].[Email], [x.BorrowerProfiles].[FirstName], [x.BorrowerProfiles].[LastName], [x.BorrowerProfiles].[LoanDbEntityId], [x.BorrowerProfiles].[LoanId], [x.BorrowerProfiles].[PreferredContactMethod], [x.BorrowerProfiles].[Version]
+FROM [ClientPortal_BorrowerProfiles] AS [x.BorrowerProfiles]
+INNER JOIN (
+    SELECT TOP(1) [x0].[Id]
+    FROM [ClientPortal_Loans] AS [x0]
+    WHERE [x0].[Id] = @__id_0
+    ORDER BY [x0].[Id]
+) AS [t] ON [x.BorrowerProfiles].[LoanDbEntityId] = [t].[Id]
+ORDER BY [t].[Id]"
+2018-07-26 14:38:57.423 +03:00 [Information] Executed DbCommand ("5"ms) [Parameters=["@__id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x.BorrowerProfiles].[Id], [x.BorrowerProfiles].[Email], [x.BorrowerProfiles].[FirstName], [x.BorrowerProfiles].[LastName], [x.BorrowerProfiles].[LoanDbEntityId], [x.BorrowerProfiles].[LoanId], [x.BorrowerProfiles].[PreferredContactMethod], [x.BorrowerProfiles].[Version]
+FROM [ClientPortal_BorrowerProfiles] AS [x.BorrowerProfiles]
+INNER JOIN (
+    SELECT TOP(1) [x0].[Id]
+    FROM [ClientPortal_Loans] AS [x0]
+    WHERE [x0].[Id] = @__id_0
+    ORDER BY [x0].[Id]
+) AS [t] ON [x.BorrowerProfiles].[LoanDbEntityId] = [t].[Id]
+ORDER BY [t].[Id]"
+2018-07-26 14:38:57.428 +03:00 [Debug] A data reader was disposed.
+2018-07-26 14:38:57.429 +03:00 [Debug] Closing connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:38:57.429 +03:00 [Debug] Closed connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:38:57.434 +03:00 [Debug] Opening connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:38:57.435 +03:00 [Debug] Opened connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:38:57.436 +03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[CompanyId], [x].[CreatedDateTime], [x].[IsSubmitted], [x].[LoanAmount], [x].[LoanPurpose], [x].[PurchasePrice], [x].[SubmittedDateTime], [x].[Version]
+FROM [ClientPortal_Loans] AS [x]
+WHERE 0 = 1
+ORDER BY [x].[Id]"
+2018-07-26 14:38:57.439 +03:00 [Information] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[CompanyId], [x].[CreatedDateTime], [x].[IsSubmitted], [x].[LoanAmount], [x].[LoanPurpose], [x].[PurchasePrice], [x].[SubmittedDateTime], [x].[Version]
+FROM [ClientPortal_Loans] AS [x]
+WHERE 0 = 1
+ORDER BY [x].[Id]"
+2018-07-26 14:38:57.441 +03:00 [Debug] A data reader was disposed.
+2018-07-26 14:38:57.444 +03:00 [Debug] Closing connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:38:57.445 +03:00 [Debug] Closed connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:38:57.446 +03:00 [Debug] Opening connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:38:57.447 +03:00 [Debug] Opened connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:38:57.447 +03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[CompanyId], [x].[CreatedDateTime], [x].[IsSubmitted], [x].[LoanAmount], [x].[LoanPurpose], [x].[PurchasePrice], [x].[SubmittedDateTime], [x].[Version]
+FROM [ClientPortal_Loans] AS [x]
+WHERE [x].[Id] IN ('2c75897c-9bef-4546-9b9a-0f45ddc9463f')
+ORDER BY [x].[Id]"
+2018-07-26 14:38:57.451 +03:00 [Information] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[CompanyId], [x].[CreatedDateTime], [x].[IsSubmitted], [x].[LoanAmount], [x].[LoanPurpose], [x].[PurchasePrice], [x].[SubmittedDateTime], [x].[Version]
+FROM [ClientPortal_Loans] AS [x]
+WHERE [x].[Id] IN ('2c75897c-9bef-4546-9b9a-0f45ddc9463f')
+ORDER BY [x].[Id]"
+2018-07-26 14:38:57.455 +03:00 [Debug] A data reader was disposed.
+2018-07-26 14:38:57.456 +03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x.BorrowerProfiles].[Id], [x.BorrowerProfiles].[Email], [x.BorrowerProfiles].[FirstName], [x.BorrowerProfiles].[LastName], [x.BorrowerProfiles].[LoanDbEntityId], [x.BorrowerProfiles].[LoanId], [x.BorrowerProfiles].[PreferredContactMethod], [x.BorrowerProfiles].[Version]
+FROM [ClientPortal_BorrowerProfiles] AS [x.BorrowerProfiles]
+INNER JOIN (
+    SELECT [x0].[Id]
+    FROM [ClientPortal_Loans] AS [x0]
+    WHERE [x0].[Id] IN ('2c75897c-9bef-4546-9b9a-0f45ddc9463f')
+) AS [t] ON [x.BorrowerProfiles].[LoanDbEntityId] = [t].[Id]
+ORDER BY [t].[Id]"
+2018-07-26 14:38:57.460 +03:00 [Information] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x.BorrowerProfiles].[Id], [x.BorrowerProfiles].[Email], [x.BorrowerProfiles].[FirstName], [x.BorrowerProfiles].[LastName], [x.BorrowerProfiles].[LoanDbEntityId], [x.BorrowerProfiles].[LoanId], [x.BorrowerProfiles].[PreferredContactMethod], [x.BorrowerProfiles].[Version]
+FROM [ClientPortal_BorrowerProfiles] AS [x.BorrowerProfiles]
+INNER JOIN (
+    SELECT [x0].[Id]
+    FROM [ClientPortal_Loans] AS [x0]
+    WHERE [x0].[Id] IN ('2c75897c-9bef-4546-9b9a-0f45ddc9463f')
+) AS [t] ON [x.BorrowerProfiles].[LoanDbEntityId] = [t].[Id]
+ORDER BY [t].[Id]"
+2018-07-26 14:38:57.467 +03:00 [Debug] A data reader was disposed.
+2018-07-26 14:38:57.468 +03:00 [Debug] Closing connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:38:57.469 +03:00 [Debug] Closed connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:38:57.472 +03:00 [Debug] Opening connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:38:57.473 +03:00 [Debug] Opened connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:38:57.476 +03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Email], [x].[FirstName], [x].[LastName], [x].[LoanDbEntityId], [x].[LoanId], [x].[PreferredContactMethod], [x].[Version]
+FROM [ClientPortal_BorrowerProfiles] AS [x]
+WHERE 0 = 1"
+2018-07-26 14:38:57.479 +03:00 [Information] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Email], [x].[FirstName], [x].[LastName], [x].[LoanDbEntityId], [x].[LoanId], [x].[PreferredContactMethod], [x].[Version]
+FROM [ClientPortal_BorrowerProfiles] AS [x]
+WHERE 0 = 1"
+2018-07-26 14:38:57.481 +03:00 [Debug] A data reader was disposed.
+2018-07-26 14:38:57.482 +03:00 [Debug] Closing connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:38:57.482 +03:00 [Debug] Closed connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:38:57.483 +03:00 [Debug] Opening connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:38:57.486 +03:00 [Debug] Opened connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:38:57.487 +03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Email], [x].[FirstName], [x].[LastName], [x].[LoanDbEntityId], [x].[LoanId], [x].[PreferredContactMethod], [x].[Version]
+FROM [ClientPortal_BorrowerProfiles] AS [x]
+WHERE 0 = 1"
+2018-07-26 14:38:57.489 +03:00 [Information] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Email], [x].[FirstName], [x].[LastName], [x].[LoanDbEntityId], [x].[LoanId], [x].[PreferredContactMethod], [x].[Version]
+FROM [ClientPortal_BorrowerProfiles] AS [x]
+WHERE 0 = 1"
+2018-07-26 14:38:57.491 +03:00 [Debug] A data reader was disposed.
+2018-07-26 14:38:57.492 +03:00 [Debug] Closing connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:38:57.493 +03:00 [Debug] Closed connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:38:57.496 +03:00 [Debug] {"$type":"Los.Common.Events.Application.BorrowerProfileCreatedEvent, Los.Common.Events","LoanId":"2c75897c-9bef-4546-9b9a-0f45ddc9463f","BorrowerNumber":1,"FirstName":"Daniel","MiddleName":null,"LastName":"Gidik","Suffix":null,"Phones":[{"$type":"Los.Common.Events.Application.BorrowerPhoneEventInfo, Los.Common.Events","Id":"a8943601-94c4-4919-b088-c90474542d35","PhoneNumber":"987-654-3210","PhoneType":null}],"Email":"d@d.d","Ssn":null,"BirthDate":null,"Dependents":null,"AgeOfDependents":[],"YearsOfSchool":null,"MaritalStatus":null,"PresentAddressId":null,"PresentAddressOccupancyStatus":null,"PresentAddressMonthlyRent":null,"PresentAddressTimeLivedMonths":null,"PreviousResidencies":[],"MailingAddressId":null,"PreferredContactMethod":2,"ServedForMilitary":null,"ActiveDutyExpDate":null,"MilitaryServiceTypes":[],"Id":"8965a3ae-7011-4394-b103-cbdae109c4ee","Actor":"f12f5f85-5bc1-4685-988c-82381ca9e93c","AggregateId":"431d0b1a-fdbd-4664-974f-4a850632a406","EntityId":"431d0b1a-fdbd-4664-974f-4a850632a406","Version":"","Reason":"2371a094-5b51-42da-bd7d-8df62dd50d44"}
+2018-07-26 14:38:57.605 +03:00 [Information] Entity Framework Core "2.0.2-rtm-10011" initialized '"ClientPortalDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-07-26 14:38:57.608 +03:00 [Debug] Opening connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:38:57.609 +03:00 [Debug] Opened connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:38:57.610 +03:00 [Debug] Executing DbCommand [Parameters=["@__id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [ClientPortal_BorrowerProfiles] AS [x]
+        WHERE [x].[Id] = @__id_0)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END"
+2018-07-26 14:38:57.615 +03:00 [Information] Executed DbCommand ("4"ms) [Parameters=["@__id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [ClientPortal_BorrowerProfiles] AS [x]
+        WHERE [x].[Id] = @__id_0)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END"
+2018-07-26 14:38:57.619 +03:00 [Debug] A data reader was disposed.
+2018-07-26 14:38:57.620 +03:00 [Debug] Closing connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:38:57.621 +03:00 [Debug] Closed connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:38:57.622 +03:00 [Debug] Opening connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:38:57.623 +03:00 [Debug] Opened connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:38:57.624 +03:00 [Debug] Executing DbCommand [Parameters=["@__id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [ClientPortal_BorrowerProfiles] AS [x]
+        WHERE [x].[Id] = @__id_0)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END"
+2018-07-26 14:38:57.628 +03:00 [Information] Executed DbCommand ("4"ms) [Parameters=["@__id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [ClientPortal_BorrowerProfiles] AS [x]
+        WHERE [x].[Id] = @__id_0)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END"
+2018-07-26 14:38:57.630 +03:00 [Debug] A data reader was disposed.
+2018-07-26 14:38:57.631 +03:00 [Debug] Closing connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:38:57.632 +03:00 [Debug] Closed connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:38:57.633 +03:00 [Debug] Opening connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:38:57.633 +03:00 [Debug] Opened connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:38:57.634 +03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[CompanyId], [x].[CreatedDateTime], [x].[IsSubmitted], [x].[LoanAmount], [x].[LoanPurpose], [x].[PurchasePrice], [x].[SubmittedDateTime], [x].[Version]
+FROM [ClientPortal_Loans] AS [x]
+WHERE 0 = 1
+ORDER BY [x].[Id]"
+2018-07-26 14:38:57.639 +03:00 [Information] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[CompanyId], [x].[CreatedDateTime], [x].[IsSubmitted], [x].[LoanAmount], [x].[LoanPurpose], [x].[PurchasePrice], [x].[SubmittedDateTime], [x].[Version]
+FROM [ClientPortal_Loans] AS [x]
+WHERE 0 = 1
+ORDER BY [x].[Id]"
+2018-07-26 14:38:57.642 +03:00 [Debug] A data reader was disposed.
+2018-07-26 14:38:57.642 +03:00 [Debug] Closing connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:38:57.643 +03:00 [Debug] Closed connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:38:57.644 +03:00 [Debug] Opening connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:38:57.645 +03:00 [Debug] Opened connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:38:57.648 +03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[CompanyId], [x].[CreatedDateTime], [x].[IsSubmitted], [x].[LoanAmount], [x].[LoanPurpose], [x].[PurchasePrice], [x].[SubmittedDateTime], [x].[Version]
+FROM [ClientPortal_Loans] AS [x]
+WHERE 0 = 1
+ORDER BY [x].[Id]"
+2018-07-26 14:38:57.650 +03:00 [Information] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[CompanyId], [x].[CreatedDateTime], [x].[IsSubmitted], [x].[LoanAmount], [x].[LoanPurpose], [x].[PurchasePrice], [x].[SubmittedDateTime], [x].[Version]
+FROM [ClientPortal_Loans] AS [x]
+WHERE 0 = 1
+ORDER BY [x].[Id]"
+2018-07-26 14:38:57.652 +03:00 [Debug] A data reader was disposed.
+2018-07-26 14:38:57.652 +03:00 [Debug] Closing connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:38:57.654 +03:00 [Debug] Closed connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:38:57.655 +03:00 [Debug] Opening connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:38:57.655 +03:00 [Debug] Opened connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:38:57.658 +03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Email], [x].[FirstName], [x].[LastName], [x].[LoanDbEntityId], [x].[LoanId], [x].[PreferredContactMethod], [x].[Version]
+FROM [ClientPortal_BorrowerProfiles] AS [x]
+WHERE 0 = 1"
+2018-07-26 14:38:57.662 +03:00 [Information] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Email], [x].[FirstName], [x].[LastName], [x].[LoanDbEntityId], [x].[LoanId], [x].[PreferredContactMethod], [x].[Version]
+FROM [ClientPortal_BorrowerProfiles] AS [x]
+WHERE 0 = 1"
+2018-07-26 14:38:57.664 +03:00 [Debug] A data reader was disposed.
+2018-07-26 14:38:57.664 +03:00 [Debug] Closing connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:38:57.665 +03:00 [Debug] Closed connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:38:57.669 +03:00 [Debug] Opening connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:38:57.669 +03:00 [Debug] Opened connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:38:57.671 +03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Email], [x].[FirstName], [x].[LastName], [x].[LoanDbEntityId], [x].[LoanId], [x].[PreferredContactMethod], [x].[Version]
+FROM [ClientPortal_BorrowerProfiles] AS [x]
+WHERE 0 = 1"
+2018-07-26 14:38:57.674 +03:00 [Information] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Email], [x].[FirstName], [x].[LastName], [x].[LoanDbEntityId], [x].[LoanId], [x].[PreferredContactMethod], [x].[Version]
+FROM [ClientPortal_BorrowerProfiles] AS [x]
+WHERE 0 = 1"
+2018-07-26 14:38:57.676 +03:00 [Debug] A data reader was disposed.
+2018-07-26 14:38:57.679 +03:00 [Debug] Closing connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:38:57.680 +03:00 [Debug] Closed connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:38:57.681 +03:00 [Debug] Opening connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:38:57.682 +03:00 [Debug] Opened connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:38:57.683 +03:00 [Debug] Beginning transaction with isolation level '"ReadCommitted"'.
+2018-07-26 14:38:57.684 +03:00 [Debug] Executing DbCommand [Parameters=["@p0='?', @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?', @p5='?', @p6='?'"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [ClientPortal_BorrowerProfiles] ([Id], [Email], [FirstName], [LastName], [LoanDbEntityId], [LoanId], [PreferredContactMethod])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+SELECT [Version]
+FROM [ClientPortal_BorrowerProfiles]
+WHERE @@ROWCOUNT = 1 AND [Id] = @p0;"
+2018-07-26 14:38:57.689 +03:00 [Information] Executed DbCommand ("4"ms) [Parameters=["@p0='?', @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?', @p5='?', @p6='?'"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [ClientPortal_BorrowerProfiles] ([Id], [Email], [FirstName], [LastName], [LoanDbEntityId], [LoanId], [PreferredContactMethod])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+SELECT [Version]
+FROM [ClientPortal_BorrowerProfiles]
+WHERE @@ROWCOUNT = 1 AND [Id] = @p0;"
+2018-07-26 14:38:57.694 +03:00 [Debug] A data reader was disposed.
+2018-07-26 14:38:57.695 +03:00 [Debug] Committing transaction.
+2018-07-26 14:38:57.695 +03:00 [Debug] Closing connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:38:57.697 +03:00 [Debug] Closed connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:38:57.698 +03:00 [Debug] Disposing transaction.
+2018-07-26 14:38:57.719 +03:00 [Debug] {"$type":"Los.Common.Events.Application.LoanDetailsCreatedEvent, Los.Common.Events","LoanId":"2c75897c-9bef-4546-9b9a-0f45ddc9463f","LoanPurpose":1,"RefinancePrimaryPurposeType":null,"LoanAmount":null,"PurchasePrice":null,"DownPayment":null,"PropertyOwnership":2,"Id":"df3cb771-922a-435b-a056-7070346a0449","Actor":"f12f5f85-5bc1-4685-988c-82381ca9e93c","AggregateId":"152f03c5-7c8c-4e1c-9568-a763f9a19eaf","EntityId":"152f03c5-7c8c-4e1c-9568-a763f9a19eaf","Version":"","Reason":"2371a094-5b51-42da-bd7d-8df62dd50d44"}
+2018-07-26 14:38:57.819 +03:00 [Information] Entity Framework Core "2.0.2-rtm-10011" initialized '"ClientPortalDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-07-26 14:38:57.823 +03:00 [Debug] Opening connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:38:57.824 +03:00 [Debug] Opened connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:38:57.825 +03:00 [Debug] Executing DbCommand [Parameters=["@__id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [x].[Id], [x].[CompanyId], [x].[CreatedDateTime], [x].[IsSubmitted], [x].[LoanAmount], [x].[LoanPurpose], [x].[PurchasePrice], [x].[SubmittedDateTime], [x].[Version]
+FROM [ClientPortal_Loans] AS [x]
+WHERE [x].[Id] = @__id_0
+ORDER BY [x].[Id]"
+2018-07-26 14:38:57.827 +03:00 [Information] Executed DbCommand ("2"ms) [Parameters=["@__id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [x].[Id], [x].[CompanyId], [x].[CreatedDateTime], [x].[IsSubmitted], [x].[LoanAmount], [x].[LoanPurpose], [x].[PurchasePrice], [x].[SubmittedDateTime], [x].[Version]
+FROM [ClientPortal_Loans] AS [x]
+WHERE [x].[Id] = @__id_0
+ORDER BY [x].[Id]"
+2018-07-26 14:38:57.838 +03:00 [Debug] A data reader was disposed.
+2018-07-26 14:38:57.841 +03:00 [Debug] Executing DbCommand [Parameters=["@__id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x.BorrowerProfiles].[Id], [x.BorrowerProfiles].[Email], [x.BorrowerProfiles].[FirstName], [x.BorrowerProfiles].[LastName], [x.BorrowerProfiles].[LoanDbEntityId], [x.BorrowerProfiles].[LoanId], [x.BorrowerProfiles].[PreferredContactMethod], [x.BorrowerProfiles].[Version]
+FROM [ClientPortal_BorrowerProfiles] AS [x.BorrowerProfiles]
+INNER JOIN (
+    SELECT TOP(1) [x0].[Id]
+    FROM [ClientPortal_Loans] AS [x0]
+    WHERE [x0].[Id] = @__id_0
+    ORDER BY [x0].[Id]
+) AS [t] ON [x.BorrowerProfiles].[LoanDbEntityId] = [t].[Id]
+ORDER BY [t].[Id]"
+2018-07-26 14:38:57.843 +03:00 [Information] Executed DbCommand ("2"ms) [Parameters=["@__id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x.BorrowerProfiles].[Id], [x.BorrowerProfiles].[Email], [x.BorrowerProfiles].[FirstName], [x.BorrowerProfiles].[LastName], [x.BorrowerProfiles].[LoanDbEntityId], [x.BorrowerProfiles].[LoanId], [x.BorrowerProfiles].[PreferredContactMethod], [x.BorrowerProfiles].[Version]
+FROM [ClientPortal_BorrowerProfiles] AS [x.BorrowerProfiles]
+INNER JOIN (
+    SELECT TOP(1) [x0].[Id]
+    FROM [ClientPortal_Loans] AS [x0]
+    WHERE [x0].[Id] = @__id_0
+    ORDER BY [x0].[Id]
+) AS [t] ON [x.BorrowerProfiles].[LoanDbEntityId] = [t].[Id]
+ORDER BY [t].[Id]"
+2018-07-26 14:38:57.847 +03:00 [Debug] A data reader was disposed.
+2018-07-26 14:38:57.851 +03:00 [Debug] Closing connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:38:57.852 +03:00 [Debug] Closed connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:38:57.857 +03:00 [Debug] Opening connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:38:57.859 +03:00 [Debug] Opened connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:38:57.861 +03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[CompanyId], [x].[CreatedDateTime], [x].[IsSubmitted], [x].[LoanAmount], [x].[LoanPurpose], [x].[PurchasePrice], [x].[SubmittedDateTime], [x].[Version]
+FROM [ClientPortal_Loans] AS [x]
+WHERE 0 = 1
+ORDER BY [x].[Id]"
+2018-07-26 14:38:57.865 +03:00 [Information] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[CompanyId], [x].[CreatedDateTime], [x].[IsSubmitted], [x].[LoanAmount], [x].[LoanPurpose], [x].[PurchasePrice], [x].[SubmittedDateTime], [x].[Version]
+FROM [ClientPortal_Loans] AS [x]
+WHERE 0 = 1
+ORDER BY [x].[Id]"
+2018-07-26 14:38:57.867 +03:00 [Debug] A data reader was disposed.
+2018-07-26 14:38:57.868 +03:00 [Debug] Closing connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:38:57.869 +03:00 [Debug] Closed connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:38:57.872 +03:00 [Debug] Opening connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:38:57.872 +03:00 [Debug] Opened connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:38:57.873 +03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[CompanyId], [x].[CreatedDateTime], [x].[IsSubmitted], [x].[LoanAmount], [x].[LoanPurpose], [x].[PurchasePrice], [x].[SubmittedDateTime], [x].[Version]
+FROM [ClientPortal_Loans] AS [x]
+WHERE [x].[Id] IN ('2c75897c-9bef-4546-9b9a-0f45ddc9463f')
+ORDER BY [x].[Id]"
+2018-07-26 14:38:57.876 +03:00 [Information] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[CompanyId], [x].[CreatedDateTime], [x].[IsSubmitted], [x].[LoanAmount], [x].[LoanPurpose], [x].[PurchasePrice], [x].[SubmittedDateTime], [x].[Version]
+FROM [ClientPortal_Loans] AS [x]
+WHERE [x].[Id] IN ('2c75897c-9bef-4546-9b9a-0f45ddc9463f')
+ORDER BY [x].[Id]"
+2018-07-26 14:38:57.879 +03:00 [Debug] A data reader was disposed.
+2018-07-26 14:38:57.879 +03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x.BorrowerProfiles].[Id], [x.BorrowerProfiles].[Email], [x.BorrowerProfiles].[FirstName], [x.BorrowerProfiles].[LastName], [x.BorrowerProfiles].[LoanDbEntityId], [x.BorrowerProfiles].[LoanId], [x.BorrowerProfiles].[PreferredContactMethod], [x.BorrowerProfiles].[Version]
+FROM [ClientPortal_BorrowerProfiles] AS [x.BorrowerProfiles]
+INNER JOIN (
+    SELECT [x0].[Id]
+    FROM [ClientPortal_Loans] AS [x0]
+    WHERE [x0].[Id] IN ('2c75897c-9bef-4546-9b9a-0f45ddc9463f')
+) AS [t] ON [x.BorrowerProfiles].[LoanDbEntityId] = [t].[Id]
+ORDER BY [t].[Id]"
+2018-07-26 14:38:57.885 +03:00 [Information] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x.BorrowerProfiles].[Id], [x.BorrowerProfiles].[Email], [x.BorrowerProfiles].[FirstName], [x.BorrowerProfiles].[LastName], [x.BorrowerProfiles].[LoanDbEntityId], [x.BorrowerProfiles].[LoanId], [x.BorrowerProfiles].[PreferredContactMethod], [x.BorrowerProfiles].[Version]
+FROM [ClientPortal_BorrowerProfiles] AS [x.BorrowerProfiles]
+INNER JOIN (
+    SELECT [x0].[Id]
+    FROM [ClientPortal_Loans] AS [x0]
+    WHERE [x0].[Id] IN ('2c75897c-9bef-4546-9b9a-0f45ddc9463f')
+) AS [t] ON [x.BorrowerProfiles].[LoanDbEntityId] = [t].[Id]
+ORDER BY [t].[Id]"
+2018-07-26 14:38:57.887 +03:00 [Debug] A data reader was disposed.
+2018-07-26 14:38:57.888 +03:00 [Debug] Closing connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:38:57.889 +03:00 [Debug] Closed connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:38:57.893 +03:00 [Debug] Opening connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:38:57.894 +03:00 [Debug] Opened connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:38:57.896 +03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Email], [x].[FirstName], [x].[LastName], [x].[LoanDbEntityId], [x].[LoanId], [x].[PreferredContactMethod], [x].[Version]
+FROM [ClientPortal_BorrowerProfiles] AS [x]
+WHERE 0 = 1"
+2018-07-26 14:38:57.899 +03:00 [Information] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Email], [x].[FirstName], [x].[LastName], [x].[LoanDbEntityId], [x].[LoanId], [x].[PreferredContactMethod], [x].[Version]
+FROM [ClientPortal_BorrowerProfiles] AS [x]
+WHERE 0 = 1"
+2018-07-26 14:38:57.902 +03:00 [Debug] A data reader was disposed.
+2018-07-26 14:38:57.904 +03:00 [Debug] Closing connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:38:57.905 +03:00 [Debug] Closed connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:38:57.906 +03:00 [Debug] Opening connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:38:57.907 +03:00 [Debug] Opened connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:38:57.908 +03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Email], [x].[FirstName], [x].[LastName], [x].[LoanDbEntityId], [x].[LoanId], [x].[PreferredContactMethod], [x].[Version]
+FROM [ClientPortal_BorrowerProfiles] AS [x]
+WHERE 0 = 1"
+2018-07-26 14:38:57.911 +03:00 [Information] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Email], [x].[FirstName], [x].[LastName], [x].[LoanDbEntityId], [x].[LoanId], [x].[PreferredContactMethod], [x].[Version]
+FROM [ClientPortal_BorrowerProfiles] AS [x]
+WHERE 0 = 1"
+2018-07-26 14:38:57.915 +03:00 [Debug] A data reader was disposed.
+2018-07-26 14:38:57.916 +03:00 [Debug] Closing connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:38:57.917 +03:00 [Debug] Closed connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:38:57.918 +03:00 [Debug] Opening connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:38:57.918 +03:00 [Debug] Opened connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:38:57.919 +03:00 [Debug] Beginning transaction with isolation level '"ReadCommitted"'.
+2018-07-26 14:38:57.920 +03:00 [Debug] Executing DbCommand [Parameters=["@p1='?', @p0='?', @p2='?' (Size = 8)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [ClientPortal_Loans] SET [LoanPurpose] = @p0
+WHERE [Id] = @p1 AND [Version] = @p2;
+SELECT [Version]
+FROM [ClientPortal_Loans]
+WHERE @@ROWCOUNT = 1 AND [Id] = @p1;"
+2018-07-26 14:38:57.926 +03:00 [Information] Executed DbCommand ("6"ms) [Parameters=["@p1='?', @p0='?', @p2='?' (Size = 8)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [ClientPortal_Loans] SET [LoanPurpose] = @p0
+WHERE [Id] = @p1 AND [Version] = @p2;
+SELECT [Version]
+FROM [ClientPortal_Loans]
+WHERE @@ROWCOUNT = 1 AND [Id] = @p1;"
+2018-07-26 14:38:57.930 +03:00 [Debug] A data reader was disposed.
+2018-07-26 14:38:57.935 +03:00 [Debug] Committing transaction.
+2018-07-26 14:38:57.935 +03:00 [Debug] Closing connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:38:57.936 +03:00 [Debug] Closed connection to database '"LOS.clientPortal"' on server '"IMATEV10"'.
+2018-07-26 14:38:57.937 +03:00 [Debug] Disposing transaction.
+2018-07-26 17:59:47.337 +03:00 [Information] Now starting LOS ClientPortal XCom Runner ...
+2018-07-26 17:59:48.566 +03:00 [Debug] {"$type":"Los.Common.Events.Application.BorrowerProfileUpdatedEvent, Los.Common.Events","Names":["MiddleName"],"Values":["c"],"EntityType":2,"LoanId":"c84be6c4-e339-4d32-89ba-0e74781d4c05","Id":"6c235daa-8498-4c44-901f-8f484e4c1d54","Actor":"28cde30f-9fb5-48d2-9334-d05dbcb9a8ea","AggregateId":"d3ea0665-8cb0-4a5c-83f0-93c2f68a05e4","EntityId":"d3ea0665-8cb0-4a5c-83f0-93c2f68a05e4","Version":"AAAAAAAAB+s=","Reason":"b99a3867-2705-494a-b4d2-38e384e347b8"}

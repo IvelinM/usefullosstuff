@@ -11,8 +11,8 @@ namespace XComRunners
     {
         static void Main(string[] args)
         {
-            Process.Start("C:\\IVELIN\\PROJECTS\\LOS\\src\\Infrastructure\\Los.ClientPortal.XCom.Runner\\bin\\Debug\\Los.ClientPortal.XCom.Runner.exe");
-            Process.Start("C:\\IVELIN\\PROJECTS\\LOS\\src\\Infrastructure\\Los.Application.XCom.Runner\\bin\\Debug\\Los.Application.XCom.Runner.exe");
+            Process.Start("C:\\IVELIN\\PROJECTS\\LOS\\src\\Los.ClientPortal\\Infrastructure\\Los.ClientPortal.XCom.Runner\\bin\\Debug\\Los.ClientPortal.XCom.Runner.exe");
+            Process.Start("C:\\IVELIN\\PROJECTS\\LOS\\src\\Los.Application\\Infrastructure\\Los.Application.XCom.Runner\\bin\\Debug\\Los.Application.XCom.Runner.exe");
         }
     }
 }

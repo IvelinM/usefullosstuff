@@ -10,4 +10,3 @@ C:\IVELIN\PROJECTS\WORK FILES\RUN SCRIPTS\UsefulLOSStuff GITHUB REPO\usefullosst
 C:\IVELIN\PROJECTS\WORK FILES\RUN SCRIPTS\UsefulLOSStuff GITHUB REPO\usefullosstuff\XComRunners\obj\Debug\XComRunners.csproj.CoreCompileInputs.cache
 C:\IVELIN\PROJECTS\WORK FILES\RUN SCRIPTS\UsefulLOSStuff GITHUB REPO\usefullosstuff\XComRunners\obj\Debug\XComRunners.exe
 C:\IVELIN\PROJECTS\WORK FILES\RUN SCRIPTS\UsefulLOSStuff GITHUB REPO\usefullosstuff\XComRunners\obj\Debug\XComRunners.pdb
-C:\IVELIN\PROJECTS\WORK FILES\RUN SCRIPTS\UsefulLOSStuff GITHUB REPO\usefullosstuff\XComRunners\obj\Debug\XComRunners.csprojResolveAssemblyReference.cache

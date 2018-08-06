@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NpmInstallUIs", "NpmInstall
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharedNpmInstall", "SharedNpmInstall\SharedNpmInstall.csproj", "{7637BEE5-2C0E-4873-B200-081E10D4A49C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RenameConnectionStrings", "RenameConnectionStrings\RenameConnectionStrings.csproj", "{F677D917-C0A8-41D2-95BB-8D201B3DD81D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{7637BEE5-2C0E-4873-B200-081E10D4A49C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7637BEE5-2C0E-4873-B200-081E10D4A49C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7637BEE5-2C0E-4873-B200-081E10D4A49C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F677D917-C0A8-41D2-95BB-8D201B3DD81D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F677D917-C0A8-41D2-95BB-8D201B3DD81D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F677D917-C0A8-41D2-95BB-8D201B3DD81D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F677D917-C0A8-41D2-95BB-8D201B3DD81D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

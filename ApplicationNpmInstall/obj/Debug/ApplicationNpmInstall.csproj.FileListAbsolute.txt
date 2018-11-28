@@ -4,4 +4,4 @@ C:\IVELIN\PROJECTS\WORK FILES\RUN SCRIPTS\UsefulLOSStuff GITHUB REPO\usefullosst
 C:\IVELIN\PROJECTS\WORK FILES\RUN SCRIPTS\UsefulLOSStuff GITHUB REPO\usefullosstuff\ApplicationNpmInstall\obj\Debug\ApplicationNpmInstall.csproj.CoreCompileInputs.cache
 C:\IVELIN\PROJECTS\WORK FILES\RUN SCRIPTS\UsefulLOSStuff GITHUB REPO\usefullosstuff\ApplicationNpmInstall\obj\Debug\ApplicationNpmInstall.exe
 C:\IVELIN\PROJECTS\WORK FILES\RUN SCRIPTS\UsefulLOSStuff GITHUB REPO\usefullosstuff\ApplicationNpmInstall\obj\Debug\ApplicationNpmInstall.pdb
-C:\IVELIN\PROJECTS\WORK FILES\RUN SCRIPTS\UsefulLOSStuff GITHUB REPO\usefullosstuff\ApplicationNpmInstall\obj\Debug\ApplicationNpmInstall.csprojResolveAssemblyReference.cache
+C:\IVELIN\PROJECTS\WORK FILES\RUN SCRIPTS\UsefulLOSStuff GITHUB REPO\usefullosstuff\ApplicationNpmInstall\obj\Debug\ApplicationNpmInstall.csprojAssemblyReference.cache

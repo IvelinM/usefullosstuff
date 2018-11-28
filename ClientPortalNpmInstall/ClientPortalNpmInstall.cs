@@ -1,4 +1,5 @@
-﻿using System.Diagnostics;
+﻿using Common;
+using System.Diagnostics;
 using System.IO;
 
 namespace ClientPortalNpmInstall
@@ -7,8 +8,8 @@ namespace ClientPortalNpmInstall
     {
         static void Main(string[] args)
         {
-            string ClientPortalPath = @"C:\IVELIN\PROJECTS\LOS\src\Los.ClientPortal\Web\Los.ClientPortal.UI";
-            string nodeModules = @"C:\IVELIN\PROJECTS\LOS\src\Los.ClientPortal\Web\Los.ClientPortal.UI\node_modules";
+            string ClientPortalPath = Constants.PATH_TO_LOS_FOLDER + @"\LOS\src\Los.ClientPortal\Web\Los.ClientPortal.Web\ClientApp";
+            string nodeModules = ClientPortalPath + "\node_modules";
 
             var RunClientPortalUI = new ProcessStartInfo
             {

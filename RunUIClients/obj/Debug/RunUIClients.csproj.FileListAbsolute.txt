@@ -11,4 +11,4 @@ C:\IVELIN\PROJECTS\WORK FILES\RUN SCRIPTS\UsefulLOSStuff GITHUB REPO\usefullosst
 C:\IVELIN\PROJECTS\WORK FILES\RUN SCRIPTS\UsefulLOSStuff GITHUB REPO\usefullosstuff\RunUIClients\obj\Debug\RunUIClients.csproj.CoreCompileInputs.cache
 C:\IVELIN\PROJECTS\WORK FILES\RUN SCRIPTS\UsefulLOSStuff GITHUB REPO\usefullosstuff\RunUIClients\obj\Debug\RunUIClients.exe
 C:\IVELIN\PROJECTS\WORK FILES\RUN SCRIPTS\UsefulLOSStuff GITHUB REPO\usefullosstuff\RunUIClients\obj\Debug\RunUIClients.pdb
-C:\IVELIN\PROJECTS\WORK FILES\RUN SCRIPTS\UsefulLOSStuff GITHUB REPO\usefullosstuff\RunUIClients\obj\Debug\RunUIClients.csprojResolveAssemblyReference.cache
+C:\IVELIN\PROJECTS\WORK FILES\RUN SCRIPTS\UsefulLOSStuff GITHUB REPO\usefullosstuff\RunUIClients\obj\Debug\RunUIClients.csprojAssemblyReference.cache

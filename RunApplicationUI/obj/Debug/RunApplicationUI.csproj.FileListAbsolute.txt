@@ -4,9 +4,10 @@ C:\IVELIN\PROJECTS\WORK FILES\RUN SCRIPTS\UsefulLOSStuff\RunApplicationUI\bin\De
 C:\IVELIN\PROJECTS\WORK FILES\RUN SCRIPTS\UsefulLOSStuff\RunApplicationUI\obj\Debug\RunApplicationUI.csproj.CoreCompileInputs.cache
 C:\IVELIN\PROJECTS\WORK FILES\RUN SCRIPTS\UsefulLOSStuff\RunApplicationUI\obj\Debug\RunApplicationUI.exe
 C:\IVELIN\PROJECTS\WORK FILES\RUN SCRIPTS\UsefulLOSStuff\RunApplicationUI\obj\Debug\RunApplicationUI.pdb
-C:\IVELIN\PROJECTS\WORK FILES\RUN SCRIPTS\UsefulLOSStuff GITHUB REPO\usefullosstuff\RunApplicationUI\bin\Debug\RunApplicationUI.exe.config
 C:\IVELIN\PROJECTS\WORK FILES\RUN SCRIPTS\UsefulLOSStuff GITHUB REPO\usefullosstuff\RunApplicationUI\bin\Debug\RunApplicationUI.exe
-C:\IVELIN\PROJECTS\WORK FILES\RUN SCRIPTS\UsefulLOSStuff GITHUB REPO\usefullosstuff\RunApplicationUI\bin\Debug\RunApplicationUI.pdb
+C:\IVELIN\PROJECTS\WORK FILES\RUN SCRIPTS\UsefulLOSStuff GITHUB REPO\usefullosstuff\RunApplicationUI\bin\Debug\RunApplicationUI.exe.config
+C:\IVELIN\PROJECTS\WORK FILES\RUN SCRIPTS\UsefulLOSStuff GITHUB REPO\usefullosstuff\RunApplicationUI\obj\Debug\RunApplicationUI.csprojAssemblyReference.cache
 C:\IVELIN\PROJECTS\WORK FILES\RUN SCRIPTS\UsefulLOSStuff GITHUB REPO\usefullosstuff\RunApplicationUI\obj\Debug\RunApplicationUI.csproj.CoreCompileInputs.cache
 C:\IVELIN\PROJECTS\WORK FILES\RUN SCRIPTS\UsefulLOSStuff GITHUB REPO\usefullosstuff\RunApplicationUI\obj\Debug\RunApplicationUI.exe
 C:\IVELIN\PROJECTS\WORK FILES\RUN SCRIPTS\UsefulLOSStuff GITHUB REPO\usefullosstuff\RunApplicationUI\obj\Debug\RunApplicationUI.pdb
+C:\IVELIN\PROJECTS\WORK FILES\RUN SCRIPTS\UsefulLOSStuff GITHUB REPO\usefullosstuff\RunApplicationUI\bin\Debug\RunApplicationUI.pdb

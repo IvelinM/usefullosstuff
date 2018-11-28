@@ -3,23 +3,33 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27428.2015
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XComRunners", "XComRunners\XComRunners.csproj", "{20F521A5-613C-4152-BDC2-6EEAC771D926}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04-XComRunners", "XComRunners\04-XComRunners.csproj", "{20F521A5-613C-4152-BDC2-6EEAC771D926}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RunUIClients", "RunUIClients\RunUIClients.csproj", "{40F30F33-396D-458A-83D1-C4DFDF522DA2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-RunUIClients", "RunUIClients\03-RunUIClients.csproj", "{40F30F33-396D-458A-83D1-C4DFDF522DA2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RunApplicationUI", "RunApplicationUI\RunApplicationUI.csproj", "{AF10B8BA-82AE-4A32-9545-A53E51AF777C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-01-RunApplicationUI", "RunApplicationUI\03-01-RunApplicationUI.csproj", "{AF10B8BA-82AE-4A32-9545-A53E51AF777C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RunClientPortalUI", "RunClientPortalUI\RunClientPortalUI.csproj", "{E0EA7F90-3536-4786-808C-7EBF2FD72543}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-02-RunClientPortalUI", "RunClientPortalUI\03-02-RunClientPortalUI.csproj", "{E0EA7F90-3536-4786-808C-7EBF2FD72543}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientPortalNpmInstall", "ClientPortalNpmInstall\ClientPortalNpmInstall.csproj", "{0D5643E1-D03A-42DB-961C-E7CEA1BC1DE0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-02-ClientPortalNpmInstall", "ClientPortalNpmInstall\01-02-ClientPortalNpmInstall.csproj", "{0D5643E1-D03A-42DB-961C-E7CEA1BC1DE0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplicationNpmInstall", "ApplicationNpmInstall\ApplicationNpmInstall.csproj", "{74EA7759-54A0-495B-9044-B3210F701995}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-01-ApplicationNpmInstall", "ApplicationNpmInstall\01-01-ApplicationNpmInstall.csproj", "{74EA7759-54A0-495B-9044-B3210F701995}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NpmInstallUIs", "NpmInstallUIs\NpmInstallUIs.csproj", "{E89E7C71-AB98-47EE-A5AE-7CDDDC66E24C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-NpmInstallUIs", "NpmInstallUIs\01-NpmInstallUIs.csproj", "{E89E7C71-AB98-47EE-A5AE-7CDDDC66E24C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharedNpmInstall", "SharedNpmInstall\SharedNpmInstall.csproj", "{7637BEE5-2C0E-4873-B200-081E10D4A49C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-03-SharedNpmInstall", "SharedNpmInstall\01-03-SharedNpmInstall.csproj", "{7637BEE5-2C0E-4873-B200-081E10D4A49C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RenameConnectionStrings", "RenameConnectionStrings\RenameConnectionStrings.csproj", "{F677D917-C0A8-41D2-95BB-8D201B3DD81D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-RenameConnectionStrings", "RenameConnectionStrings\02-RenameConnectionStrings.csproj", "{F677D917-C0A8-41D2-95BB-8D201B3DD81D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05-RunNetCoreApps", "RunNetCoreApps\05-RunNetCoreApps.csproj", "{8F58C196-D1E6-43AD-8AF5-478F2954CC59}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05-01-RunApplicationCoreApp", "RunApplicationCoreApp\05-01-RunApplicationCoreApp.csproj", "{C1FF3FAD-A2D2-4C53-A9BC-73B79FA5C2AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05-02-RunClientPortalCoreApp", "RunClientPortalCoreApp\05-02-RunClientPortalCoreApp.csproj", "{85944848-1733-4816-A846-16650231F985}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06-DeleteDBs", "DeleteDBs\06-DeleteDBs.csproj", "{42F0B5C2-71B1-419E-AD4F-756238AD1DCC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{502ADCCF-5CD0-4546-A556-3AF0BDE0E90E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +73,26 @@ Global
 		{F677D917-C0A8-41D2-95BB-8D201B3DD81D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F677D917-C0A8-41D2-95BB-8D201B3DD81D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F677D917-C0A8-41D2-95BB-8D201B3DD81D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F58C196-D1E6-43AD-8AF5-478F2954CC59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F58C196-D1E6-43AD-8AF5-478F2954CC59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F58C196-D1E6-43AD-8AF5-478F2954CC59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F58C196-D1E6-43AD-8AF5-478F2954CC59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1FF3FAD-A2D2-4C53-A9BC-73B79FA5C2AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1FF3FAD-A2D2-4C53-A9BC-73B79FA5C2AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1FF3FAD-A2D2-4C53-A9BC-73B79FA5C2AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1FF3FAD-A2D2-4C53-A9BC-73B79FA5C2AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85944848-1733-4816-A846-16650231F985}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85944848-1733-4816-A846-16650231F985}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85944848-1733-4816-A846-16650231F985}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85944848-1733-4816-A846-16650231F985}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42F0B5C2-71B1-419E-AD4F-756238AD1DCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42F0B5C2-71B1-419E-AD4F-756238AD1DCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42F0B5C2-71B1-419E-AD4F-756238AD1DCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42F0B5C2-71B1-419E-AD4F-756238AD1DCC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{502ADCCF-5CD0-4546-A556-3AF0BDE0E90E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{502ADCCF-5CD0-4546-A556-3AF0BDE0E90E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{502ADCCF-5CD0-4546-A556-3AF0BDE0E90E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{502ADCCF-5CD0-4546-A556-3AF0BDE0E90E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

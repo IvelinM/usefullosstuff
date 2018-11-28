@@ -1,4 +1,5 @@
-﻿using System.Diagnostics;
+﻿using Common;
+using System.Diagnostics;
 
 namespace RunApplicationUI
 {
@@ -6,7 +7,7 @@ namespace RunApplicationUI
     {
         static void Main(string[] args)
         {
-            string ApplicationPath = @"C:\IVELIN\PROJECTS\LOS\src\Los.Application\Web\Los.Application.UI";
+            string ApplicationPath = Constants.PATH_TO_LOS_FOLDER + @"\LOS\src\Los.Application\Web\Los.Application.Web\ClientApp";
             var RunApplicationUI = new ProcessStartInfo
             {
                 FileName = "cmd",
@@ -16,7 +17,7 @@ namespace RunApplicationUI
                 CreateNoWindow = false
             };
             var pRunApplicationUI = Process.Start(RunApplicationUI);
-            pRunApplicationUI.StandardInput.WriteLine("npm start");
+            pRunApplicationUI.StandardInput.WriteLine("ng serve --port 3000");
             pRunApplicationUI.WaitForExit();
         }
     }

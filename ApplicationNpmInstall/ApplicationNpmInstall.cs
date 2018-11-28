@@ -1,4 +1,5 @@
-﻿using System.Diagnostics;
+﻿using Common;
+using System.Diagnostics;
 using System.IO;
 
 namespace ApplicationNpmInstall
@@ -7,8 +8,8 @@ namespace ApplicationNpmInstall
     {
         static void Main(string[] args)
         {
-            string ApplicationPath = @"C:\IVELIN\PROJECTS\LOS\src\Los.Application\Web\Los.Application.UI";
-            string nodeModules = @"C:\IVELIN\PROJECTS\LOS\src\Los.Application\Web\Los.Application.UI\node_modules";
+            string ApplicationPath = Constants.PATH_TO_LOS_FOLDER + @"\LOS\src\Los.Application\Web\Los.Application.Web\ClientApp";
+            string nodeModules = ApplicationPath + "\node_modules";
             var RunApplicationUI = new ProcessStartInfo
             {
                 FileName = "cmd",

@@ -1,4 +1,5 @@
-﻿using System.Diagnostics;
+﻿using Common;
+using System.Diagnostics;
 using System.Threading.Tasks;
 
 namespace RunUIClients
@@ -7,8 +8,8 @@ namespace RunUIClients
     {
         static void Main(string[] args)
         {
-            Process.Start("C:\\IVELIN\\PROJECTS\\WORK FILES\\RUN SCRIPTS\\UsefulLOSStuff GITHUB REPO\\usefullosstuff\\RunApplicationUI\\bin\\Debug\\RunApplicationUI.exe");
-            Process.Start("C:\\IVELIN\\PROJECTS\\WORK FILES\\RUN SCRIPTS\\UsefulLOSStuff GITHUB REPO\\usefullosstuff\\RunClientPortalUI\\bin\\Debug\\RunClientPortalUI.exe");
+            Process.Start(Constants.PATH_TO_THIS_SOLUTION + @"\RunApplicationUI\bin\Debug\RunApplicationUI.exe");
+            Process.Start(Constants.PATH_TO_THIS_SOLUTION + @"\RunClientPortalUI\bin\Debug\RunClientPortalUI.exe");
         }
     }
 }

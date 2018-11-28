@@ -1,4 +1,5 @@
-﻿using System.Diagnostics;
+﻿using Common;
+using System.Diagnostics;
 
 namespace RunClientPortalUI
 {
@@ -6,7 +7,7 @@ namespace RunClientPortalUI
     {
         static void Main(string[] args)
         {
-            string ClientPortalPath = @"C:\IVELIN\PROJECTS\LOS\src\Los.ClientPortal\Web\Los.ClientPortal.UI";
+            string ClientPortalPath = Constants.PATH_TO_LOS_FOLDER + @"\LOS\src\Los.ClientPortal\Web\Los.ClientPortal.Web\ClientApp";
 
             var RunClientPortalUI = new ProcessStartInfo
             {
@@ -17,7 +18,7 @@ namespace RunClientPortalUI
                 CreateNoWindow = false
             };
             var pRunClientPortalUI = Process.Start(RunClientPortalUI);
-            pRunClientPortalUI.StandardInput.WriteLine("npm start");
+            pRunClientPortalUI.StandardInput.WriteLine("ng serve --port 3001");
             pRunClientPortalUI.WaitForExit();
         }
     }

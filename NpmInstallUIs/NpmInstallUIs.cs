@@ -1,4 +1,5 @@
-﻿using System.Diagnostics;
+﻿using Common;
+using System.Diagnostics;
 
 namespace NpmInstallUIs
 {
@@ -6,9 +7,9 @@ namespace NpmInstallUIs
     {
         static void Main(string[] args)
         {
-            Process.Start("C:\\IVELIN\\PROJECTS\\WORK FILES\\RUN SCRIPTS\\UsefulLOSStuff GITHUB REPO\\usefullosstuff\\ClientPortalNpmInstall\\bin\\Debug\\ClientPortalNpmInstall.exe");
-            Process.Start("C:\\IVELIN\\PROJECTS\\WORK FILES\\RUN SCRIPTS\\UsefulLOSStuff GITHUB REPO\\usefullosstuff\\ApplicationNpmInstall\\bin\\Debug\\ApplicationNpmInstall.exe");
-            Process.Start("C:\\IVELIN\\PROJECTS\\WORK FILES\\RUN SCRIPTS\\UsefulLOSStuff GITHUB REPO\\usefullosstuff\\SharedNpmInstall\\bin\\Debug\\SharedNpmInstall.exe");
+            Process.Start(Constants.PATH_TO_THIS_SOLUTION + @"\ClientPortalNpmInstall\bin\Debug\ClientPortalNpmInstall.exe");
+            Process.Start(Constants.PATH_TO_THIS_SOLUTION + @"\ApplicationNpmInstall\bin\Debug\ApplicationNpmInstall.exe");
+            Process.Start(Constants.PATH_TO_THIS_SOLUTION + @"\SharedNpmInstall\bin\Debug\SharedNpmInstall.exe");
         }
     }
 }

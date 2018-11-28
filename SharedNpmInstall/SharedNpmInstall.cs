@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using Common;
 using System.Diagnostics;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SharedNpmInstall
 {
@@ -12,13 +8,13 @@ namespace SharedNpmInstall
     {
         static void Main(string[] args)
         {
-            string ApplicationPath = @"C:\IVELIN\PROJECTS\LOS\src\Common\Los.Shared.UI";
-            string nodeModules = @"C:\IVELIN\PROJECTS\LOS\src\Common\Los.Shared.UI\node_modules";
+            string SharedPath = Constants.PATH_TO_LOS_FOLDER + @"\LOS\src\Common\Los.Shared.UI";
+            string nodeModules = SharedPath + "\node_modules";
             var RunApplicationUI = new ProcessStartInfo
             {
                 FileName = "cmd",
                 RedirectStandardInput = true,
-                WorkingDirectory = ApplicationPath,
+                WorkingDirectory = SharedPath,
                 UseShellExecute = false,
                 CreateNoWindow = false
             };

@@ -8,7 +8,7 @@ namespace SharedNpmInstall
     {
         static void Main(string[] args)
         {
-            string SharedPath = Constants.PATH_TO_LOS_FOLDER + @"\LOS\src\Common\Los.Shared.UI";
+            string SharedPath = Constants.PATH_TO_LOS_FOLDER + @"\src\Common\Los.Shared.UI";
             string nodeModules = SharedPath + "\node_modules";
             var RunApplicationUI = new ProcessStartInfo
             {

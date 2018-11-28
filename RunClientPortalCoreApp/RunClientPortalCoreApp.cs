@@ -7,7 +7,7 @@ namespace RunClientPortalCoreApp
     {
         static void Main(string[] args)
         {
-            string ApplicationPath = Constants.PATH_TO_LOS_FOLDER + @"\LOS\src\Los.Application\Web\Los.Application.Web";
+            string ApplicationPath = Constants.PATH_TO_LOS_FOLDER + @"\src\Los.Application\Web\Los.Application.Web";
 
             var RunApplicationNetCoreApp = new ProcessStartInfo
             {

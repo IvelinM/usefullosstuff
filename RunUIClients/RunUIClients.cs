@@ -8,8 +8,10 @@ namespace RunUIClients
     {
         static void Main(string[] args)
         {
-            Process.Start(Constants.PATH_TO_THIS_SOLUTION + @"\RunApplicationUI\bin\Debug\RunApplicationUI.exe");
-            Process.Start(Constants.PATH_TO_THIS_SOLUTION + @"\RunClientPortalUI\bin\Debug\RunClientPortalUI.exe");
+            var app = Constants.PATH_TO_THIS_SOLUTION + @"\RunApplicationUI\bin\Debug\RunApplicationUI.exe";
+            var cp = Constants.PATH_TO_THIS_SOLUTION + @"\RunClientPortalUI\bin\Debug\RunClientPortalUI.exe";
+            Process.Start(app);
+            Process.Start(cp);
         }
     }
 }

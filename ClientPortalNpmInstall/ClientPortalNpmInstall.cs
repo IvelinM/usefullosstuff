@@ -8,7 +8,7 @@ namespace ClientPortalNpmInstall
     {
         static void Main(string[] args)
         {
-            string ClientPortalPath = Constants.PATH_TO_LOS_FOLDER + @"\LOS\src\Los.ClientPortal\Web\Los.ClientPortal.Web\ClientApp";
+            string ClientPortalPath = Constants.PATH_TO_LOS_FOLDER + @"\src\Los.ClientPortal\Web\Los.ClientPortal.Web\ClientApp";
             string nodeModules = ClientPortalPath + "\node_modules";
 
             var RunClientPortalUI = new ProcessStartInfo

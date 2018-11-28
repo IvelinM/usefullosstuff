@@ -7,7 +7,7 @@ namespace RunApplicationUI
     {
         static void Main(string[] args)
         {
-            string ApplicationPath = Constants.PATH_TO_LOS_FOLDER + @"\LOS\src\Los.Application\Web\Los.Application.Web\ClientApp";
+            string ApplicationPath = Constants.PATH_TO_LOS_FOLDER + @"\src\Los.Application\Web\Los.Application.Web\ClientApp";
             var RunApplicationUI = new ProcessStartInfo
             {
                 FileName = "cmd",

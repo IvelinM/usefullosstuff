@@ -1,4 +1,5 @@
-﻿using System.Diagnostics;
+﻿using Common;
+using System.Diagnostics;
 
 namespace DeleteDBsAndUpdateDatabase
 {
@@ -6,11 +7,11 @@ namespace DeleteDBsAndUpdateDatabase
     {
         static void Main(string[] args)
         {
-            var databasesPath = @"C:\Program Files\Microsoft SQL Server\MSSQL13.MSSQLSERVER\MSSQL\DATA";
-            var commandApplication = @"sqlcmd -S .\ -q ""alter database [LOS] set single_user with rollback immediate drop database [LOS]""";
-            var commandClientPortal = @"sqlcmd -S .\ -q ""alter database [LOS.clientPortal] set single_user with rollback immediate drop database [LOS.clientPortal]""";
-            var commandRates = @"sqlcmd -S .\ -q ""alter database [LOS.Rates] set single_user with rollback immediate drop database [LOS.Rates]""";
-            var commandFees = @"sqlcmd -S .\ -q ""alter database [LOS.Fees] set single_user with rollback immediate drop database [LOS.Fees]""";
+            var databasesPath = Constants.DATABASES_PATH;
+            var commandApplication = @"sqlcmd -S .\ -q ""alter database [" + Constants.APPLICATION_DATABASE_NAME + "] set single_user with rollback immediate drop database [" + Constants.APPLICATION_DATABASE_NAME + @"]""";
+            var commandClientPortal = @"sqlcmd -S .\ -q ""alter database [" + Constants.CLIENT_PORTAL_DATABASE_NAME + "] set single_user with rollback immediate drop database [" + Constants.CLIENT_PORTAL_DATABASE_NAME + @"]""";
+            var commandRates = @"sqlcmd -S .\ -q ""alter database [" + Constants.RATES_DATABASE_NAME + "] set single_user with rollback immediate drop database [" + Constants.RATES_DATABASE_NAME + @"]""";
+            var commandFees = @"sqlcmd -S .\ -q ""alter database [" + Constants.FEES_DATABASE_NAME + "] set single_user with rollback immediate drop database [" + Constants.FEES_DATABASE_NAME + @"]""";
 
             var removeApplicationDatabase = new ProcessStartInfo
             {

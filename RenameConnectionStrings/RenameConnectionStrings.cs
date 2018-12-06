@@ -22,12 +22,12 @@ namespace RenameConnectionStrings
             string stringsPathLosClientPortalWebApi = Constants.PATH_TO_LOS_FOLDER + @"\src\Los.ClientPortal\Web\Los.ClientPortal.Web\appsettings.Development.json";
             string losClientPortalJson = File.ReadAllText(stringsPathLosApplicationWebApi);
             dynamic losClientPortalJsonObj = JsonConvert.DeserializeObject(losApplicationJson);
-            losClientPortalJsonObj["ConnectionStrings"]["DefaultConnection"] = "Data Source=IMATEV10;Initial Catalog=LOS.clientPortal;User Id=los;Password=los";
+            losClientPortalJsonObj["ConnectionStrings"]["DefaultConnection"] = "Data Source=IMATEV10;Initial Catalog=LOS.ClientPortal;User Id=los;Password=los";
             File.WriteAllText(stringsPathLosClientPortalWebApi, JsonConvert.SerializeObject(losClientPortalJsonObj, Formatting.Indented));
 
             // Los.ClientPortal.XCom.Runner
             string stringsPathLosClientPortalXComRunner = Constants.PATH_TO_LOS_FOLDER + @"\src\Los.ClientPortal\Infrastructure\Los.ClientPortal.XCom.Runner\ConnectionStrings.Dev.config";
-            File.WriteAllText(stringsPathLosClientPortalXComRunner, "<?xml version=\"1.0\"?>\r\n<connectionStrings>\r\n  <clear/>\r\n  <add name=\"DefaultConnection\" connectionString=\"Data Source=IMATEV10;Initial Catalog=LOS.clientPortal;Persist Security Info=True;User ID=los;Password=los\" providerName=\"System.Data.SqlClient\" />\r\n</connectionStrings>\r\n");
+            File.WriteAllText(stringsPathLosClientPortalXComRunner, "<?xml version=\"1.0\"?>\r\n<connectionStrings>\r\n  <clear/>\r\n  <add name=\"DefaultConnection\" connectionString=\"Data Source=IMATEV10;Initial Catalog=LOS.ClientPortal;Persist Security Info=True;User ID=los;Password=los\" providerName=\"System.Data.SqlClient\" />\r\n</connectionStrings>\r\n");
 
             // Los.Fees.XCom.Runner
             string stringsPathLosFeesXComRunner = Constants.PATH_TO_LOS_FOLDER + @"\src\Microservices\Los.LoanFees\Infrastructure\Los.LoanFees.XCom.Runner\ConnectionStrings.Dev.config";

@@ -29,7 +29,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05-02-RunClientPortalCoreAp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06-DeleteDBs", "DeleteDBs\06-DeleteDBs.csproj", "{42F0B5C2-71B1-419E-AD4F-756238AD1DCC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{502ADCCF-5CD0-4546-A556-3AF0BDE0E90E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common", "Common\Common.csproj", "{502ADCCF-5CD0-4546-A556-3AF0BDE0E90E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04-01-ApplicationXComRunner", "04-01-ApplicationXComRunner\04-01-ApplicationXComRunner.csproj", "{01A5F98E-852E-48EB-875F-7D1CD86C1F95}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04-02-ClientPortalXComRunner", "04-02-ClientPortalXComRunner\04-02-ClientPortalXComRunner.csproj", "{2A02C070-90ED-441F-8341-869F4AA4DBD6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04-03-FeesXComRunner", "04-03-FeesXComRunner\04-03-FeesXComRunner.csproj", "{B5DE2E6E-709A-470E-BD13-9FA434F2555B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04-04-RatesXComRunner", "04-04-RatesXComRunner\04-04-RatesXComRunner.csproj", "{90291012-93B3-4E74-8CA0-4070D6F06E62}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -93,6 +101,22 @@ Global
 		{502ADCCF-5CD0-4546-A556-3AF0BDE0E90E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{502ADCCF-5CD0-4546-A556-3AF0BDE0E90E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{502ADCCF-5CD0-4546-A556-3AF0BDE0E90E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01A5F98E-852E-48EB-875F-7D1CD86C1F95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01A5F98E-852E-48EB-875F-7D1CD86C1F95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01A5F98E-852E-48EB-875F-7D1CD86C1F95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01A5F98E-852E-48EB-875F-7D1CD86C1F95}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A02C070-90ED-441F-8341-869F4AA4DBD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A02C070-90ED-441F-8341-869F4AA4DBD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A02C070-90ED-441F-8341-869F4AA4DBD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A02C070-90ED-441F-8341-869F4AA4DBD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5DE2E6E-709A-470E-BD13-9FA434F2555B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5DE2E6E-709A-470E-BD13-9FA434F2555B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5DE2E6E-709A-470E-BD13-9FA434F2555B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5DE2E6E-709A-470E-BD13-9FA434F2555B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90291012-93B3-4E74-8CA0-4070D6F06E62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90291012-93B3-4E74-8CA0-4070D6F06E62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90291012-93B3-4E74-8CA0-4070D6F06E62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90291012-93B3-4E74-8CA0-4070D6F06E62}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

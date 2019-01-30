@@ -18,7 +18,7 @@ namespace _04_04_RatesXComRunner
                 CreateNoWindow = false
             };
             var pRunRatesXComRunner = Process.Start(RunRatesXComRunner);
-            pRunRatesXComRunner.StandardInput.WriteLine("dotnet watch run");
+            pRunRatesXComRunner.StandardInput.WriteLine("dotnet run");
             pRunRatesXComRunner.WaitForExit();
         }
     }

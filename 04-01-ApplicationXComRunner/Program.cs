@@ -18,7 +18,7 @@ namespace _04_01_ApplicationXComRunner
                 CreateNoWindow = false
             };
             var pRunApplicationXComRunner = Process.Start(RunApplicationXComRunner);
-            pRunApplicationXComRunner.StandardInput.WriteLine("dotnet watch run");
+            pRunApplicationXComRunner.StandardInput.WriteLine("dotnet run");
             pRunApplicationXComRunner.WaitForExit();
         }
     }

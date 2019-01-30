@@ -18,7 +18,7 @@ namespace _04_03_FeesXComRunner
                 CreateNoWindow = false
             };
             var pRunFeesXComRunner = Process.Start(RunFeesXComRunner);
-            pRunFeesXComRunner.StandardInput.WriteLine("dotnet watch run");
+            pRunFeesXComRunner.StandardInput.WriteLine("dotnet run");
             pRunFeesXComRunner.WaitForExit();
         }
     }

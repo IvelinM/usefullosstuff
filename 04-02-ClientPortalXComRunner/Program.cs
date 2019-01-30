@@ -18,7 +18,7 @@ namespace _04_02_ClientPortalXComRunner
                 CreateNoWindow = false
             };
             var pRunClientPortalXComRunner = Process.Start(RunClientPortalXComRunner);
-            pRunClientPortalXComRunner.StandardInput.WriteLine("dotnet watch run");
+            pRunClientPortalXComRunner.StandardInput.WriteLine("dotnet run");
             pRunClientPortalXComRunner.WaitForExit();
         }
     }
